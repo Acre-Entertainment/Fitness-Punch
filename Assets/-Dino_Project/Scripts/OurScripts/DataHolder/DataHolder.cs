@@ -13,6 +13,7 @@ public class DataHolder : MonoBehaviour
     public int dayOfTheWeek;
     public int year;
     public int actions;
+    public bool dayTime;
 
     public int stepsTaken;
 
