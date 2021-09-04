@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/-Dino_Project/-Scenes/Main Menu.unity
+    guid: b370a8e242f1558468777b4aba573f71
+  - enabled: 1
+    path: Assets/-Dino_Project/-Scenes/Overworld.unity
+    guid: 7a83c75441d20e24aaf959728022a982
+  - enabled: 1
+    path: Assets/-Dino_Project/-Scenes/Pou.unity
+    guid: 26e2e30dd6ba0294b92c6672f88d2ece
   m_configObjects: {}

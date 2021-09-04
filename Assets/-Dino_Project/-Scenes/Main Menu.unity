@@ -661,11 +661,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayOfTheMonth: 0
   dayOfTheWeek: 0
+  year: 0
+  actions: 0
   dayTime: 0
-  money: 0
-  fats: 0
-  carbohydrates: 0
   stepsTaken: 0
+  money: 0
+  proteina: 0
+  carboidrato: 0
+  lipidio: 0
+  mineral: 0
+  vitamina: 0
+  fibra: 0
+  disposicao: 0
+  forca: 0
+  resistencia: 0
+  inventorySlots: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!4 &757464108
 Transform:
   m_ObjectHideFlags: 0
