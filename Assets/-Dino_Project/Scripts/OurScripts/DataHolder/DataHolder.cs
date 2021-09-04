@@ -10,13 +10,27 @@ public class DataHolder : MonoBehaviour
     private GameObject _dt;
     //Coloque as informações que voce quer salvar abaixo como um valor publico.
     public int dayOfTheMonth;
-    public float dayOfTheWeek;
-    public bool dayTime;
+    public int dayOfTheWeek;
+    public int year;
+    public int actions;
+
+    public int stepsTaken;
+
     public int money;
-    public int fats;
-    public int carbohydrates;
-    public int stepsTaken; //taken
-    //etc
+
+    public int proteina;
+    public int carboidrato;
+    public int lipidio;
+    public int mineral;
+    public int vitamina;
+    public int fibra;
+
+    public int disposicao;
+
+    public int forca;
+    public int resistencia;
+
+    public int[] inventorySlots = new int[10];
 
     void Awake() //Garante que ha apenas um DataHolder por cena e que ele não e destroido ao mudar de cena.
     {
