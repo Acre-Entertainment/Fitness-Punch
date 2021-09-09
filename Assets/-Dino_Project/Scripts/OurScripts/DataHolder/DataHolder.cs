@@ -33,6 +33,9 @@ public class DataHolder : MonoBehaviour
 
     public int[] inventorySlots = new int[10];
 
+    [HideInInspector] public int[] selectedGrocerFood = new int[4];
+    [HideInInspector] public int PouTurn;
+
     void Awake() //Garante que ha apenas um DataHolder por cena e que ele não e destroido ao mudar de cena.
     {
         _dt = GameObject.FindWithTag("DataHolder");

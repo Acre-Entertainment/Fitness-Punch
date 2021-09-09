@@ -659,22 +659,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c1f1064011d4845ade154fbfb09788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayOfTheMonth: 0
-  dayOfTheWeek: 0
-  year: 0
-  actions: 0
-  dayTime: 0
+  dayOfTheMonth: 1
+  dayOfTheWeek: 1
+  year: 1
+  actions: 4
+  dayTime: 1
   stepsTaken: 0
   money: 0
-  proteina: 0
-  carboidrato: 0
-  lipidio: 0
-  mineral: 0
-  vitamina: 0
-  fibra: 0
-  disposicao: 0
-  forca: 0
-  resistencia: 0
+  proteina: 5
+  carboidrato: 5
+  lipidio: 5
+  mineral: 5
+  vitamina: 5
+  fibra: 5
+  disposicao: 8
+  forca: 5
+  resistencia: 5
   inventorySlots: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!4 &757464108
 Transform:
