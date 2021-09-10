@@ -33,6 +33,7 @@ public class DataHolder : MonoBehaviour
 
     public int[] inventorySlots = new int[10];
 
+    //Grocer Minigame
     [HideInInspector] public int[] selectedGrocerFood = new int[4];
     [HideInInspector] public int PouTurn;
 
