@@ -107,8 +107,4 @@ public class PouMenu : MonoBehaviour
         DT.selectedGrocerFood[2] = number3;
         DT.selectedGrocerFood[3] = number4;
     }
-    public void setGrocerTurnToOne()
-    {
-        DT.PouTurn = 1;
-    }
 }
