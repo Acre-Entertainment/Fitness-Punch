@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -48,6 +49,11 @@ public class DataHolder : MonoBehaviour
         {
             Destroy(gameObject);
         };
+    }
+
+    public void organizeInventory()
+    {
+        Array.Reverse(inventorySlots);
     }
 
 }
