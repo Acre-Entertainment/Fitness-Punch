@@ -533,8 +533,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 150}
-  m_SizeDelta: {x: 500, y: 150}
+  m_AnchoredPosition: {x: 0, y: -69}
+  m_SizeDelta: {x: 166.4098, y: 65.0862}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &693266996
 MonoBehaviour:
@@ -676,6 +676,7 @@ MonoBehaviour:
   forca: 5
   resistencia: 5
   inventorySlots: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  selectedGrocerFood: 00000000000000000000000000000000
 --- !u!4 &757464108
 Transform:
   m_ObjectHideFlags: 0
@@ -725,7 +726,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -250}
-  m_SizeDelta: {x: 1000, y: 300}
+  m_SizeDelta: {x: 431, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1097794923
 MonoBehaviour:
@@ -799,6 +800,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DT: {fileID: 0}
+  proteinaMainMenuBar: {fileID: 0}
+  carboidratoMainMenuBar: {fileID: 0}
+  lipidioMainMenuBar: {fileID: 0}
+  mineralMainMenuBar: {fileID: 0}
+  vitaminaMainMenuBar: {fileID: 0}
+  fibraMainMenuBar: {fileID: 0}
+  disposicaoMainMenuBar: {fileID: 0}
+  forcaMainMenuBar: {fileID: 0}
+  resistenciaMainMenuBar: {fileID: 0}
 --- !u!4 &1196453808
 Transform:
   m_ObjectHideFlags: 0
@@ -849,8 +859,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -150}
-  m_SizeDelta: {x: 500, y: 150}
+  m_AnchoredPosition: {x: -0.00010681, y: -214}
+  m_SizeDelta: {x: 166.41, y: 77.2167}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1393932955
 MonoBehaviour:
