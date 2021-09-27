@@ -74,5 +74,6 @@ public class PouFood : MonoBehaviour
         _time = 0;
         _timeToFall = Random.Range(0, randomTimeToFall);
         _isFalling = false;
+        rb.velocity = new Vector2(0,0);
     }
 }
