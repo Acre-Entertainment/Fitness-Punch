@@ -53,7 +53,17 @@ public class DataHolder : MonoBehaviour
 
     public void organizeInventory()
     {
-        Array.Reverse(inventorySlots);
+        for(int i = 0; i < 10; i++)
+        {
+            for(int i2 = 0; i2 < 9; i2++)
+            {
+                if(inventorySlots[i2] == 0)
+                {
+                    inventorySlots[i2] = inventorySlots[i2 + 1];
+                    inventorySlots[i2 + 1] = 0;
+                }
+            }
+        }
     }
 
 }
