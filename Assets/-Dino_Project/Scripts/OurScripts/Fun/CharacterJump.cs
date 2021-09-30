@@ -12,7 +12,7 @@ public class CharacterJump : MonoBehaviour
   private void Start() 
   {
       rb = GetComponent<Rigidbody2D>();
-      currentHealth -= maxHealth;
+      currentHealth = maxHealth;
   }
 
   private void Update() 

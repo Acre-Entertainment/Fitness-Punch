@@ -37,6 +37,8 @@ public class GameControl : MonoBehaviour {
 
 	float nextScoreIncrease = 0f;
 
+	private CharacterJump cj;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -52,6 +54,7 @@ public class GameControl : MonoBehaviour {
 		highScore = PlayerPrefs.GetInt ("highScore");
 		nextSpawn = Time.time + spawnRate;
 		nextBoost = Time.unscaledTime + timeToBoost;
+		cj = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterJump>();
 	}
 	
 	// Update is called once per frame
@@ -71,11 +74,15 @@ public class GameControl : MonoBehaviour {
 
 	public void DinoHit()
 	{
-		if (yourScore > highScore)
-			PlayerPrefs.SetInt("highScore", yourScore);
-		Time.timeScale = 0;
-		gameStopped = true;
-		restartButton.SetActive (true);
+		cj.currentHealth = cj.currentHealth - 1;
+		if(cj.currentHealth <= 0)
+		{
+			if (yourScore > highScore)
+				PlayerPrefs.SetInt("highScore", yourScore);
+			Time.timeScale = 0;
+			gameStopped = true;
+			restartButton.SetActive (true);
+		}
 	}
 
 	void SpawnObstacle()
