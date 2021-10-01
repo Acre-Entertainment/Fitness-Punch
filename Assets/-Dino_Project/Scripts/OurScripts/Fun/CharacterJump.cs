@@ -7,7 +7,7 @@ public class CharacterJump : MonoBehaviour
   public int maxHealth = 3;
   public int currentHealth;
   private Rigidbody2D rb;
-  private float jumpForce = 600f;
+  public float jumpForce = 600f;
 
   private void Start() 
   {

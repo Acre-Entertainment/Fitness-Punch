@@ -141,11 +141,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8111945846377538043, guid: faf9749def744dc45b031194cd80f0e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.68
+      value: -1.66
       objectReference: {fileID: 0}
     - target: {fileID: 8111945846377538043, guid: faf9749def744dc45b031194cd80f0e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.47
+      value: -2.507
       objectReference: {fileID: 0}
     - target: {fileID: 8111945846377538043, guid: faf9749def744dc45b031194cd80f0e5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -442,12 +442,20 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6399006094579797007, guid: 2f89d160ec5d6bf418a73f315a92145d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.66598
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399006094579797007, guid: 2f89d160ec5d6bf418a73f315a92145d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.141418
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399006094579797007, guid: 2f89d160ec5d6bf418a73f315a92145d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 6399006094579797007, guid: 2f89d160ec5d6bf418a73f315a92145d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.01
+      value: -3.964
       objectReference: {fileID: 0}
     - target: {fileID: 6399006094579797007, guid: 2f89d160ec5d6bf418a73f315a92145d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -612,6 +620,10 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 1574424916}
+    - target: {fileID: 9107976117145709641, guid: d315d97919741014bb57ab64957eb060, type: 3}
+      propertyPath: timeToBoost
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9107976117145709641, guid: d315d97919741014bb57ab64957eb060, type: 3}
       propertyPath: highScoreText
       value: 

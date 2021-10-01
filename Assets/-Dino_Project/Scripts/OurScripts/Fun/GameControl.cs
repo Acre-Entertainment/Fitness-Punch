@@ -28,7 +28,7 @@ public class GameControl : MonoBehaviour {
 	float nextSpawn;
 
 	[SerializeField]
-	float timeToBoost = 5f;
+	public float timeToBoost = 10f;
 	float nextBoost;
 
 	int highScore = 0, yourScore = 0;
