@@ -51,7 +51,7 @@ public class GameControl : MonoBehaviour {
 		yourScore = 0;
 		gameStopped = false;
 		Time.timeScale = 1f;
-		highScore = PlayerPrefs.GetInt ("highScore");
+		highScore = PlayerPrefs.GetInt ("Best Time");
 		nextSpawn = Time.time + spawnRate;
 		nextBoost = Time.unscaledTime + timeToBoost;
 		cj = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterJump>();
@@ -62,8 +62,8 @@ public class GameControl : MonoBehaviour {
 		if (!gameStopped)
 			IncreaseYourScore ();
 
-		highScoreText.text = "High Score: " + highScore;
-		yourScoreText.text = "Your Score: " + yourScore;
+		highScoreText.text = "Best Time: " + highScore;
+		yourScoreText.text = "Your Time: " + yourScore;
 
 		if (Time.time > nextSpawn)
 			SpawnObstacle ();

@@ -2114,7 +2114,6 @@ GameObject:
   - component: {fileID: 1124694833917554464}
   - component: {fileID: 1124694833917554467}
   - component: {fileID: 1124694833917554466}
-  - component: {fileID: 1124694833917554465}
   m_Layer: 5
   m_Name: PStore
   m_TagString: Untagged
@@ -2181,24 +2180,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1124694833917554465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124694833917554479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb94963d28726a9469de424f73a3a312, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DT: {fileID: 0}
-  goButton: {fileID: 1124694833688278737}
-  noDispositionText: {fileID: 1124694833947787374}
-  noInvetoryText: {fileID: 1124694834281956392}
-  neededDisposition: 2
-  invetorySize: 10
 --- !u!1 &1124694833934071203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2785,7 +2766,6 @@ GameObject:
   - component: {fileID: 1124694834115419870}
   - component: {fileID: 1124694834115419857}
   - component: {fileID: 1124694834115419856}
-  - component: {fileID: 1124694834115419871}
   m_Layer: 5
   m_Name: PMake food/Play games
   m_TagString: Untagged
@@ -2854,24 +2834,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1124694834115419871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124694834115419869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb94963d28726a9469de424f73a3a312, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DT: {fileID: 0}
-  goButton: {fileID: 1124694833688278737}
-  noDispositionText: {fileID: 1124694833947787374}
-  noInvetoryText: {fileID: 1124694834281956392}
-  neededDisposition: 2
-  invetorySize: 10
 --- !u!1 &1124694834121042109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,7 +3089,6 @@ GameObject:
   - component: {fileID: 1124694834214115316}
   - component: {fileID: 1124694834214115319}
   - component: {fileID: 1124694834214115318}
-  - component: {fileID: 1124694834214115317}
   m_Layer: 5
   m_Name: PWorkout
   m_TagString: Untagged
@@ -3196,24 +3157,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1124694834214115317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124694834214115315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb94963d28726a9469de424f73a3a312, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DT: {fileID: 0}
-  goButton: {fileID: 1124694833688278737}
-  noDispositionText: {fileID: 1124694833947787374}
-  noInvetoryText: {fileID: 1124694834281956392}
-  neededDisposition: 2
-  invetorySize: 10
 --- !u!1 &1124694834220268657
 GameObject:
   m_ObjectHideFlags: 0
@@ -4423,6 +4366,7 @@ GameObject:
   - component: {fileID: 1124694834399760760}
   - component: {fileID: 1124694834399760743}
   - component: {fileID: 1124694834399760742}
+  - component: {fileID: 7486717969841833009}
   m_Layer: 5
   m_Name: GoPlay
   m_TagString: Untagged
@@ -4556,21 +4500,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1124694835352484342}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1124694834115419871}
-        m_TargetAssemblyTypeName: PouDispositionCheck, Assembly-CSharp
-        m_MethodName: doCheckAndAct
+      - m_Target: {fileID: 7486717969841833009}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: loadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4578,8 +4510,21 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7486717969841833009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124694834399760740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d5105cb2c2e60941b5e4d09af056c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Fun
 --- !u!1 &1124694834407347553
 GameObject:
   m_ObjectHideFlags: 0
@@ -4631,7 +4576,7 @@ Canvas:
   m_GameObject: {fileID: 1124694834407347553}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -4717,7 +4662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000076293945, y: 13.415}
+  m_AnchoredPosition: {x: -0.0000076293945, y: 13.415001}
   m_SizeDelta: {x: 0, y: -26.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1124694834426230595
@@ -5942,30 +5887,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1124694835352484342}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1124694834115419871}
-        m_TargetAssemblyTypeName: PouDispositionCheck, Assembly-CSharp
-        m_MethodName: doCheckAndAct
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &1124694834748516335
 GameObject:
@@ -8993,30 +8914,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1124694835352484342}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1124694834214115317}
-        m_TargetAssemblyTypeName: PouDispositionCheck, Assembly-CSharp
-        m_MethodName: doCheckAndAct
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!1 &1124694835511717060
 GameObject:
   m_ObjectHideFlags: 0
@@ -9241,30 +9138,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1124694835352484342}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1124694834214115317}
-        m_TargetAssemblyTypeName: PouDispositionCheck, Assembly-CSharp
-        m_MethodName: doCheckAndAct
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!1 &1124694835529058175
 GameObject:
   m_ObjectHideFlags: 0
@@ -9409,30 +9282,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1124694835352484342}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1124694833917554465}
-        m_TargetAssemblyTypeName: PouDispositionCheck, Assembly-CSharp
-        m_MethodName: doCheckAndAct
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &1124694835549267018
 GameObject:
