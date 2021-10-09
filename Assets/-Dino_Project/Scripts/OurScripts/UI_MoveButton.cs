@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class UI_MoveButton : MonoBehaviour
 {
     private bool isBeingMoved;
-    private float startingXPosition, startingYPosition;
-    [SerializeField] private float rectTransformXSize;
-    [SerializeField] private float rectTransformYSize;
-    private Vector3 touchPosition;
+    private bool correctCourse;
+    [SerializeField] private float maximumButtonMoveSize;
+    private RectTransform rt;
     private float x, y;
+
     public UnityEvent onLeftTouch;
     public UnityEvent onRightTouch;
     public UnityEvent onUpTouch;
@@ -18,8 +19,8 @@ public class UI_MoveButton : MonoBehaviour
 
     void Start()
     {
-        startingXPosition = gameObject.transform.position.x;
-        startingYPosition = gameObject.transform.position.y;
+        rt = gameObject.GetComponent<RectTransform>();
+        rt.anchoredPosition = new Vector2(2, 2);
     }
 
     void Update()
@@ -27,30 +28,42 @@ public class UI_MoveButton : MonoBehaviour
         if(Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
-            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-            if(isBeingMoved == false && touchPosition.x >= startingXPosition - rectTransformXSize/2 && touchPosition.x <= startingXPosition + rectTransformXSize/2 && touchPosition.y >= startingYPosition - rectTransformYSize/2 && touchPosition.y <= startingYPosition + rectTransformYSize/2)
+            if(isBeingMoved == false && EventSystem.current.IsPointerOverGameObject(touch.fingerId))
             {
                 isBeingMoved = true;
-                x = touchPosition.x;
-                y = touchPosition.y;
-                gameObject.transform.position = new Vector3 (x, y, 0);
+                gameObject.transform.position = Camera.main.ScreenToWorldPoint(touch.position);
+                x = rt.anchoredPosition.x;
+                y = rt.anchoredPosition.y;
+                if(x <= -maximumButtonMoveSize){x = -maximumButtonMoveSize; correctCourse = true; onLeftTouch.Invoke();}
+                if(x >= maximumButtonMoveSize){x = maximumButtonMoveSize; correctCourse = true; onRightTouch.Invoke();}
+                if(y <= -maximumButtonMoveSize){y = -maximumButtonMoveSize; correctCourse = true; onDownTouch.Invoke();}
+                if(y >= maximumButtonMoveSize){y = maximumButtonMoveSize; correctCourse = true; onUpTouch.Invoke();}
+                if(correctCourse == true)
+                {
+                    rt.anchoredPosition = new Vector2(x, y);
+                    correctCourse = false;
+                }
             }
             if(isBeingMoved == true)
             {
-                x = touchPosition.x;
-                y = touchPosition.y;
-                if(x >= startingXPosition + rectTransformXSize/2){x = startingXPosition + rectTransformXSize/2; onLeftTouch.Invoke();}
-                if(x <= startingXPosition - rectTransformXSize/2){x = startingXPosition - rectTransformXSize/2; onRightTouch.Invoke();}
-                if(y >= startingXPosition + rectTransformYSize/2){y = startingYPosition + rectTransformYSize/2; onDownTouch.Invoke();}
-                if(x <= startingYPosition - rectTransformYSize/2){y = startingYPosition - rectTransformYSize/2; onUpTouch.Invoke();}
-
-                gameObject.transform.position = new Vector3 (x, y, 0);
+                gameObject.transform.position = Camera.main.ScreenToWorldPoint(touch.position);
+                x = rt.anchoredPosition.x;
+                y = rt.anchoredPosition.y;
+                if(x <= -maximumButtonMoveSize){x = -maximumButtonMoveSize; correctCourse = true; onLeftTouch.Invoke();}
+                if(x >= maximumButtonMoveSize){x = maximumButtonMoveSize; correctCourse = true; onRightTouch.Invoke();}
+                if(y <= -maximumButtonMoveSize){y = -maximumButtonMoveSize; correctCourse = true; onDownTouch.Invoke();}
+                if(y >= maximumButtonMoveSize){y = maximumButtonMoveSize; correctCourse = true; onUpTouch.Invoke();}
+                if(correctCourse == true)
+                {
+                    rt.anchoredPosition = new Vector2(x, y);
+                    correctCourse = false;
+                }
             }
         }
         if(Input.touchCount == 0 && isBeingMoved == true)
         {
             isBeingMoved = false;
-            gameObject.transform.position = new Vector3 (startingXPosition, startingYPosition, 0);
+            
         }
     }
 }
