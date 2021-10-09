@@ -938,8 +938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f3a51d1eb5c87b4eb79c8efcfd9051f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rectTransformXSize: 250
-  rectTransformYSize: 250
+  maximumButtonMoveSize: 100
   onLeftTouch:
     m_PersistentCalls:
       m_Calls:
