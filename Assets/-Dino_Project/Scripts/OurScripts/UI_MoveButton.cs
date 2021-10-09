@@ -47,5 +47,10 @@ public class UI_MoveButton : MonoBehaviour
                 gameObject.transform.position = new Vector3 (x, y, 0);
             }
         }
+        if(Input.touchCount == 0 && isBeingMoved == true)
+        {
+            isBeingMoved = false;
+            gameObject.transform.position = new Vector3 (startingXPosition, startingYPosition, 0);
+        }
     }
 }
