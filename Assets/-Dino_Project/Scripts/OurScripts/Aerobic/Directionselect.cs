@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class Directionselect : MonoBehaviour
 {
     [SerializeField] private Text feedback;
-    [SerializeField] GameObject controler;
+    [SerializeField] private GameObject controler;
     private int controlerNumber;
+
     private void Start()
     {
-        // controlerNumber = GameObject.FindGameObjectsWithTag("Activator").
+        controler = GameObject.FindGameObjectWithTag("Activator");
+        controlerNumber = controler.GetComponent<Directioncontroler>().Direction();
     }
     public void DirSelectRigth()
     {
