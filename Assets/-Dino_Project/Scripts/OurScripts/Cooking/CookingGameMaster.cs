@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class CookingGameMaster : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int[] selectedFoodsID = new int[3];
+    
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         

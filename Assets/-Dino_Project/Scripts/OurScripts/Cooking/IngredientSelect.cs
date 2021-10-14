@@ -8,6 +8,7 @@ public class IngredientSelect : MonoBehaviour
     //caraca, esse codigo que eu fiz ta horrivel
 
     private DataHolder dt;
+    private CookingGameMaster cgm;
 
     public GameObject button1;
     public GameObject button1Text;
@@ -62,6 +63,7 @@ public class IngredientSelect : MonoBehaviour
     
     void Start()
     {
+        cgm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<CookingGameMaster>();
         dt = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
         dt.organizeInventory();
 
@@ -80,7 +82,7 @@ public class IngredientSelect : MonoBehaviour
         _added3Text = added3Text.GetComponent<Text>();
         _textTitle = textTitle.GetComponent<Text>();
 
-
+        //to do: make icons of inventory itens show up.
         if(dt.inventorySlots[9] != 0){button10.SetActive(true); _button10Text.text = "" + dt.inventorySlots[9];}
         if(dt.inventorySlots[8] != 0){button9.SetActive(true); _button9Text.text = "" + dt.inventorySlots[8];}
         if(dt.inventorySlots[7] != 0){button8.SetActive(true); _button8Text.text = "" + dt.inventorySlots[7];}
@@ -132,6 +134,9 @@ public class IngredientSelect : MonoBehaviour
                 button9.SetActive(false);
                 button10.SetActive(false);
                 proceedButton.SetActive(true);
+
+                cgm.selectedFoodsID = selectedFoodsID;
+
                 break;
         }
         numberOfFoodAdded++;
