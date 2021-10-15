@@ -33,36 +33,51 @@ public class AimThingy : MonoBehaviour
         //verifica onde o Aim esta e faz a ação apropriada
         if(gameObject.transform.position.x >= -centerRange && gameObject.transform.position.x <= centerRange)
         {
-            cgm.points = cgm.points + cgm.pointsForCenterThrow;
+            cgm.centerHit();
         }
         else
         {
             if(gameObject.transform.position.x >= -nearRange && gameObject.transform.position.x <= nearRange)
             {
-                cgm.points = cgm.points + cgm.pointsForNearThrow;
+                cgm.nearHit();
             }
             else
             {
                 if(gameObject.transform.position.x >= -closeRange && gameObject.transform.position.x <= closeRange)
                 {
-                    cgm.points = cgm.points + cgm.pointsForCloseThrow;
+                    cgm.closeHit();
                 }
                 else
                 {
                     if(gameObject.transform.position.x >= -insideRange && gameObject.transform.position.x <= insideRange)
                     {
-                        cgm.points = cgm.points + cgm.pointsForInsideThrow;
+                        cgm.insideHit();
                     }
                     else
                     {
-
+                        cgm.outsideHit();
                     }
                 }
             }
         }
+        rb.velocity = new Vector2(0, 0);
+        cgm.foodsThrownInPhaseOne++;
+        if(cgm.foodsThrownInPhaseOne >= 3)
+        {
+            cgm.phase++;
+            cgm.onPhaseOneEnd.Invoke();
+        }
+        else
+        {
+            cgm.time = 0;
+            cgm.waitingAfterThrowingFood = true;
+        }
+
     }
     public void setToStartingX()
     {
         gameObject.transform.position = new Vector3(startingX, gameObject.transform.position.y, 0);
+        rb.velocity = new Vector2(velocity, 0);
     }
+
 }
