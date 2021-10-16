@@ -64,8 +64,8 @@ public class AimThingy : MonoBehaviour
         cgm.foodsThrownInPhaseOne++;
         if(cgm.foodsThrownInPhaseOne >= 3)
         {
-            cgm.phase++;
-            cgm.onPhaseOneEnd.Invoke();
+            cgm.time = 0;
+            cgm.goingToNextPhase = true;
         }
         else
         {

@@ -146,60 +146,70 @@ public class IngredientSelect : MonoBehaviour
     public void selectButton1()
     {
         selectedFoodID = dt.inventorySlots[0];
+        dt.inventorySlots[0] = 0;
         selectedButton = 1;
         _textTitle.text = "" + selectedFoodID;
     }
     public void selectButton2()
     {
         selectedFoodID = dt.inventorySlots[1];
+        dt.inventorySlots[1] = 0;
         selectedButton = 2;
         _textTitle.text = "" + selectedFoodID;
     }
     public void selectButton3()
     {
         selectedFoodID = dt.inventorySlots[2];
+        dt.inventorySlots[2] = 0;
         selectedButton = 3;
         _textTitle.text = "" + selectedFoodID;
     }
     public void selectButton4()
     {
         selectedFoodID = dt.inventorySlots[3];
+        dt.inventorySlots[3] = 0;
         selectedButton = 4;
         _textTitle.text = "" + selectedFoodID;
     }
     public void selectButton5()
     {
         selectedFoodID = dt.inventorySlots[4];
+        dt.inventorySlots[4] = 0;
         selectedButton = 5;
         _textTitle.text = "" + selectedFoodID;
     }
     public void selectButton6()
     {
         selectedFoodID = dt.inventorySlots[5];
+        dt.inventorySlots[5] = 0;
         selectedButton = 6;
         _textTitle.text = "" + selectedFoodID;
     }
     public void selectButton7()
     {
         selectedFoodID = dt.inventorySlots[6];
+        dt.inventorySlots[6] = 0;
         selectedButton = 7;
         _textTitle.text = "" + selectedFoodID;
     }
     public void selectButton8()
     {
         selectedFoodID = dt.inventorySlots[7];
+        dt.inventorySlots[7] = 0;
         selectedButton = 8;
         _textTitle.text = "" + selectedFoodID;
     }
     public void selectButton9()
     {
         selectedFoodID = dt.inventorySlots[8];
+        dt.inventorySlots[8] = 0;
         selectedButton = 9;
         _textTitle.text = "" + selectedFoodID;
     }
     public void selectButton10()
     {
         selectedFoodID = dt.inventorySlots[9];
+        dt.inventorySlots[9] = 0;
         selectedButton = 10;
         _textTitle.text = "" + selectedFoodID;
     }
