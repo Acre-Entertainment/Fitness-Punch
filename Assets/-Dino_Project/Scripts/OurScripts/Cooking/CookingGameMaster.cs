@@ -16,11 +16,17 @@ public class CookingGameMaster : MonoBehaviour
     [SerializeField] private float timeForShortPopUps;
     [SerializeField] private float timeToStir;
     [SerializeField] private float timeToThrow;
+    [SerializeField] private float timeToBalance;
+    [SerializeField] private float timeBetweenChecks;
+    [HideInInspector] public bool isInContact;
+    private float timeForChecks;
     public int pointsForCenterThrow, pointsForNearThrow, pointsForCloseThrow, pointsForInsideThrow;
     public UnityEvent onPhaseZeroEnd;
     public UnityEvent onPhaseOneEnd;
     public UnityEvent onPhaseTwoEnd;
     public UnityEvent onPhaseThreeEnd;
+    public UnityEvent onPhaseFourEnd;
+    public UnityEvent onPhaseFiveEnd;
 
     public GameObject aim;
     public GameObject pointsUI;
@@ -42,6 +48,7 @@ public class CookingGameMaster : MonoBehaviour
     {
         startingCounterText = startingCounter.GetComponent<Text>();
         pointsUIText = pointsUI.GetComponent<Text>();
+        timeForChecks = timeBetweenChecks;
     }
 
     void Update()
@@ -49,8 +56,40 @@ public class CookingGameMaster : MonoBehaviour
         time = time + 1 * Time.deltaTime;
         switch (phase)
         {
-            case 3:
+            case 5:
+                if(time >= timeForChecks)
+                {
+                    timeForChecks = timeForChecks + timeBetweenChecks;
+                    if(isInContact == true)
+                    {
+                        points++;
+                        pointsUIText.text = "Points: " + points;
+                    }
+                }
+                if(time >= timeToBalance)
+                {
+                    time = 0;
+                    phase++;
+                    onPhaseFiveEnd.Invoke();
+                }
+                break;
+            case 4:
                 startingCounterText.text = "" + (timeForPopUps - (int)time);
+                if(time >= timeForPopUps)
+                {
+                    time = 0;
+                    phase++;
+                    onPhaseFourEnd.Invoke();
+                }
+                break;
+            case 3:
+                startingCounterText.text = "" + (timeToStir - (int)time);
+                if(time >= timeToStir)
+                {
+                    time = 0;
+                    phase++;
+                    onPhaseThreeEnd.Invoke();
+                }
                 break;
             case 2:
                 startingCounterText.text = "" + (timeForPopUps - (int)time);
@@ -93,39 +132,39 @@ public class CookingGameMaster : MonoBehaviour
     {
         centerText.SetActive(true);
         points = points + pointsForCenterThrow;
-        pointsUIText.text = "" + points;
+        pointsUIText.text = "Points: " + points;
     }
     public void nearHit()
     {
         nearText.SetActive(true);
         points = points + pointsForNearThrow;
-        pointsUIText.text = "" + points;
+        pointsUIText.text = "Points: " + points;
     }
     public void closeHit()
     {
         closeText.SetActive(true);
         points = points + pointsForCloseThrow;
-        pointsUIText.text = "" + points;
+        pointsUIText.text = "Points: " + points;
     }
     public void insideHit()
     {
         insideText.SetActive(true);
         points = points + pointsForInsideThrow;
-        pointsUIText.text = "" + points;
+        pointsUIText.text = "Points: " + points;
     }
     public void outsideHit()
     {
         outsideText.SetActive(true);
-        pointsUIText.text = "" + points;
+        pointsUIText.text = "Points: " + points;
     }
     public void stirRight()
     {
         points++;
-        pointsUIText.text = "" + points;
+        pointsUIText.text = "Points: " + points;
     }
     public void stirLeft()
     {
         points++;
-        pointsUIText.text = "" + points;
+        pointsUIText.text = "Points: " + points;
     }
 }
