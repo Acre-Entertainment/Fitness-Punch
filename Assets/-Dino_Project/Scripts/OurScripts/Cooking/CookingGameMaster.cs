@@ -19,6 +19,8 @@ public class CookingGameMaster : MonoBehaviour
     [SerializeField] private float timeToBalance;
     [SerializeField] private float timeBetweenChecks;
     [HideInInspector] public bool isInContact;
+    [SerializeField] private int pointsNeededForNormal;
+    [SerializeField] private int pointsNeededForExtra;
     private float timeForChecks;
     public int pointsForCenterThrow, pointsForNearThrow, pointsForCloseThrow, pointsForInsideThrow;
     public UnityEvent onPhaseZeroEnd;
@@ -71,6 +73,7 @@ public class CookingGameMaster : MonoBehaviour
                     time = 0;
                     phase++;
                     onPhaseFiveEnd.Invoke();
+                    caulculateResults();
                 }
                 break;
             case 4:
@@ -166,5 +169,9 @@ public class CookingGameMaster : MonoBehaviour
     {
         points++;
         pointsUIText.text = "Points: " + points;
+    }
+    private void caulculateResults()
+    {
+
     }
 }

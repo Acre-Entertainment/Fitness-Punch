@@ -7,6 +7,7 @@ public class BalanceCollider : MonoBehaviour
     CookingGameMaster cgm;
     public GameObject shineSprite;
     private bool isShining;
+    private float xPosition;
     void Start()
     {
         cgm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<CookingGameMaster>();
@@ -30,6 +31,11 @@ public class BalanceCollider : MonoBehaviour
                 shineSprite.SetActive(false);
                 isShining = false;
             }
+        }
+        if(Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            gameObject.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(xPosition, gameObject.transform.position.y, Camera.main.transform.position.z));
         }
     }
     void OnTriggerStay2D(Collider2D other)
