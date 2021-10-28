@@ -11,7 +11,6 @@ public class FightControl : MonoBehaviour
     public GameObject punchCollider;
     [SerializeField] private float punchColliderSpeed;
     [SerializeField] private float punchColliderTime;
-    [SerializeField] private float punchNoReactionTime;
     private bool isBlocking;
     [SerializeField] private float blockingTime;
     private float startingX, startingY;
@@ -28,118 +27,110 @@ public class FightControl : MonoBehaviour
         startingY = gameObject.transform.position.y;
     }
 
-    //soco
+    //soco-------------------------------------------------------------
     public void punch() //botao de socar
     {
         if(canAct == true && canPunch == true)
         {
             punchCollider.GetComponent<Rigidbody2D>().velocity = new Vector2(0, punchColliderSpeed);
             canAct = false;
-            returnPunchCollider();
+            StartCoroutine(returnPunchCollider());
         }
     }
     private IEnumerator returnPunchCollider() //retorna o colider do soco depois de um tempo e faz poder agir de novo
     {
         yield return new WaitForSeconds(punchColliderTime);
         punchCollider.transform.localPosition = new Vector3(0, 0, 0);
+        punchCollider.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         canAct = true;
+        StopCoroutine(returnPunchCollider());
     }
     private void cancelPunch() //chamado quando o soco é intenrompido
     {
         StopCoroutine(returnPunchCollider());
         punchCollider.transform.localPosition = new Vector3(0, 0, 0);
+        punchCollider.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        canAct = true;
     }
-    //bloquear attaques
+    //bloquear attaques----------------------------------------------------------------
     public void block() //funcao de bloquear
     {
         if(canAct == true && canBlock == true)
         {
             isBlocking = true;
             canAct = false;
+            StartCoroutine(lowerBlock());
         }
     }
-    private IEnumerator lowerBlock() //chamado guando o block acaba
+    private IEnumerator lowerBlock()
     {
         yield return new WaitForSeconds(blockingTime);
         canAct = true;
         isBlocking = false;
+        StartCoroutine(lowerBlock());
     }
     private void cancelBlock()
     {
         StopCoroutine(lowerBlock());
         isBlocking = false;
+        canAct = true;
     }
-    //esquivar para a esquerda
+    //esquivar para a esquerda---------------------------------------------------------------------
     public void dodgeLeft()
     {
         if(canAct == true && canDodge == true)
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-lateralDodgeSpeed, 0);
             canAct = false;
-            stopAtRightDodgePosition();
+            StartCoroutine(dodgeLeftRotine());
         }
     }
-    private IEnumerator stopAtLeftDodgePosition()
+    private IEnumerator dodgeLeftRotine()
     {
         yield return new WaitForSeconds(lateralDodgeTimeToStop);
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-        returnToNormalPositionAfterLeftDodge();
-    }
-    private IEnumerator returnToNormalPositionAfterLeftDodge()
-    {
         yield return new WaitForSeconds(lateralDodgeTimeToReturn);
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(lateralDodgeSpeed, 0);
-        stayAtNormalPositionAfterLeftDodge();
-    }
-    private IEnumerator stayAtNormalPositionAfterLeftDodge()
-    {
         yield return new WaitForSeconds(lateralDodgeTimeToStop);
         canAct = true;
         gameObject.transform.position = new Vector3(startingX, startingY, 0);
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        StopCoroutine(dodgeLeftRotine());
     }
     private void cancelLeftDodge()
     {
         gameObject.transform.position = new Vector3(startingX, startingY, 0);
-        StopCoroutine(stopAtLeftDodgePosition());
-        StopCoroutine(returnToNormalPositionAfterLeftDodge());
-        StopCoroutine(stayAtNormalPositionAfterLeftDodge());
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        canAct = true;
+        StopCoroutine(dodgeLeftRotine());
     }
-    //esquivar para a direita
+    //esquivar para a direita----------------------------------------------------------------------------------
     public void dodgeRight()
     {
         if(canAct == true && canDodge == true)
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(lateralDodgeSpeed, 0);
             canAct = false;
-            stopAtRightDodgePosition();
+            StartCoroutine(dodgeRightRotine());
         }
     }
-    private IEnumerator stopAtRightDodgePosition()
+    private IEnumerator dodgeRightRotine()
     {
         yield return new WaitForSeconds(lateralDodgeTimeToStop);
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-        returnToNormalPositionAfterRightDodge();
-    }
-    private IEnumerator returnToNormalPositionAfterRightDodge()
-    {
         yield return new WaitForSeconds(lateralDodgeTimeToReturn);
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-lateralDodgeSpeed, 0);
-        stayAtNormalPositionAfterRightDodge();
-    }
-    private IEnumerator stayAtNormalPositionAfterRightDodge()
-    {
         yield return new WaitForSeconds(lateralDodgeTimeToStop);
         canAct = true;
         gameObject.transform.position = new Vector3(startingX, startingY, 0);
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        StopCoroutine(dodgeRightRotine());
     }
     private void cancelRightDodge()
     {
         gameObject.transform.position = new Vector3(startingX, startingY, 0);
-        StopCoroutine(stopAtRightDodgePosition());
-        StopCoroutine(returnToNormalPositionAfterRightDodge());
-        StopCoroutine(stayAtNormalPositionAfterRightDodge());
+        canAct = true;
+        StopCoroutine(dodgeRightRotine());
     }
     //esquivar para baixo
     public void dodgeDown()
@@ -148,33 +139,25 @@ public class FightControl : MonoBehaviour
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -downwardsDodgeSpeed);
             canAct = false;
-            stopAtDownDodgePosition();
+            StartCoroutine(dodgeDownRotine());
         }
     }
-    private IEnumerator stopAtDownDodgePosition()
+    private IEnumerator dodgeDownRotine()
     {
         yield return new WaitForSeconds(downwardsDodgeTimeToStop);
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-        returnToNormalPositionAfterDownDodge();
-    }
-    private IEnumerator returnToNormalPositionAfterDownDodge()
-    {
         yield return new WaitForSeconds(downwardsDodgeTimeToReturn);
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, downwardsDodgeSpeed);
-
-    }
-    private IEnumerator stayAtNormalPositionAfterDownDodge()
-    {
         yield return new WaitForSeconds(downwardsDodgeTimeToStop);
         canAct = true;
         gameObject.transform.position = new Vector3(startingX, startingY, 0);
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        StopCoroutine(dodgeDownRotine());
     }
     private void cancelDownDodge()
     {
         gameObject.transform.position = new Vector3(startingX, startingY, 0);
-        StopCoroutine(stopAtDownDodgePosition());
-        StopCoroutine(returnToNormalPositionAfterDownDodge());
-        StopCoroutine(stayAtNormalPositionAfterDownDodge());
+        StopCoroutine(dodgeDownRotine());
+        canAct = true;
     }
 }
