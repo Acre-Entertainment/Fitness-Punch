@@ -1,18 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StrenghGameMaster : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private bool isVulnerableToPunch;
+    [SerializeField] private int points;
+    [SerializeField] private int pointsForPunch;
+    [SerializeField] private int pointsForBlock;
+    [SerializeField] private int pointsPenaltyForNotBlocking;
+    [SerializeField] private float timeDuration;
+    [SerializeField] private GameObject uiTimer;
+    [SerializeField] private GameObject uiPoints;
+    [SerializeField] private GameObject finalMenuPoints;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void callRandomMove()
     {
-        
+
+    }
+    public void playerPunchConnects()
+    {
+        if(isVulnerableToPunch == true)
+        {
+            hitByPlayerPunch();
+        }
+    }
+    private void hitByPlayerPunch()
+    {
+        points = points + pointsForPunch;
     }
 }
