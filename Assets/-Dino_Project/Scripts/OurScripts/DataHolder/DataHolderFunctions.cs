@@ -22,7 +22,6 @@ public class DataHolderFunctions : MonoBehaviour
     void Start()
     {
         DT = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
-        MainMenuSliderAdjustments();
     }
     public void addOneStep()
     {

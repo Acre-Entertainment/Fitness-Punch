@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class AnimFunctions : MonoBehaviour
 {
-
-    public void LoadScene(string WhichLevel)
+    public string sceneToBeLoaded;
+    public void LoadScene()
     {
-        SceneManager.LoadScene(WhichLevel);
+        SceneManager.LoadScene(sceneToBeLoaded);
     }
 
 }
