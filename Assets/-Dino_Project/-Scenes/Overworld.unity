@@ -904,6 +904,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 465736374}
     m_Modifications:
     - target: {fileID: 1439157275303822588, guid: ab454571041135a4f841fca7a197b2f8, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439157275303822588, guid: ab454571041135a4f841fca7a197b2f8, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439157275303822588, guid: ab454571041135a4f841fca7a197b2f8, type: 3}
       propertyPath: onTriggerExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 160647669}
@@ -911,6 +919,30 @@ PrefabInstance:
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 160647669}
+    - target: {fileID: 1439157275303822588, guid: ab454571041135a4f841fca7a197b2f8, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439157275303822588, guid: ab454571041135a4f841fca7a197b2f8, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439157275303822588, guid: ab454571041135a4f841fca7a197b2f8, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439157275303822588, guid: ab454571041135a4f841fca7a197b2f8, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439157275303822588, guid: ab454571041135a4f841fca7a197b2f8, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439157275303822588, guid: ab454571041135a4f841fca7a197b2f8, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1439157275303822589, guid: ab454571041135a4f841fca7a197b2f8, type: 3}
       propertyPath: m_Size.x
       value: 1.0534732
