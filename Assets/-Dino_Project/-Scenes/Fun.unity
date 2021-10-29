@@ -349,8 +349,12 @@ PrefabInstance:
       value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 4488856839885133478, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 324
+      objectReference: {fileID: 0}
+    - target: {fileID: 4488856839885133478, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -110.22998
+      value: -145
       objectReference: {fileID: 0}
     - target: {fileID: 4488856839885133479, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_Text
@@ -359,6 +363,14 @@ PrefabInstance:
     - target: {fileID: 4488856840288830382, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_Text
       value: Leave game
+      objectReference: {fileID: 0}
+    - target: {fileID: 4488856840509783764, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 324
+      objectReference: {fileID: 0}
+    - target: {fileID: 4488856840509783764, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -71.51495
       objectReference: {fileID: 0}
     - target: {fileID: 4488856840509783765, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_Text

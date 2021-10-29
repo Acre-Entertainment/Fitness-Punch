@@ -229,8 +229,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7,
-    type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -323,8 +322,8 @@ Canvas:
   m_GameObject: {fileID: 153077489}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 955218619}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -440,8 +439,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847,
-    type: 3}
+  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -565,8 +563,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7,
-    type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.39215687}
   m_FlipX: 0
   m_FlipY: 0
@@ -995,8 +992,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7,
-    type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 1, b: 0, a: 0.09803922}
   m_FlipX: 0
   m_FlipY: 0
@@ -1621,10 +1617,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayOfTheMonth: 0
   dayOfTheWeek: 0
+  year: 0
+  actions: 0
   dayTime: 1
+  stepsTaken: 0
   money: 0
-  fats: 0
-  carbohydrates: 0
+  proteina: 0
+  carboidrato: 0
+  lipidio: 0
+  mineral: 0
+  vitamina: 0
+  fibra: 0
+  disposicao: 0
+  forca: 0
+  resistencia: 0
+  inventorySlots: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  selectedGrocerFood: 00000000000000000000000000000000
 --- !u!4 &1991490018
 Transform:
   m_ObjectHideFlags: 0
