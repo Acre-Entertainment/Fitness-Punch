@@ -35,6 +35,13 @@ public class StrenghEnemyController : MonoBehaviour
         pfs = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerFightStatus>();
     }
     //Artifical Intellgicence-------------------------------------------------------------------
+    private IEnumerator WaitAtStart()
+    {
+        yield return new WaitForSeconds(ai_IdleTime_Long);
+
+        RandomBehaviorSelect();
+        StopCoroutine(WaitAtStart());
+    }
     public void RandomBehaviorSelect()
     {
         randy = Random.Range(1, 4);
