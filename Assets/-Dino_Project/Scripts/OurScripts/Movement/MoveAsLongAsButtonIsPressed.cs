@@ -35,9 +35,7 @@ public class MoveAsLongAsButtonIsPressed : MonoBehaviour
         {
             anim.SetBool("isRunning", false);
         }
-        
-
-        
+           
     }
 
     public void moveLeft()
@@ -72,4 +70,15 @@ public class MoveAsLongAsButtonIsPressed : MonoBehaviour
     {
         isMovingDown = false;
     }
+
+    private void FootstepSound1()
+    {
+        FindObjectOfType<AudioManager>().Play("Walk1");
+    }
+
+    private void FootstepSound2()
+    {
+        FindObjectOfType<AudioManager>().Play("Walk2");
+    }
+
 }
