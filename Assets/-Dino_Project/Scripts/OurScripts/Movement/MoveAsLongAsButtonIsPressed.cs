@@ -11,8 +11,11 @@ public class MoveAsLongAsButtonIsPressed : MonoBehaviour
     private bool isMovingDown;
     private Rigidbody2D rb;
 
+    private Animator anim;
+
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = gameObject.GetComponent<Rigidbody2D>();
     }
     void Update()
@@ -23,7 +26,20 @@ public class MoveAsLongAsButtonIsPressed : MonoBehaviour
         if(isMovingLeft == true){rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);}
         if(isMovingRight == true){rb.velocity = new Vector2(moveSpeed, rb.velocity.y);}
         if(isMovingRight == false && isMovingLeft == false){rb.velocity = new Vector2(0, rb.velocity.y);}
+
+        // animation transition
+        if(isMovingDown || isMovingUp || isMovingLeft || isMovingRight == true)
+        {
+            anim.SetBool("isRunning", true);
+        } else
+        {
+            anim.SetBool("isRunning", false);
+        }
+        
+
+        
     }
+
     public void moveLeft()
     {
         isMovingLeft = true;
