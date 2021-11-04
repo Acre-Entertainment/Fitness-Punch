@@ -7,7 +7,7 @@ public class PlayerFightStatus : MonoBehaviour
 {
     [SerializeField] private bool canAct = true;
     [SerializeField] private bool isPunching;
-    [SerializeField] private bool isBlocking;
+    public bool isBlocking;
     [SerializeField] private bool isDodging;
     [SerializeField] private bool isRight;
     [SerializeField] private bool isLeft;

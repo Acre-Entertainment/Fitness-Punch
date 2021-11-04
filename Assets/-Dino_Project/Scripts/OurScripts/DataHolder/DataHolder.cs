@@ -16,8 +16,6 @@ public class DataHolder : MonoBehaviour
     public int actions;
     public bool dayTime;
 
-    public int stepsTaken;
-
     public int money;
 
     public int proteina;

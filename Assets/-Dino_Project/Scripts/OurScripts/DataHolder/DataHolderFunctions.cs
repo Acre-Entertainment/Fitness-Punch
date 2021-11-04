@@ -23,10 +23,6 @@ public class DataHolderFunctions : MonoBehaviour
     {
         DT = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
     }
-    public void addOneStep()
-    {
-        DT.stepsTaken++;
-    }
     public void MainMenuSliderAdjustments()
     {
         proteinaMainMenuBar.GetComponent<Slider>().value = DT.proteina;
