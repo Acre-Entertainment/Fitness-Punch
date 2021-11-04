@@ -2410,13 +2410,13 @@ MonoBehaviour:
   sounds:
   - name: Walk1
     clip: {fileID: 8300000, guid: 6d132c8641837b04aa2b3502a2903312, type: 3}
-    volume: 0.15
+    volume: 0.05
     pitch: 0.8
     loop: 0
     source: {fileID: 0}
   - name: Walk2
     clip: {fileID: 8300000, guid: ad1810c6376a1434caf4d5a45f7af866, type: 3}
-    volume: 0.15
+    volume: 0.05
     pitch: 0.7
     loop: 0
     source: {fileID: 0}
