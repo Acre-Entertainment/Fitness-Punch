@@ -1,7 +1,100 @@
 fileFormatVersion: 2
 guid: edfc7bdeb1e42544fb44c7c8bc238620
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1604767467892231897
+    second: Alimentos_0
+  - first:
+      213: 4110030963525121272
+    second: Alimentos_1
+  - first:
+      213: 2327287330051964119
+    second: Alimentos_2
+  - first:
+      213: -2339490403816227398
+    second: Alimentos_3
+  - first:
+      213: -3647517027446911875
+    second: Alimentos_4
+  - first:
+      213: 1327634279799498379
+    second: Alimentos_5
+  - first:
+      213: 3280302736471313215
+    second: Alimentos_6
+  - first:
+      213: -8320933953223170885
+    second: Alimentos_7
+  - first:
+      213: 7939266881735906694
+    second: Alimentos_8
+  - first:
+      213: -2840485473125999962
+    second: Alimentos_9
+  - first:
+      213: 5482275391565585941
+    second: Alimentos_10
+  - first:
+      213: 8912846057612271047
+    second: Alimentos_11
+  - first:
+      213: 4371646016666030756
+    second: Alimentos_12
+  - first:
+      213: -1952056420525271009
+    second: Alimentos_13
+  - first:
+      213: -1474057550720727199
+    second: Alimentos_14
+  - first:
+      213: 1100182318151990968
+    second: Alimentos_15
+  - first:
+      213: 4099137848123165300
+    second: Alimentos_16
+  - first:
+      213: 106691982565406238
+    second: Alimentos_17
+  - first:
+      213: -7614009752075369476
+    second: Alimentos_18
+  - first:
+      213: -1799018957697818800
+    second: Alimentos_19
+  - first:
+      213: -8172469974323096077
+    second: Alimentos_20
+  - first:
+      213: -3691026762509492552
+    second: Alimentos_21
+  - first:
+      213: 8771042740457619283
+    second: Alimentos_22
+  - first:
+      213: 2238409847060548260
+    second: Alimentos_23
+  - first:
+      213: 7940428304308800710
+    second: Alimentos_24
+  - first:
+      213: 6909434209206473723
+    second: Alimentos_25
+  - first:
+      213: -9173292920486565237
+    second: Alimentos_26
+  - first:
+      213: 5899988724723019661
+    second: Alimentos_27
+  - first:
+      213: -8538755664380841917
+    second: Alimentos_28
+  - first:
+      213: -3728752264745574912
+    second: Alimentos_29
+  - first:
+      213: 755956363252600969
+    second: Alimentos_30
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +134,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +168,696 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Alimentos_0
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1793
+        width: 159
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dec1d67287454610800000000000000
+      internalID: 1604767467892231897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_1
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1764
+        width: 213
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f475cca263c90930800000000000000
+      internalID: 4110030963525121272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_2
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1793
+        width: 138
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dcb3060f7f2c4020800000000000000
+      internalID: 2327287330051964119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_3
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 1781
+        width: 188
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd39157fd5788fd0800000000000000
+      internalID: -2339490403816227398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_4
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1793
+        width: 251
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c86d2c69a616dc0800000000000000
+      internalID: -3647517027446911875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_5
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 1785
+        width: 224
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86a417e754bc6210800000000000000
+      internalID: 1327634279799498379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1424
+        width: 210
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b4d1385f9f58d20800000000000000
+      internalID: 3280302736471313215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_7
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1424
+        width: 193
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb465aed7aa168c80800000000000000
+      internalID: -8320933953223170885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_8
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1418
+        width: 165
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68554e63a21fd2e60800000000000000
+      internalID: 7939266881735906694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_9
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 1418
+        width: 202
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aadaa003819498d0800000000000000
+      internalID: -2840485473125999962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_10
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 1426
+        width: 261
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ed12b1c64f41c40800000000000000
+      internalID: 5482275391565585941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_11
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 1428
+        width: 159
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd58b1644ac0bb70800000000000000
+      internalID: 8912846057612271047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_12
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1047
+        width: 236
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a25123e3e43bac30800000000000000
+      internalID: 4371646016666030756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_13
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1075
+        width: 193
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1812192707e8e4e0800000000000000
+      internalID: -1952056420525271009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_14
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1082
+        width: 251
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1670fcea7781b8be0800000000000000
+      internalID: -1474057550720727199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 803
+        width: 143
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be7d954df1a44f00800000000000000
+      internalID: 1100182318151990968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_16
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 774
+        width: 196
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a8dba972013e830800000000000000
+      internalID: 4099137848123165300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_17
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 803
+        width: 122
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e167139facb0b7100800000000000000
+      internalID: 106691982565406238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_18
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 791
+        width: 172
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf30033a87a955690800000000000000
+      internalID: -7614009752075369476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_19
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 803
+        width: 235
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f5a322ac99807e0800000000000000
+      internalID: -1799018957697818800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_20
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 796
+        width: 208
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f51de2abdd859e80800000000000000
+      internalID: -8172469974323096077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 434
+        width: 192
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be592427b6d6ccc0800000000000000
+      internalID: -3691026762509492552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_22
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 434
+        width: 172
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fbeb6c6e009b970800000000000000
+      internalID: 8771042740457619283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_23
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 435
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aac7c375ed601f10800000000000000
+      internalID: 2238409847060548260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_24
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 428
+        width: 148
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc88caf871123e60800000000000000
+      internalID: 7940428304308800710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_25
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 428
+        width: 186
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf31fa63ecd33ef50800000000000000
+      internalID: 6909434209206473723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_26
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 436
+        width: 244
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8aeac5e0bae1b080800000000000000
+      internalID: -9173292920486565237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_27
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 439
+        width: 143
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8fece35c78f0e150800000000000000
+      internalID: 5899988724723019661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_28
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 57
+        width: 219
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340b9b8a6fe308980800000000000000
+      internalID: -8538755664380841917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_29
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 85
+        width: 177
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e186c229fc04cc0800000000000000
+      internalID: -3728752264745574912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alimentos_30
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 93
+        width: 235
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9801e51ae42bd7a00800000000000000
+      internalID: 755956363252600969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
