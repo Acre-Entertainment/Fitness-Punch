@@ -534,7 +534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7275771082949082894}
   - component: {fileID: 7275771082949082888}
-  - component: {fileID: 9349397}
+  - component: {fileID: 5091924971902385366}
   - component: {fileID: 6290474108201998817}
   - component: {fileID: 6848296110463964265}
   m_Layer: 12
@@ -585,7 +585,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &9349397
+--- !u!114 &5091924971902385366
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -594,10 +594,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7275771082949082892}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1100be9d8d22df43b72c5db1aff2287, type: 3}
+  m_Script: {fileID: 11500000, guid: 404e6a491c75c424d8689a4bfd3fceea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 0
+  joystick: {fileID: 0}
 --- !u!58 &6290474108201998817
 CircleCollider2D:
   m_ObjectHideFlags: 0

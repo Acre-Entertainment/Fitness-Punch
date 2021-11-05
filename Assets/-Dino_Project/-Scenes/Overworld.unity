@@ -128,17 +128,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7275771082949082892, guid: ca2573b2939e545428771d54355d333c, type: 3}
   m_PrefabInstance: {fileID: 7275771082956838429}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &9349397 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9349397, guid: ca2573b2939e545428771d54355d333c, type: 3}
-  m_PrefabInstance: {fileID: 7275771082956838429}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9349393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1100be9d8d22df43b72c5db1aff2287, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &15773794 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1124694834268432202, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
@@ -3470,6 +3459,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1103792199 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9149485303079728265, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+  m_PrefabInstance: {fileID: 1124694834275800872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1127402589
 GameObject:
   m_ObjectHideFlags: 0
@@ -7417,38 +7417,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 183312434, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 9349397}
-    - target: {fileID: 183312434, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 9349397}
-    - target: {fileID: 381741768, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 9349397}
-    - target: {fileID: 381741768, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 9349397}
-    - target: {fileID: 1039151481, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 9349397}
-    - target: {fileID: 1039151481, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 9349397}
-    - target: {fileID: 1150313989, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 9349397}
-    - target: {fileID: 1150313989, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 9349397}
     - target: {fileID: 1124694834407347553, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -8003,6 +7971,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5091924971902385366, guid: ca2573b2939e545428771d54355d333c, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1103792199}
+    - target: {fileID: 5091924971902385366, guid: ca2573b2939e545428771d54355d333c, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5091924971902385366, guid: ca2573b2939e545428771d54355d333c, type: 3}
+      propertyPath: inputSensibility
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7275771082949082892, guid: ca2573b2939e545428771d54355d333c, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
