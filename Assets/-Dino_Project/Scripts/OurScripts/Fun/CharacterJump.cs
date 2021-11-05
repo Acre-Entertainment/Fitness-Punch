@@ -15,19 +15,21 @@ public class CharacterJump : MonoBehaviour
       currentHealth = maxHealth;
   }
 
-  private void Update() 
+  private void FixedUpdate() 
   {
       if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
          {
              rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Force);
-         } 
+             FindObjectOfType<AudioManager>().Play("ninjaJump");
+        } 
   }
 
   public void TakeDamage(int amount)
   {
       if(currentHealth <= 0)
-      {
+      { 
           GameControl.instance.DinoHit ();
-      }
+          //FindObjectOfType<AudioManager>().Play("ninjaFail");
+        }
   }
 }
