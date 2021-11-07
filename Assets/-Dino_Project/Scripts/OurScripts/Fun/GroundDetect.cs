@@ -16,7 +16,6 @@ public class GroundDetect : MonoBehaviour
     {
         if (collision.gameObject.tag == "GroundFun")
         {
-
             pg.canJump = true;
         }
     }

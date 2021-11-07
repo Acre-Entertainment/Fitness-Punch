@@ -14,6 +14,7 @@ public class CharacterJump : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
 
+
     [SerializeField]
     float JumpForce;
 
@@ -25,26 +26,26 @@ public class CharacterJump : MonoBehaviour
         anim = GetComponent<Animator>();
         currentHealth = maxHealth;
         
-        if (isGrounded)
-          {
-            Jump();
-            anim.SetBool("isJumping", false);
-        }     
     }
 
-    private void Update() 
+    private void Update()
+    {
+
+        if (isGrounded == true)
+        {
+            anim.SetBool("isJumping", false);
+            Jump();
+        }
+        else
+        {
+            anim.SetBool("isJumping", true);
+        }
+
+    }
+
+    void FixedUpdate() 
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        float moveInput = Input.GetAxisRaw("Horizontal");
-
-        if (moveInput == 0)
-        {
-            anim.SetBool("isRunning", true);
-        }
-         else
-         {
-            anim.SetBool("isRunning", false);
-         }
 
     }
 
@@ -52,14 +53,11 @@ public class CharacterJump : MonoBehaviour
     {
         if (canJump == true)
         {
-            //anim.SetTrigger("takeOf");
+            anim.SetTrigger("takeOf");
             rb.velocity = new Vector2(0, JumpForce);
             FindObjectOfType<AudioManager>().Play("ninjaJump");
         }
-        //else
-        //{
-            //anim.SetBool("isJumping", true);
-        //}
+        
 
     }
 
