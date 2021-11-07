@@ -54,7 +54,7 @@ public class GameControl : MonoBehaviour {
 		highScore = PlayerPrefs.GetInt ("Best Time");
 		nextSpawn = Time.time + spawnRate;
 		nextBoost = Time.unscaledTime + timeToBoost;
-		cj = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterJump>();
+		cj = GameObject.FindGameObjectWithTag("PlayerFun").GetComponent<CharacterJump>();
 	}
 	
 	// Update is called once per frame

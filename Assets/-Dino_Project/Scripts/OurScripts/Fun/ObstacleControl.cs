@@ -18,8 +18,9 @@ public class ObstacleControl : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		if (col.gameObject.name.Equals ("Dino"))
-			GameControl.instance.DinoHit ();
+		if (col.gameObject.name.Equals ("Ninja"))
+			GameControl.instance.DinoHit();
+			//FindObjectOfType<AudioManager>().Play("ninjaDamage");
 	}
 
 }

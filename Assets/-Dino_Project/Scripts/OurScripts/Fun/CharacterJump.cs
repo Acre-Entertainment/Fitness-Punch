@@ -4,32 +4,71 @@ using UnityEngine;
 
 public class CharacterJump : MonoBehaviour
 {
-  public int maxHealth = 3;
-  public int currentHealth;
-  private Rigidbody2D rb;
-  public float jumpForce = 600f;
+    public int maxHealth = 3;
+    public int currentHealth;
 
-  private void Start() 
-  {
-      rb = GetComponent<Rigidbody2D>();
-      currentHealth = maxHealth;
-  }
+    private Rigidbody2D rb;
+    public bool canJump = true;
 
-  private void FixedUpdate() 
-  {
-      if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-         {
-             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Force);
-             FindObjectOfType<AudioManager>().Play("ninjaJump");
-        } 
-  }
+    bool isGrounded;
+    public Transform groundCheck;
+    public LayerMask groundLayer;
 
-  public void TakeDamage(int amount)
-  {
-      if(currentHealth <= 0)
-      { 
-          GameControl.instance.DinoHit ();
-          //FindObjectOfType<AudioManager>().Play("ninjaFail");
+    [SerializeField]
+    float JumpForce;
+
+    private Animator anim;
+
+    void Start() 
+    {
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        currentHealth = maxHealth;
+        
+        if (isGrounded)
+          {
+            Jump();
+            anim.SetBool("isJumping", false);
+        }     
+    }
+
+    private void Update() 
+    {
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        float moveInput = Input.GetAxisRaw("Horizontal");
+
+        if (moveInput == 0)
+        {
+            anim.SetBool("isRunning", true);
         }
-  }
+         else
+         {
+            anim.SetBool("isRunning", false);
+         }
+
+    }
+
+    public void Jump()
+    {
+        if (canJump == true)
+        {
+            //anim.SetTrigger("takeOf");
+            rb.velocity = new Vector2(0, JumpForce);
+            FindObjectOfType<AudioManager>().Play("ninjaJump");
+        }
+        //else
+        //{
+            //anim.SetBool("isJumping", true);
+        //}
+
+    }
+
+    public void TakeDamage(int amount)
+      {
+          if(currentHealth <= 0)
+          { 
+              GameControl.instance.DinoHit ();
+              FindObjectOfType<AudioManager>().Play("ninjaFail");
+          }
+      }
 }
