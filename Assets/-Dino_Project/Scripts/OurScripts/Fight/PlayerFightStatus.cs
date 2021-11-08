@@ -42,7 +42,6 @@ public class PlayerFightStatus : MonoBehaviour
     public UnityEvent onStaggerStart;
     public UnityEvent onStaggerEnd;
 
-
     //punch--------------------------------------------------------------------------
     public void Punch()
     {

@@ -23,6 +23,7 @@ public class StrenghGameMaster : MonoBehaviour
     [SerializeField] private GameObject uiTimer;
     private Text uiTimerText;
     [SerializeField] private GameObject uiPoints;
+    private Text uiPointsText;
     [SerializeField] private GameObject finalMenuPoints;
     [SerializeField] private GameObject finalMenuText;
     public UnityEvent onGameEnd;
@@ -34,6 +35,7 @@ public class StrenghGameMaster : MonoBehaviour
     {
         time = timeDuration;
         uiTimerText = uiTimer.GetComponent<Text>();
+        uiPointsText = uiPoints.GetComponent<Text>();
     }
     void Update()
     {
@@ -82,6 +84,6 @@ public class StrenghGameMaster : MonoBehaviour
     }
     public void updatPointUI()
     {
-        uiTimerText.text = "Pontos: " + points;
+        uiPointsText.text = "Pontos: " + points;
     }
 }

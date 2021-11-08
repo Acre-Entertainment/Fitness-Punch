@@ -19,20 +19,28 @@ public class MoveWithJoystick : MonoBehaviour
     void Update()
     {
         horizontalInput = joystick.Horizontal;
-        rb.velocity = new Vector2(joystick.Horizontal * moveSpeed, joystick.Vertical * moveSpeed);
+        verticalInput = joystick.Vertical;
+        if(Mathf.Abs(joystick.Horizontal) < Mathf.Abs(inputSensibility) && Mathf.Abs(joystick.Vertical) < Mathf.Abs(inputSensibility))
+        {
+            horizontalInput = 0;
+            verticalInput = 0;
+        }
 
-        if(joystick.Horizontal < 0 && facingRight == true)
+
+        rb.velocity = new Vector2(horizontalInput * moveSpeed, verticalInput * moveSpeed);
+
+        if(horizontalInput < 0 && facingRight == true)
         {
             facingRight = false;
             gameObject.transform.rotation = Quaternion.Euler(0, 180, 0);
         }
-        if(joystick.Horizontal > 0 && facingRight == false)
+        if(horizontalInput > 0 && facingRight == false)
         {
             facingRight = true;
             gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        if(joystick.Horizontal != 0 || joystick.Vertical != 0)
+        if(horizontalInput != 0 || verticalInput != 0)
         {
             anim.SetBool("isRunning", true);
         }
