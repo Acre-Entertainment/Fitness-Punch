@@ -30,6 +30,7 @@ public class CharacterJump : MonoBehaviour
 
     private void Update()
     {
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
 
         if (isGrounded == true)
         {
@@ -45,7 +46,7 @@ public class CharacterJump : MonoBehaviour
 
     void FixedUpdate() 
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        
 
     }
 

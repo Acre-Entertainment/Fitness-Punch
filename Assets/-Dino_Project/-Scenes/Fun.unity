@@ -182,6 +182,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: ninjaDamage
+    clip: {fileID: 8300000, guid: 0a7f4d8049bfc5a46a86f5af87530671, type: 3}
+    volume: 0.502
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   soundOnIcon: {fileID: 0}
   soundOffIcon: {fileID: 0}
 --- !u!4 &614754690
@@ -373,6 +379,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4186278805434298080, guid: c56c27b0677062447a0747276b13d22f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5371613068525170721, guid: c56c27b0677062447a0747276b13d22f, type: 3}
       propertyPath: m_RootOrder
       value: 3
