@@ -9,6 +9,7 @@ public class MoveWithJoystick : MonoBehaviour
     private float verticalInput, horizontalInput;
     private bool facingRight = true;
     public Joystick joystick;
+    public GameObject[] bodyParts;
     private Rigidbody2D rb;
     private Animator anim;
     void Start()
@@ -33,11 +34,19 @@ public class MoveWithJoystick : MonoBehaviour
         {
             facingRight = false;
             gameObject.transform.rotation = Quaternion.Euler(0, 180, 0);
+            foreach(GameObject go in bodyParts)
+            {
+                go.transform.localPosition = new Vector3(go.transform.localPosition.x, go.transform.localPosition.y, -go.transform.localPosition.z);
+            }
         }
         if(horizontalInput > 0 && facingRight == false)
         {
             facingRight = true;
             gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+            foreach(GameObject go in bodyParts)
+            {
+                go.transform.localPosition = new Vector3(go.transform.localPosition.x, go.transform.localPosition.y, -go.transform.localPosition.z);
+            }
         }
 
         if(horizontalInput != 0 || verticalInput != 0)
