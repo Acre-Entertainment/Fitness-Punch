@@ -35,7 +35,6 @@ public class CharacterJump : MonoBehaviour
         if (isGrounded == true)
         {
             anim.SetBool("isJumping", false);
-            Jump();
         }
         else
         {
