@@ -33,20 +33,12 @@ public class MoveWithJoystick : MonoBehaviour
         if(horizontalInput < 0 && facingRight == true)
         {
             facingRight = false;
-            gameObject.transform.rotation = Quaternion.Euler(0, 180, 0);
-            foreach(GameObject go in bodyParts)
-            {
-                go.transform.localPosition = new Vector3(go.transform.localPosition.x, go.transform.localPosition.y, -go.transform.localPosition.z);
-            }
+            gameObject.transform.localScale = new Vector3(-1, 1, 1);
         }
         if(horizontalInput > 0 && facingRight == false)
         {
             facingRight = true;
-            gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
-            foreach(GameObject go in bodyParts)
-            {
-                go.transform.localPosition = new Vector3(go.transform.localPosition.x, go.transform.localPosition.y, -go.transform.localPosition.z);
-            }
+            gameObject.transform.localScale = new Vector3(1, 1, 1);
         }
 
         if(horizontalInput != 0 || verticalInput != 0)
