@@ -79,7 +79,6 @@ public class StrenghGameMaster : MonoBehaviour
             }
             finalMenuPoints.GetComponent<Text>().text = "Pontos: " + points;
             finalMenuText.GetComponent<Text>().text = "Parabéns, sua força aumentou em " + (dt.forca - forcaAntiga) + "!";
-            dt.actions++;
         }
     }
     public void updatPointUI()

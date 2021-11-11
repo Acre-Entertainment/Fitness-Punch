@@ -747,6 +747,7 @@ MonoBehaviour:
   resistencia: 5
   inventorySlots: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   selectedGrocerFood: 00000000000000000000000000000000
+  removeActionUponReturnToOverworld: 0
 --- !u!4 &757464108
 Transform:
   m_ObjectHideFlags: 0
@@ -926,7 +927,7 @@ GameObject:
   - component: {fileID: 1196453808}
   - component: {fileID: 1196453807}
   m_Layer: 0
-  m_Name: DtaHolderFunctions
+  m_Name: DataHolderFunctions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
