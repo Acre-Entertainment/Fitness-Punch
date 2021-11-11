@@ -69,4 +69,9 @@ public class CharacterJump : MonoBehaviour
               FindObjectOfType<AudioManager>().Play("ninjaFail");
           }
       }
+
+    private void Landing()
+    {
+        FindObjectOfType<AudioManager>().Play("ninjaLand");
+    }
 }

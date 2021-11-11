@@ -183,9 +183,15 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: ninjaDamage
-    clip: {fileID: 8300000, guid: 0a7f4d8049bfc5a46a86f5af87530671, type: 3}
+    clip: {fileID: 8300000, guid: 7f918c474b16b3e458b007f33ed31bcb, type: 3}
     volume: 0.502
     pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ninjaLand
+    clip: {fileID: 8300000, guid: f25d5982b8fecee408ac1128224daa20, type: 3}
+    volume: 0.259
+    pitch: 0.96
     loop: 0
     source: {fileID: 0}
   soundOnIcon: {fileID: 0}
