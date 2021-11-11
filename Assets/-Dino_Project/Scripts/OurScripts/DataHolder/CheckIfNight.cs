@@ -8,8 +8,8 @@ public class CheckIfNight : MonoBehaviour
     public GameObject night;
     void Start()
     {
-        dataHolder = gameObject.GetComponent<DataHolder>();
-        if(dataHolder.actions >= 3)
+        dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
+        if(dataHolder.actions >= 2)
         {
             night.SetActive(false);
         }
