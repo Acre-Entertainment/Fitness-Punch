@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class CookingGameMaster : MonoBehaviour
 {
-    [HideInInspector] public int phase = 0;
+    public int phase = 0;
     [HideInInspector] public bool goingToNextPhase;
     [HideInInspector] public int foodsThrownInPhaseOne;
     [HideInInspector] public bool waitingAfterThrowingFood;
@@ -86,7 +86,7 @@ public class CookingGameMaster : MonoBehaviour
                 }
                 break;
             case 3:
-                startingCounterText.text = "" + (timeToStir - (int)time);
+                startingCounterText.text = "" + (int)(timeToStir - time);
                 if(time >= timeToStir)
                 {
                     time = 0;

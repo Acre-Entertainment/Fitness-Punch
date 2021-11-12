@@ -7,10 +7,13 @@ public class BalanceCollider : MonoBehaviour
     CookingGameMaster cgm;
     public GameObject shineSprite;
     private bool isShining;
-    private float xPosition;
+    public float xPosition, yPosition, zPosition;
     void Start()
     {
         cgm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<CookingGameMaster>();
+        xPosition = gameObject.transform.position.x;
+        yPosition = gameObject.transform.position.y;
+        zPosition = gameObject.transform.position.z;
     }
 
     // Update is called once per frame
@@ -35,7 +38,9 @@ public class BalanceCollider : MonoBehaviour
         if(Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
-            gameObject.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(xPosition, gameObject.transform.position.y, Camera.main.transform.position.z));
+            xPosition = touch.position.x;
+            gameObject.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(xPosition, 0, 0));
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x, yPosition, zPosition);
         }
     }
     void OnTriggerStay2D(Collider2D other)
