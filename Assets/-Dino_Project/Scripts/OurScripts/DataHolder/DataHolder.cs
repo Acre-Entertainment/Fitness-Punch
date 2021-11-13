@@ -33,7 +33,7 @@ public class DataHolder : MonoBehaviour
     public int[] inventorySlots = new int[10];
 
     //Grocer Minigame
-    [HideInInspector] public int[] selectedGrocerFood = new int[4];
+    public int[] selectedGrocerFood = new int[4];
     [HideInInspector] public bool removeActionUponReturnToOverworld;
 
     void Awake() //Garante que ha apenas um DataHolder por cena e que ele não e destroido ao mudar de cena.

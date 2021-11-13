@@ -1758,7 +1758,7 @@ GameObject:
   - component: {fileID: 1300922281}
   - component: {fileID: 1300922280}
   m_Layer: 0
-  m_Name: Enemy Status
+  m_Name: Enemy Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1773,9 +1773,75 @@ MonoBehaviour:
   m_GameObject: {fileID: 1300922279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e016af0dd436864789959c02feeaf3a, type: 3}
+  m_Script: {fileID: 11500000, guid: efd94ea584f512e48a7eb78e17e2ba50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFightStatus: {fileID: 1865589952}
+  fightingGameMaster: {fileID: 1463834146}
+  isRegularPunching: 0
+  isUltraPunching: 0
+  isSwiping: 0
+  isBlocking: 0
+  isDodging: 0
+  isStaggered: 0
+  punch_TimeToDamage: 0
+  punch_TimeToActAgain: 0
+  block_DurationOfBlock: 0
+  dodge_TimeToBeEffective: 0
+  dodge_DurationOfDodge: 0
+  dodge_TimeToActAgain: 0
+  stagger_staggerDuration: 0
+  ai_IdleTime_VeryShort: 0
+  ai_IdleTime_Short: 0
+  ai_IdleTime_Long: 0
+  onPunchStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onPunchDamageTime:
+    m_PersistentCalls:
+      m_Calls: []
+  onPunchEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onPunchStartOther:
+    m_PersistentCalls:
+      m_Calls: []
+  onPunchDamageTimeOther:
+    m_PersistentCalls:
+      m_Calls: []
+  onPunchEndOther:
+    m_PersistentCalls:
+      m_Calls: []
+  onSuperPunchStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onSuperPunchDamageTime:
+    m_PersistentCalls:
+      m_Calls: []
+  onSuperPunchEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onSwipeStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onSwipeDamageTime:
+    m_PersistentCalls:
+      m_Calls: []
+  onSwipeEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onBlockStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onBlockEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onStaggerStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onStaggerEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1300922281
 Transform:
   m_ObjectHideFlags: 0
@@ -1967,7 +2033,7 @@ GameObject:
   - component: {fileID: 1463834146}
   m_Layer: 0
   m_Name: GameMaster
-  m_TagString: Untagged
+  m_TagString: GameMaster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2355,7 +2421,7 @@ GameObject:
   - component: {fileID: 1865589951}
   - component: {fileID: 1865589952}
   m_Layer: 0
-  m_Name: Player Status
+  m_Name: Player Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -33,6 +33,7 @@ public class StrenghEnemyController : MonoBehaviour
     {
         sgm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<StrenghGameMaster>();
         pfs = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerFightStatus>();
+        StartCoroutine(WaitAtStart());
     }
     //Artifical Intellgicence-------------------------------------------------------------------
     private IEnumerator WaitAtStart()
@@ -44,7 +45,7 @@ public class StrenghEnemyController : MonoBehaviour
     }
     public void RandomBehaviorSelect()
     {
-        randy = Random.Range(1, 4);
+        randy = Random.Range(1, 6);
         switch(randy)
         {
             case 1:
@@ -54,6 +55,12 @@ public class StrenghEnemyController : MonoBehaviour
                 StartCoroutine(SinglePunch());
                 break;
             case 3:
+                StartCoroutine(SinglePunch());
+                break;
+            case 4:
+                StartCoroutine(SinglePunch());
+                break;
+            case 5:
                 StartCoroutine(Blocking());
                 break;
         }

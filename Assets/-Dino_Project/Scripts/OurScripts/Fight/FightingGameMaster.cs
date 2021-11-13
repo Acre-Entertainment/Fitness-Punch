@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class FightingGameMaster : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private DataHolder dataHolder;
     void Start()
     {
-        
+        dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
     }
 
     // Update is called once per frame

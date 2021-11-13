@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class PouGameMaster : MonoBehaviour
 {
-    [SerializeField] private int turn = 1;
+    public int turn = 1;
     [SerializeField] private float turnDuration;
     [SerializeField] private int foodPerTurn;
     [SerializeField] private int lowQualityPointWorth;
@@ -47,6 +47,7 @@ public class PouGameMaster : MonoBehaviour
 
     private int _roundedTime, _roundedTurnDuration; private int _objectQuantity;
 
+    public UnityEvent onStart;
     public UnityEvent onTurn1End;
     public UnityEvent onTurn2End;
     public UnityEvent onTurn3End;
@@ -63,6 +64,8 @@ public class PouGameMaster : MonoBehaviour
         _timeText = timeText.GetComponent<Text>();
         _itensText = itensText.GetComponent<Text>();
         _turnText = turnText.GetComponent<Text>();
+
+        onStart.Invoke();
     }
 
     void Update()
