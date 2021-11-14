@@ -45,7 +45,7 @@ public class StrenghEnemyController : MonoBehaviour
     }
     public void RandomBehaviorSelect()
     {
-        randy = Random.Range(1, 6);
+        randy = Random.Range(1, 7);
         switch(randy)
         {
             case 1:
@@ -61,6 +61,9 @@ public class StrenghEnemyController : MonoBehaviour
                 StartCoroutine(SinglePunch());
                 break;
             case 5:
+                StartCoroutine(Blocking());
+                break;
+            case 6:
                 StartCoroutine(Blocking());
                 break;
         }
@@ -194,9 +197,6 @@ public class StrenghEnemyController : MonoBehaviour
 
         onStaggerEnd.Invoke();
         isStaggered = false;
-
-        yield return new WaitForSeconds(ai_IdleTime_VeryShort);
-
         onBlockStart.Invoke();
         isBlocking = true;
 

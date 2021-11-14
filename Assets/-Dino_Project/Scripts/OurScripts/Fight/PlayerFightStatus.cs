@@ -9,9 +9,9 @@ public class PlayerFightStatus : MonoBehaviour
     [SerializeField] private bool isPunching;
     public bool isBlocking;
     [SerializeField] private bool isDodging;
-    [SerializeField] private bool isRight;
-    [SerializeField] private bool isLeft;
-    [SerializeField] private bool isDown;
+    public bool isRight;
+    public bool isLeft;
+    public bool isDown;
     [SerializeField] private bool isStaggered;
     [SerializeField] private float punch_TimeToDamage;
     [SerializeField] private float punch_TimeToActAgain;
