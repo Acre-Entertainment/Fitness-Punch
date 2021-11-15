@@ -11,7 +11,11 @@ public class Directioncontroler : MonoBehaviour
     private bool intime = false;
     private int direction;
     private float timeControler = 1.5f;
-    private int life = 5;
+    [SerializeField] private float timereference;
+    [SerializeField]private int life;
+    [SerializeField] private GameObject DefaultSing;
+    private float ITime;
+    [SerializeField] private float gameSpeed;
 
     void Start()
     {
@@ -25,9 +29,16 @@ public class Directioncontroler : MonoBehaviour
         if (intime == true)
         {
             Direction();
+            StartCoroutine(DisableInTime());
             controlerNumber = Direction();
             GameOver();
         }
+    }
+    private IEnumerator DisableInTime()
+    {
+        ITime = timereference;
+        yield return new WaitForSeconds(ITime -= 0.3f);
+        DefaultSing.SetActive(true);
     }
 
     protected int Right()
@@ -53,6 +64,7 @@ public class Directioncontroler : MonoBehaviour
     public int Direction()
     {
         direction = (int)Random.Range(1, 4);
+
         if (direction == 3)
         {
             Right();
@@ -79,14 +91,18 @@ public class Directioncontroler : MonoBehaviour
         }
         else
         {
-            timeControler = 1.5f;
+            timeControler = timereference;
             intime = true;
+        }
+        if (timereference == 1.0f)
+        {
+            DefaultSing.SetActive(true);
         }
     }
 
     private void TimeSpeedUp()
     {
-        timeControler -= 0.1f;
+        timereference = timereference -= timereference *= gameSpeed;
     }
 
     private void PlayerLife()
