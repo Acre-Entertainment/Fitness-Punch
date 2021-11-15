@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5496331003242178755}
   - component: {fileID: 7096623606579184805}
   - component: {fileID: 7885543576306518020}
-  - component: {fileID: 2586017952293244652}
   m_Layer: 5
   m_Name: Feedbacks
   m_TagString: Untagged
@@ -68,11 +67,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 46
+    m_MinSize: 5
+    m_MaxSize: 90
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -80,17 +79,3 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: READY!
---- !u!114 &2586017952293244652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633419218398005296}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89d3a3c2b3b3f75498f2d4a8053c74bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  feedback: {fileID: 7885543576306518020}
-  controler: {fileID: 0}

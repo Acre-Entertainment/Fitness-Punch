@@ -7,16 +7,18 @@ public class Directioncontroler : MonoBehaviour
 {
     [SerializeField] private Text feedback;
     private int controlerNumber;
-
     [SerializeField] private SpriteRenderer activator;
-    public bool intime = false;
+    private bool intime = false;
     private int direction;
     private float timeControler = 1.5f;
+    private int life = 5;
+
     void Start()
     {
         activator = GetComponent<SpriteRenderer>();
         Default();
     }
+
     void Update()
     {
         TimeControler();
@@ -24,6 +26,7 @@ public class Directioncontroler : MonoBehaviour
         {
             Direction();
             controlerNumber = Direction();
+            GameOver();
         }
     }
 
@@ -32,13 +35,11 @@ public class Directioncontroler : MonoBehaviour
         activator.color = Color.green;
         return 3;
     }
-
     protected int Down()
     {
         activator.color = Color.yellow;
         return 2;
     }
-
     protected int Left()
     {
         activator.color = Color.red;
@@ -48,6 +49,7 @@ public class Directioncontroler : MonoBehaviour
     {
         activator.color = Color.blue;
     }
+
     public int Direction()
     {
         direction = (int)Random.Range(1, 4);
@@ -68,6 +70,7 @@ public class Directioncontroler : MonoBehaviour
         }
         return direction;
     }
+
     private void TimeControler()
     {
         if (timeControler > 0f && intime == false)
@@ -81,13 +84,24 @@ public class Directioncontroler : MonoBehaviour
         }
     }
 
+    private void TimeSpeedUp()
+    {
+        timeControler -= 0.1f;
+    }
+
+    private void PlayerLife()
+    {
+        life--;
+    }
+
     public void DirSelectRigth()
     {
         if (controlerNumber == 3)
         {
             feedback.text = "BOOYA!!!";
+            TimeSpeedUp();
         }
-        else { feedback.text = "OOOOOH!"; }
+        else { feedback.text = "OOOOOH!"; PlayerLife(); }
         return;
     }
     public void DirSelectDown()
@@ -95,8 +109,9 @@ public class Directioncontroler : MonoBehaviour
         if (controlerNumber == 2)
         {
             feedback.text = "BOOYA!!!";
+            TimeSpeedUp();
         }
-        else { feedback.text = "OOOOOH!"; }
+        else { feedback.text = "OOOOOH!"; PlayerLife(); }
         return;
     }
     public void DirSelectLeft()
@@ -104,8 +119,18 @@ public class Directioncontroler : MonoBehaviour
         if (controlerNumber == 1)
         {
             feedback.text = "BOOYA!!!";
+            TimeSpeedUp();
         }
-        else { feedback.text = "OOOOOH!"; }
+        else { feedback.text = "OOOOOH!"; PlayerLife(); }
         return;
+    }
+
+    private void GameOver()
+    {
+        if (life <= 0)
+        {
+            feedback.text = "GAME OVER";
+            Destroy(gameObject);
+        }
     }
 }
