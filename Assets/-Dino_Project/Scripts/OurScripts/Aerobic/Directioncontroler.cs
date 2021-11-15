@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Directioncontroler : MonoBehaviour
 {
+    [SerializeField] private Text feedback;
+    private int controlerNumber;
+
     [SerializeField] private SpriteRenderer activator;
-    private bool intime = false;
+    public bool intime = false;
     private int direction;
     private float timeControler = 1.5f;
     void Start()
@@ -19,6 +23,7 @@ public class Directioncontroler : MonoBehaviour
         if (intime == true)
         {
             Direction();
+            controlerNumber = Direction();
         }
     }
 
@@ -45,7 +50,7 @@ public class Directioncontroler : MonoBehaviour
     }
     public int Direction()
     {
-        direction = (int)Random.Range(0, 4);
+        direction = (int)Random.Range(1, 4);
         if (direction == 3)
         {
             Right();
@@ -65,7 +70,7 @@ public class Directioncontroler : MonoBehaviour
     }
     private void TimeControler()
     {
-        if (timeControler > 0f)
+        if (timeControler > 0f && intime == false)
         {
             timeControler -= Time.deltaTime;
         }
@@ -76,7 +81,31 @@ public class Directioncontroler : MonoBehaviour
         }
     }
 
-    //internal class Direction
-    //{
-    //}
+    public void DirSelectRigth()
+    {
+        if (controlerNumber == 3)
+        {
+            feedback.text = "BOOYA!!!";
+        }
+        else { feedback.text = "OOOOOH!"; }
+        return;
+    }
+    public void DirSelectDown()
+    {
+        if (controlerNumber == 2)
+        {
+            feedback.text = "BOOYA!!!";
+        }
+        else { feedback.text = "OOOOOH!"; }
+        return;
+    }
+    public void DirSelectLeft()
+    {
+        if (controlerNumber == 1)
+        {
+            feedback.text = "BOOYA!!!";
+        }
+        else { feedback.text = "OOOOOH!"; }
+        return;
+    }
 }
