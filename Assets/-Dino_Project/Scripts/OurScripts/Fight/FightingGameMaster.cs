@@ -17,6 +17,7 @@ public class FightingGameMaster : MonoBehaviour
     public int enemySuperAttackDamage;
     public UnityEvent onPlayerWin;
     public UnityEvent onEnemyWin;
+    public bool FightIsOver;
     void Start()
     {
         dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
@@ -38,9 +39,11 @@ public class FightingGameMaster : MonoBehaviour
     private void EnemyVictory()
     {
         onEnemyWin.Invoke();
+        FightIsOver = true;
     }
     private void PlayerVictory()
     {
         onPlayerWin.Invoke();
+        FightIsOver = true;
     }
 }

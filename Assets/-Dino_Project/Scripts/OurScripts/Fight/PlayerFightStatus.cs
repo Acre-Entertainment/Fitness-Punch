@@ -41,6 +41,7 @@ public class PlayerFightStatus : MonoBehaviour
     public UnityEvent onDownDodgeEnd;
     public UnityEvent onStaggerStart;
     public UnityEvent onStaggerEnd;
+    public UnityEvent onPlayerKnockout;
 
     //punch--------------------------------------------------------------------------
     public void Punch()
@@ -206,5 +207,10 @@ public class PlayerFightStatus : MonoBehaviour
         canAct = true;
         isStaggered = false;
         StopCoroutine(staggerRotine());
+    }
+    private void playerKnockout()
+    {
+        StopAllCoroutines();
+        onPlayerKnockout.Invoke();
     }
 }

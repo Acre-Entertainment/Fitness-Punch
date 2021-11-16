@@ -10,14 +10,14 @@ public class DataHolder : MonoBehaviour
 {
     private GameObject _dt;
     //Coloque as informações que voce quer salvar abaixo como um valor publico.
-    public int dayOfTheMonth;
+    public bool primeiraVezAbrindoOJogo = true;
+    public bool saiuDoApartamento;
+    public bool saiuDaAcademia;
+    public bool saiuDaLoja;
+    public bool saiuDoGrocer;
     public int dayOfTheWeek;
-    public int year;
     public int actions;
-    //public bool dayTime;
-
     public int money;
-
     public int proteina;
     public int carboidrato;
     public int lipidio;

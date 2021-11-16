@@ -19,10 +19,10 @@ public class FightEnemyController : MonoBehaviour
     [SerializeField] private float block_DurationOfBlock;
     [SerializeField] private float dodge_TimeToBeEffective;
     [SerializeField] private float stagger_staggerDuration;
-    [SerializeField] private float ai_IdleTime_VeryShort;
-    [SerializeField] private float ai_IdleTime_Short;
-    [SerializeField] private float ai_IdleTime_Long;
-    [SerializeField] private float special_SpecialAttackWindupTime;
+    [SerializeField] private float ai_IdleTime_VeryShort; //usado quando o AI vai executar varios movemntos muitos rapidos, tipo o tempo entre socos de um combo
+    [SerializeField] private float ai_IdleTime_Short; //usado em curtas pausas, e quando é tambem o windup de atakes normais
+    [SerializeField] private float ai_IdleTime_Long; //usado quando o AI fica idle entre movimentos
+    [SerializeField] private float special_SpecialAttackWindupTime; //usado antes de super atakes
     private int overrideStaggerCombo;
     public UnityEvent onPunchStart;
     public UnityEvent onPunchDamageTime;
@@ -48,6 +48,7 @@ public class FightEnemyController : MonoBehaviour
     public UnityEvent onBlockEnd;
     public UnityEvent onStaggerStart;
     public UnityEvent onStaggerEnd;
+    public UnityEvent onEnemyKnockout;
     private int randy;
     
     void Start()
@@ -64,6 +65,11 @@ public class FightEnemyController : MonoBehaviour
     }
     public void RandomBehaviorSelect()
     {
+        if(fightingGameMaster.FightIsOver == true)
+        {
+            return;
+            //acaba o AI do enemigo quando acaba a luta
+        }
         randy = Random.Range(1, 16);
         switch(randy)
         {
@@ -80,8 +86,31 @@ public class FightEnemyController : MonoBehaviour
                 StartCoroutine(SingleRegularPunch());
                 break;
             case 5:
-                //StartCoroutine(Blocking());
+                StartCoroutine(DoNothing());
                 break;
+            case 6:
+                StartCoroutine(DoNothing());
+                break;
+            case 7:
+                StartCoroutine(SingleSuperPunch());
+                break;
+            case 8:
+                StartCoroutine(SingleSwipe());
+                break;
+            case 9:
+                StartCoroutine(DodgeLeftThenStrikeRight());
+                break;
+            case 10:
+                StartCoroutine(DodgeRightThenStrikeLeft());
+                break;
+            case 11:
+                StartCoroutine(Block());
+                break;
+            case 12:
+                StartCoroutine(Block());
+                break;
+            
+
         }
     }
     //enemy moves-------------------------------------------------------------------------------
@@ -241,7 +270,7 @@ public class FightEnemyController : MonoBehaviour
     //reaction to player moves-----------------------------------------------------------------------
     public void playerPunchConnects()
     {
-        if(isDodging == false && isBlocking == false)
+        if(isDodging == false && isBlocking == false && fightingGameMaster.FightIsOver == false)
         {
             fightingGameMaster.playerPunchDoesDamage();
             overrideStaggerCombo++;
@@ -256,6 +285,10 @@ public class FightEnemyController : MonoBehaviour
                 StopAllCoroutines();
                 StartCoroutine(stagger());
             }
+        }
+        if(isBlocking == true && fightingGameMaster.FightIsOver == false)
+        {
+            //ataque do jogador foi blokeado
         }
     }
     private IEnumerator stagger()
@@ -311,11 +344,31 @@ public class FightEnemyController : MonoBehaviour
         RandomBehaviorSelect();
         StopCoroutine(staggerOverride());
     }
+    private IEnumerator Block()
+    {
+        onBlockStart.Invoke();
+        isBlocking = true;
+
+        yield return new WaitForSeconds(block_DurationOfBlock);
+
+        onBlockEnd.Invoke();
+        isBlocking = false;
+
+        yield return new WaitForSeconds(ai_IdleTime_Long);
+
+        RandomBehaviorSelect();
+        StopCoroutine(Block());
+    }
+    public void Knockout()
+    {
+        StopAllCoroutines();
+        onEnemyKnockout.Invoke();
+    }
 
     //enemy move results------------------------------------------------------------------------------
     private void enemyRegularPunchConnects()
     {
-        if(playerFightStatus.isBlocking == false && playerFightStatus.isLeft == false && playerFightStatus.isRight == false && playerFightStatus.isDown == false)
+        if(playerFightStatus.isBlocking == false && playerFightStatus.isLeft == false && playerFightStatus.isRight == false && playerFightStatus.isDown == false && fightingGameMaster.FightIsOver == false)
         {
             fightingGameMaster.enemyRegularPunchDoesDamage();
             playerFightStatus.stagger();
@@ -327,7 +380,7 @@ public class FightEnemyController : MonoBehaviour
     }
     private void enemySuperPunchConnects()
     {
-        if(playerFightStatus.isLeft == false && playerFightStatus.isRight == false)
+        if(playerFightStatus.isLeft == false && playerFightStatus.isRight == false && fightingGameMaster.FightIsOver == false)
         {
             fightingGameMaster.enemySuperPunchDoesDamage();
             playerFightStatus.stagger();
@@ -339,7 +392,7 @@ public class FightEnemyController : MonoBehaviour
     }
     private void enemySwipeConnects()
     {
-        if(playerFightStatus.isDown == false)
+        if(playerFightStatus.isDown == false && fightingGameMaster.FightIsOver == false)
         {
         fightingGameMaster.enemySuperPunchDoesDamage();
         playerFightStatus.stagger();
@@ -351,7 +404,7 @@ public class FightEnemyController : MonoBehaviour
     }
     private void enemyLeftPunchConnects()
     {
-        if(playerFightStatus.isRight == false && playerFightStatus.isDown == false && isBlocking == false)
+        if(playerFightStatus.isRight == false && playerFightStatus.isDown == false && isBlocking == false && fightingGameMaster.FightIsOver == false)
         {
             fightingGameMaster.enemyRegularPunchDoesDamage();
             playerFightStatus.stagger();
@@ -363,7 +416,7 @@ public class FightEnemyController : MonoBehaviour
     }
     private void enemyRightPunchConnects()
     {
-        if(playerFightStatus.isLeft == false && playerFightStatus.isDown == false && isBlocking == false)
+        if(playerFightStatus.isLeft == false && playerFightStatus.isDown == false && isBlocking == false && fightingGameMaster.FightIsOver == false)
         {
             fightingGameMaster.enemyRegularPunchDoesDamage();
             playerFightStatus.stagger();
