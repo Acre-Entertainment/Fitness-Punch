@@ -6423,11 +6423,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26bd86b9cdb62ca49a8fd28d51b35f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerBaseHealth: 0
+  playerBaseHealth: 5
   playerHealthPerAerobic: 0
   playerBaseDamage: 0
   playerDamagePerStrengh: 0
-  enemyHealth: 0
+  enemyHealth: 5
   enemyRegularAttackDamage: 0
   enemySuperAttackDamage: 0
   onPlayerWin:
