@@ -16,6 +16,7 @@ public class PouDispositionAndInventoryCheck : MonoBehaviour
     }
     public void doCheckAndAct()
     {
+        DT.organizeInventory();
         if(DT.inventorySlots[9] != 0)
         {
             goButton.SetActive(false);

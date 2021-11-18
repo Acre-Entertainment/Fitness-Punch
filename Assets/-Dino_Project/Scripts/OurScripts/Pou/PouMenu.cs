@@ -5,27 +5,21 @@ using UnityEngine.UI;
 
 public class PouMenu : MonoBehaviour
 {
-    public GameObject display1;
-    public GameObject display2;
-    public GameObject display3;
-    public GameObject display4;
-    private Text text1;
-    private Text text2;
-    private Text text3;
-    private Text text4;
+    public Image display1;
+    public Image display2;
+    public Image display3;
+    public Image display4;
+    public Text text1;
+    public Text text2;
+    public Text text3;
+    public Text text4;
+    public Sprite[] foodSprites;
     [SerializeField] private int numberOfFoodInTheGame;
     private int number1 = 1;
     private int number2 = 1;
     private int number3 = 1;
     private int number4 = 1;
     private DataHolder DT;
-    void Start()
-    {
-        text1 = display1.GetComponent<Text>();
-        text2 = display2.GetComponent<Text>();
-        text3 = display3.GetComponent<Text>();
-        text4 = display4.GetComponent<Text>();
-    }
 
     public void addNumber1()
     {
@@ -34,7 +28,8 @@ public class PouMenu : MonoBehaviour
         {
             number1 = 1;
         }
-        text1.text = "" + number1;
+        display1.sprite = foodSprites[number1 - 1];
+        setText(1);
     }
     public void subtractNumber1()
     {
@@ -43,7 +38,8 @@ public class PouMenu : MonoBehaviour
         {
             number1 = numberOfFoodInTheGame;
         }
-        text1.text = "" + number1;
+        display1.sprite = foodSprites[number1 - 1];
+        setText(1);
     }
     public void addNumber2()
     {
@@ -52,7 +48,8 @@ public class PouMenu : MonoBehaviour
         {
             number2 = 1;
         }
-        text2.text = "" + number2;
+        display2.sprite = foodSprites[number2 - 1];
+        setText(2);
     }
     public void subtractNumber2()
     {
@@ -61,7 +58,8 @@ public class PouMenu : MonoBehaviour
         {
             number2 = numberOfFoodInTheGame;
         }
-        text2.text = "" + number2;
+        display2.sprite = foodSprites[number2 - 1];
+        setText(2);
     }
     public void addNumber3()
     {
@@ -70,7 +68,8 @@ public class PouMenu : MonoBehaviour
         {
             number3 = 1;
         }
-        text3.text = "" + number3;
+        display3.sprite = foodSprites[number3 - 1];
+        setText(3);
     }
     public void subtractNumber3()
     {
@@ -79,7 +78,8 @@ public class PouMenu : MonoBehaviour
         {
             number3 = numberOfFoodInTheGame;
         }
-        text3.text = "" + number3;
+        display3.sprite = foodSprites[number3 - 1];
+        setText(3);
     }
     public void addNumber4()
     {
@@ -88,7 +88,8 @@ public class PouMenu : MonoBehaviour
         {
             number4 = 1;
         }
-        text4.text = "" + number4;
+        display4.sprite = foodSprites[number4 - 1];
+        setText(4);
     }
     public void subtractNumber4()
     {
@@ -97,7 +98,80 @@ public class PouMenu : MonoBehaviour
         {
             number4 = numberOfFoodInTheGame;
         }
-        text4.text = "" + number4;
+        display4.sprite = foodSprites[number4 - 1];
+        setText(4);
+    }
+    private void setText(int whichFood)
+    {
+        Text textoAMudar = text1;
+        int IDDaComidaAMudar = 0;
+        switch(whichFood)
+        {
+            case 1:
+                textoAMudar = text1;
+                IDDaComidaAMudar = number1;
+                break;
+            case 2:
+                textoAMudar = text2;
+                IDDaComidaAMudar = number2;
+                break;
+            case 3:
+                textoAMudar = text3;
+                IDDaComidaAMudar = number3;
+                break;
+            case 4:
+                textoAMudar = text4;
+                IDDaComidaAMudar = number4;
+                break;
+        }
+        switch(IDDaComidaAMudar)
+        {
+            case 1:
+                textoAMudar.text = "Amendoin: Proteínas e Fibras";
+                break;
+            case 2:
+                textoAMudar.text = "Carne Magra: Proteínas e Vitaminas";
+                break;
+            case 3:
+                textoAMudar.text = "Ovo: Proteínas e Lipídios";
+                break;
+            case 4:
+                textoAMudar.text = "Arroz: Proteínas e Carboidratos";
+                break;
+            case 5:
+                textoAMudar.text = "Queijo: Proteínas e Minerais";
+                break;
+            case 6:
+                textoAMudar.text = "Brócolis: Vitaminas e Fibras";
+                break;
+            case 7:
+                textoAMudar.text = "Milho: Minerais e Vitaminas";
+                break;
+            case 8:
+                textoAMudar.text = "Chocolate: Carboidratos e Lipídios";
+                break;
+            case 9:
+                textoAMudar.text = "Leite: Lipídios e Minerais";
+                break;
+            case 10:
+                textoAMudar.text = "Cenoura: Lipídios e Vitaminas";
+                break;
+            case 11:
+                textoAMudar.text = "Pão: Lipídios e Fibras";
+                break;
+            case 12:
+                textoAMudar.text = "Laranja: Carboidratos e Vitaminas";
+                break;
+            case 13:
+                textoAMudar.text = "Abacate: Carboidratos e Fibras";
+                break;
+            case 14:
+                textoAMudar.text = "Batata: Carboidratos e Minerais";
+                break;
+            case 15:
+                textoAMudar.text = "Alfaçe: Minerais e Fibras";
+                break;
+        }
     }
     public void saveGrocerChoice()
     {
