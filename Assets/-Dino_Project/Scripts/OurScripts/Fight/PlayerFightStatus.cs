@@ -208,7 +208,7 @@ public class PlayerFightStatus : MonoBehaviour
         isStaggered = false;
         StopCoroutine(staggerRotine());
     }
-    private void playerKnockout()
+    public void playerKnockout()
     {
         StopAllCoroutines();
         onPlayerKnockout.Invoke();
