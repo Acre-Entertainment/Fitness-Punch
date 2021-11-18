@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: 52f4b925952b07544a09c3b350ebe41f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6567861904241130755
+    second: AlimentosEstragados_Assets_0
+  - first:
+      213: -2513611656404976212
+    second: AlimentosEstragados_Assets_1
+  - first:
+      213: -5023563356268138965
+    second: AlimentosEstragados_Assets_2
+  - first:
+      213: -1159473959499506497
+    second: AlimentosEstragados_Assets_3
+  - first:
+      213: 1054685824543189242
+    second: AlimentosEstragados_Assets_4
+  - first:
+      213: -6156772145999090157
+    second: AlimentosEstragados_Assets_5
+  - first:
+      213: 2510109556571219429
+    second: AlimentosEstragados_Assets_6
+  - first:
+      213: -2344859382517713008
+    second: AlimentosEstragados_Assets_7
+  - first:
+      213: -9074323680793879480
+    second: AlimentosEstragados_Assets_8
+  - first:
+      213: -599336427644345654
+    second: AlimentosEstragados_Assets_9
+  - first:
+      213: -8111175929613568485
+    second: AlimentosEstragados_Assets_10
+  - first:
+      213: 1284676803246728034
+    second: AlimentosEstragados_Assets_11
+  - first:
+      213: 127245869395481546
+    second: AlimentosEstragados_Assets_12
+  - first:
+      213: -4467708795544449664
+    second: AlimentosEstragados_Assets_13
+  - first:
+      213: 3907196191614678644
+    second: AlimentosEstragados_Assets_14
+  - first:
+      213: 3570489367967810110
+    second: AlimentosEstragados_Assets_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_0
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1770
+        width: 143
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30dfc189a9bb52b50800000000000000
+      internalID: 6567861904241130755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_1
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1741
+        width: 196
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad33b4248bdd1dd0800000000000000
+      internalID: -2513611656404976212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_2
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1770
+        width: 122
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ee7f25eb7b84ab0800000000000000
+      internalID: -5023563356268138965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_3
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 1758
+        width: 172
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc57b5b398b8efe0800000000000000
+      internalID: -1159473959499506497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_4
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 1770
+        width: 234
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af869816b2ff2ae00800000000000000
+      internalID: 1054685824543189242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_5
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 1762
+        width: 208
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e64ba6a50ce8aa0800000000000000
+      internalID: -6156772145999090157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_6
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1400
+        width: 192
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5adb2b753b5d220800000000000000
+      internalID: 2510109556571219429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_7
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 1401
+        width: 172
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0973ac0b0d2657fd0800000000000000
+      internalID: -2344859382517713008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_8
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1402
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c9d5da0b6811280800000000000000
+      internalID: -9074323680793879480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_9
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1395
+        width: 148
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2ae49c1babea7f0800000000000000
+      internalID: -599336427644345654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_10
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 1395
+        width: 186
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b163fa487705f6f80800000000000000
+      internalID: -8111175929613568485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_11
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 1403
+        width: 244
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263a4bcfeb614d110800000000000000
+      internalID: 1284676803246728034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_12
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 1406
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3147ca17114c100800000000000000
+      internalID: 127245869395481546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_13
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1024
+        width: 219
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d4fa975828ff1c0800000000000000
+      internalID: -4467708795544449664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_14
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1052
+        width: 177
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476b3fc2c36293630800000000000000
+      internalID: 3907196191614678644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlimentosEstragados_Assets_15
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1060
+        width: 235
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32c704b92dec8130800000000000000
+      internalID: 3570489367967810110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
