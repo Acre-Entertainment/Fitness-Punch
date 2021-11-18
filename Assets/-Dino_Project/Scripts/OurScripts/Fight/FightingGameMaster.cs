@@ -27,14 +27,26 @@ public class FightingGameMaster : MonoBehaviour
     public void playerPunchDoesDamage()
     {
         enemyHealth = enemyHealth - playerDamage;
+        if(enemyHealth <= 0)
+        {
+            PlayerVictory();
+        }
     }
     public void enemyRegularPunchDoesDamage()
     {
         playerHealth = playerHealth - enemyRegularAttackDamage;
+        if(playerHealth <= 0)
+        {
+            EnemyVictory();
+        }
     }
     public void enemySuperPunchDoesDamage()
     {
         playerHealth = playerHealth - enemySuperAttackDamage;
+        if(playerHealth <= 0)
+        {
+            EnemyVictory();
+        }
     }
     private void EnemyVictory()
     {
