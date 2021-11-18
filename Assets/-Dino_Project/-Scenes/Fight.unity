@@ -3062,7 +3062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &870424039
 Transform:
   m_ObjectHideFlags: 0
@@ -4651,15 +4651,15 @@ MonoBehaviour:
   isBlocking: 0
   isDodging: 0
   isStaggered: 0
-  punch_TimeToDamage: 0
-  attack_TimeToActAgain: 0
-  block_DurationOfBlock: 0
-  dodge_TimeToBeEffective: 0
-  stagger_staggerDuration: 0
-  ai_IdleTime_VeryShort: 0
-  ai_IdleTime_Short: 0
-  ai_IdleTime_Long: 0
-  special_SpecialAttackWindupTime: 0
+  punch_TimeToDamage: 1
+  attack_TimeToActAgain: 1
+  block_DurationOfBlock: 1
+  dodge_TimeToBeEffective: 1
+  stagger_staggerDuration: 1
+  ai_IdleTime_VeryShort: 1
+  ai_IdleTime_Short: 1
+  ai_IdleTime_Long: 1
+  special_SpecialAttackWindupTime: 1
   onPunchStart:
     m_PersistentCalls:
       m_Calls:
@@ -6457,6 +6457,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onEnemyWin:
     m_PersistentCalls:
       m_Calls:
@@ -6479,6 +6491,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6788,7 +6812,7 @@ Canvas:
   m_GameObject: {fileID: 1527175238}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1712917049}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -7168,7 +7192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1753146747
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7531,14 +7555,14 @@ MonoBehaviour:
   isLeft: 0
   isDown: 0
   isStaggered: 0
-  punch_TimeToDamage: 0
-  punch_TimeToActAgain: 0
-  block_DurationOfBlock: 0
-  block_TimeToActAgain: 0
-  dodge_TimeToBeEffective: 0
-  dodge_DurationOfDodge: 0
-  dodge_TimeToActAgain: 0
-  stagger_staggerDuration: 0
+  punch_TimeToDamage: 1
+  punch_TimeToActAgain: 1
+  block_DurationOfBlock: 1
+  block_TimeToActAgain: 1
+  dodge_TimeToBeEffective: 1
+  dodge_DurationOfDodge: 1
+  dodge_TimeToActAgain: 1
+  stagger_staggerDuration: 1
   onPunchStart:
     m_PersistentCalls:
       m_Calls:
