@@ -2200,10 +2200,10 @@ MonoBehaviour:
   timeToBalance: 15
   timeBetweenChecks: 0.5
   isInContact: 0
-  disposicaoDebuffForSuck: 0
-  pointsNeededForNormal: 0
-  pointsNeededForExtra: 0
-  disposicaoBuffForExtra: 0
+  disposicaoDebuffForSuck: 2
+  pointsNeededForNormal: 25
+  pointsNeededForExtra: 50
+  disposicaoBuffForExtra: 2
   pointsForCenterThrow: 20
   pointsForNearThrow: 10
   pointsForCloseThrow: 5

@@ -35,4 +35,21 @@ public class DataHolderFunctions : MonoBehaviour
         forcaMainMenuBar.GetComponent<Slider>().value = DT.forca;
         resistenciaMainMenuBar.GetComponent<Slider>().value = DT.resistencia;
     }
+    public void removeOneAction()
+    {
+        DT.actions = DT.actions - 1;
+    }
+    public void removeDisposition(int howMuch)
+    {
+        DT.disposicao = DT.disposicao - howMuch;
+    }
+    public void removeHealthThings(int pro, int car, int lip, int min, int vit, int fib)
+    {
+        DT.proteina = DT.proteina - pro;
+        DT.carboidrato = DT.carboidrato - car;
+        DT.lipidio = DT.lipidio - lip;
+        DT.mineral = DT.mineral - min;
+        DT.vitamina = DT.vitamina - vit;
+        DT.fibra = DT.fibra - fib;
+    }
 }
