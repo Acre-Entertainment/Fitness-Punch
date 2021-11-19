@@ -2809,7 +2809,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FIGHT!
+  m_Text: Go back
 --- !u!222 &812216470
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6423,11 +6423,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26bd86b9cdb62ca49a8fd28d51b35f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerBaseHealth: 5
+  playerBaseHealth: 0
   playerHealthPerAerobic: 0
   playerBaseDamage: 0
   playerDamagePerStrengh: 0
-  enemyHealth: 5
+  enemyHealth: 0
   enemyRegularAttackDamage: 0
   enemySuperAttackDamage: 0
   onPlayerWin:
@@ -8596,7 +8596,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FIGHT!
+  m_Text: Go back
 --- !u!222 &1924655307
 CanvasRenderer:
   m_ObjectHideFlags: 0
