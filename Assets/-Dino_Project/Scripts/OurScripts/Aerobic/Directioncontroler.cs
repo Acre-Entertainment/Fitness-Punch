@@ -5,22 +5,23 @@ using UnityEngine.UI;
 
 public class Directioncontroler : MonoBehaviour
 {
-    [SerializeField] private Text feedback;
-    private int controlerNumber;
+    [SerializeField] private Text feedback, scoreUIcanvas;
     [SerializeField] private SpriteRenderer activator;
     private bool intime = false;
-    private int direction;
     private float timeControler = 1.5f;
-    [SerializeField] private float timereference;
-    [SerializeField]private int life;
+    [SerializeField] private float timereference, ITime, gameSpeed;
+    [SerializeField]private int life, finalScore, score, direction, easy, hard, expert;
+    private int scoreUI;
+    private int controlerNumber;
     [SerializeField] private GameObject DefaultSing;
-    private float ITime;
-    [SerializeField] private float gameSpeed;
+    private GameObject scoreDH;
 
     void Start()
     {
         activator = GetComponent<SpriteRenderer>();
         Default();
+        scoreDH = GameObject.FindWithTag("DataHolder");
+        score = 0;
     }
 
     void Update()
@@ -80,6 +81,7 @@ public class Directioncontroler : MonoBehaviour
             Left();
             intime = false;
         }
+        scoreUIcanvas.text = "Score: " + scoreUI;
         return direction;
     }
 
@@ -106,7 +108,7 @@ public class Directioncontroler : MonoBehaviour
     }
 
     private void PlayerLife()
-    {
+    {        
         life--;
     }
 
@@ -116,6 +118,8 @@ public class Directioncontroler : MonoBehaviour
         {
             feedback.text = "BOOYA!!!";
             TimeSpeedUp();
+            score++;
+            scoreUI++;
         }
         else { feedback.text = "OOOOOH!"; PlayerLife(); }
         return;
@@ -126,6 +130,8 @@ public class Directioncontroler : MonoBehaviour
         {
             feedback.text = "BOOYA!!!";
             TimeSpeedUp();
+            score++;
+            scoreUI++;
         }
         else { feedback.text = "OOOOOH!"; PlayerLife(); }
         return;
@@ -136,6 +142,8 @@ public class Directioncontroler : MonoBehaviour
         {
             feedback.text = "BOOYA!!!";
             TimeSpeedUp();
+            score++;
+            scoreUI++;
         }
         else { feedback.text = "OOOOOH!"; PlayerLife(); }
         return;
@@ -148,5 +156,24 @@ public class Directioncontroler : MonoBehaviour
             feedback.text = "GAME OVER";
             Destroy(gameObject);
         }
+    }
+
+    private int ScoreChecker()
+    {
+        if (score == easy)
+        {
+            finalScore = 1;
+        }
+
+        if (score == hard)
+        {
+            finalScore = 2;
+        }
+
+        if (score == expert)
+        {
+            finalScore = 3;
+        }
+        return finalScore;
     }
 }
