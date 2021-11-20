@@ -602,6 +602,10 @@ PrefabInstance:
       value: 'Your Time:'
       objectReference: {fileID: 0}
     - target: {fileID: 4488856839885133479, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
+    - target: {fileID: 4488856839885133479, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 0
       objectReference: {fileID: 0}
@@ -613,6 +617,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: Leave game
       objectReference: {fileID: 0}
+    - target: {fileID: 4488856840288830382, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
     - target: {fileID: 4488856840509783764, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_SizeDelta.y
       value: 36.2
@@ -629,6 +637,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'Best Time:'
       objectReference: {fileID: 0}
+    - target: {fileID: 4488856840509783765, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
     - target: {fileID: 4488856840509783765, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 0
