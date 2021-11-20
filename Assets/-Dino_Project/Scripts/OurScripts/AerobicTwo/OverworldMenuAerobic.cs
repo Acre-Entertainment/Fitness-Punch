@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OverworldStrenghMenu : MonoBehaviour
+public class OverworldMenuAerobic : MonoBehaviour
 {
     private DataHolder dataHolder;
     void Start()
@@ -11,11 +11,10 @@ public class OverworldStrenghMenu : MonoBehaviour
     }
     public void onPressGo()
     {
-        dataHolder.fibra = dataHolder.fibra - 1;
-        dataHolder.vitamina = dataHolder.vitamina - 1;
+        dataHolder.lipidio = dataHolder.lipidio - 1;
+        dataHolder.mineral = dataHolder.mineral - 1;
         dataHolder.actions = dataHolder.actions - 1;
-        dataHolder.disposicao = dataHolder.disposicao - (1 + dataHolder.forcaThisDay);
-        dataHolder.forcaThisDay++;
+        dataHolder.disposicao = dataHolder.disposicao - (2 + dataHolder.forcaThisDay);
+        dataHolder.aerobicoThisDay++;
     }
-
 }
