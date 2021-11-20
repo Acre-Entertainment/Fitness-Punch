@@ -39,6 +39,7 @@ public class DataHolder : MonoBehaviour
     public int cookingThisDay;
     public int aerobicoThisDay;
     public int forcaThisDay;
+    public int funThisDay;
 
     void Awake() //Garante que ha apenas um DataHolder por cena e que ele não e destroido ao mudar de cena.
     {
