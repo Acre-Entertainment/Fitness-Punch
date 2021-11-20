@@ -180,5 +180,9 @@ public class PouMenu : MonoBehaviour
         DT.selectedGrocerFood[1] = number2;
         DT.selectedGrocerFood[2] = number3;
         DT.selectedGrocerFood[3] = number4;
+
+        DT.disposicao = DT.disposicao - (1 + DT.grocerThisDay);
+        DT.grocerThisDay++;
+        DT.actions = DT.actions - 1;
     }
 }

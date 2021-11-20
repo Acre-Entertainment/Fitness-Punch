@@ -169,6 +169,7 @@ public class OverworldCookingMenu : MonoBehaviour
         dataHolder.organizeInventory();
         dataHolder.actions = dataHolder.actions - 1;
         dataHolder.disposicao = dataHolder.disposicao - dataHolder.cookingThisDay;
+        dataHolder.cookingThisDay++;
     }
     public void setTextToNothing()
     {

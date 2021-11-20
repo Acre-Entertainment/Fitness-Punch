@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PouDispositionAndInventoryCheck : MonoBehaviour
 {
     [HideInInspector] public DataHolder DT;
     [SerializeField] private GameObject goButton;
     [SerializeField] private GameObject noDispositionText;
+    [SerializeField] private GameObject dispositionText;
     [SerializeField] private GameObject noInvetoryText;
     [SerializeField] private GameObject noActionsText;
     [SerializeField] private int neededDisposition;
@@ -14,6 +16,16 @@ public class PouDispositionAndInventoryCheck : MonoBehaviour
     void Start()
     {
         DT = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
+        neededDisposition = 1 + DT.grocerThisDay;
+        noDispositionText.GetComponent<Text>().text = "Sua disposição não está auta o suficiente! Você precisa de " + (1 + DT.grocerThisDay) + " e você tem " + DT.disposicao + "!";
+        if(DT.grocerThisDay == 0)
+        {
+            dispositionText.GetComponent<Text>().text = "Sua primeira compra do dia custa 1 disposição.";
+        }
+        else
+        {
+            dispositionText.GetComponent<Text>().text = "-" + neededDisposition + " disposição";
+        }
     }
     public void doCheckAndAct()
     {
