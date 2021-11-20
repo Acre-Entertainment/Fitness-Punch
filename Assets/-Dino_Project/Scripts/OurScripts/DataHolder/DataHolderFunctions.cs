@@ -52,12 +52,4 @@ public class DataHolderFunctions : MonoBehaviour
         DT.vitamina = DT.vitamina - vit;
         DT.fibra = DT.fibra - fib;
     }
-    public void newDay()
-    {
-        DT.grocerThisDay = 0;
-        DT.cookingThisDay = 0;
-        DT.aerobicoThisDay = 0;
-        DT.forcaThisDay = 0;
-        DT.actions = 4;
-    }
 }
