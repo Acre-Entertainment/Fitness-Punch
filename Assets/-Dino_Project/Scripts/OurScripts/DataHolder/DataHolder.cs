@@ -24,6 +24,13 @@ public class DataHolder : MonoBehaviour
     public int mineral;
     public int vitamina;
     public int fibra;
+    [HideInInspector] public int proteinaBefore;
+    [HideInInspector] public int carboidratoBefore;
+    [HideInInspector] public int lipidioBefore;
+    [HideInInspector] public int mineralBefore;
+    [HideInInspector] public int vitaminaBefore;
+    [HideInInspector] public int fibraBefore;
+    [HideInInspector] public bool noExerciceBefore;
 
     public int disposicao;
 

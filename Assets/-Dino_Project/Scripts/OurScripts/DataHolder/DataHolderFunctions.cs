@@ -23,6 +23,42 @@ public class DataHolderFunctions : MonoBehaviour
     {
         DT = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
     }
+    public void endTheDay()
+    {
+        DT.proteinaBefore = DT.proteina;
+        DT.carboidratoBefore = DT.carboidrato;
+        DT.lipidioBefore = DT.lipidio;
+        DT.mineralBefore = DT.mineral;
+        DT.vitaminaBefore = DT.vitamina;
+        DT.fibraBefore = DT.fibra;
+        if(DT.forcaThisDay == 0 && DT.aerobicoThisDay == 0)
+        {
+            DT.noExerciceBefore = true;
+            DT.proteina -= 3;
+            DT.carboidrato -= 3;
+            DT.lipidio -= 3;
+            DT.mineral -= 3;
+            DT.vitamina -= 3;
+            DT.fibra -= 3;
+        }
+        else
+        {
+            DT.noExerciceBefore = false;
+            DT.proteina -= 1;
+            DT.carboidrato -= 1;
+            DT.lipidio -= 1;
+            DT.mineral -= 1;
+            DT.vitamina -= 1;
+            DT.fibra -= 1;
+        }
+        DT.grocerThisDay = 0;
+        DT.cookingThisDay = 0;
+        DT.aerobicoThisDay = 0;
+        DT.forcaThisDay = 0;
+        DT.funThisDay = 0;
+        DT.actions = 4;
+        DT.dayOfTheWeek++;
+    }
     public void MainMenuSliderAdjustments()
     {
         proteinaMainMenuBar.GetComponent<Slider>().value = DT.proteina;
