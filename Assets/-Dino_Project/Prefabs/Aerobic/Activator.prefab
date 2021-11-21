@@ -96,10 +96,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   feedback: {fileID: 0}
+  scoreUIcanvas: {fileID: 0}
   activator: {fileID: 4361347453360316757}
   timereference: 1.5
   ITime: 0
-  gameSpeed: 0.05
+  gameSpeed: 0.005
   life: 5
   finalScore: 0
   score: 0
@@ -108,3 +109,7 @@ MonoBehaviour:
   hard: 20
   expert: 30
   DefaultSing: {fileID: 0}
+  PunchBagR: {fileID: 0}
+  PunchBagL: {fileID: 0}
+  PunchBagD: {fileID: 0}
+  anim: {fileID: 0}

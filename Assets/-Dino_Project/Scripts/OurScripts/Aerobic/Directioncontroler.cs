@@ -8,23 +8,25 @@ public class Directioncontroler : MonoBehaviour
     [SerializeField] private Text feedback, scoreUIcanvas;
     [SerializeField] private SpriteRenderer activator;
     private bool intime = false;
-    private float timeControler = 1.5f;
+    private float timeControler = 2f;
     [SerializeField] private float timereference, ITime, gameSpeed;
     [SerializeField]private int life, finalScore, score, direction, easy, hard, expert;
     private int scoreUI;
     private int controlerNumber;
-    [SerializeField] private GameObject DefaultSing;
-    private GameObject scoreDH;
+    [SerializeField] private GameObject DefaultSing, PunchBagD, PunchBagE, PunchBagF;
+    private DataHolder dt;
+    [SerializeField]private Animator anim;
 
-    void Start()
+    private void Start()
     {
+        //anim = GetComponent<Animator>();
         activator = GetComponent<SpriteRenderer>();
         Default();
-        scoreDH = GameObject.FindWithTag("DataHolder");
+        dt = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
         score = 0;
     }
 
-    void Update()
+    private void Update()
     {
         TimeControler();
         if (intime == true)
@@ -33,13 +35,30 @@ public class Directioncontroler : MonoBehaviour
             StartCoroutine(DisableInTime());
             controlerNumber = Direction();
             GameOver();
+            anim.SetBool("Right", false);
+            anim.SetBool("Left", false);
+            anim.SetBool("Down", false);
+            PunchBagD.SetActive(false);
+            PunchBagE.SetActive(false);
+            PunchBagF.SetActive(false);
         }
     }
     private IEnumerator DisableInTime()
     {
         ITime = timereference;
-        yield return new WaitForSeconds(ITime -= 0.3f);
-        DefaultSing.SetActive(true);
+        yield return new WaitForSeconds(ITime -= 1f);
+        if (direction == 1)
+        {
+            PunchBagE.SetActive(true);
+        }
+        if (direction == 2)
+        {
+            PunchBagF.SetActive(true);
+        }
+        if (direction == 3)
+        {
+            PunchBagD.SetActive(true);
+        }
     }
 
     protected int Right()
@@ -120,6 +139,7 @@ public class Directioncontroler : MonoBehaviour
             TimeSpeedUp();
             score++;
             scoreUI++;
+            anim.SetBool("Right", true);
         }
         else { feedback.text = "OOOOOH!"; PlayerLife(); }
         return;
@@ -132,6 +152,7 @@ public class Directioncontroler : MonoBehaviour
             TimeSpeedUp();
             score++;
             scoreUI++;
+            anim.SetBool("Down", true);
         }
         else { feedback.text = "OOOOOH!"; PlayerLife(); }
         return;
@@ -144,6 +165,7 @@ public class Directioncontroler : MonoBehaviour
             TimeSpeedUp();
             score++;
             scoreUI++;
+            anim.SetBool("Left", true);
         }
         else { feedback.text = "OOOOOH!"; PlayerLife(); }
         return;
@@ -153,27 +175,27 @@ public class Directioncontroler : MonoBehaviour
     {
         if (life <= 0)
         {
+            ScoreChecker();
+            dt.resistencia += finalScore;
             feedback.text = "GAME OVER";
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 
     private int ScoreChecker()
     {
-        if (score == easy)
+        if (score >= easy && score < hard)
         {
             finalScore = 1;
         }
-
-        if (score == hard)
+        if (score >= hard && score < expert)
         {
             finalScore = 2;
         }
-
-        if (score == expert)
+        if (score >= expert)
         {
             finalScore = 3;
         }
         return finalScore;
-    }
+    }    
 }
