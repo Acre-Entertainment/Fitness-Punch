@@ -190,12 +190,14 @@ public class PlayerFightStatus : MonoBehaviour
     public void stagger()
     {
         StopCoroutine(staggerRotine());
+        StopAllCoroutines();
         onStaggerStart.Invoke();
-        CancelPunch();
-        cancelBlock();
-        cancelDownDodge();
-        cancelLeftDodge();
-        cancelRightDodge();
+        isDodging = false;
+        isDown = false;
+        isRight = false;
+        isLeft = false;
+        isPunching = false;
+        isBlocking = false;
         canAct = false;
         isStaggered = true;
         StartCoroutine(staggerRotine());
