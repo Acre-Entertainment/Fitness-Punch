@@ -2287,6 +2287,10 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1103792199}
+    - target: {fileID: 5091924971902385366, guid: ca2573b2939e545428771d54355d333c, type: 3}
+      propertyPath: inputSensibility
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 7275771082949082892, guid: ca2573b2939e545428771d54355d333c, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
