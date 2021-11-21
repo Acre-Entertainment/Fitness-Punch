@@ -193,7 +193,7 @@ public class FightEnemyController : MonoBehaviour
         yield return new WaitForSeconds(ai_IdleTime_Long);
 
         RandomBehaviorSelect();
-        StopCoroutine(SingleRegularPunch());
+        StopCoroutine(SingleSuperPunch());
     }
     private IEnumerator SingleSwipe()
     {
@@ -259,13 +259,13 @@ public class FightEnemyController : MonoBehaviour
 
         yield return new WaitForSeconds(attack_TimeToActAgain);
 
-        onRightDodgeLeftPunchEnd.Invoke();
+        onLeftDodgeRightPunchEnd.Invoke();
         isSidePunching = false;
 
         yield return new WaitForSeconds(ai_IdleTime_Long);
 
         RandomBehaviorSelect();
-        StopCoroutine(DodgeRightThenStrikeLeft());
+        StopCoroutine(DodgeLeftThenStrikeRight());
     }
     //reaction to player moves-----------------------------------------------------------------------
     public void playerPunchConnects()
