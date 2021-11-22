@@ -14,5 +14,6 @@ public class OverworldMenu : MonoBehaviour
     {
         dataHolder.actions = dataHolder.actions - 1;
         dataHolder.funThisDay = dataHolder.funThisDay + 1;
+        dataHolder.saiuDoApartamento = true;
     }
 }

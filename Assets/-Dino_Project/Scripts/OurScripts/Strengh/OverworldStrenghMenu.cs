@@ -16,6 +16,7 @@ public class OverworldStrenghMenu : MonoBehaviour
         dataHolder.actions = dataHolder.actions - 1;
         dataHolder.disposicao = dataHolder.disposicao - (1 + dataHolder.forcaThisDay);
         dataHolder.forcaThisDay++;
+        dataHolder.saiuDaAcademia = true;
     }
 
 }

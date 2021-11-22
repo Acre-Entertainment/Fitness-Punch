@@ -16,5 +16,6 @@ public class OverworldMenuAerobic : MonoBehaviour
         dataHolder.actions = dataHolder.actions - 1;
         dataHolder.disposicao = dataHolder.disposicao - (2 + dataHolder.forcaThisDay);
         dataHolder.aerobicoThisDay++;
+        dataHolder.saiuDaAcademia = true;
     }
 }

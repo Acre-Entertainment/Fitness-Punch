@@ -776,7 +776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeiraVezAbrindoOJogo: 1
-  saiuDoApartamento: 0
+  saiuDoApartamento: 1
   saiuDaAcademia: 0
   saiuDaLoja: 0
   saiuDoGrocer: 0
@@ -789,6 +789,13 @@ MonoBehaviour:
   mineral: 5
   vitamina: 5
   fibra: 5
+  proteinaBefore: 0
+  carboidratoBefore: 0
+  lipidioBefore: 0
+  mineralBefore: 0
+  vitaminaBefore: 0
+  fibraBefore: 0
+  noExerciceBefore: 0
   disposicao: 6
   forca: 5
   resistencia: 5
@@ -799,6 +806,7 @@ MonoBehaviour:
   cookingThisDay: 0
   aerobicoThisDay: 0
   forcaThisDay: 0
+  funThisDay: 0
 --- !u!4 &757464108
 Transform:
   m_ObjectHideFlags: 0

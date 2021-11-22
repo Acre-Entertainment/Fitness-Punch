@@ -12,7 +12,7 @@ public class SetPlayerToPosition : MonoBehaviour
     void Start()
     {
         dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
-        if(dataHolder.primeiraVezAbrindoOJogo == true || dataHolder.saiuDoApartamento == true)
+        if(dataHolder.saiuDoApartamento == true)
         {
             gameObject.transform.position = ApartmentPosition.transform.position;
             dataHolder.saiuDoApartamento = false;
