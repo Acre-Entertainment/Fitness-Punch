@@ -19,7 +19,6 @@ public class Directioncontroler : MonoBehaviour
 
     private void Start()
     {
-        //anim = GetComponent<Animator>();
         activator = GetComponent<SpriteRenderer>();
         Default();
         dt = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
@@ -126,7 +125,7 @@ public class Directioncontroler : MonoBehaviour
         timereference = timereference -= timereference *= gameSpeed;
     }
 
-    private void PlayerLife()
+    public void PlayerLife()
     {        
         life--;
     }
@@ -135,7 +134,6 @@ public class Directioncontroler : MonoBehaviour
     {
         if (controlerNumber == 3)
         {
-            feedback.text = "BOOYA!!!";
             TimeSpeedUp();
             score++;
             scoreUI++;
@@ -148,7 +146,6 @@ public class Directioncontroler : MonoBehaviour
     {
         if (controlerNumber == 2)
         {
-            feedback.text = "BOOYA!!!";
             TimeSpeedUp();
             score++;
             scoreUI++;
@@ -161,7 +158,6 @@ public class Directioncontroler : MonoBehaviour
     {
         if (controlerNumber == 1)
         {
-            feedback.text = "BOOYA!!!";
             TimeSpeedUp();
             score++;
             scoreUI++;
