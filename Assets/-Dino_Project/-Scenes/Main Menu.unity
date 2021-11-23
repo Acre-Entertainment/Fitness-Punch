@@ -781,6 +781,7 @@ MonoBehaviour:
   saiuDaLoja: 0
   saiuDoGrocer: 0
   dayOfTheWeek: 1
+  dayOfEverything: 1
   actions: 4
   money: 0
   proteina: 5
@@ -795,7 +796,16 @@ MonoBehaviour:
   mineralBefore: 0
   vitaminaBefore: 0
   fibraBefore: 0
+  disposicaoBefore: 0
   noExerciceBefore: 0
+  noAerobicBefore: 0
+  noStrenghBefore: 0
+  proteinaBonus: 0
+  proteinaMalus: 0
+  carboidratoBonus: 0
+  carboidratoMalus: 0
+  strenghBeforeFight: 0
+  resistenciaBeforeFight: 0
   disposicao: 6
   forca: 5
   resistencia: 5

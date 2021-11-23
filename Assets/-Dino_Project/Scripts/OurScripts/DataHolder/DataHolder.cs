@@ -16,6 +16,7 @@ public class DataHolder : MonoBehaviour
     public bool saiuDaLoja;
     public bool saiuDoGrocer;
     public int dayOfTheWeek;
+    public int dayOfEverything;
     public int actions;
     public int money;
     public int proteina;
@@ -38,6 +39,10 @@ public class DataHolder : MonoBehaviour
     [HideInInspector] public bool proteinaMalus;
     [HideInInspector] public bool carboidratoBonus;
     [HideInInspector] public bool carboidratoMalus;
+    [HideInInspector] public int strenghBeforeFight;
+    [HideInInspector] public int resistenciaBeforeFight;
+
+    
 
     public int disposicao;
 

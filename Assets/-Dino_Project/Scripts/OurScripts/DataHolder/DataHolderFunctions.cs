@@ -119,6 +119,7 @@ public class DataHolderFunctions : MonoBehaviour
         DT.funThisDay = 0;
         DT.actions = 4;
         DT.dayOfTheWeek++;
+        DT.dayOfEverything++;
 
         if(DT.proteina < 0){DT.proteina = 0;}
         if(DT.carboidrato < 0){DT.carboidrato = 0;}

@@ -12,8 +12,8 @@ public class FadeInOutDayCheck : MonoBehaviour
     void Start()
     {
         dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
-        fadeInText.text = "Dia " + dataHolder.dayOfTheWeek;
-        fadeOutText.text = "Dia " + dataHolder.dayOfTheWeek + 1;
+        fadeInText.text = "Dia " + dataHolder.dayOfEverything;
+        fadeOutText.text = "Dia " + dataHolder.dayOfEverything + 1;
         if(dataHolder.actions == 4)
         {
             fadeInObject.SetActive(true);
