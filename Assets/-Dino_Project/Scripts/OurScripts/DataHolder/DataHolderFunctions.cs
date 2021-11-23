@@ -72,7 +72,7 @@ public class DataHolderFunctions : MonoBehaviour
         }
         
         //diminui os atributos
-        if(DT.forcaThisDay == 0 && DT.aerobicoThisDay == 0)
+        if(DT.forcaThisDay == 0 && DT.aerobicoThisDay == 0 && DT.dayOfTheWeek != 7)
         {
             DT.noExerciceBefore = true;
             DT.proteina -= 3;
@@ -93,7 +93,7 @@ public class DataHolderFunctions : MonoBehaviour
             DT.fibra -= 1;
         }
         //diminui força ou resistencia se n fez exercicio
-        if(DT.aerobicoThisDay == 0)
+        if(DT.aerobicoThisDay == 0 && DT.dayOfTheWeek != 7)
         {
             DT.resistencia -= 1;
             DT.noAerobicBefore = true;
@@ -102,7 +102,7 @@ public class DataHolderFunctions : MonoBehaviour
         {
             DT.noAerobicBefore = false;
         }
-        if(DT.forcaThisDay == 0)
+        if(DT.forcaThisDay == 0 && DT.dayOfTheWeek != 7)
         {
             DT.forca -= 1;
             DT.noStrenghBefore = true;
@@ -128,7 +128,9 @@ public class DataHolderFunctions : MonoBehaviour
         if(DT.vitamina < 0){DT.vitamina = 0;}
         if(DT.fibra < 0){DT.fibra = 0;}
         if(DT.forca < 0){DT.forca = 0;}
+        if(DT.forca > 10){DT.forca = 10;}
         if(DT.resistencia < 0){DT.resistencia = 0;}
+        if(DT.resistencia > 10){DT.resistencia = 10;}
         if(DT.disposicao < 0){DT.disposicao = 0;}
         if(DT.disposicao > 10){DT.disposicao = 10;}
     }
