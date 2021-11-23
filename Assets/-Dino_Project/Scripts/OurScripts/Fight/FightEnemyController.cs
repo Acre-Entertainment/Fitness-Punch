@@ -274,17 +274,17 @@ public class FightEnemyController : MonoBehaviour
         {
             fightingGameMaster.playerPunchDoesDamage();
             overrideStaggerCombo++;
-            if(overrideStaggerCombo >= 3)
-            {
-                overrideStaggerCombo = 0;
-                StopAllCoroutines();
-                StopCoroutine(staggerOverride());
-            }
-            else
-            {
-                StopAllCoroutines();
-                StartCoroutine(stagger());
-            }
+            //if(overrideStaggerCombo >= 3)
+            //{
+            //    overrideStaggerCombo = 0;
+            //    StopAllCoroutines();
+            //    StopCoroutine(staggerOverride());
+            //}
+            //else
+            //{
+            //    StopAllCoroutines();
+            //    StartCoroutine(stagger());
+            //}
         }
         if(isBlocking == true && fightingGameMaster.FightIsOver == false)
         {

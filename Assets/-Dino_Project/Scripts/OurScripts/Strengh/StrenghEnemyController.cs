@@ -145,18 +145,18 @@ public class StrenghEnemyController : MonoBehaviour
         {
             sgm.points = sgm.points + sgm.pointsForPunch;
             sgm.updatPointUI();
-            overrideStaggerCombo++;
-            if(overrideStaggerCombo >= 3)
-            {
-                overrideStaggerCombo = 0;
-                StopAllCoroutines();
-                StartCoroutine(StaggerOverride());
-            }
-            else
-            {
-                StopAllCoroutines();
-                StartCoroutine(Stagger());
-            }
+            //overrideStaggerCombo++;
+            //if(overrideStaggerCombo >= 3)
+            //{
+            //    overrideStaggerCombo = 0;
+            //    StopAllCoroutines();
+            //    StartCoroutine(StaggerOverride());
+            //}
+            //else
+            //{
+            //    StopAllCoroutines();
+            //    StartCoroutine(Stagger());
+            //}
         }
         else
         {
