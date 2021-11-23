@@ -10,17 +10,17 @@ public class Directioncontroler : MonoBehaviour
     private bool intime = false;
     private float timeControler = 2f;
     [SerializeField] private float timereference, ITime, gameSpeed;
-    [SerializeField]private int life, finalScore, score, direction, easy, hard, expert;
+    [SerializeField] private int life, finalScore, score, direction, easy, hard, expert;
     private int scoreUI;
     private int controlerNumber;
-    [SerializeField] private GameObject DefaultSing, PunchBagD, PunchBagE, PunchBagF;
+    [SerializeField] private GameObject RightS, LeftS, DownS, PunchBagD, PunchBagE, PunchBagF;
     private DataHolder dt;
-    [SerializeField]private Animator anim;
+    [SerializeField] private Animator anim;
 
     private void Start()
     {
         activator = GetComponent<SpriteRenderer>();
-        Default();
+        DefaultDirectionSing();
         dt = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
         score = 0;
     }
@@ -34,12 +34,8 @@ public class Directioncontroler : MonoBehaviour
             StartCoroutine(DisableInTime());
             controlerNumber = Direction();
             GameOver();
-            anim.SetBool("Right", false);
-            anim.SetBool("Left", false);
-            anim.SetBool("Down", false);
-            PunchBagD.SetActive(false);
-            PunchBagE.SetActive(false);
-            PunchBagF.SetActive(false);
+            DefaultPlayerAnimation();
+            DefaultPunchingBag();
         }
     }
     private IEnumerator DisableInTime()
@@ -62,39 +58,53 @@ public class Directioncontroler : MonoBehaviour
 
     protected int Right()
     {
-        activator.color = Color.green;
+        RightS.SetActive(true);
         return 3;
     }
     protected int Down()
     {
-        activator.color = Color.yellow;
+        DownS.SetActive(true);
         return 2;
     }
     protected int Left()
     {
-        activator.color = Color.red;
+        LeftS.SetActive(true);
         return 1;
     }
-    private void Default()
+    private void DefaultDirectionSing()
     {
-        activator.color = Color.blue;
+        LeftS.SetActive(false);
+        DownS.SetActive(false);
+        RightS.SetActive(false);
+    }
+    private void DefaultPunchingBag()
+    {
+        PunchBagD.SetActive(false);
+        PunchBagE.SetActive(false);
+        PunchBagF.SetActive(false);
+    }
+    private void DefaultPlayerAnimation()
+    {
+        anim.SetBool("Right", false);
+        anim.SetBool("Left", false);
+        anim.SetBool("Down", false);
     }
 
     public int Direction()
     {
         direction = (int)Random.Range(1, 4);
 
-        if (direction == 3)
+        if (direction == 3 && direction != 2 && direction != 1)
         {
             Right();
             intime = false;
         }
-        if (direction == 2)
+        if (direction == 2 && direction != 3 && direction != 1)
         {
             Down();
             intime = false;
         }
-        if (direction == 1)
+        if (direction == 1 && direction != 3 && direction != 2)
         {
             Left();
             intime = false;
@@ -116,7 +126,7 @@ public class Directioncontroler : MonoBehaviour
         }
         if (timereference == 1.0f)
         {
-            DefaultSing.SetActive(true);
+            //DefaultDirectionSing();
         }
     }
 

@@ -5,10 +5,6 @@ using UnityEngine;
 public class InativeInTime : MonoBehaviour
 {
     [SerializeField]private float time;
-    private void Start()
-    {
-        time = 0.3f;
-    }
     private void OnEnable()
     {
         StartCoroutine(DisablenTime());
