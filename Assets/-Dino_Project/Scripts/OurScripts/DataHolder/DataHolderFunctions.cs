@@ -51,6 +51,24 @@ public class DataHolderFunctions : MonoBehaviour
             DT.vitamina -= 1;
             DT.fibra -= 1;
         }
+        if(DT.aerobicoThisDay == 0)
+        {
+            DT.resistencia -= 1;
+            DT.noAerobicBefore = true;
+        }
+        else
+        {
+            DT.noAerobicBefore = false;
+        }
+        if(DT.forcaThisDay == 0)
+        {
+            DT.forca -= 1;
+            DT.noStrenghBefore = true;
+        }
+        else
+        {
+            DT.noStrenghBefore = false;
+        }
         DT.grocerThisDay = 0;
         DT.cookingThisDay = 0;
         DT.aerobicoThisDay = 0;
@@ -58,6 +76,15 @@ public class DataHolderFunctions : MonoBehaviour
         DT.funThisDay = 0;
         DT.actions = 4;
         DT.dayOfTheWeek++;
+
+        if(DT.proteina < 0){DT.proteina = 0;}
+        if(DT.carboidrato < 0){DT.carboidrato = 0;}
+        if(DT.lipidio < 0){DT.lipidio = 0;}
+        if(DT.mineral < 0){DT.mineral = 0;}
+        if(DT.vitamina < 0){DT.vitamina = 0;}
+        if(DT.fibra < 0){DT.fibra = 0;}
+        if(DT.forca < 0){DT.forca = 0;}
+        if(DT.resistencia < 0){DT.resistencia = 0;}
     }
     public void MainMenuSliderAdjustments()
     {
