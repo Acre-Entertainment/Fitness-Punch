@@ -30,9 +30,14 @@ public class DataHolder : MonoBehaviour
     [HideInInspector] public int mineralBefore;
     [HideInInspector] public int vitaminaBefore;
     [HideInInspector] public int fibraBefore;
+    [HideInInspector] public int disposicaoBefore;
     [HideInInspector] public bool noExerciceBefore;
     [HideInInspector] public bool noAerobicBefore;
     [HideInInspector] public bool noStrenghBefore;
+    [HideInInspector] public bool proteinaBonus;
+    [HideInInspector] public bool proteinaMalus;
+    [HideInInspector] public bool carboidratoBonus;
+    [HideInInspector] public bool carboidratoMalus;
 
     public int disposicao;
 

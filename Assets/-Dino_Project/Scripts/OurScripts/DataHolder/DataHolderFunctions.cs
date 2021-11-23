@@ -25,12 +25,53 @@ public class DataHolderFunctions : MonoBehaviour
     }
     public void endTheDay()
     {
+        //salva os valores do dia anterior
         DT.proteinaBefore = DT.proteina;
         DT.carboidratoBefore = DT.carboidrato;
         DT.lipidioBefore = DT.lipidio;
         DT.mineralBefore = DT.mineral;
         DT.vitaminaBefore = DT.vitamina;
         DT.fibraBefore = DT.fibra;
+        DT.disposicaoBefore = DT.disposicao;
+        //cheka se ha bonus ou debuff de disposição
+        if(DT.proteina == 7 || DT.proteina == 8)
+        {
+            DT.disposicao += 1;
+            DT.proteinaBonus = true;
+        }
+        else
+        {
+            DT.proteinaBonus = false;
+        }
+        if(DT.proteina == 0 || DT.proteina == 10)
+        {
+            DT.disposicao -= 1;
+            DT.proteinaMalus = true;
+        }
+        else
+        {
+            DT.proteinaMalus = false;
+        }
+        if(DT.carboidrato == 7 || DT.carboidrato == 8)
+        {
+            DT.disposicao += 1;
+            DT.carboidratoBonus = true;
+        }
+        else
+        {
+            DT.carboidratoBonus = false;
+        }
+        if(DT.carboidrato == 0 || DT.carboidrato == 10)
+        {
+            DT.disposicao -= 1;
+            DT.carboidratoBonus = true;
+        }
+        else
+        {
+            DT.carboidratoMalus = false;
+        }
+        
+        //diminui os atributos
         if(DT.forcaThisDay == 0 && DT.aerobicoThisDay == 0)
         {
             DT.noExerciceBefore = true;
@@ -51,6 +92,7 @@ public class DataHolderFunctions : MonoBehaviour
             DT.vitamina -= 1;
             DT.fibra -= 1;
         }
+        //diminui força ou resistencia se n fez exercicio
         if(DT.aerobicoThisDay == 0)
         {
             DT.resistencia -= 1;
@@ -69,6 +111,7 @@ public class DataHolderFunctions : MonoBehaviour
         {
             DT.noStrenghBefore = false;
         }
+        //reseta os valores
         DT.grocerThisDay = 0;
         DT.cookingThisDay = 0;
         DT.aerobicoThisDay = 0;
@@ -85,6 +128,8 @@ public class DataHolderFunctions : MonoBehaviour
         if(DT.fibra < 0){DT.fibra = 0;}
         if(DT.forca < 0){DT.forca = 0;}
         if(DT.resistencia < 0){DT.resistencia = 0;}
+        if(DT.disposicao < 0){DT.disposicao = 0;}
+        if(DT.disposicao > 10){DT.disposicao = 10;}
     }
     public void MainMenuSliderAdjustments()
     {
