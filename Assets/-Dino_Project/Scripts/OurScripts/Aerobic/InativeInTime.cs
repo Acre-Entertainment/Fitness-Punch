@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InativeInTime : MonoBehaviour
+public class InativeInTIme : MonoBehaviour
 {
-    [SerializeField]private float time;
+    [SerializeField] GameObject obj;
     private void OnEnable()
     {
-        StartCoroutine(DisablenTime());
+        StartCoroutine(Inative());
     }
-    private IEnumerator DisablenTime()
+    private IEnumerator Inative()
     {
-        yield return new WaitForSeconds(time);
-        gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.34f);
+        obj.SetActive(false);
     }
 }

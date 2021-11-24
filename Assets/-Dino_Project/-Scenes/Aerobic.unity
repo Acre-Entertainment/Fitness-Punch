@@ -317,7 +317,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d770b6fc92cc542b8fdc0b81980726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Dc: {fileID: 1902897771}
   impact: {fileID: 290984988}
+  anim: {fileID: 530154887}
 --- !u!1 &110367317
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,7 +553,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d770b6fc92cc542b8fdc0b81980726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Dc: {fileID: 1902897771}
   impact: {fileID: 290984988}
+  anim: {fileID: 530154887}
 --- !u!1 &188043075
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,7 +848,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &447343880
 MonoBehaviour:
@@ -1157,7 +1161,7 @@ RectTransform:
   - {fileID: 2586017952293244649}
   - {fileID: 496665559}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1259,7 +1263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72f7f4ec4a721b948b480145bea17af5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0.8
+  obj: {fileID: 942643141}
 --- !u!1 &1140999266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1755,7 +1759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72f7f4ec4a721b948b480145bea17af5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0.8
+  obj: {fileID: 1355404664}
 --- !u!1 &1426004894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1980,8 +1984,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1640877625}
   - component: {fileID: 1640877626}
-  - component: {fileID: 1640877628}
   - component: {fileID: 1640877627}
+  - component: {fileID: 1640877628}
   m_Layer: 0
   m_Name: PunchingBag2
   m_TagString: Untagged
@@ -2082,7 +2086,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d770b6fc92cc542b8fdc0b81980726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Dc: {fileID: 1902897771}
   impact: {fileID: 290984988}
+  anim: {fileID: 530154887}
 --- !u!1 &1681510199
 GameObject:
   m_ObjectHideFlags: 0
@@ -2393,7 +2399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72f7f4ec4a721b948b480145bea17af5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0.8
+  obj: {fileID: 1782210603}
 --- !u!114 &1902897771 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6445369164993760338, guid: 3239c1e365d38ce45af80f77139f9b1d, type: 3}
@@ -2469,7 +2475,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1204492857074592039
 PrefabInstance:
@@ -2520,7 +2526,7 @@ PrefabInstance:
       objectReference: {fileID: 496665560}
     - target: {fileID: 7024689221298231479, guid: 3239c1e365d38ce45af80f77139f9b1d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7024689221298231479, guid: 3239c1e365d38ce45af80f77139f9b1d, type: 3}
       propertyPath: m_LocalPosition.x
