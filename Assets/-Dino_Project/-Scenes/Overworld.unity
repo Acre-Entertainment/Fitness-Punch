@@ -148,7 +148,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.3206215, y: -0.22138119}
@@ -229,7 +229,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.046235085, y: -0.15719843}
@@ -305,7 +305,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0005803108, y: -0.09294319}
@@ -336,7 +336,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.17977667, y: 0.0074911118}
@@ -372,7 +372,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.010603905, y: -0.09543002}
@@ -408,7 +408,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.06755257, y: -0.16984463}
@@ -531,7 +531,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0018692017, y: -0.08650017}
@@ -1082,7 +1082,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.19457436}
@@ -1134,7 +1134,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.12376881}
@@ -1409,7 +1409,7 @@ SpriteRenderer:
   m_Size: {x: 0.36, y: 0.37}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1658013456 stripped
@@ -1476,7 +1476,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01484251, y: -0.11874199}
@@ -1556,7 +1556,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0018692017, y: -0.08650017}
@@ -1587,7 +1587,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0049905777, y: -0.15967107}
@@ -1758,15 +1758,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 769834752965472878, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -330
+      value: -330.00003
       objectReference: {fileID: 0}
     - target: {fileID: 769834753470853706, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -475
+      value: -475.00006
       objectReference: {fileID: 0}
     - target: {fileID: 769834753484076561, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -475
+      value: -475.00006
       objectReference: {fileID: 0}
     - target: {fileID: 769834754376812486, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2403,6 +2403,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 204586371}
     m_Modifications:
+    - target: {fileID: 351040179020073430, guid: 6ffab35d49be5754eb29bd598cbba5dc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.351
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347317102930269353, guid: 6ffab35d49be5754eb29bd598cbba5dc, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 29ee0499f01476f499b6ac6fd61501a7, type: 2}
     - target: {fileID: 2066817880588368882, guid: 6ffab35d49be5754eb29bd598cbba5dc, type: 3}
       propertyPath: m_Name
       value: "Cidad\xE3os"
@@ -2414,6 +2422,10 @@ PrefabInstance:
     - target: {fileID: 4564844983936944161, guid: 6ffab35d49be5754eb29bd598cbba5dc, type: 3}
       propertyPath: m_LocalPosition.y
       value: -92.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473393431173624081, guid: 6ffab35d49be5754eb29bd598cbba5dc, type: 3}
+      propertyPath: m_Name
+      value: Garoto 1
       objectReference: {fileID: 0}
     - target: {fileID: 7792213070803703744, guid: 6ffab35d49be5754eb29bd598cbba5dc, type: 3}
       propertyPath: m_RootOrder
