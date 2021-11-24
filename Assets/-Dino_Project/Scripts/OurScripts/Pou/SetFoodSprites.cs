@@ -8,6 +8,8 @@ public class SetFoodSprites : MonoBehaviour
     public SpriteRenderer[] lowFoods;
     public SpriteRenderer[] mediumFoods;
     public SpriteRenderer[] highFoods;
+    public SpriteRenderer[] rottenFoods;
+    public SpriteRenderer[] backGlow;
     [SerializeField] private Sprite[] foodSprite;
     private DataHolder dataHolder;
     private int currentFoodSort;
@@ -29,6 +31,14 @@ public class SetFoodSprites : MonoBehaviour
         foreach(SpriteRenderer spriteRenderer in highFoods)
         {
             spriteRenderer.sprite = foodSprite[currentFoodSort];
+        }
+        foreach (SpriteRenderer spriteRenderer in backGlow)
+        {
+            spriteRenderer.sprite = foodSprite[currentFoodSort + 15];
+        }
+        foreach (SpriteRenderer spriteRenderer in rottenFoods)
+        {
+            spriteRenderer.sprite = foodSprite[currentFoodSort + 30];
         }
     }
 

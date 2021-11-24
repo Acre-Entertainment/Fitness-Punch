@@ -12,6 +12,7 @@ public class PouGameMaster : MonoBehaviour
     [SerializeField] private int lowQualityPointWorth;
     [SerializeField] private int mediumQualityPointWorth;
     [SerializeField] private int highQualityPointWorth;
+    [SerializeField] private int rottenQualityPointWorth;
     [SerializeField] private int pointsNeededForLowReward;
     [SerializeField] private int pointsNeededForMediumReward;
     [SerializeField] private int pointsNeededForHighReward;
@@ -20,6 +21,7 @@ public class PouGameMaster : MonoBehaviour
     public int lowQualityFoodCatched;
     public int mediumQualityFoodCatched;
     public int highQualityFoodCatched;
+    public int rottenFoodCatched;
 
     private int _currentTurnResult;
 
@@ -74,8 +76,8 @@ public class PouGameMaster : MonoBehaviour
 
         if(gameRunning == true)
         {
-            _currentTurnResult = lowQualityFoodCatched * lowQualityPointWorth + mediumQualityFoodCatched * mediumQualityPointWorth + highQualityFoodCatched * highQualityPointWorth;
-            _objectQuantity = lowQualityFoodCatched + mediumQualityFoodCatched + highQualityFoodCatched;
+            _currentTurnResult = lowQualityFoodCatched * lowQualityPointWorth + mediumQualityFoodCatched * mediumQualityPointWorth + highQualityFoodCatched * highQualityPointWorth + rottenFoodCatched * -rottenQualityPointWorth;
+            _objectQuantity = lowQualityFoodCatched + mediumQualityFoodCatched + highQualityFoodCatched + rottenFoodCatched;
             switch (turn)
             {
                 case 1:
