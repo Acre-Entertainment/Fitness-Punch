@@ -8,7 +8,6 @@ public class DataHolder : MonoBehaviour
 //Guarda todas as informações do jogo
 //não coloque tag no objeto desse script
 {
-    private GameObject _dt;
     //Coloque as informações que voce quer salvar abaixo como um valor publico.
     public bool primeiraVezAbrindoOJogo = true;
     public bool saiuDoApartamento;
@@ -59,21 +58,6 @@ public class DataHolder : MonoBehaviour
     public int aerobicoThisDay;
     public int forcaThisDay;
     public int funThisDay;
-
-    void Awake() //Garante que ha apenas um DataHolder por cena e que ele não e destroido ao mudar de cena.
-    {
-        _dt = GameObject.FindWithTag("DataHolder");
-        if(_dt == null)
-        {
-            transform.gameObject.tag = "DataHolder";
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        };
-    }
-
     public void organizeInventory()
     {
         for(int i = 0; i < 10; i++)
