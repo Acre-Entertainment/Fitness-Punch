@@ -40,6 +40,7 @@ public class GameControl : MonoBehaviour {
 	float nextScoreIncrease = 0f;
 
 	private CharacterJump cj;
+	private float gameTime;
 
 	// Use this for initialization
 	void Start () {
@@ -61,8 +62,12 @@ public class GameControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (gameStopped == false && gamePaused == false)
+		if (gameStopped == false)
 			IncreaseYourScore ();
+		if(gamePaused == false)
+		{
+			gameTime = gameTime + 1 * Time.deltaTime;
+		}
 
 		highScoreText.text = "Best Time: " + highScore;
 		yourScoreText.text = "Your Time: " + yourScore;
@@ -102,9 +107,9 @@ public class GameControl : MonoBehaviour {
 
 	void IncreaseYourScore()
 	{
-		if (Time.time > nextScoreIncrease) {
+		if (gameTime > nextScoreIncrease) {
 			yourScore += 1;
-			nextScoreIncrease = Time.time + 1;
+			nextScoreIncrease = gameTime + 1;
 		}
 	}
 
