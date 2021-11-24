@@ -30,7 +30,8 @@ public class Directioncontroler : MonoBehaviour
         TimeControler();
         if (intime == true)
         {
-            Direction();
+            //Direction();
+            //O Direction tava sendo chamado duas vezes
             StartCoroutine(DisableInTime());
             controlerNumber = Direction();
             GameOver();
@@ -93,7 +94,6 @@ public class Directioncontroler : MonoBehaviour
     public int Direction()
     {
         direction = (int)Random.Range(1, 4);
-
         if (direction == 3 && direction != 2 && direction != 1)
         {
             Right();
