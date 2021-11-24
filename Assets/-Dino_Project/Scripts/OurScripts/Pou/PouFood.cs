@@ -45,6 +45,8 @@ public class PouFood : MonoBehaviour
             PGM = GameObject.FindWithTag("GameMaster").GetComponent<PouGameMaster>();
             switch(foodQuality)
             {
+                case 0:
+                    
                 case 1:
                     PGM.lowQualityFoodCatched++;
                     break;
