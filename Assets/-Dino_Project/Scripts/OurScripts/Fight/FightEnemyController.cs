@@ -70,7 +70,7 @@ public class FightEnemyController : MonoBehaviour
             return;
             //acaba o AI do enemigo quando acaba a luta
         }
-        randy = Random.Range(1, 16);
+        randy = Random.Range(1, 13);
         switch(randy)
         {
             case 1:
@@ -109,8 +109,6 @@ public class FightEnemyController : MonoBehaviour
             case 12:
                 StartCoroutine(Block());
                 break;
-            
-
         }
     }
     //enemy moves-------------------------------------------------------------------------------
