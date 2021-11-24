@@ -6,14 +6,15 @@ using UnityEngine.UI;
 public class Directioncontroler : MonoBehaviour
 {
     [SerializeField] private Text feedback, scoreUIcanvas;
+    private string PerformaceChecker;
     [SerializeField] private SpriteRenderer activator;
     private bool intime = false;
     private float timeControler = 2f;
     [SerializeField] private float timereference, ITime, gameSpeed;
-    [SerializeField] private int life, finalScore, score, direction, easy, hard, expert;
-    private int scoreUI;
-    private int controlerNumber;
-    [SerializeField] private GameObject RightS, LeftS, DownS, PunchBagD, PunchBagE, PunchBagF;
+    [SerializeField] private int finalScore, score, direction, easy, hard, expert;
+    [SerializeField] public int life;
+    private int scoreUI, controlerNumber;
+    [SerializeField] private GameObject RightS, LeftS, DownS, PunchBagD, PunchBagE, PunchBagF, EndMenu;
     private DataHolder dt;
     [SerializeField] private Animator anim;
 
@@ -30,8 +31,6 @@ public class Directioncontroler : MonoBehaviour
         TimeControler();
         if (intime == true)
         {
-            //Direction();
-            //O Direction tava sendo chamado duas vezes
             StartCoroutine(DisableInTime());
             controlerNumber = Direction();
             GameOver();
@@ -39,6 +38,7 @@ public class Directioncontroler : MonoBehaviour
             DefaultPunchingBag();
         }
     }
+
     private IEnumerator DisableInTime()
     {
         ITime = timereference;
@@ -124,22 +124,12 @@ public class Directioncontroler : MonoBehaviour
             timeControler = timereference;
             intime = true;
         }
-        if (timereference == 1.0f)
-        {
-            //DefaultDirectionSing();
-        }
     }
 
     private void TimeSpeedUp()
     {
         timereference = timereference -= timereference *= gameSpeed;
     }
-
-    public void PlayerLife()
-    {        
-        life--;
-    }
-
     public void DirSelectRigth()
     {
         if (controlerNumber == 3)
@@ -149,7 +139,7 @@ public class Directioncontroler : MonoBehaviour
             scoreUI++;
             anim.SetBool("Right", true);
         }
-        else { feedback.text = "OOOOOH!"; PlayerLife(); }
+        else { PlayerLife(); }
         return;
     }
     public void DirSelectDown()
@@ -161,7 +151,7 @@ public class Directioncontroler : MonoBehaviour
             scoreUI++;
             anim.SetBool("Down", true);
         }
-        else { feedback.text = "OOOOOH!"; PlayerLife(); }
+        else { PlayerLife(); }
         return;
     }
     public void DirSelectLeft()
@@ -173,7 +163,7 @@ public class Directioncontroler : MonoBehaviour
             scoreUI++;
             anim.SetBool("Left", true);
         }
-        else { feedback.text = "OOOOOH!"; PlayerLife(); }
+        else { PlayerLife(); }
         return;
     }
 
@@ -183,9 +173,14 @@ public class Directioncontroler : MonoBehaviour
         {
             ScoreChecker();
             dt.resistencia += finalScore;
-            feedback.text = "GAME OVER";
-            gameObject.SetActive(false);
+            feedback.text = "Pontuação final: " + PerformaceChecker;
+            EndMenu.SetActive(true);
+            gameObject.SetActive(false);       
         }
+    }
+    public void PlayerLife()
+    {
+        life--;
     }
 
     private int ScoreChecker()
@@ -193,15 +188,18 @@ public class Directioncontroler : MonoBehaviour
         if (score >= easy && score < hard)
         {
             finalScore = 1;
+            PerformaceChecker = "Normal";
         }
         if (score >= hard && score < expert)
         {
             finalScore = 2;
+            PerformaceChecker = "Expert";
         }
         if (score >= expert)
         {
             finalScore = 3;
+            PerformaceChecker = "ProPlayer";
         }
         return finalScore;
-    }    
+    }
 }
