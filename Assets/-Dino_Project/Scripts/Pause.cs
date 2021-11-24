@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pause : MonoBehaviour
 {
     bool isPaused = false;
+    public GameControl gameControl;
 
     public void pauseGame()
     {
@@ -12,9 +13,11 @@ public class Pause : MonoBehaviour
         {
             Time.timeScale = 1;
             isPaused = false;
+            gameControl.gamePaused = false;
         } else {
             Time.timeScale = 0;
             isPaused = true;
+            gameControl.gamePaused = true;
         }
     }
 }

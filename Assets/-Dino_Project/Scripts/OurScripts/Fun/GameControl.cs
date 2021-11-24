@@ -34,6 +34,8 @@ public class GameControl : MonoBehaviour {
 	int highScore = 0, yourScore = 0;
 
 	public static bool gameStopped;
+	[HideInInspector] public bool gamePaused;
+
 
 	float nextScoreIncrease = 0f;
 
@@ -53,13 +55,13 @@ public class GameControl : MonoBehaviour {
 		Time.timeScale = 1f;
 		highScore = PlayerPrefs.GetInt ("Best Time");
 		nextSpawn = Time.time + spawnRate;
-		nextBoost = Time.unscaledTime + timeToBoost;
+		nextBoost = Time.time + timeToBoost;
 		cj = GameObject.FindGameObjectWithTag("PlayerFun").GetComponent<CharacterJump>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (!gameStopped)
+		if (gameStopped == false && gamePaused == false)
 			IncreaseYourScore ();
 
 		highScoreText.text = "Best Time: " + highScore;
@@ -68,7 +70,7 @@ public class GameControl : MonoBehaviour {
 		if (Time.time > nextSpawn)
 			SpawnObstacle ();
 
-		if (Time.unscaledTime > nextBoost && !gameStopped)
+		if (Time.time > nextBoost && !gameStopped)
 			BoostTime ();
 	}
 
@@ -94,15 +96,15 @@ public class GameControl : MonoBehaviour {
 
 	void BoostTime()
 	{
-		nextBoost = Time.unscaledTime + timeToBoost;
+		nextBoost = Time.time + timeToBoost;
 		Time.timeScale += 0.25f;
 	}
 
 	void IncreaseYourScore()
 	{
-		if (Time.unscaledTime > nextScoreIncrease) {
+		if (Time.time > nextScoreIncrease) {
 			yourScore += 1;
-			nextScoreIncrease = Time.unscaledTime + 1;
+			nextScoreIncrease = Time.time + 1;
 		}
 	}
 
