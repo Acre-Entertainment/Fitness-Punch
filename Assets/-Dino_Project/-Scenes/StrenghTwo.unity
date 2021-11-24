@@ -2153,6 +2153,7 @@ MonoBehaviour:
   saiuDaLoja: 0
   saiuDoGrocer: 0
   dayOfTheWeek: 0
+  dayOfEverything: 0
   actions: 0
   money: 0
   proteina: 0
@@ -2161,6 +2162,22 @@ MonoBehaviour:
   mineral: 0
   vitamina: 0
   fibra: 0
+  proteinaBefore: 0
+  carboidratoBefore: 0
+  lipidioBefore: 0
+  mineralBefore: 0
+  vitaminaBefore: 0
+  fibraBefore: 0
+  disposicaoBefore: 0
+  noExerciceBefore: 0
+  noAerobicBefore: 0
+  noStrenghBefore: 0
+  proteinaBonus: 0
+  proteinaMalus: 0
+  carboidratoBonus: 0
+  carboidratoMalus: 0
+  strenghBeforeFight: 0
+  resistenciaBeforeFight: 0
   disposicao: 0
   forca: 0
   resistencia: 0
@@ -2171,6 +2188,7 @@ MonoBehaviour:
   cookingThisDay: 0
   aerobicoThisDay: 0
   forcaThisDay: 0
+  funThisDay: 0
 --- !u!4 &1055938127
 Transform:
   m_ObjectHideFlags: 0
@@ -2518,7 +2536,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -600}
+  m_AnchoredPosition: {x: 0, y: -246}
   m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1326579281
