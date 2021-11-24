@@ -1615,6 +1615,7 @@ GameObject:
   - component: {fileID: 2147002175}
   - component: {fileID: 2147002177}
   - component: {fileID: 2147002178}
+  - component: {fileID: 2147002179}
   m_Layer: 0
   m_Name: OnLoadScripts
   m_TagString: Untagged
@@ -1680,6 +1681,18 @@ MonoBehaviour:
   fadeInText: {fileID: 1124694834275800875}
   fadeInObject: {fileID: 1793251896}
   fadeOutText: {fileID: 1124694834275800874}
+--- !u!114 &2147002179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147002174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82a3e4f45b4b7ed48ae82a0ad6ac8a54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &660690971716695120
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class DataHolder : MonoBehaviour
 //não coloque tag no objeto desse script
 {
     //Coloque as informações que voce quer salvar abaixo como um valor publico.
-    public bool primeiraVezAbrindoOJogo = true;
+    public bool primeiraVezAbrindoOJogo;
     public bool saiuDoApartamento;
     public bool saiuDaAcademia;
     public bool saiuDaLoja;
@@ -24,6 +24,21 @@ public class DataHolder : MonoBehaviour
     public int mineral;
     public int vitamina;
     public int fibra;
+    public int disposicao;
+
+    public int forca;
+    public int resistencia;
+
+    public int[] inventorySlots = new int[10];
+
+    //Grocer Minigame
+    public int[] selectedGrocerFood = new int[4];
+    public int[] selectedCookingFood = new int[3];
+    public int grocerThisDay;
+    public int cookingThisDay;
+    public int aerobicoThisDay;
+    public int forcaThisDay;
+    public int funThisDay;
     [HideInInspector] public int proteinaBefore;
     [HideInInspector] public int carboidratoBefore;
     [HideInInspector] public int lipidioBefore;
@@ -40,24 +55,6 @@ public class DataHolder : MonoBehaviour
     [HideInInspector] public bool carboidratoMalus;
     [HideInInspector] public int strenghBeforeFight;
     [HideInInspector] public int resistenciaBeforeFight;
-
-    
-
-    public int disposicao;
-
-    public int forca;
-    public int resistencia;
-
-    public int[] inventorySlots = new int[10];
-
-    //Grocer Minigame
-    public int[] selectedGrocerFood = new int[4];
-    public int[] selectedCookingFood = new int[3];
-    public int grocerThisDay;
-    public int cookingThisDay;
-    public int aerobicoThisDay;
-    public int forcaThisDay;
-    public int funThisDay;
     public void organizeInventory()
     {
         for(int i = 0; i < 10; i++)

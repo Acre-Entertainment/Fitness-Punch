@@ -1748,6 +1748,17 @@ MonoBehaviour:
   mineral: 5
   vitamina: 5
   fibra: 5
+  disposicao: 6
+  forca: 5
+  resistencia: 5
+  inventorySlots: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  selectedGrocerFood: 00000000000000000000000000000000
+  selectedCookingFood: 000000000000000000000000
+  grocerThisDay: 0
+  cookingThisDay: 0
+  aerobicoThisDay: 0
+  forcaThisDay: 0
+  funThisDay: 0
   proteinaBefore: 0
   carboidratoBefore: 0
   lipidioBefore: 0
@@ -1764,17 +1775,6 @@ MonoBehaviour:
   carboidratoMalus: 0
   strenghBeforeFight: 0
   resistenciaBeforeFight: 0
-  disposicao: 6
-  forca: 5
-  resistencia: 5
-  inventorySlots: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  selectedGrocerFood: 00000000000000000000000000000000
-  selectedCookingFood: 000000000000000000000000
-  grocerThisDay: 0
-  cookingThisDay: 0
-  aerobicoThisDay: 0
-  forcaThisDay: 0
-  funThisDay: 0
 --- !u!4 &757464108
 Transform:
   m_ObjectHideFlags: 0
@@ -2502,6 +2502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1196453808}
   - component: {fileID: 1196453807}
+  - component: {fileID: 1196453809}
   m_Layer: 0
   m_Name: DataHolderFunctions
   m_TagString: Untagged
@@ -2545,6 +2546,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1196453809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196453806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342b9080bdd59a84ebe32ba143fc8dc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1197489645
 GameObject:
   m_ObjectHideFlags: 0

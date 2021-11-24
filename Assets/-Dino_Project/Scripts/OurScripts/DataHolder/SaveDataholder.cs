@@ -1,18 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class SaveDataholder : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private DataHolder dataHolder;
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
+        BinaryFormatter binaryFormatter = new BinaryFormatter();
+        string savePath = Application.persistentDataPath + "/FitnessPunch.fit";
+        FileStream fileStream = new FileStream(savePath, FileMode.Create);
+        binaryFormatter.Serialize(fileStream, dataHolder);
+        fileStream.Close();
     }
 }
