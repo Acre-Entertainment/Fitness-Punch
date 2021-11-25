@@ -794,9 +794,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 465822216}
     - target: {fileID: 4488856838764121868, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4488856838764121868, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4488856838764121868, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 9107976117495650854}
+    - target: {fileID: 4488856838764121868, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1099444033}
+    - target: {fileID: 4488856838764121868, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4488856838764121868, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: normalSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 4488856838764121868, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Pause, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4488856838764121868, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4488856838931026244, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_Pivot.x
       value: 0

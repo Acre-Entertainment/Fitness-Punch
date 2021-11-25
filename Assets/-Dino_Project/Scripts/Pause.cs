@@ -20,4 +20,8 @@ public class Pause : MonoBehaviour
             gameControl.gamePaused = true;
         }
     }
+    public void normalSpeed()
+    {
+        Time.timeScale = 1;
+    }
 }
