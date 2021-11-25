@@ -11,7 +11,7 @@ public class Pause : MonoBehaviour
     {
         if (isPaused)
         {
-            Time.timeScale = 1;
+            Time.timeScale = 1 + gameControl.howManyTimesHasTimeBeenBosted * 0.25f;
             isPaused = false;
             gameControl.gamePaused = false;
         } else {

@@ -32,6 +32,7 @@ public class GameControl : MonoBehaviour {
 	float nextBoost;
 
 	int highScore = 0, yourScore = 0;
+	[SerializeField] private int scoreNeededForExtraDisposition;
 
 	public static bool gameStopped;
 	[HideInInspector] public bool gamePaused;
@@ -41,6 +42,9 @@ public class GameControl : MonoBehaviour {
 
 	private CharacterJump cj;
 	private float gameTime;
+	[HideInInspector] public int howManyTimesHasTimeBeenBosted;
+	[SerializeField] private GameObject pauseObject;
+	private DataHolder dataHolder;
 
 	// Use this for initialization
 	void Start () {
@@ -89,6 +93,18 @@ public class GameControl : MonoBehaviour {
 			Time.timeScale = 0;
 			gameStopped = true;
 			restartButton.SetActive (true);
+			pauseObject.SetActive(false);
+
+			dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
+			dataHolder.disposicao++;
+			if(yourScore >= scoreNeededForExtraDisposition)
+			{
+				dataHolder.disposicao++;
+			}
+			if(dataHolder.disposicao > 10)
+			{
+				dataHolder.disposicao = 10;
+			}
 		}
 	}
 
@@ -101,6 +117,7 @@ public class GameControl : MonoBehaviour {
 
 	void BoostTime()
 	{
+		howManyTimesHasTimeBeenBosted++;
 		nextBoost = Time.time + timeToBoost;
 		Time.timeScale += 0.25f;
 	}

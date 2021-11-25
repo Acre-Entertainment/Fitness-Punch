@@ -387,6 +387,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1099444032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1099444034}
+  - component: {fileID: 1099444033}
+  m_Layer: 0
+  m_Name: PauseObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1099444033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099444032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65155aa11f1197b4c882a765d20ecea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameControl: {fileID: 0}
+--- !u!4 &1099444034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099444032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1105886659 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4488856840509783765, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
@@ -678,6 +722,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7763583255310202993, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
   m_PrefabInstance: {fileID: 4488856839462617878}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2058064709 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 992668717, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+  m_PrefabInstance: {fileID: 4488856839462617878}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2133792177 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4488856839885133479, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
@@ -699,6 +748,18 @@ PrefabInstance:
     - target: {fileID: 755391600, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -956
+      objectReference: {fileID: 0}
+    - target: {fileID: 992668717, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 992668720, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1099444033}
+    - target: {fileID: 992668720, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: pauseGame
       objectReference: {fileID: 0}
     - target: {fileID: 1576278195, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_AnchorMax.x
@@ -828,7 +889,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7763583255310202993, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 429675234, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
 --- !u!1001 &5026655669780833089
 PrefabInstance:
@@ -1415,6 +1481,10 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 1574424916}
+    - target: {fileID: 9107976117145709641, guid: d315d97919741014bb57ab64957eb060, type: 3}
+      propertyPath: pauseObject
+      value: 
+      objectReference: {fileID: 2058064709}
     - target: {fileID: 9107976117145709641, guid: d315d97919741014bb57ab64957eb060, type: 3}
       propertyPath: timeToBoost
       value: 10
