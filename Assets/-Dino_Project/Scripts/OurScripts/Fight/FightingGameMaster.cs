@@ -17,6 +17,9 @@ public class FightingGameMaster : MonoBehaviour
     public int enemySuperAttackDamage;
     public UnityEvent onPlayerWin;
     public UnityEvent onEnemyWin;
+    public UnityEvent onPlayerDoesDamage;
+    public UnityEvent onEnemyDoesRegularDamage;
+    public UnityEvent onEnemyDoesBigDamage;
     public bool FightIsOver;
     void Start()
     {
@@ -27,6 +30,7 @@ public class FightingGameMaster : MonoBehaviour
     public void playerPunchDoesDamage()
     {
         enemyHealth = enemyHealth - playerDamage;
+        onPlayerDoesDamage.Invoke();
         if(enemyHealth <= 0)
         {
             PlayerVictory();
@@ -35,6 +39,7 @@ public class FightingGameMaster : MonoBehaviour
     public void enemyRegularPunchDoesDamage()
     {
         playerHealth = playerHealth - enemyRegularAttackDamage;
+        onEnemyDoesRegularDamage.Invoke();
         if(playerHealth <= 0)
         {
             EnemyVictory();
@@ -43,6 +48,7 @@ public class FightingGameMaster : MonoBehaviour
     public void enemySuperPunchDoesDamage()
     {
         playerHealth = playerHealth - enemySuperAttackDamage;
+        onEnemyDoesBigDamage.Invoke();
         if(playerHealth <= 0)
         {
             EnemyVictory();
