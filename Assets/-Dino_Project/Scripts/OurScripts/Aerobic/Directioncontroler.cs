@@ -7,7 +7,6 @@ public class Directioncontroler : MonoBehaviour
 {
     [SerializeField] private Text feedback, scoreUIcanvas;
     private string PerformaceChecker;
-    [SerializeField] private SpriteRenderer activator;
     private bool intime = false;
     private float timeControler = 2f;
     [SerializeField] private float timereference, ITime, gameSpeed;
@@ -20,7 +19,6 @@ public class Directioncontroler : MonoBehaviour
 
     private void Start()
     {
-        activator = GetComponent<SpriteRenderer>();
         DefaultDirectionSing();
         dt = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
         score = 0;
@@ -132,36 +130,36 @@ public class Directioncontroler : MonoBehaviour
     }
     public void DirSelectRigth()
     {
+        anim.SetBool("Right", true);
         if (controlerNumber == 3)
         {
             TimeSpeedUp();
             score++;
             scoreUI++;
-            anim.SetBool("Right", true);
         }
         else { PlayerLife(); }
         return;
     }
     public void DirSelectDown()
     {
+        anim.SetBool("Down", true);
         if (controlerNumber == 2)
         {
             TimeSpeedUp();
             score++;
             scoreUI++;
-            anim.SetBool("Down", true);
         }
         else { PlayerLife(); }
         return;
     }
     public void DirSelectLeft()
     {
+        anim.SetBool("Left", true);
         if (controlerNumber == 1)
         {
             TimeSpeedUp();
             score++;
             scoreUI++;
-            anim.SetBool("Left", true);
         }
         else { PlayerLife(); }
         return;

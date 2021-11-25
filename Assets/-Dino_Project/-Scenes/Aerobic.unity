@@ -2448,6 +2448,17 @@ MonoBehaviour:
   mineral: 0
   vitamina: 0
   fibra: 0
+  disposicao: 0
+  forca: 0
+  resistencia: 0
+  inventorySlots: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  selectedGrocerFood: 00000000000000000000000000000000
+  selectedCookingFood: 000000000000000000000000
+  grocerThisDay: 0
+  cookingThisDay: 0
+  aerobicoThisDay: 0
+  forcaThisDay: 0
+  funThisDay: 0
   proteinaBefore: 0
   carboidratoBefore: 0
   lipidioBefore: 0
@@ -2464,17 +2475,6 @@ MonoBehaviour:
   carboidratoMalus: 0
   strenghBeforeFight: 0
   resistenciaBeforeFight: 0
-  disposicao: 0
-  forca: 0
-  resistencia: 0
-  inventorySlots: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  selectedGrocerFood: 00000000000000000000000000000000
-  selectedCookingFood: 000000000000000000000000
-  grocerThisDay: 0
-  cookingThisDay: 0
-  aerobicoThisDay: 0
-  forcaThisDay: 0
-  funThisDay: 0
 --- !u!4 &1308319540
 Transform:
   m_ObjectHideFlags: 0
@@ -2511,7 +2511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1355404666}
   - component: {fileID: 1355404665}
-  - component: {fileID: 1355404668}
+  - component: {fileID: 1355404667}
   m_Layer: 0
   m_Name: Left
   m_TagString: Untagged
@@ -2584,7 +2584,7 @@ Transform:
   m_Father: {fileID: 188043076}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
---- !u!114 &1355404668
+--- !u!114 &1355404667
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

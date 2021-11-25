@@ -14,4 +14,5 @@ public class InativeInTIme : MonoBehaviour
         yield return new WaitForSeconds(0.34f);
         obj.SetActive(false);
     }
+
 }
