@@ -473,6 +473,17 @@ MonoBehaviour:
   mineral: 0
   vitamina: 0
   fibra: 0
+  disposicao: 0
+  forca: 0
+  resistencia: 0
+  inventorySlots: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  selectedGrocerFood: 00000000000000000000000000000000
+  selectedCookingFood: 000000000000000000000000
+  grocerThisDay: 0
+  cookingThisDay: 0
+  aerobicoThisDay: 0
+  forcaThisDay: 0
+  funThisDay: 0
   proteinaBefore: 0
   carboidratoBefore: 0
   lipidioBefore: 0
@@ -489,17 +500,6 @@ MonoBehaviour:
   carboidratoMalus: 0
   strenghBeforeFight: 0
   resistenciaBeforeFight: 0
-  disposicao: 0
-  forca: 0
-  resistencia: 0
-  inventorySlots: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  selectedGrocerFood: 00000000000000000000000000000000
-  selectedCookingFood: 000000000000000000000000
-  grocerThisDay: 0
-  cookingThisDay: 0
-  aerobicoThisDay: 0
-  forcaThisDay: 0
-  funThisDay: 0
 --- !u!4 &100154890
 Transform:
   m_ObjectHideFlags: 0
@@ -4222,6 +4222,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812216467}
   m_CullTransparentMesh: 1
+--- !u!1 &821649265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 821649266}
+  m_Layer: 0
+  m_Name: Feedback
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &821649266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821649265}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2035495457}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &826044946
 GameObject:
   m_ObjectHideFlags: 0
@@ -8399,9 +8429,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerBaseHealth: 5
   playerHealthPerAerobic: 0
-  playerBaseDamage: 0
+  playerBaseDamage: 1
   playerDamagePerStrengh: 0
-  enemyHealth: 5
+  enemyHealth: 1
   enemyRegularAttackDamage: 0
   enemySuperAttackDamage: 0
   onPlayerWin:
@@ -8786,7 +8816,7 @@ Canvas:
   m_GameObject: {fileID: 1527175238}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1712917049}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -11463,6 +11493,7 @@ Transform:
   m_Children:
   - {fileID: 1022508846}
   - {fileID: 249127430}
+  - {fileID: 821649266}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
