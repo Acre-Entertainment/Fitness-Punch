@@ -16,6 +16,7 @@ public class Directioncontroler : MonoBehaviour
     [SerializeField] private GameObject RightS, LeftS, DownS, PunchBagD, PunchBagE, PunchBagF, EndMenu;
     private DataHolder dt;
     [SerializeField] private Animator anim;
+    public GameObject controllerButtons;
 
     private void Start()
     {
@@ -108,6 +109,7 @@ public class Directioncontroler : MonoBehaviour
             intime = false;
         }
         scoreUIcanvas.text = "Score: " + scoreUI;
+        controllerButtons.SetActive(true);
         return direction;
     }
 
@@ -171,7 +173,7 @@ public class Directioncontroler : MonoBehaviour
         {
             ScoreChecker();
             dt.resistencia += finalScore;
-            feedback.text = "Pontuação final: " + PerformaceChecker;
+            feedback.text = "Pontuaï¿½ï¿½o final: " + PerformaceChecker;
             EndMenu.SetActive(true);
             gameObject.SetActive(false);       
         }
