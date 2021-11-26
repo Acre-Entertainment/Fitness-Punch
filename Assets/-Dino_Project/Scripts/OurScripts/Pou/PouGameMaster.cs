@@ -81,22 +81,22 @@ public class PouGameMaster : MonoBehaviour
             switch (turn)
             {
                 case 1:
-                    _round1Text.text = _currentTurnResult + " points";
+                    _round1Text.text = _currentTurnResult + " pontos";
                     break;
                 case 2:
-                    _round2Text.text = _currentTurnResult + " points";
+                    _round2Text.text = _currentTurnResult + " pontos";
                     break;
                 case 3:
-                    _round3Text.text = _currentTurnResult + " points";
+                    _round3Text.text = _currentTurnResult + " pontos";
                     break;
                 case 4:
-                    _round4Text.text = _currentTurnResult + " points";
+                    _round4Text.text = _currentTurnResult + " pontos";
                     break;
             }
             _roundedTime = (int) time; _roundedTurnDuration = (int) turnDuration;
-            _timeText.text = "Time: " + _roundedTime + "/" + _roundedTurnDuration;
+            _timeText.text = "Tempo: " + _roundedTime + "/" + _roundedTurnDuration;
             _itensText.text = "Itens: " + _objectQuantity +"/" + foodPerTurn;
-            _turnText.text = "Turn: " + turn;
+            _turnText.text = "Turno: " + turn;
         }
 
         if(time >= turnDuration || _objectQuantity >= foodPerTurn && gameRunning == true)
