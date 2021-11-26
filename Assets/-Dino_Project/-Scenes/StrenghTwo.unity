@@ -4235,8 +4235,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499694a3444f8ce4eb68d6ba18adde43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
-  sounds: []
+  musicMixerGroup: {fileID: 3636197073092816806, guid: 571e0eb5e4dcdbb4d8a79e1407baa8f0, type: 2}
+  soundEffectsMixerGroup: {fileID: -364875233008755489, guid: 571e0eb5e4dcdbb4d8a79e1407baa8f0, type: 2}
+  sounds:
+  - name: Theme
+    audioType: 1
+    audioClip: {fileID: 8300000, guid: c40f91600a62859469fc21aca2135484, type: 3}
+    volume: 0.24
+    pitch: 1
+    loop: 1
+    playOnAwake: 1
+    source: {fileID: 0}
 --- !u!4 &1662898744
 Transform:
   m_ObjectHideFlags: 0
