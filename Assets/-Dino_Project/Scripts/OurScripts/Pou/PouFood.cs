@@ -41,7 +41,9 @@ public class PouFood : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.tag == "Player")
-        {
+        { 
+            FindObjectOfType<AudioManager>().Play("Coleta");
+    
             PGM = GameObject.FindWithTag("GameMaster").GetComponent<PouGameMaster>();
             switch(foodQuality)
             {
@@ -78,4 +80,6 @@ public class PouFood : MonoBehaviour
         _isFalling = false;
         rb.velocity = new Vector2(0,0);
     }
+
+   
 }
