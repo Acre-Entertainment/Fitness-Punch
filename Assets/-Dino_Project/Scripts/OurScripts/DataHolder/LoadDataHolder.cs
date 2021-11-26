@@ -60,7 +60,8 @@ public class LoadDataHolder : MonoBehaviour
             gameDataHolder.carboidratoBonus = savedDataHolder.carboidratoBonus;
             gameDataHolder.carboidratoMalus = savedDataHolder.carboidratoMalus;
             gameDataHolder.strenghBeforeFight = savedDataHolder.strenghBeforeFight;
-            gameDataHolder.resistenciaBeforeFight = savedDataHolder.resistenciaBeforeFight;            
+            gameDataHolder.resistenciaBeforeFight = savedDataHolder.resistenciaBeforeFight;
+            gameDataHolder.funHighScore = savedDataHolder.funHighScore;
         }
     }
 }

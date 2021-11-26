@@ -48,7 +48,9 @@ public class GameControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
+		highScore = dataHolder.funHighScore; //pega o high score do dataholder
+
 		if (instance == null) 
 			instance = this;
 		else if (instance != this)
@@ -90,12 +92,13 @@ public class GameControl : MonoBehaviour {
 		{
 			if (yourScore > highScore)
 				PlayerPrefs.SetInt("highScore", yourScore);
+				dataHolder.funHighScore = yourScore; //coloka o novo highscore
+
 			Time.timeScale = 0;
 			gameStopped = true;
 			restartButton.SetActive (true);
 			pauseObject.SetActive(false);
 
-			dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
 			dataHolder.disposicao++;
 			if(yourScore >= scoreNeededForExtraDisposition)
 			{

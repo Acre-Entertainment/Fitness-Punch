@@ -271,7 +271,7 @@ public class FightEnemyController : MonoBehaviour
         if(isDodging == false && isBlocking == false && fightingGameMaster.FightIsOver == false)
         {
             fightingGameMaster.playerPunchDoesDamage();
-            overrideStaggerCombo++;
+            //overrideStaggerCombo++;
             //if(overrideStaggerCombo >= 3)
             //{
             //    overrideStaggerCombo = 0;
