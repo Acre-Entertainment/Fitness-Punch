@@ -73,6 +73,12 @@ public class AudioManager : MonoBehaviour
         s.source.Stop();
     }
 
+    public void UpdateMixerVolume()
+    {
+        musicMixerGroup.audioMixer.SetFloat("Music Volume", Mathf.Log10(AudioOptionsManager.musicVolume) * 20);
+        soundEffectsMixerGroup.audioMixer.SetFloat("Sound Effects Volume", Mathf.Log10(AudioOptionsManager.soundEffectsVolume)*20);
+    }
+
     //public void OnButtonPress()
     //{
         //if(muted == false)
