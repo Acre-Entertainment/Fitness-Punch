@@ -2592,8 +2592,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 43.76004}
-  m_SizeDelta: {x: 0, y: -192.44}
+  m_AnchoredPosition: {x: 13.68, y: 54.87}
+  m_SizeDelta: {x: -27.35, y: -170.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1197489647
 MonoBehaviour:
@@ -2615,9 +2615,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'NOMES
-
-'
+  m_text: "Camila Aparecida Tiemi Kobayashi \n21352666\n\nLian Henrique Maidana Linsmeyer
+    \n21478113\n\nAnthony Oliveira da Cruz \n21437277\n\nThiago Garulo Sartori \n21385548\n\nDiego
+    Machado Baccili \n21375346\n\nFelipe Molina Cyrineu \n21249424\n\nCedric Joinovici
+    Cadier \n20696269"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a324ee4325441b947a4eeda0de29f801, type: 2}
   m_sharedMaterial: {fileID: -6012019328254477163, guid: a324ee4325441b947a4eeda0de29f801, type: 2}
@@ -2644,14 +2645,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56
-  m_fontSizeBase: 56
+  m_fontSize: 34.2
+  m_fontSizeBase: 34.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: -5.9
@@ -3590,7 +3591,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1784112286
 RectTransform:
   m_ObjectHideFlags: 0
