@@ -288,6 +288,7 @@ MonoBehaviour:
   carboidratoMalus: 0
   strenghBeforeFight: 0
   resistenciaBeforeFight: 0
+  funHighScore: 0
 --- !u!4 &449862124
 Transform:
   m_ObjectHideFlags: 0
@@ -347,31 +348,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499694a3444f8ce4eb68d6ba18adde43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
+  musicMixerGroup: {fileID: 0}
+  soundEffectsMixerGroup: {fileID: 0}
   sounds:
   - name: ninjaJump
-    clip: {fileID: 8300000, guid: 456fad652efb61c45bcef4a910247cb8, type: 3}
-    volume: 0.201
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 456fad652efb61c45bcef4a910247cb8, type: 3}
+    volume: 0.152
     pitch: 1
     loop: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - name: ninjaFail
-    clip: {fileID: 8300000, guid: 1a958c9ae197f64418ce0c1b9331ebf1, type: 3}
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 1a958c9ae197f64418ce0c1b9331ebf1, type: 3}
     volume: 0.502
     pitch: 1
     loop: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - name: ninjaDamage
-    clip: {fileID: 8300000, guid: 7f918c474b16b3e458b007f33ed31bcb, type: 3}
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 7f918c474b16b3e458b007f33ed31bcb, type: 3}
     volume: 0.502
     pitch: 1
     loop: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - name: ninjaLand
-    clip: {fileID: 8300000, guid: f25d5982b8fecee408ac1128224daa20, type: 3}
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: f25d5982b8fecee408ac1128224daa20, type: 3}
     volume: 0.259
     pitch: 0.96
     loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Theme
+    audioType: 1
+    audioClip: {fileID: 8300000, guid: 17a3351b601ab0547bd4b12307a03b55, type: 3}
+    volume: 0.259
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
     source: {fileID: 0}
 --- !u!4 &614754690
 Transform:

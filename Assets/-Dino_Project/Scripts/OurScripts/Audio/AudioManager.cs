@@ -1,42 +1,59 @@
 using UnityEngine.Audio;
 using System;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioMixerGroup audioMixer;
+    [SerializeField] private AudioMixerGroup musicMixerGroup;
+    [SerializeField] private AudioMixerGroup soundEffectsMixerGroup;
+
     public Sound[] sounds;
 
     //[SerializeField] Image soundOnIcon;
     //[SerializeField] Image soundOffIcon;
-    private bool muted = false;
+    //private bool muted = false;
 
-    public static AudioManager instance;
+    public static AudioManager Instance;
 
 
     void Awake()
     {
+        Instance = this;
+
         foreach (Sound s in sounds)
         {
             s.source  = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
-
+            s.source.clip = s.audioClip;
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
 
-            s.source.outputAudioMixerGroup = audioMixer;
+            switch(s.audioType)
+            {
+                case Sound.AudioTypes.soundEffect:
+                    s.source.outputAudioMixerGroup = soundEffectsMixerGroup;
+                    break;
+
+                case Sound.AudioTypes.music:
+                    s.source.outputAudioMixerGroup = musicMixerGroup;
+                    break;
+            }
+
+            if (s.playOnAwake)
+                s.source.Play();
+
+            
         }
 
     }
 
-    void Start()
-    {
+    //void Start()
+    //{
         //UpdateButtonIcon();
-        AudioListener.pause = muted;
+        //AudioListener.pause = muted;
         //Play("Theme");
-    }
+    //}
 
     public void Play (string name)
     {

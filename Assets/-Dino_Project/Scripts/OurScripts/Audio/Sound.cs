@@ -6,7 +6,10 @@ public class Sound
 {
     public string name;
 
-    public AudioClip clip;
+    public enum AudioTypes { soundEffect, music}
+    public AudioTypes audioType;
+
+    public AudioClip audioClip;
 
     [Range(0f, 1f)]
     public float volume;
@@ -14,6 +17,8 @@ public class Sound
     public float pitch;
 
     public bool loop;
+
+    public bool playOnAwake;
 
     [HideInInspector]
     public AudioSource source;
