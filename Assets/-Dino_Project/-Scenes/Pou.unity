@@ -6200,6 +6200,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -52.31006
       objectReference: {fileID: 0}
+    - target: {fileID: 1456295595134610102, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1854240411542076192, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -6292,6 +6296,46 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 433943879}
+    - target: {fileID: 1854240411817060795, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_Text
+      value: Voltar para cidade
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240412007065367, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_Text
+      value: SE PREPARE!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240412171587420, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -213.95996
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240412340614912, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_Text
+      value: Obrigado pela compra!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240412340614915, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00076294
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240412340614915, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -146.71997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240412604001088, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_Text
+      value: 'Pegue 5 comidas antes do tempo acabar.
+
+
+        Quanto maior a qualidade,
+        melhor o resultado!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240412723306242, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00076294
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240412723306242, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 110
+      objectReference: {fileID: 0}
     - target: {fileID: 1854240412830891755, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -877
@@ -6337,8 +6381,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: cd108552ffb754942baa28c2d0838670, type: 3}
     - target: {fileID: 1854240413515354520, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240413515354520, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
       propertyPath: m_FontData.m_FontStyle
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240413515354523, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 453.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240413515354523, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -226.59998
       objectReference: {fileID: 0}
     - target: {fileID: 2220948672986846973, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -6354,7 +6410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3265777877733678301, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -54.159973
+      value: -54.159912
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
