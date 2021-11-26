@@ -5768,6 +5768,10 @@ PrefabInstance:
       propertyPath: PerformaceChecker
       value: 
       objectReference: {fileID: 2032027043}
+    - target: {fileID: 6445369164993760338, guid: 3239c1e365d38ce45af80f77139f9b1d, type: 3}
+      propertyPath: controllerButtons
+      value: 
+      objectReference: {fileID: 262214053}
     - target: {fileID: 7024689221298231479, guid: 3239c1e365d38ce45af80f77139f9b1d, type: 3}
       propertyPath: m_RootOrder
       value: 4
