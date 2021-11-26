@@ -55,6 +55,7 @@ public class DataHolder : MonoBehaviour
     [HideInInspector] public bool carboidratoMalus;
     [HideInInspector] public int strenghBeforeFight;
     [HideInInspector] public int resistenciaBeforeFight;
+    [HideInInspector] public int funHighScore;
     public void organizeInventory()
     {
         for(int i = 0; i < 10; i++)
