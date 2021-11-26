@@ -862,16 +862,8 @@ PrefabInstance:
       value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 4488856839885133478, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 709.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 4488856839885133478, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -58.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 4488856839885133478, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1085.3
+      value: 829
       objectReference: {fileID: 0}
     - target: {fileID: 4488856839885133479, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_Color.b
@@ -893,17 +885,9 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 4488856840288830368, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4488856840288830382, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
-      propertyPath: m_Text
-      value: Sair do jogo
-      objectReference: {fileID: 0}
     - target: {fileID: 4488856840509783764, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 579.16
+      value: 401.93
       objectReference: {fileID: 0}
     - target: {fileID: 4488856840509783764, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -911,7 +895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4488856840509783764, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 323.29
+      value: 234.68
       objectReference: {fileID: 0}
     - target: {fileID: 4488856840509783765, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_Color.b

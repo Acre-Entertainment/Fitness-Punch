@@ -73,8 +73,8 @@ public class GameControl : MonoBehaviour {
 			gameTime = gameTime + 1 * Time.deltaTime;
 		}
 
-		highScoreText.text = "Melhor Tempo: " + highScore;
-		yourScoreText.text = "Seu Tempo: " + yourScore;
+		highScoreText.text = "Best Time: " + highScore;
+		yourScoreText.text = "Your Time: " + yourScore;
 
 		if (Time.time > nextSpawn)
 			SpawnObstacle ();
