@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7024689221298231479
 Transform:
   m_ObjectHideFlags: 0
@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   feedback: {fileID: 0}
+  feedbackresist: {fileID: 0}
   scoreUIcanvas: {fileID: 0}
-  activator: {fileID: 4361347453360316757}
   timereference: 1.5
   ITime: 0
   gameSpeed: 0.005
@@ -114,4 +114,6 @@ MonoBehaviour:
   PunchBagD: {fileID: 0}
   PunchBagE: {fileID: 0}
   PunchBagF: {fileID: 0}
+  EndMenu: {fileID: 0}
   anim: {fileID: 0}
+  controllerButtons: {fileID: 0}

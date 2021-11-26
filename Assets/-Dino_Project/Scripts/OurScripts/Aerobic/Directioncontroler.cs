@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Directioncontroler : MonoBehaviour
 {
-    [SerializeField] private Text feedback, scoreUIcanvas;
+    [SerializeField] private Text feedback, feedbackresist, scoreUIcanvas;
     private string PerformaceChecker;
     private bool intime = false;
     private float timeControler = 2f;
@@ -172,9 +172,10 @@ public class Directioncontroler : MonoBehaviour
         if (life <= 0)
         {
             ScoreChecker();
-            dt.resistencia += finalScore;
-            feedback.text = "Pontua��o final: " + PerformaceChecker;
             EndMenu.SetActive(true);
+            dt.resistencia += finalScore;
+            feedback.text = "Pontuação final: " + PerformaceChecker;
+            feedbackresist.text = "Mais " + finalScore + " De Resistencia!";
             gameObject.SetActive(false);       
         }
     }
