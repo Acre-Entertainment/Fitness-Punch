@@ -34,6 +34,7 @@ public class DataHolder : MonoBehaviour
     //Grocer Minigame
     public int[] selectedGrocerFood = new int[4];
     public int[] selectedCookingFood = new int[3];
+    
     public int grocerThisDay;
     public int cookingThisDay;
     public int aerobicoThisDay;
