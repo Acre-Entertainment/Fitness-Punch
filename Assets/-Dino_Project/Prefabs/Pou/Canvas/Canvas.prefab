@@ -265,7 +265,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Round 3
+  m_Text: Rodada 3
 --- !u!114 &1854240411514989663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,7 +474,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Round 1
+  m_Text: Rodada 1
 --- !u!114 &1854240411641302305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,7 +581,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Go back to Town!
+  m_Text: Voltar para a cidade
 --- !u!1 &1854240412005480249
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,7 +616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -100}
+  m_AnchoredPosition: {x: 0.000030518, y: 0.0000076294}
   m_SizeDelta: {x: 600, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1854240412005480228
@@ -660,7 +660,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You, uh, didn't get anything...
+  m_Text: "Voc\xEA consegue fazer melhor que isso!"
 --- !u!1 &1854240412007065366
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,7 +739,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GET READY!
+  m_Text: SE PREPARE!
 --- !u!1 &1854240412070114977
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,7 +819,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Round 2
+  m_Text: Rodada 2
 --- !u!114 &1854240412070114991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -882,7 +882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -213.95999, y: -101}
+  m_AnchoredPosition: {x: -213.95996, y: -101}
   m_SizeDelta: {x: 336.63, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1854240412171587418
@@ -961,8 +961,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -191}
-  m_SizeDelta: {x: 837.22, y: 300}
+  m_AnchoredPosition: {x: 0, y: -142.10999}
+  m_SizeDelta: {x: 837.22, y: 202.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1854240412340614913
 CanvasRenderer:
@@ -1005,7 +1005,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Thank you for the purchase!
+  m_Text: Suas compras acabaram!
 --- !u!1 &1854240412590531653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,11 +1225,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Catch five foods before the timer runs out!
+  m_Text: 'Pegue cinco comidas antes do  tempo acabar.
 
 
-    The higher the quality,
-    the better!'
+    Quanto maior a qualidade,
+    melhor o resultado!'
 --- !u!1 &1854240412723306245
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,7 +1267,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 153}
+  m_AnchoredPosition: {x: 0.000030518, y: 99}
   m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1854240412723306241
@@ -1490,7 +1490,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -555.81, y: -80.98}
+  m_AnchoredPosition: {x: -877, y: -80.97998}
   m_SizeDelta: {x: 347.08, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1854240412830891754
@@ -1514,7 +1514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1522,9 +1522,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
+    m_Font: {fileID: 12800000, guid: cd108552ffb754942baa28c2d0838670, type: 3}
     m_FontSize: 70
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
@@ -1614,7 +1614,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Round 4
+  m_Text: Rodada 4
 --- !u!114 &1854240412948942770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1816,7 +1816,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -100}
+  m_AnchoredPosition: {x: 0, y: 0.0000076293945}
   m_SizeDelta: {x: 600, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1854240413132665323
@@ -1860,7 +1860,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Your invetory is full!
+  m_Text: "Seu invent\xE1rio est\xE1 cheio!"
 --- !u!1 &1854240413153206653
 GameObject:
   m_ObjectHideFlags: 0
@@ -2187,8 +2187,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -209.13, y: -80.97998}
-  m_SizeDelta: {x: 346.28, y: 100}
+  m_AnchoredPosition: {x: -222.79999, y: -80.97998}
+  m_SizeDelta: {x: 445.59, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1854240413515354521
 CanvasRenderer:
@@ -2211,7 +2211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2219,13 +2219,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
+    m_Font: {fileID: 12800000, guid: cd108552ffb754942baa28c2d0838670, type: 3}
     m_FontSize: 70
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 5
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -2898,8 +2898,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -9.560059}
-  m_SizeDelta: {x: -132.98, y: -252.03}
+  m_AnchoredPosition: {x: 0, y: -52.31006}
+  m_SizeDelta: {x: -132.98, y: -337.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2644300238584503438
 CanvasRenderer:
@@ -3369,7 +3369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -80.98004}
+  m_AnchoredPosition: {x: 0, y: -80.97998}
   m_SizeDelta: {x: 0, y: 161.96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3837371774723017157
@@ -3445,8 +3445,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: -9.560059}
-  m_SizeDelta: {x: -132.97998, y: -252.03003}
+  m_AnchoredPosition: {x: 0.00012207031, y: -54.159912}
+  m_SizeDelta: {x: -132.98, y: -341.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5954914340351178977
 CanvasRenderer:
