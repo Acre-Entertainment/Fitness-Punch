@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[System.Serializable]
 public class DataHolder : MonoBehaviour
 //Guarda todas as informações do jogo
 //não coloque tag no objeto desse script
@@ -34,7 +35,7 @@ public class DataHolder : MonoBehaviour
     //Grocer Minigame
     public int[] selectedGrocerFood = new int[4];
     public int[] selectedCookingFood = new int[3];
-    
+
     public int grocerThisDay;
     public int cookingThisDay;
     public int aerobicoThisDay;
