@@ -513,7 +513,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &100154891
 MonoBehaviour:
@@ -579,7 +579,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &131151755
 GameObject:
@@ -1774,6 +1774,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &306128006 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8052810475373548885, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+  m_PrefabInstance: {fileID: 1261605548}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &347883476
 GameObject:
   m_ObjectHideFlags: 0
@@ -2277,7 +2282,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &469667979
 GameObject:
@@ -3514,7 +3519,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &733743713
 GameObject:
@@ -5609,7 +5614,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1044296391
 MonoBehaviour:
@@ -6648,6 +6653,179 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1261605548
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8052810475169448533, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475169448533, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475169448533, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.96692204
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475169448533, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.25507194
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475169448533, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 29.556
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475255284356, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475255284356, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475255284356, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475255284356, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475255284356, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475255284356, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475255284356, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475255284356, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475373548884, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475373548884, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475373548884, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475373548884, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475373548884, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475373548884, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475373548884, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475373548884, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475373548884, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475373548884, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475373548884, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475373548884, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475373548887, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_Name
+      value: PlayerCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475373548887, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475599389032, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475599389035, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475599389035, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475599389035, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99518085
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475599389035, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.09805696
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475599389035, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 11.255
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475812905277, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475812905277, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475812905277, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475812905277, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475812905277, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475812905277, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475812905277, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052810475812905277, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
 --- !u!1 &1287746157
 GameObject:
   m_ObjectHideFlags: 0
@@ -7836,7 +8014,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1319579200
 GameObject:
@@ -8589,7 +8767,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1480744007
 GameObject:
@@ -8646,7 +8824,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1490380277
 GameObject:
@@ -8908,7 +9086,7 @@ RectTransform:
   - {fileID: 679488747}
   - {fileID: 1994708710}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10189,7 +10367,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1865589952
 MonoBehaviour:
@@ -10222,28 +10400,28 @@ MonoBehaviour:
   onPunchStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 517051525}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 306128006}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Punch
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2124589068}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 306128006}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Punch2
           m_BoolArgument: 1
         m_CallState: 2
   onPunchDamageTime:
@@ -10315,29 +10493,17 @@ MonoBehaviour:
   onBlockStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 517051525}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 306128006}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Block
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 891942656}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
   onBlockLowerGuard:
     m_PersistentCalls:
@@ -10396,29 +10562,17 @@ MonoBehaviour:
   onLeftDodgeStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 517051525}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 306128006}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: AerobicoEsquerda
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 7403635}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
   onLeftDodgeFull:
     m_PersistentCalls:
@@ -10477,56 +10631,32 @@ MonoBehaviour:
   onLeftDodgeEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7403635}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 306128006}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: AerobicoIdle
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 517051525}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
   onRightDodgeStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 517051525}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 306128006}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: AerobicoEsquerda
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1601832343}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
   onRightDodgeFull:
     m_PersistentCalls:
@@ -10585,56 +10715,32 @@ MonoBehaviour:
   onRightDodgeEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1601832343}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 306128006}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: AerobicoIdle
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 517051525}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
   onDownDodgeStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 517051525}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 306128006}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: AerobicoDow
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2082040766}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
   onDownDodgeFull:
     m_PersistentCalls:
@@ -10693,29 +10799,17 @@ MonoBehaviour:
   onDownDodgeEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2082040766}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 306128006}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: AerobicoIdle
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 517051525}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
   onStaggerStart:
     m_PersistentCalls:
@@ -11592,7 +11686,7 @@ Transform:
   - {fileID: 249127430}
   - {fileID: 821649266}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2069065957
 GameObject:
