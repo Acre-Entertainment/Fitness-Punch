@@ -60,7 +60,7 @@ public class GameControl : MonoBehaviour {
 		yourScore = 0;
 		gameStopped = false;
 		Time.timeScale = 1f;
-		highScore = PlayerPrefs.GetInt ("Best Time");
+		highScore = PlayerPrefs.GetInt ("Melhor Tempo");
 		nextSpawn = Time.time + spawnRate;
 		nextBoost = Time.time + timeToBoost;
 		cj = GameObject.FindGameObjectWithTag("PlayerFun").GetComponent<CharacterJump>();
@@ -75,8 +75,8 @@ public class GameControl : MonoBehaviour {
 			gameTime = gameTime + 1 * Time.deltaTime;
 		}
 
-		highScoreText.text = "Best Time: " + highScore;
-		yourScoreText.text = "Your Time: " + yourScore;
+		highScoreText.text = "Melhor Tempo: " + highScore;
+		yourScoreText.text = "Tempo Atual: " + yourScore;
 
 		if (Time.time > nextSpawn)
 			SpawnObstacle ();
