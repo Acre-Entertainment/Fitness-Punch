@@ -5,20 +5,23 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class LoadDataHolder : MonoBehaviour
 {
     private DataHolder gameDataHolder;
-    private DataHolder savedDataHolder;
+    private DataHolderSavefile savedDataHolder;
     void Start()
     {
         string savePath = Application.persistentDataPath + "/FitnessPunch.fit";
         if(File.Exists(savePath))
         {
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
-            FileStream fileStream = new FileStream(savePath, FileMode.Create);
-            savedDataHolder = binaryFormatter.Deserialize(fileStream) as DataHolder;
-            fileStream.Close();
-
             gameDataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
-
-            gameDataHolder.primeiraVezAbrindoOJogo = savedDataHolder.primeiraVezAbrindoOJogo;
+            BinaryFormatter binaryFormatter = new BinaryFormatter();
+            FileStream fileStream = new FileStream(savePath, FileMode.Open);
+            savedDataHolder = binaryFormatter.Deserialize(fileStream) as DataHolderSavefile;
+            transferSaveData();
+            fileStream.Close();
+        }
+    }
+    private void transferSaveData()
+    {
+        gameDataHolder.primeiraVezAbrindoOJogo = savedDataHolder.primeiraVezAbrindoOJogo;
             gameDataHolder.saiuDoApartamento = savedDataHolder.saiuDoApartamento;
             gameDataHolder.saiuDaAcademia = savedDataHolder.saiuDaAcademia;
             gameDataHolder.saiuDaLoja = savedDataHolder.saiuDaLoja;
@@ -62,6 +65,5 @@ public class LoadDataHolder : MonoBehaviour
             gameDataHolder.strenghBeforeFight = savedDataHolder.strenghBeforeFight;
             gameDataHolder.resistenciaBeforeFight = savedDataHolder.resistenciaBeforeFight;
             gameDataHolder.funHighScore = savedDataHolder.funHighScore;
-        }
     }
 }
