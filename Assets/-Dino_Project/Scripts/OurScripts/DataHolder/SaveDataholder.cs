@@ -9,6 +9,7 @@ public class SaveDataholder : MonoBehaviour
     void Start()
     {
         dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
+        dataHolderSavefile = new DataHolderSavefile();
         transferData();
         BinaryFormatter binaryFormatter = new BinaryFormatter();
         string savePath = Application.persistentDataPath + "/FitnessPunch.fit";
