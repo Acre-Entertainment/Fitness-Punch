@@ -78,7 +78,7 @@ public class CookingGameMaster : MonoBehaviour
                     if(isInContact == true)
                     {
                         points++;
-                        pointsUIText.text = "Points: " + points;
+                        pointsUIText.text = "Pontos: " + points;
                     }
                 }
                 if(time >= timeToBalance)
@@ -148,40 +148,40 @@ public class CookingGameMaster : MonoBehaviour
     {
         centerText.SetActive(true);
         points = points + pointsForCenterThrow;
-        pointsUIText.text = "Points: " + points;
+        pointsUIText.text = "Pontos: " + points;
     }
     public void nearHit()
     {
         nearText.SetActive(true);
         points = points + pointsForNearThrow;
-        pointsUIText.text = "Points: " + points;
+        pointsUIText.text = "Pontos: " + points;
     }
     public void closeHit()
     {
         closeText.SetActive(true);
         points = points + pointsForCloseThrow;
-        pointsUIText.text = "Points: " + points;
+        pointsUIText.text = "Pontos: " + points;
     }
     public void insideHit()
     {
         insideText.SetActive(true);
         points = points + pointsForInsideThrow;
-        pointsUIText.text = "Points: " + points;
+        pointsUIText.text = "Pontos: " + points;
     }
     public void outsideHit()
     {
         outsideText.SetActive(true);
-        pointsUIText.text = "Points: " + points;
+        pointsUIText.text = "Pontos: " + points;
     }
     public void stirRight()
     {
         points++;
-        pointsUIText.text = "Points: " + points;
+        pointsUIText.text = "Pontos: " + points;
     }
     public void stirLeft()
     {
         points++;
-        pointsUIText.text = "Points: " + points;
+        pointsUIText.text = "Pontos: " + points;
     }
     private int proToBeAdd, carToBeAdd, lipToBeAdd, minToBeAdd, vitToBeAdd, fibToBeAdd, disToBeAdd;
     [HideInInspector]public int changingCar, changingPro, changingLip, changingMin, changingVit,changingFib, changingDis;

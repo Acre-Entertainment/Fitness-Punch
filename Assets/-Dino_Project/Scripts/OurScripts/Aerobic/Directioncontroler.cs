@@ -108,7 +108,7 @@ public class Directioncontroler : MonoBehaviour
             Left();
             intime = false;
         }
-        scoreUIcanvas.text = "Score: " + scoreUI;
+        scoreUIcanvas.text = "Pontos: " + scoreUI;
         controllerButtons.SetActive(true);
         return direction;
     }
@@ -189,17 +189,17 @@ public class Directioncontroler : MonoBehaviour
         if (score >= easy && score < hard)
         {
             finalScore = 1;
-            PerformaceChecker = "Normal";
+            PerformaceChecker = "Lento";
         }
         if (score >= hard && score < expert)
         {
             finalScore = 2;
-            PerformaceChecker = "Expert";
+            PerformaceChecker = "Normal";
         }
         if (score >= expert)
         {
             finalScore = 3;
-            PerformaceChecker = "ProPlayer";
+            PerformaceChecker = "Veloz";
         }
         return finalScore;
     }
