@@ -29,12 +29,12 @@ public class FightTimer : MonoBehaviour
     private IEnumerator Ready()
     {
         yield return new WaitForSeconds(3);
-        text.text = "Ready?";
+        text.text = "Pronto?";
     }
     private IEnumerator Go()
     {
         yield return new WaitForSeconds(4);
-        text.text = "Go!";
+        text.text = "Vai!";
         onGo.Invoke();
     }
     private IEnumerator EndGame()
