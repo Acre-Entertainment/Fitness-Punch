@@ -28,7 +28,7 @@ public class OverworldCookingMenu : MonoBehaviour
     public GameObject addButton;
     public GameObject cookButton;
     private int selectedCookingButtonOne, selectedCookingButtonTwo, selectedCookingButtonThree;
-    private int selectStage;
+    [SerializeField] private int selectStage;
     private int[] selectedInventorySlots = new int[3];
     private int currentSelectedButton;
     private int currentSelectedInventoryID;
@@ -117,7 +117,7 @@ public class OverworldCookingMenu : MonoBehaviour
         inventoryButtons[currentSelectedButton -1].SetActive(false);
         dataHolder.selectedCookingFood[selectStage] = currentSelectedInventoryID;
         selectStage++;
-        if(selectStage == 4)
+        if(selectStage == 3)
         {
             cookButton.SetActive(true);
             foreach(GameObject go in inventoryButtons)
