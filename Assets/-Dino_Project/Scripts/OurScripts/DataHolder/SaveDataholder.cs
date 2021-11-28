@@ -9,6 +9,7 @@ public class SaveDataholder : MonoBehaviour
     void Start()
     {
         dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
+        dataHolder.primeiraVezAbrindoOJogo = false;
         dataHolderSavefile = new DataHolderSavefile();
         transferData();
         BinaryFormatter binaryFormatter = new BinaryFormatter();

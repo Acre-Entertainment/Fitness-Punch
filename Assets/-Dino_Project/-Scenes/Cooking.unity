@@ -2489,6 +2489,18 @@ PrefabInstance:
       propertyPath: inventorySlots.Array.data[4]
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2419501378135710873, guid: 9c326338e5ac1ed4480a5841d4d2562f, type: 3}
+      propertyPath: selectedCookingFood.Array.data[0]
+      value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419501378135710873, guid: 9c326338e5ac1ed4480a5841d4d2562f, type: 3}
+      propertyPath: selectedCookingFood.Array.data[1]
+      value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419501378135710873, guid: 9c326338e5ac1ed4480a5841d4d2562f, type: 3}
+      propertyPath: selectedCookingFood.Array.data[2]
+      value: 101
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c326338e5ac1ed4480a5841d4d2562f, type: 3}
 --- !u!1 &2419501379432892242 stripped
