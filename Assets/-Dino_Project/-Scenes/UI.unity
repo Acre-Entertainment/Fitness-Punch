@@ -589,9 +589,10 @@ MonoBehaviour:
   m_Text: "MINIGAMES:\n\n- Cada atividade na cidade consiste em um minigame diferente\n\n-
     O resultando do minigame varia do seu desempenho nele, variando de ruim, m\xE9dio
     e bom\n\n- Quanto melhor o resultado mais atributo do minigame escolhido ser\xE1
-    ganho, assim como moedas\n\nINVENT\xC1RIO:\n\n- Voc\xEA ter\xE1 um invent\xE1rio
-    onde ficaram guardadas as suas comidas\n\n-Tem-se o limite de 10 espa\xE7os e
-    os itens n\xE3o podem ser jogados fora, use-os sabiamente"
+    ganho\n\n- Para jogar o minigame mais de uma vez no mesmo dia do jogo, voc\xEA
+    tera que gastar mais atributos doque o normal\n\nINVENT\xC1RIO:\n\n- Voc\xEA
+    ter\xE1 um invent\xE1rio onde ficaram guardadas as suas comidas\n\n-Tem-se o
+    limite de 10 espa\xE7os e os itens n\xE3o podem ser jogados fora, use-os sabiamente"
 --- !u!222 &81453556
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3227,7 +3228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &639756449
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3412,7 +3413,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 105.50665}
+  m_AnchoredPosition: {x: 0, y: 105.50659}
   m_SizeDelta: {x: 0, y: 596.1061}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &693942744
@@ -3523,7 +3524,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Pr\xF3ximo"
+  m_Text: Terminar
 --- !u!222 &749286360
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7929,7 +7930,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -513.00006}
+  m_AnchoredPosition: {x: 0, y: -513}
   m_SizeDelta: {x: 0, y: -250.00024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1796796065
@@ -8465,7 +8466,7 @@ MonoBehaviour:
   m_Text: "DISPOSI\xC7\xC3O:\n\n- N\xE3o basta apenas gastar pontos de a\xE7\xE3o
     para fazer atividades, voc\xEA deve estar com disposi\xE7\xE3o o bastante para
     a atividade escolhida\n\n- A disposi\xE7\xE3o \xE9 uma barra de \"for\xE7a de
-    vontade\" do personagem, ela sempre ser\xE1 gasta para fazer atividades cansativas\n\n-
+    vontade\" da personagem, ela sempre ser\xE1 gasta para fazer atividades cansativas\n\n-
     Voc\xEA s\xF3 pode recupera-la ao decorrer do jogo se divertindo, ela \xE9 essencial
     para se manter sa\xFAdavel"
 --- !u!222 &1878853255
