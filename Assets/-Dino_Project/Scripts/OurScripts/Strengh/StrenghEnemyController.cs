@@ -73,7 +73,7 @@ public class StrenghEnemyController : MonoBehaviour
     {
         onPunchStart.Invoke();
         isPunching = true;
-        yield return new WaitForSeconds(ai_IdleTime_Short);
+        yield return new WaitForSeconds(punch_TimeToDamage);
         onPunchDamageTime.Invoke();
         enemyPunchConnects();
         yield return new WaitForSeconds(punch_TimeToActAgain);
@@ -111,7 +111,7 @@ public class StrenghEnemyController : MonoBehaviour
     {
         onPunchStart.Invoke();
         isPunching = true;
-        yield return new WaitForSeconds(ai_IdleTime_Short);
+        yield return new WaitForSeconds(punch_TimeToDamage);
         onPunchDamageTime.Invoke();
         enemyPunchConnects();
         yield return new WaitForSeconds(punch_TimeToActAgain);

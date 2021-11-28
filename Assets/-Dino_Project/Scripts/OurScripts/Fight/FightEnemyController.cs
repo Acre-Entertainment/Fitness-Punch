@@ -14,7 +14,7 @@ public class FightEnemyController : MonoBehaviour
     [SerializeField] private bool isBlocking;
     [SerializeField] private bool isDodging;
     [SerializeField] private bool isStaggered;
-    [SerializeField] private float punch_TimeToDamage;
+    [SerializeField] private float attack_TimeToDamage;
     [SerializeField] private float attack_TimeToActAgain;
     [SerializeField] private float block_DurationOfBlock;
     [SerializeField] private float dodge_TimeToBeEffective;
@@ -123,7 +123,7 @@ public class FightEnemyController : MonoBehaviour
     {
         onPunchStart.Invoke();
         isRegularPunching = true;
-        yield return new WaitForSeconds(ai_IdleTime_Short);
+        yield return new WaitForSeconds(attack_TimeToDamage);
         onPunchDamageTime.Invoke();
         enemyRegularPunchConnects();
         yield return new WaitForSeconds(attack_TimeToActAgain);
@@ -134,7 +134,7 @@ public class FightEnemyController : MonoBehaviour
 
         onPunchStartOther.Invoke();
         isRegularPunching = true;
-        yield return new WaitForSeconds(punch_TimeToDamage);
+        yield return new WaitForSeconds(attack_TimeToDamage);
         onPunchDamageTimeOther.Invoke();
         enemyRegularPunchConnects();
         yield return new WaitForSeconds(attack_TimeToActAgain);
@@ -146,7 +146,7 @@ public class FightEnemyController : MonoBehaviour
         onPunchStart.Invoke();
         isRegularPunching = true;
 
-        yield return new WaitForSeconds(punch_TimeToDamage);
+        yield return new WaitForSeconds(attack_TimeToDamage);
 
         onPunchDamageTime.Invoke();
         enemyRegularPunchConnects();
@@ -165,7 +165,7 @@ public class FightEnemyController : MonoBehaviour
     {
         onPunchStart.Invoke();
         isRegularPunching = true;
-        yield return new WaitForSeconds(ai_IdleTime_Short);
+        yield return new WaitForSeconds(attack_TimeToDamage);
         onPunchDamageTime.Invoke();
         enemyRegularPunchConnects();
         yield return new WaitForSeconds(attack_TimeToActAgain);
