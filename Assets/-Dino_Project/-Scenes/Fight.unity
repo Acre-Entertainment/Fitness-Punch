@@ -7539,15 +7539,22 @@ MonoBehaviour:
   isBlocking: 0
   isDodging: 0
   isStaggered: 0
-  punch_TimeToDamage: 1
-  attack_TimeToActAgain: 1
+  punch_TimeFromStartToDamage: 0
+  punch_TimeFromDamageToEnd: 0
+  superPunch_TimeFromStartToDamage: 0
+  superPunch_TimeFromDamageToEnd: 0
+  swipe_TimeFromStartToDamage: 0
+  swipe_TimeFromDamageToEnd: 0
+  sidePunch_TimeFromStartToDoding: 0
+  sidePunch_TimeFromDodginToDamage: 0
+  sidePunch_TimeFromDamageToEnd: 0
   block_DurationOfBlock: 1
-  dodge_TimeToBeEffective: 1
   stagger_staggerDuration: 1
   ai_IdleTime_VeryShort: 1
-  ai_IdleTime_Short: 1
   ai_IdleTime_Long: 1
-  special_SpecialAttackWindupTime: 1
+  special_SuperPunchWindupTime: 0
+  special_SidePunchWindupTime: 0
+  special_SwipeWindupTime: 0
   onPunchStart:
     m_PersistentCalls:
       m_Calls:
@@ -8985,7 +8992,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1527175239
 MonoBehaviour:
   m_ObjectHideFlags: 0
