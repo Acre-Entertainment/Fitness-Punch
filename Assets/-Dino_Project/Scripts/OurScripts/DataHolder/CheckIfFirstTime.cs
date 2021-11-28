@@ -11,5 +11,9 @@ public class CheckIfFirstTime : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+        else
+        {
+            dataHolder.primeiraVezAbrindoOJogo = false;
+        }
     }
 }
