@@ -10492,42 +10492,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 9349393}
-    - target: {fileID: 1588779385, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -156
-      objectReference: {fileID: 0}
-    - target: {fileID: 769834752901836758, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 105.50635
-      objectReference: {fileID: 0}
-    - target: {fileID: 769834752965472878, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -330
-      objectReference: {fileID: 0}
-    - target: {fileID: 769834753484076561, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -475
-      objectReference: {fileID: 0}
-    - target: {fileID: 769834754050312169, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 769834754376812486, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 105.50635
-      objectReference: {fileID: 0}
-    - target: {fileID: 769834754627219618, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 105.50635
-      objectReference: {fileID: 0}
-    - target: {fileID: 1124694834275800885, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: foodGlow.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1124694834275800885, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-      propertyPath: foodImageGameObject.Array.size
-      value: 10
-      objectReference: {fileID: 0}
+    - target: {fileID: 769834753422601476, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 465736373}
+    - target: {fileID: 769834754309389998, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 465736373}
     - target: {fileID: 1124694834407347553, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -10676,46 +10648,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 204586371}
     m_Modifications:
-    - target: {fileID: 31534983, guid: eb878ecadff62994a850c44111a55567, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -51.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 31534984, guid: eb878ecadff62994a850c44111a55567, type: 3}
-      propertyPath: m_Size.x
-      value: 15.882483
-      objectReference: {fileID: 0}
-    - target: {fileID: 339308694, guid: eb878ecadff62994a850c44111a55567, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -55.9905
-      objectReference: {fileID: 0}
-    - target: {fileID: 339308695, guid: eb878ecadff62994a850c44111a55567, type: 3}
-      propertyPath: m_Size.x
-      value: 7.4335766
-      objectReference: {fileID: 0}
-    - target: {fileID: 990062724, guid: eb878ecadff62994a850c44111a55567, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -51.6139
-      objectReference: {fileID: 0}
-    - target: {fileID: 990062725, guid: eb878ecadff62994a850c44111a55567, type: 3}
-      propertyPath: m_Size.x
-      value: 15.690199
-      objectReference: {fileID: 0}
-    - target: {fileID: 1088134856, guid: eb878ecadff62994a850c44111a55567, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -51.7744
-      objectReference: {fileID: 0}
-    - target: {fileID: 1088134857, guid: eb878ecadff62994a850c44111a55567, type: 3}
-      propertyPath: m_Size.x
-      value: 15.897678
-      objectReference: {fileID: 0}
-    - target: {fileID: 1258840361, guid: eb878ecadff62994a850c44111a55567, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 22.0256
-      objectReference: {fileID: 0}
-    - target: {fileID: 1258840362, guid: eb878ecadff62994a850c44111a55567, type: 3}
-      propertyPath: m_Size.x
-      value: 12.661265
-      objectReference: {fileID: 0}
     - target: {fileID: 6426852854882125788, guid: eb878ecadff62994a850c44111a55567, type: 3}
       propertyPath: m_RootOrder
       value: 6
