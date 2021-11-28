@@ -32,7 +32,7 @@ public class OverworldCookingMenu : MonoBehaviour
     private int[] selectedInventorySlots = new int[3];
     private int currentSelectedButton;
     private int currentSelectedInventoryID;
-    void Start()
+    void Awake()
     {
         dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
         showImageComponent = showImage.GetComponent<Image>();
@@ -61,7 +61,7 @@ public class OverworldCookingMenu : MonoBehaviour
     }
     void activateButtons(int whichOne)
     {
-        if(dataHolder.inventorySlots[whichOne] != 0)
+        if(dataHolder.inventorySlots[whichOne] > 0)
         {
             inventoryButtons[whichOne].SetActive(true);
             inventoryButtonsImage[whichOne].sprite = giveSpriteOfItenID(dataHolder.inventorySlots[whichOne]);
