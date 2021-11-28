@@ -34,10 +34,10 @@ public class PouResultsMenu : MonoBehaviour
         dh = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
         pgm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<PouGameMaster>();
 
-        iten1id = dh.selectedGrocerFood[0] + pgm.turn1Result * 10 ;
-        iten2id = dh.selectedGrocerFood[1] + pgm.turn2Result * 10 ;
-        iten3id = dh.selectedGrocerFood[2] + pgm.turn3Result * 10 ;
-        iten4id = dh.selectedGrocerFood[3] + pgm.turn4Result * 10 ;
+        iten1id = dh.selectedGrocerFood[0] + pgm.turn1Result * 100;
+        iten2id = dh.selectedGrocerFood[1] + pgm.turn2Result * 100;
+        iten3id = dh.selectedGrocerFood[2] + pgm.turn3Result * 100;
+        iten4id = dh.selectedGrocerFood[3] + pgm.turn4Result * 100;
 
         setFoodSprite(1);
         setFoodSprite(2);
