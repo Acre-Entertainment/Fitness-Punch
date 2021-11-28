@@ -1,7 +1,70 @@
 fileFormatVersion: 2
 guid: 2d6372062df2b3641bffc9a27ef09782
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1872358631500531933
+    second: FinalFight_MiniGames (1)_0
+  - first:
+      213: 1796385603953717842
+    second: FinalFight_MiniGames (1)_1
+  - first:
+      213: 6917236007965085952
+    second: FinalFight_MiniGames (1)_2
+  - first:
+      213: 5249466589033697939
+    second: FinalFight_MiniGames (1)_3
+  - first:
+      213: 6805647348063269268
+    second: FinalFight_MiniGames (1)_4
+  - first:
+      213: 6535502617001881850
+    second: FinalFight_MiniGames (1)_5
+  - first:
+      213: 6604358192475316174
+    second: FinalFight_MiniGames (1)_6
+  - first:
+      213: 4482586909084219612
+    second: FinalFight_MiniGames (1)_7
+  - first:
+      213: -5779551588724824245
+    second: FinalFight_MiniGames (1)_8
+  - first:
+      213: 2172673220798727004
+    second: FinalFight_MiniGames (1)_9
+  - first:
+      213: -3053622259935474829
+    second: FinalFight_MiniGames (1)_10
+  - first:
+      213: -2769437694228273460
+    second: FinalFight_MiniGames (1)_11
+  - first:
+      213: 2097940884196813454
+    second: FinalFight_MiniGames (1)_12
+  - first:
+      213: -4650965759255176782
+    second: FinalFight_MiniGames (1)_13
+  - first:
+      213: 6872009429617417558
+    second: FinalFight_MiniGames (1)_14
+  - first:
+      213: 3230885953207633268
+    second: FinalFight_MiniGames (1)_15
+  - first:
+      213: -2583671999887620595
+    second: FinalFight_MiniGames (1)_16
+  - first:
+      213: 919297695175602387
+    second: FinalFight_MiniGames (1)_17
+  - first:
+      213: 7591919891695346657
+    second: FinalFight_MiniGames (1)_18
+  - first:
+      213: -7348468250879215883
+    second: FinalFight_MiniGames (1)_19
+  - first:
+      213: -6988474216306759429
+    second: FinalFight_MiniGames (1)_20
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +104,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +138,498 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1242
+        width: 446
+        height: 703
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8c9b25144fbf910800000000000000
+      internalID: 1872358631500531933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_1
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 991
+        width: 153
+        height: 954
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252794b603b0ee810800000000000000
+      internalID: 1796385603953717842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_2
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 902
+        width: 551
+        height: 987
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001dc4a0085feff50800000000000000
+      internalID: 6917236007965085952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 911
+        width: 551
+        height: 987
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39292a3cc0ad9d840800000000000000
+      internalID: 5249466589033697939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_4
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 984
+        width: 228
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491f3e78434827e50800000000000000
+      internalID: 6805647348063269268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_5
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 781
+        width: 25
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0780be005c2ba50800000000000000
+      internalID: 6535502617001881850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 781
+        width: 26
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf9eefd8c467ab50800000000000000
+      internalID: 6604358192475316174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_7
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 674
+        width: 221
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8f7c64b09553e30800000000000000
+      internalID: 4482586909084219612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_8
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 497
+        width: 190
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4723019378eacfa0800000000000000
+      internalID: -5779551588724824245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 458
+        width: 172
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5346b278c2e62e10800000000000000
+      internalID: 2172673220798727004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_10
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 458
+        width: 25
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b025ebbba5f95d0800000000000000
+      internalID: -3053622259935474829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_11
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 458
+        width: 26
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc662f7171bf099d0800000000000000
+      internalID: -2769437694228273460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_12
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 497
+        width: 190
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ae15a6e126d1d10800000000000000
+      internalID: 2097940884196813454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_13
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 520
+        width: 139
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b91719a843747fb0800000000000000
+      internalID: -4650965759255176782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_14
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 498
+        width: 137
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d1b71ba284e5f50800000000000000
+      internalID: 6872009429617417558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_15
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 136
+        width: 221
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4758dbe08a966dc20800000000000000
+      internalID: 3230885953207633268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_16
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 168
+        width: 170
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0643964104f42cd0800000000000000
+      internalID: -2583671999887620595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_17
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 121
+        width: 223
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0f6c3126002cc00800000000000000
+      internalID: 919297695175602387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_18
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 310
+        width: 552
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e329b3faeaeb5960800000000000000
+      internalID: 7591919891695346657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_19
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 136
+        width: 135
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6bb174f0ff40a90800000000000000
+      internalID: -7348468250879215883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalFight_MiniGames (1)_20
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 131
+        width: 552
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf82f0f0ab3f30f90800000000000000
+      internalID: -6988474216306759429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
