@@ -57,7 +57,7 @@ public class PlayerFightStatus : MonoBehaviour
             }
             else
             {
-
+                onOtherPunchStart.Invoke();
                 leftPunch = false;
             }
             canAct = false;

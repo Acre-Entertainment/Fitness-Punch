@@ -288,9 +288,9 @@ public class FightEnemyController : MonoBehaviour
             //    StartCoroutine(stagger());
             //}
         }
-        if(isBlocking == true && fightingGameMaster.FightIsOver == false)
+        if(isBlocking == true)
         {
-            //ataque do jogador foi blokeado
+            fightingGameMaster.onEnemyBlocksAttack.Invoke();
         }
     }
     private IEnumerator stagger()
@@ -375,9 +375,9 @@ public class FightEnemyController : MonoBehaviour
             fightingGameMaster.enemyRegularPunchDoesDamage();
             playerFightStatus.stagger();
         }
-        else
+        if(playerFightStatus.isBlocking == true)
         {
-            //falhou ataque
+            fightingGameMaster.onPlayerBlocksAttack.Invoke();
         }
     }
     private void enemySuperPunchConnects()
@@ -411,9 +411,9 @@ public class FightEnemyController : MonoBehaviour
             fightingGameMaster.enemyRegularPunchDoesDamage();
             playerFightStatus.stagger();
         }
-        else
+        if(playerFightStatus.isBlocking == true)
         {
-            //falhou ataque
+            fightingGameMaster.onPlayerBlocksAttack.Invoke();
         }
     }
     private void enemyRightPunchConnects()
@@ -423,9 +423,9 @@ public class FightEnemyController : MonoBehaviour
             fightingGameMaster.enemyRegularPunchDoesDamage();
             playerFightStatus.stagger();
         }
-        else
+        if(playerFightStatus.isBlocking == true)
         {
-            //falhou ataque
+            fightingGameMaster.onPlayerBlocksAttack.Invoke();
         }
     }
 }

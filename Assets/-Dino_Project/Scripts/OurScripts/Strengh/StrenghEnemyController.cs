@@ -5,8 +5,8 @@ using UnityEngine.Events;
 
 public class StrenghEnemyController : MonoBehaviour
 {
-    private StrenghGameMaster sgm;
-    private PlayerFightStatus pfs;
+    public StrenghGameMaster sgm;
+    public PlayerFightStatus pfs;
     [SerializeField] private bool isPunching;
     [SerializeField] private bool isBlocking;
     [SerializeField] private bool isStaggered;
@@ -30,8 +30,6 @@ public class StrenghEnemyController : MonoBehaviour
     private int randy;
     void Start()
     {
-        sgm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<StrenghGameMaster>();
-        pfs = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerFightStatus>();
         StartCoroutine(WaitAtStart());
     }
     //Artifical Intellgicence-------------------------------------------------------------------
@@ -142,6 +140,7 @@ public class StrenghEnemyController : MonoBehaviour
     {
         if(isBlocking == false)
         {
+            sgm.onEnemyNotBlockedAttack.Invoke();
             sgm.points = sgm.points + sgm.pointsForPunch;
             sgm.updatPointUI();
             //overrideStaggerCombo++;
@@ -159,6 +158,7 @@ public class StrenghEnemyController : MonoBehaviour
         }
         else
         {
+            sgm.onEnemyBlockedAttack.Invoke();
             //put sound here, I guess
         }
     }
@@ -213,12 +213,14 @@ public class StrenghEnemyController : MonoBehaviour
     {
         if(pfs.isBlocking == false)
         {
+            sgm.onPlayerNotBlockedAttack.Invoke();
             sgm.points = sgm.points - sgm.pointsPenaltyForNotBlocking;
             sgm.updatPointUI();
             pfs.stagger();
         }
         else
         {
+            sgm.onPlayerBlockedAttack.Invoke();
             sgm.points = sgm.points + sgm.pointsForBlock;
             sgm.updatPointUI();
         }

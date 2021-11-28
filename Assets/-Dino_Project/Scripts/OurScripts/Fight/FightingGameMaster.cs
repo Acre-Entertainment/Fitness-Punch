@@ -18,8 +18,10 @@ public class FightingGameMaster : MonoBehaviour
     public UnityEvent onPlayerWin;
     public UnityEvent onEnemyWin;
     public UnityEvent onPlayerDoesDamage;
+    public UnityEvent onPlayerBlocksAttack;
     public UnityEvent onEnemyDoesRegularDamage;
     public UnityEvent onEnemyDoesBigDamage;
+    public UnityEvent onEnemyBlocksAttack;
     public bool FightIsOver;
     void Start()
     {

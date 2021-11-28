@@ -31,6 +31,10 @@ public class StrenghGameMaster : MonoBehaviour
     public UnityEvent onGameEndLowReward;
     public UnityEvent onGameEndMediumReward;
     public UnityEvent onGameEndHighReward;
+    public UnityEvent onPlayerBlockedAttack;
+    public UnityEvent onPlayerNotBlockedAttack;
+    public UnityEvent onEnemyBlockedAttack;
+    public UnityEvent onEnemyNotBlockedAttack;
     void Start()
     {
         time = timeDuration;
@@ -78,7 +82,7 @@ public class StrenghGameMaster : MonoBehaviour
                 dt.forca = 10;
             }
             finalMenuPoints.GetComponent<Text>().text = "Pontos: " + points;
-            finalMenuText.GetComponent<Text>().text = "Parabéns, sua força aumentou em " + (dt.forca - forcaAntiga) + "!";
+            finalMenuText.GetComponent<Text>().text = "Sua força aumentou em " + (dt.forca - forcaAntiga) + "!";
         }
     }
     public void updatPointUI()
