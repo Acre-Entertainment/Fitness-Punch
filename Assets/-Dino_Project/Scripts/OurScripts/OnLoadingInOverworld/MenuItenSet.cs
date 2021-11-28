@@ -29,11 +29,6 @@ public class MenuItenSet : MonoBehaviour
         setImageOfSlot(7);
         setImageOfSlot(8);
         setImageOfSlot(9);
-        setImageOfSlot(10);
-        setImageOfSlot(11);
-        setImageOfSlot(12);
-        setImageOfSlot(13);
-        setImageOfSlot(14);
     }
     void setImageOfSlot(int slot)
     {
