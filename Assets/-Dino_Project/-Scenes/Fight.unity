@@ -205,6 +205,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!212 &52189375 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5358070100788913698, guid: 91e628a52b309b24c88be1ff3ae0bf03, type: 3}
+  m_PrefabInstance: {fileID: 5358070100618758408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &63985958
 GameObject:
   m_ObjectHideFlags: 0
@@ -4914,6 +4919,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!212 &943772412 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5358070101219819439, guid: 91e628a52b309b24c88be1ff3ae0bf03, type: 3}
+  m_PrefabInstance: {fileID: 5358070100618758408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &944526500
 GameObject:
   m_ObjectHideFlags: 0
@@ -5679,6 +5689,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1051143553}
   m_CullTransparentMesh: 1
+--- !u!212 &1085308813 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5358070100118208383, guid: 91e628a52b309b24c88be1ff3ae0bf03, type: 3}
+  m_PrefabInstance: {fileID: 5358070100618758408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1087881613
 GameObject:
   m_ObjectHideFlags: 0
@@ -8025,6 +8040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1463834147}
   - component: {fileID: 1463834146}
+  - component: {fileID: 1463834148}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: GameMaster
@@ -8131,11 +8147,29 @@ MonoBehaviour:
         m_CallState: 2
   onPlayerDoesDamage:
     m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1463834148}
+        m_TargetAssemblyTypeName: MakeStuffRed, Assembly-CSharp
+        m_MethodName: makerRed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPlayerBlocksAttack:
+    m_PersistentCalls:
       m_Calls: []
   onEnemyDoesRegularDamage:
     m_PersistentCalls:
       m_Calls: []
   onEnemyDoesBigDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  onEnemyBlocksAttack:
     m_PersistentCalls:
       m_Calls: []
   FightIsOver: 0
@@ -8153,6 +8187,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1463834148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463834145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f1e0379503c1245b758b14454b0dca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stuffToMakeRed:
+  - {fileID: 1599736769}
+  - {fileID: 943772412}
+  - {fileID: 52189375}
+  - {fileID: 1085308813}
+  durationOfRed: 0.2
 --- !u!1 &1480744007
 GameObject:
   m_ObjectHideFlags: 0
@@ -8714,6 +8766,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599196407}
   m_CullTransparentMesh: 1
+--- !u!212 &1599736769 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5358070100668003581, guid: 91e628a52b309b24c88be1ff3ae0bf03, type: 3}
+  m_PrefabInstance: {fileID: 5358070100618758408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1601832343
 GameObject:
   m_ObjectHideFlags: 0

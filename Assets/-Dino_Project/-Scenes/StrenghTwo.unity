@@ -2215,6 +2215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1461534329}
   - component: {fileID: 1461534330}
+  - component: {fileID: 1461534331}
   m_Layer: 0
   m_Name: Game Master
   m_TagString: GameMaster
@@ -2398,6 +2399,48 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  onPlayerBlockedAttack:
+    m_PersistentCalls:
+      m_Calls: []
+  onPlayerNotBlockedAttack:
+    m_PersistentCalls:
+      m_Calls: []
+  onEnemyBlockedAttack:
+    m_PersistentCalls:
+      m_Calls: []
+  onEnemyNotBlockedAttack:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1461534331}
+        m_TargetAssemblyTypeName: MakeStuffRed, Assembly-CSharp
+        m_MethodName: makerRed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1461534331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461534328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f1e0379503c1245b758b14454b0dca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stuffToMakeRed:
+  - {fileID: 1862019037}
+  - {fileID: 1862019036}
+  - {fileID: 1862019035}
+  - {fileID: 1862019034}
+  durationOfRed: 0.2
 --- !u!1 &1538113717
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,6 +3454,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91e628a52b309b24c88be1ff3ae0bf03, type: 3}
+--- !u!212 &1862019034 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5358070100118208383, guid: 91e628a52b309b24c88be1ff3ae0bf03, type: 3}
+  m_PrefabInstance: {fileID: 1862019033}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1862019035 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5358070100788913698, guid: 91e628a52b309b24c88be1ff3ae0bf03, type: 3}
+  m_PrefabInstance: {fileID: 1862019033}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1862019036 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5358070101219819439, guid: 91e628a52b309b24c88be1ff3ae0bf03, type: 3}
+  m_PrefabInstance: {fileID: 1862019033}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1862019037 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5358070100668003581, guid: 91e628a52b309b24c88be1ff3ae0bf03, type: 3}
+  m_PrefabInstance: {fileID: 1862019033}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1902227270
 GameObject:
   m_ObjectHideFlags: 0
@@ -4150,18 +4213,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onStaggerEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  onPlayerBlockedAttack:
-    m_PersistentCalls:
-      m_Calls: []
-  onPlayerNotBlockedAttack:
-    m_PersistentCalls:
-      m_Calls: []
-  onEnemyBlockedAttack:
-    m_PersistentCalls:
-      m_Calls: []
-  onEnemyNotBlockedAttack:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &2118437669
