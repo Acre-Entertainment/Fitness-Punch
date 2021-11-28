@@ -21,7 +21,9 @@ public class PlayerFightStatus : MonoBehaviour
     [SerializeField] private float dodge_DurationOfDodge;
     [SerializeField] private float dodge_TimeToActAgain;
     [SerializeField] private float stagger_staggerDuration;
+    private bool leftPunch;
     public UnityEvent onPunchStart;
+    public UnityEvent onOtherPunchStart;
     public UnityEvent onPunchDamageTime;
     public UnityEvent onPunchEnd;
     public UnityEvent onBlockStart;
@@ -48,7 +50,16 @@ public class PlayerFightStatus : MonoBehaviour
     {
         if(canAct == true)
         {
-            onPunchStart.Invoke();
+            if(leftPunch == false)
+            {
+                onPunchStart.Invoke();
+                leftPunch = true;
+            }
+            else
+            {
+
+                leftPunch = false;
+            }
             canAct = false;
             isPunching = true;
             StartCoroutine(PunchRotine());

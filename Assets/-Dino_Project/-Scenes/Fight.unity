@@ -7125,22 +7125,19 @@ MonoBehaviour:
   isBlocking: 0
   isDodging: 0
   isStaggered: 0
-  punch_TimeFromStartToDamage: 0
-  punch_TimeFromDamageToEnd: 0
-  superPunch_TimeFromStartToDamage: 0
-  superPunch_TimeFromDamageToEnd: 0
-  swipe_TimeFromStartToDamage: 0
-  swipe_TimeFromDamageToEnd: 0
-  sidePunch_TimeFromStartToDoding: 0
-  sidePunch_TimeFromDodginToDamage: 0
-  sidePunch_TimeFromDamageToEnd: 0
-  block_DurationOfBlock: 1
+  punch_TimeFromStartToDamage: 0.4
+  punch_TimeFromDamageToEnd: 0.25
+  superPunch_TimeFromStartToDamage: 0.9
+  superPunch_TimeFromDamageToEnd: 0.4
+  swipe_TimeFromStartToDamage: 0.75
+  swipe_TimeFromDamageToEnd: 0.35
+  sidePunch_TimeFromStartToDoding: 0.25
+  sidePunch_TimeFromDodginToDamage: 0.35
+  sidePunch_TimeFromDamageToEnd: 0.4
+  block_DurationOfBlock: 0.8
   stagger_staggerDuration: 1
-  ai_IdleTime_VeryShort: 1
-  ai_IdleTime_Long: 1
-  special_SuperPunchWindupTime: 0
-  special_SidePunchWindupTime: 0
-  special_SwipeWindupTime: 0
+  ai_IdleTime_VeryShort: 0.2
+  ai_IdleTime_Long: 0.5
   onPunchStart:
     m_PersistentCalls:
       m_Calls:
@@ -10248,14 +10245,14 @@ MonoBehaviour:
   isLeft: 0
   isDown: 0
   isStaggered: 0
-  punch_TimeToDamage: 1
-  punch_TimeToActAgain: 1
-  block_DurationOfBlock: 1
-  block_TimeToActAgain: 1
-  dodge_TimeToBeEffective: 1
-  dodge_DurationOfDodge: 1
-  dodge_TimeToActAgain: 1
-  stagger_staggerDuration: 1
+  punch_TimeToDamage: 0.4
+  punch_TimeToActAgain: 0.35
+  block_DurationOfBlock: 0.75
+  block_TimeToActAgain: 0.25
+  dodge_TimeToBeEffective: 0.1
+  dodge_DurationOfDodge: 0.6
+  dodge_TimeToActAgain: 0.3
+  stagger_staggerDuration: 0.5
   onPunchStart:
     m_PersistentCalls:
       m_Calls:
@@ -10271,6 +10268,9 @@ MonoBehaviour:
           m_StringArgument: Punch
           m_BoolArgument: 0
         m_CallState: 2
+  onOtherPunchStart:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 306128006}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: Play
@@ -10281,7 +10281,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Punch2
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
   onPunchDamageTime:
     m_PersistentCalls:
@@ -11851,6 +11851,14 @@ PrefabInstance:
     - target: {fileID: 5358070099804855731, guid: 91e628a52b309b24c88be1ff3ae0bf03, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5358070100118208382, guid: 91e628a52b309b24c88be1ff3ae0bf03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5358070100118208382, guid: 91e628a52b309b24c88be1ff3ae0bf03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 5358070100118208383, guid: 91e628a52b309b24c88be1ff3ae0bf03, type: 3}
       propertyPath: m_FlipX

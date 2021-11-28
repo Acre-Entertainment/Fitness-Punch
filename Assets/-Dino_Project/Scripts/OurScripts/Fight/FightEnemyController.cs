@@ -27,9 +27,6 @@ public class FightEnemyController : MonoBehaviour
     [SerializeField] private float stagger_staggerDuration;
     [SerializeField] private float ai_IdleTime_VeryShort; //usado quando o AI vai executar varios movemntos muitos rapidos, tipo o tempo entre socos de um combo
     [SerializeField] private float ai_IdleTime_Long; //usado quando o AI fica idle entre movimentos
-    [SerializeField] private float special_SuperPunchWindupTime;
-    [SerializeField] private float special_SidePunchWindupTime;
-    [SerializeField] private float special_SwipeWindupTime;
     private int overrideStaggerCombo;
     public UnityEvent onPunchStart;
     public UnityEvent onPunchDamageTime;
