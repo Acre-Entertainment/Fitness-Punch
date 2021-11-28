@@ -1274,14 +1274,14 @@ MonoBehaviour:
   isLeft: 0
   isDown: 0
   isStaggered: 0
-  punch_TimeToDamage: 0.1
-  punch_TimeToActAgain: 0.2
-  block_DurationOfBlock: 0.4
-  block_TimeToActAgain: 0.1
-  dodge_TimeToBeEffective: 0
-  dodge_DurationOfDodge: 0
-  dodge_TimeToActAgain: 0
-  stagger_staggerDuration: 0.2
+  punch_TimeToDamage: 0.4
+  punch_TimeToActAgain: 0.35
+  block_DurationOfBlock: 0.75
+  block_TimeToActAgain: 0.25
+  dodge_TimeToBeEffective: 0.1
+  dodge_DurationOfDodge: 0.6
+  dodge_TimeToActAgain: 0.3
+  stagger_staggerDuration: 0.5
   onPunchStart:
     m_PersistentCalls:
       m_Calls:
@@ -1297,6 +1297,9 @@ MonoBehaviour:
           m_StringArgument: Punch
           m_BoolArgument: 0
         m_CallState: 2
+  onOtherPunchStart:
+    m_PersistentCalls:
+      m_Calls: []
   onPunchDamageTime:
     m_PersistentCalls:
       m_Calls:
@@ -6584,12 +6587,12 @@ MonoBehaviour:
   isPunching: 0
   isBlocking: 0
   isStaggered: 0
-  punch_TimeFromStartToDamage: 0
-  punch_TimeFromDamageToEnd: 0
-  block_DurationOfBlock: 0.4
-  stagger_staggerDuration: 0.2
-  ai_IdleTime_VeryShort: 0.25
-  ai_IdleTime_Long: 0.75
+  punch_TimeFromStartToDamage: 0.4
+  punch_TimeFromDamageToEnd: 0.25
+  block_DurationOfBlock: 0.8
+  stagger_staggerDuration: 0
+  ai_IdleTime_VeryShort: 0.2
+  ai_IdleTime_Long: 0.5
   onPunchStart:
     m_PersistentCalls:
       m_Calls:
