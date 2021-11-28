@@ -14,13 +14,18 @@ public class FightEnemyController : MonoBehaviour
     [SerializeField] private bool isBlocking;
     [SerializeField] private bool isDodging;
     [SerializeField] private bool isStaggered;
-    [SerializeField] private float attack_TimeToDamage;
-    [SerializeField] private float attack_TimeToActAgain;
+    [SerializeField] private float punch_TimeFromStartToDamage;
+    [SerializeField] private float punch_TimeFromDamageToEnd;
+    [SerializeField] private float superPunch_TimeFromStartToDamage;
+    [SerializeField] private float superPunch_TimeFromDamageToEnd;
+    [SerializeField] private float swipe_TimeFromStartToDamage;
+    [SerializeField] private float swipe_TimeFromDamageToEnd;
+    [SerializeField] private float sidePunch_TimeFromStartToDoding;
+    [SerializeField] private float sidePunch_TimeFromDodginToDamage;
+    [SerializeField] private float sidePunch_TimeFromDamageToEnd;
     [SerializeField] private float block_DurationOfBlock;
-    [SerializeField] private float dodge_TimeToBeEffective;
     [SerializeField] private float stagger_staggerDuration;
     [SerializeField] private float ai_IdleTime_VeryShort; //usado quando o AI vai executar varios movemntos muitos rapidos, tipo o tempo entre socos de um combo
-    [SerializeField] private float ai_IdleTime_Short; //usado em curtas pausas, e quando é tambem o windup de atakes normais
     [SerializeField] private float ai_IdleTime_Long; //usado quando o AI fica idle entre movimentos
     [SerializeField] private float special_SuperPunchWindupTime;
     [SerializeField] private float special_SidePunchWindupTime;
@@ -125,10 +130,10 @@ public class FightEnemyController : MonoBehaviour
     {
         onPunchStart.Invoke();
         isRegularPunching = true;
-        yield return new WaitForSeconds(attack_TimeToDamage);
+        yield return new WaitForSeconds(punch_TimeFromStartToDamage);
         onPunchDamageTime.Invoke();
         enemyRegularPunchConnects();
-        yield return new WaitForSeconds(attack_TimeToActAgain);
+        yield return new WaitForSeconds(punch_TimeFromDamageToEnd);
         onPunchEnd.Invoke();
         isRegularPunching = false;
 
@@ -136,10 +141,10 @@ public class FightEnemyController : MonoBehaviour
 
         onPunchStartOther.Invoke();
         isRegularPunching = true;
-        yield return new WaitForSeconds(attack_TimeToDamage);
+        yield return new WaitForSeconds(punch_TimeFromStartToDamage);
         onPunchDamageTimeOther.Invoke();
         enemyRegularPunchConnects();
-        yield return new WaitForSeconds(attack_TimeToActAgain);
+        yield return new WaitForSeconds(punch_TimeFromDamageToEnd);
         onPunchEndOther.Invoke();
         isRegularPunching = false;
 
@@ -148,12 +153,12 @@ public class FightEnemyController : MonoBehaviour
         onPunchStart.Invoke();
         isRegularPunching = true;
 
-        yield return new WaitForSeconds(attack_TimeToDamage);
+        yield return new WaitForSeconds(punch_TimeFromStartToDamage);
 
         onPunchDamageTime.Invoke();
         enemyRegularPunchConnects();
 
-        yield return new WaitForSeconds(attack_TimeToActAgain);
+        yield return new WaitForSeconds(punch_TimeFromDamageToEnd);
 
         onPunchEnd.Invoke();
         isRegularPunching = false;
@@ -167,10 +172,10 @@ public class FightEnemyController : MonoBehaviour
     {
         onPunchStart.Invoke();
         isRegularPunching = true;
-        yield return new WaitForSeconds(attack_TimeToDamage);
+        yield return new WaitForSeconds(punch_TimeFromStartToDamage);
         onPunchDamageTime.Invoke();
         enemyRegularPunchConnects();
-        yield return new WaitForSeconds(attack_TimeToActAgain);
+        yield return new WaitForSeconds(punch_TimeFromDamageToEnd);
         onPunchEnd.Invoke();
         isRegularPunching = false;
 
@@ -183,10 +188,10 @@ public class FightEnemyController : MonoBehaviour
     {
         onSuperPunchStart.Invoke();
         isUltraPunching = true;
-        yield return new WaitForSeconds(special_SuperPunchWindupTime);
+        yield return new WaitForSeconds(superPunch_TimeFromStartToDamage);
         onSuperPunchDamageTime.Invoke();
         enemySuperPunchConnects();
-        yield return new WaitForSeconds(attack_TimeToActAgain);
+        yield return new WaitForSeconds(superPunch_TimeFromDamageToEnd);
         onSuperPunchEnd.Invoke();
         isUltraPunching = false;
 
@@ -200,11 +205,11 @@ public class FightEnemyController : MonoBehaviour
         onSwipeStart.Invoke();
         isSwiping = true;
 
-        yield return new WaitForSeconds(special_SwipeWindupTime);
+        yield return new WaitForSeconds(swipe_TimeFromStartToDamage);
 
         onSwipeDamageTime.Invoke();
         enemySwipeConnects();
-        yield return new WaitForSeconds(attack_TimeToActAgain);
+        yield return new WaitForSeconds(swipe_TimeFromDamageToEnd);
 
         onSwipeEnd.Invoke();
         isSwiping = false;
@@ -220,18 +225,18 @@ public class FightEnemyController : MonoBehaviour
         onRightDodgeLeftPunchStart.Invoke();
         isSidePunching = true;
 
-        yield return new WaitForSeconds(dodge_TimeToBeEffective);
+        yield return new WaitForSeconds(sidePunch_TimeFromStartToDoding);
 
         onRightDodgeLeftPunchWindup.Invoke();
         isDodging = true;
 
-        yield return new WaitForSeconds(special_SwipeWindupTime);
+        yield return new WaitForSeconds(sidePunch_TimeFromDodginToDamage);
 
         onRightDodgeLeftPunchDamageTime.Invoke();
         isDodging = false;
         enemyLeftPunchConnects();
 
-        yield return new WaitForSeconds(attack_TimeToActAgain);
+        yield return new WaitForSeconds(sidePunch_TimeFromDamageToEnd);
 
         onRightDodgeLeftPunchEnd.Invoke();
         isSidePunching = false;
@@ -246,18 +251,18 @@ public class FightEnemyController : MonoBehaviour
         onLeftDodgeRightPunchStart.Invoke();
         isSidePunching = true;
 
-        yield return new WaitForSeconds(dodge_TimeToBeEffective);
+        yield return new WaitForSeconds(sidePunch_TimeFromStartToDoding);
 
         onLeftDodgeRightPunchWindup.Invoke();
         isDodging = true;
 
-        yield return new WaitForSeconds(special_SwipeWindupTime);
+        yield return new WaitForSeconds(sidePunch_TimeFromDodginToDamage);
 
         onLeftDodgeRightPunchDamageTime.Invoke();
         isDodging = false;
         enemyRightPunchConnects();
 
-        yield return new WaitForSeconds(attack_TimeToActAgain);
+        yield return new WaitForSeconds(sidePunch_TimeFromDamageToEnd);
 
         onLeftDodgeRightPunchEnd.Invoke();
         isSidePunching = false;

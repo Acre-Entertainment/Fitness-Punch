@@ -10,12 +10,11 @@ public class StrenghEnemyController : MonoBehaviour
     [SerializeField] private bool isPunching;
     [SerializeField] private bool isBlocking;
     [SerializeField] private bool isStaggered;
-    [SerializeField] private float punch_TimeToDamage;
-    [SerializeField] private float punch_TimeToActAgain;
+    [SerializeField] private float punch_TimeFromStartToDamage;
+    [SerializeField] private float punch_TimeFromDamageToEnd;
     [SerializeField] private float block_DurationOfBlock;
     [SerializeField] private float stagger_staggerDuration;
     [SerializeField] private float ai_IdleTime_VeryShort;
-    [SerializeField] private float ai_IdleTime_Short;
     [SerializeField] private float ai_IdleTime_Long;
     public UnityEvent onPunchStart;
     public UnityEvent onPunchDamageTime;
@@ -73,10 +72,10 @@ public class StrenghEnemyController : MonoBehaviour
     {
         onPunchStart.Invoke();
         isPunching = true;
-        yield return new WaitForSeconds(punch_TimeToDamage);
+        yield return new WaitForSeconds(punch_TimeFromStartToDamage);
         onPunchDamageTime.Invoke();
         enemyPunchConnects();
-        yield return new WaitForSeconds(punch_TimeToActAgain);
+        yield return new WaitForSeconds(punch_TimeFromDamageToEnd);
         onPunchEnd.Invoke();
         isPunching = false;
 
@@ -84,10 +83,10 @@ public class StrenghEnemyController : MonoBehaviour
 
         onPunchStartOther.Invoke();
         isPunching = true;
-        yield return new WaitForSeconds(punch_TimeToDamage);
+        yield return new WaitForSeconds(punch_TimeFromStartToDamage);
         onPunchDamageTimeOther.Invoke();
         enemyPunchConnects();
-        yield return new WaitForSeconds(punch_TimeToActAgain);
+        yield return new WaitForSeconds(punch_TimeFromDamageToEnd);
         onPunchEndOther.Invoke();
         isPunching = false;
 
@@ -95,10 +94,10 @@ public class StrenghEnemyController : MonoBehaviour
 
         onPunchStart.Invoke();
         isPunching = true;
-        yield return new WaitForSeconds(punch_TimeToDamage);
+        yield return new WaitForSeconds(punch_TimeFromStartToDamage);
         onPunchDamageTime.Invoke();
         enemyPunchConnects();
-        yield return new WaitForSeconds(punch_TimeToActAgain);
+        yield return new WaitForSeconds(punch_TimeFromDamageToEnd);
         onPunchEnd.Invoke();
         isPunching = false;
 
@@ -111,10 +110,10 @@ public class StrenghEnemyController : MonoBehaviour
     {
         onPunchStart.Invoke();
         isPunching = true;
-        yield return new WaitForSeconds(punch_TimeToDamage);
+        yield return new WaitForSeconds(punch_TimeFromStartToDamage);
         onPunchDamageTime.Invoke();
         enemyPunchConnects();
-        yield return new WaitForSeconds(punch_TimeToActAgain);
+        yield return new WaitForSeconds(punch_TimeFromDamageToEnd);
         onPunchEnd.Invoke();
         isPunching = false;
 
