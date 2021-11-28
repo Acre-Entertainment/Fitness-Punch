@@ -61,6 +61,14 @@ public class StrenghResistanceAttributeBonesMalus : MonoBehaviour
             dataHolder.resistencia -= 1;
             fibraText.text = "-1 de Resistência devido a quantidade de Fibras desbalanceadas";
         }
+        if(dataHolder.forca < 0)
+        {
+            dataHolder.forca = 0;
+        }
+        if(dataHolder.resistencia < 0)
+        {
+            dataHolder.resistencia = 0;
+        }
         strenghText.text = "" + dataHolder.forca;
         resistenciaText.text = "" + dataHolder.resistencia;
     }
