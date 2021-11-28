@@ -57,6 +57,10 @@ public class CookingGameMaster : MonoBehaviour
         pointsUIText = pointsUI.GetComponent<Text>();
         timeForChecks = timeBetweenChecks;
 
+        selectedFoodsID[0] = dataHolder.selectedCookingFood[0];
+        selectedFoodsID[1] = dataHolder.selectedCookingFood[1];
+        selectedFoodsID[2] = dataHolder.selectedCookingFood[2];
+
         startingCar = dataHolder.carboidrato;
         startingPro = dataHolder.proteina;
         startingLip = dataHolder.lipidio;
