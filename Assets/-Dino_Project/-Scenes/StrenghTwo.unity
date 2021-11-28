@@ -647,6 +647,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389530331}
   m_CullTransparentMesh: 1
+--- !u!212 &436303990 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8052810475599389032, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+  m_PrefabInstance: {fileID: 567408844}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &446152182 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5358070100118208382, guid: 91e628a52b309b24c88be1ff3ae0bf03, type: 3}
@@ -837,6 +842,7 @@ GameObject:
   m_Component:
   - component: {fileID: 587799407}
   - component: {fileID: 587799406}
+  - component: {fileID: 587799408}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Player
@@ -947,9 +953,33 @@ MonoBehaviour:
           m_StringArgument: Block
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 587799408}
+        m_TargetAssemblyTypeName: MakeStuffBlue, Assembly-CSharp
+        m_MethodName: makeBlue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onBlockLowerGuard:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 587799408}
+        m_TargetAssemblyTypeName: MakeStuffBlue, Assembly-CSharp
+        m_MethodName: makeNotBlue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onBlockEnd:
     m_PersistentCalls:
       m_Calls:
@@ -1120,6 +1150,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &587799408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587799405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010429eeb8589e047ac42216dc9d2ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderers:
+  - {fileID: 1124993036}
+  - {fileID: 1643283116}
+  - {fileID: 436303990}
+  - {fileID: 909669681}
 --- !u!1 &590663618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,6 +1336,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662915007}
   m_CullTransparentMesh: 1
+--- !u!212 &909669681 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8052810475169448538, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+  m_PrefabInstance: {fileID: 567408844}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &933388353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1804,6 +1856,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108560085}
   m_CullTransparentMesh: 1
+--- !u!212 &1124993036 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8052810475812905250, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+  m_PrefabInstance: {fileID: 567408844}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1178341776
 GameObject:
   m_ObjectHideFlags: 0
@@ -2555,6 +2612,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!212 &1643283116 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8052810475255284357, guid: e76ca8964fae1794391cdb651b5d5ee1, type: 3}
+  m_PrefabInstance: {fileID: 567408844}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1662709169
 GameObject:
   m_ObjectHideFlags: 0
@@ -4109,7 +4171,7 @@ MonoBehaviour:
   isStaggered: 0
   punch_TimeFromStartToDamage: 0.4
   punch_TimeFromDamageToEnd: 0.25
-  block_DurationOfBlock: 0.8
+  block_DurationOfBlock: 1
   stagger_staggerDuration: 0
   ai_IdleTime_VeryShort: 0.25
   ai_IdleTime_Long: 1

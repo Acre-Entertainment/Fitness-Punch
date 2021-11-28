@@ -123,7 +123,7 @@ public class StrenghEnemyController : MonoBehaviour
     private IEnumerator Blocking()
     {
         onBlockStart.Invoke();
-        isBlocking = false;
+        isBlocking = true;
 
         yield return new WaitForSeconds(block_DurationOfBlock);
 
