@@ -22,7 +22,9 @@ public class FightEnemyController : MonoBehaviour
     [SerializeField] private float ai_IdleTime_VeryShort; //usado quando o AI vai executar varios movemntos muitos rapidos, tipo o tempo entre socos de um combo
     [SerializeField] private float ai_IdleTime_Short; //usado em curtas pausas, e quando é tambem o windup de atakes normais
     [SerializeField] private float ai_IdleTime_Long; //usado quando o AI fica idle entre movimentos
-    [SerializeField] private float special_SpecialAttackWindupTime; //usado antes de super atakes
+    [SerializeField] private float special_SuperPunchWindupTime;
+    [SerializeField] private float special_SidePunchWindupTime;
+    [SerializeField] private float special_SwipeWindupTime;
     private int overrideStaggerCombo;
     public UnityEvent onPunchStart;
     public UnityEvent onPunchDamageTime;
@@ -181,7 +183,7 @@ public class FightEnemyController : MonoBehaviour
     {
         onSuperPunchStart.Invoke();
         isUltraPunching = true;
-        yield return new WaitForSeconds(special_SpecialAttackWindupTime);
+        yield return new WaitForSeconds(special_SuperPunchWindupTime);
         onSuperPunchDamageTime.Invoke();
         enemySuperPunchConnects();
         yield return new WaitForSeconds(attack_TimeToActAgain);
@@ -198,7 +200,7 @@ public class FightEnemyController : MonoBehaviour
         onSwipeStart.Invoke();
         isSwiping = true;
 
-        yield return new WaitForSeconds(special_SpecialAttackWindupTime);
+        yield return new WaitForSeconds(special_SwipeWindupTime);
 
         onSwipeDamageTime.Invoke();
         enemySwipeConnects();
@@ -223,7 +225,7 @@ public class FightEnemyController : MonoBehaviour
         onRightDodgeLeftPunchWindup.Invoke();
         isDodging = true;
 
-        yield return new WaitForSeconds(special_SpecialAttackWindupTime);
+        yield return new WaitForSeconds(special_SwipeWindupTime);
 
         onRightDodgeLeftPunchDamageTime.Invoke();
         isDodging = false;
@@ -249,7 +251,7 @@ public class FightEnemyController : MonoBehaviour
         onLeftDodgeRightPunchWindup.Invoke();
         isDodging = true;
 
-        yield return new WaitForSeconds(special_SpecialAttackWindupTime);
+        yield return new WaitForSeconds(special_SwipeWindupTime);
 
         onLeftDodgeRightPunchDamageTime.Invoke();
         isDodging = false;
