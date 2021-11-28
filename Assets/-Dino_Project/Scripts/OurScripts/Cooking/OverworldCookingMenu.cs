@@ -117,54 +117,44 @@ public class OverworldCookingMenu : MonoBehaviour
         inventoryButtons[currentSelectedButton -1].SetActive(false);
         dataHolder.selectedCookingFood[selectStage] = currentSelectedInventoryID;
         selectStage++;
-        if(selectStage == 3)
+        switch(selectStage)
         {
-            cookButton.SetActive(true);
-            foreach(GameObject go in inventoryButtons)
-            {
-                go.SetActive(false);
-            }
-        }
-        else
-        {
-            switch(selectStage)
-            {
-                case 1:
+            case 1:
+                selectedOne.sprite = giveSpriteOfItenID(currentSelectedInventoryID);
+                if(currentSelectedInventoryID > 300)
+                {
+                    selectedOneGlow.SetActive(true);
+                }
+                selectedCookingButtonOne = currentSelectedButton;
+                break;
+            case 2:
+                selectedTwo.sprite = giveSpriteOfItenID(currentSelectedInventoryID);
+                if(currentSelectedInventoryID > 300)
+                {
+                    selectedTwoGlow.SetActive(true);
+                }
+                selectedCookingButtonTwo = currentSelectedButton;
+                break;
+            case 3:
+                selectedTwo.sprite = giveSpriteOfItenID(currentSelectedInventoryID);
+                if(currentSelectedInventoryID > 300)
+                {
+                    selectedTwoGlow.SetActive(true);
+                }
+                selectedCookingButtonThree = currentSelectedButton;
 
-                    selectedOne.sprite = giveSpriteOfItenID(currentSelectedInventoryID);
-                    if(currentSelectedInventoryID > 300)
-                    {
-                        selectedOneGlow.SetActive(true);
-                    }
-                    selectedCookingButtonOne = currentSelectedButton;
-                    break;
-                case 2:
-                    selectedTwo.sprite = giveSpriteOfItenID(currentSelectedInventoryID);
-                    if(currentSelectedInventoryID > 300)
-                    {
-                        selectedTwoGlow.SetActive(true);
-                    }
-                    selectedCookingButtonTwo = currentSelectedButton;
-                    break;
-                case 3:
-                    selectedTwo.sprite = giveSpriteOfItenID(currentSelectedInventoryID);
-                    if(currentSelectedInventoryID > 300)
-                    {
-                        selectedTwoGlow.SetActive(true);
-                    }
-                    selectedCookingButtonThree = currentSelectedButton;
-                    break;
-                
+                cookButton.SetActive(true);
+                foreach(GameObject go in inventoryButtons)
+                {
+                    go.SetActive(false);
+                }
+                break;
             }
-        }
     }
     public void clickedCook()
     {
-        dataHolder.selectedCookingFood[0] = dataHolder.inventorySlots[selectedCookingButtonOne - 1];
         dataHolder.inventorySlots[selectedCookingButtonOne - 1] = 0;
-        dataHolder.selectedCookingFood[1] = dataHolder.inventorySlots[selectedCookingButtonTwo - 1];
         dataHolder.inventorySlots[selectedCookingButtonTwo - 1] = 0;
-        dataHolder.selectedCookingFood[2] = dataHolder.inventorySlots[selectedCookingButtonThree - 1];
         dataHolder.inventorySlots[selectedCookingButtonThree - 1] = 0;
         dataHolder.organizeInventory();
         dataHolder.actions = dataHolder.actions - 1;
