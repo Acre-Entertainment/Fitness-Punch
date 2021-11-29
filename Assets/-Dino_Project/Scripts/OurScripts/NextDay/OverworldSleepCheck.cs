@@ -26,6 +26,10 @@ public class OverworldSleepCheck : MonoBehaviour
         {
             if(dataHolder.actions == 0)
             {
+                foreach(GameObject go in otherJunk)
+            {
+                go.SetActive(false);
+            }
                 stillActionText.SetActive(false);
                 sleepButton.SetActive(true);
             }
