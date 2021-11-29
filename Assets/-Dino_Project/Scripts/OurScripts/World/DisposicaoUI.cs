@@ -12,9 +12,9 @@ public class DisposicaoUI : MonoBehaviour
     void Start()
     {
         dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
-        if(dataHolder.disposicao < 4){disposicao4.SetActive(false);}
-        if(dataHolder.disposicao < 3){disposicao3.SetActive(false);}
-        if(dataHolder.disposicao < 2){disposicao2.SetActive(false);}
-        if(dataHolder.disposicao < 1){disposicao1.SetActive(false);}
+        if(dataHolder.actions < 4){disposicao4.SetActive(false);}
+        if(dataHolder.actions < 3){disposicao3.SetActive(false);}
+        if(dataHolder.actions < 2){disposicao2.SetActive(false);}
+        if(dataHolder.actions < 1){disposicao1.SetActive(false);}
     }
 }
