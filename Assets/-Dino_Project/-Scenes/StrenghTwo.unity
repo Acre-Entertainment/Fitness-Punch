@@ -756,7 +756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &519090396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1714,7 +1714,9 @@ MonoBehaviour:
   disposicao: 0
   forca: 0
   resistencia: 0
+  coins: 0
   inventorySlots: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  coinActivation: 00000000000000000000000000000000000000000000000000
   selectedGrocerFood: 00000000000000000000000000000000
   selectedCookingFood: 000000000000000000000000
   grocerThisDay: 0
