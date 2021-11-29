@@ -4324,12 +4324,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499694a3444f8ce4eb68d6ba18adde43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicMixerGroup: {fileID: 0}
-  soundEffectsMixerGroup: {fileID: 0}
+  musicMixerGroup: {fileID: 3636197073092816806, guid: 571e0eb5e4dcdbb4d8a79e1407baa8f0, type: 2}
+  soundEffectsMixerGroup: {fileID: -364875233008755489, guid: 571e0eb5e4dcdbb4d8a79e1407baa8f0, type: 2}
   sounds:
   - name: Walk1
     audioType: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 6d132c8641837b04aa2b3502a2903312, type: 3}
     volume: 0.05
     pitch: 0.8
     loop: 0
@@ -4337,7 +4337,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Walk2
     audioType: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: ad1810c6376a1434caf4d5a45f7af866, type: 3}
     volume: 0.05
     pitch: 0.7
     loop: 0
@@ -10450,7 +10450,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 36563186, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 105.50714
+      value: 105.50708
       objectReference: {fileID: 0}
     - target: {fileID: 204585639, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -10458,7 +10458,11 @@ PrefabInstance:
       objectReference: {fileID: 7319460427771095124}
     - target: {fileID: 246904184, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 105.50714
+      value: 105.50708
+      objectReference: {fileID: 0}
+    - target: {fileID: 346953210, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -53.99994
       objectReference: {fileID: 0}
     - target: {fileID: 381612803, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -10470,28 +10474,44 @@ PrefabInstance:
       objectReference: {fileID: 9349393}
     - target: {fileID: 654954502, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 105.50714
+      value: 105.50708
+      objectReference: {fileID: 0}
+    - target: {fileID: 734436278, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -53.99994
       objectReference: {fileID: 0}
     - target: {fileID: 784074154, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 105.50714
+      value: 105.50708
       objectReference: {fileID: 0}
     - target: {fileID: 996912351, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 9349393}
+    - target: {fileID: 1321332580, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -29.999939
+      objectReference: {fileID: 0}
     - target: {fileID: 1331731824, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 9349393}
+    - target: {fileID: 1349517574, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -29.999939
+      objectReference: {fileID: 0}
     - target: {fileID: 1397965547, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 105.50714
+      value: 105.50708
       objectReference: {fileID: 0}
     - target: {fileID: 1519049670, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 9349393}
+    - target: {fileID: 1524327629, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -29.999939
+      objectReference: {fileID: 0}
     - target: {fileID: 769834753422601476, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
