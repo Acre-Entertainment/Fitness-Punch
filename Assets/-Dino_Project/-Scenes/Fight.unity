@@ -599,15 +599,7 @@ MonoBehaviour:
   - name: Victory
     audioType: 0
     audioClip: {fileID: 8300000, guid: 439a1b73cae793840913cc1c43f4f228, type: 3}
-    volume: 0.362
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: Button_play
-    audioType: 0
-    audioClip: {fileID: 8300000, guid: 439a1b73cae793840913cc1c43f4f228, type: 3}
-    volume: 0.318
+    volume: 0.4
     pitch: 1
     loop: 0
     playOnAwake: 0
@@ -615,7 +607,7 @@ MonoBehaviour:
   - name: Soco_fraco
     audioType: 0
     audioClip: {fileID: 8300000, guid: 626e243154026644cb90a3e4a78f5079, type: 3}
-    volume: 0.318
+    volume: 0.45
     pitch: 1
     loop: 0
     playOnAwake: 0
@@ -623,7 +615,7 @@ MonoBehaviour:
   - name: Soco_medio
     audioType: 0
     audioClip: {fileID: 8300000, guid: 8e68de0af96b9774b8df28794c7dc1a8, type: 3}
-    volume: 0.318
+    volume: 0.45
     pitch: 1
     loop: 0
     playOnAwake: 0
@@ -655,7 +647,7 @@ MonoBehaviour:
   - name: Voosh_enemy2
     audioType: 0
     audioClip: {fileID: 8300000, guid: 34e0355936369974f9f12c5f3898afd5, type: 3}
-    volume: 0.39
+    volume: 0.45
     pitch: 1
     loop: 0
     playOnAwake: 0
@@ -663,7 +655,7 @@ MonoBehaviour:
   - name: Voosh_player
     audioType: 0
     audioClip: {fileID: 8300000, guid: 0ce3048ec0bb29043be83a75e5f59d78, type: 3}
-    volume: 0.35
+    volume: 0.45
     pitch: 1
     loop: 0
     playOnAwake: 0
@@ -671,7 +663,31 @@ MonoBehaviour:
   - name: Esquiva
     audioType: 0
     audioClip: {fileID: 8300000, guid: d346ea9d23631bd4cbe3fed7684dbe2e, type: 3}
-    volume: 0.444
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: button_1
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 503166fe721ef654cac95d10fc37aa4d, type: 3}
+    volume: 0.65
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: button_2
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 438d14bf454080048bd954b060c7813b, type: 3}
+    volume: 0.503
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Defeat
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 9d06ece7c168cf64ebaa1d4a61ecb4fc, type: 3}
+    volume: 0.503
     pitch: 1
     loop: 0
     playOnAwake: 0
@@ -1820,6 +1836,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 104764568}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: button_2
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &265660180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2238,7 +2266,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Come\xE7ar"
+  m_Text: VOLTAR
 --- !u!222 &339884533
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4019,6 +4047,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &712363179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5358070099804855728, guid: 91e628a52b309b24c88be1ff3ae0bf03, type: 3}
+  m_PrefabInstance: {fileID: 5358070100618758408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &712363180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712363179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd74de8686a885847bfdf3d6136ba3b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &713966055
 GameObject:
   m_ObjectHideFlags: 0
@@ -7398,7 +7443,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1169055622}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -7424,6 +7469,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 104764568}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: button_2
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1169055622
@@ -9043,8 +9100,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Suas prepara\xE7\xF5es durante a semana se culminam aqui!\n\nToque no
-    seu oponente para socar, no seu personagem para bloquer e nas laterais inferior,
+  m_Text: "Suas prepara\xE7\xF5es durante a semana culminam aqui!\n\nToque no seu
+    oponente para socar, no seu personagem para bloquer e nas laterais inferior,
     direita e esquerda para se esquivar.\n\nSua for\xE7a, resist\xEAncia e habilidade
     definir\xE1 quem ser\xE1 o campe\xE3o!"
 --- !u!222 &1424077430
@@ -9393,6 +9450,18 @@ MonoBehaviour:
           m_StringArgument: Victory
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 104764568}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Stop
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Theme
+          m_BoolArgument: 1
+        m_CallState: 2
   onEnemyWin:
     m_PersistentCalls:
       m_Calls:
@@ -9432,16 +9501,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 104764567}
-        m_TargetAssemblyTypeName: FightEnemyController, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 104764568}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Defeat
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 104764568}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Stop
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Theme
           m_BoolArgument: 1
         m_CallState: 2
   onPlayerDoesDamage:
@@ -10591,7 +10672,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1659465465}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -10617,6 +10698,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 104764568}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: button_2
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1659465465
@@ -10895,7 +10988,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Come\xE7ar"
+  m_Text: VOLTAR
 --- !u!222 &1709037180
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12285,19 +12378,7 @@ MonoBehaviour:
         m_CallState: 2
   onPlayerKnockout:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 104764567}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1865589953
 MonoBehaviour:
   m_ObjectHideFlags: 0
