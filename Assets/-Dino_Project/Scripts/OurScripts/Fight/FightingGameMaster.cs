@@ -6,12 +6,13 @@ using UnityEngine.Events;
 public class FightingGameMaster : MonoBehaviour
 {
     private DataHolder dataHolder;
+    public HealthBars healthBars;
     public int playerBaseHealth;
     public int playerHealthPerAerobic;
-    private int playerHealth;
+    [HideInInspector] public int playerHealth;
     public int playerBaseDamage;
     public int playerDamagePerStrengh;
-    private int playerDamage;
+    [HideInInspector] public int playerDamage;
     public int enemyHealth;
     public int enemyRegularAttackDamage;
     public int enemySuperAttackDamage;
@@ -32,6 +33,7 @@ public class FightingGameMaster : MonoBehaviour
     public void playerPunchDoesDamage()
     {
         enemyHealth = enemyHealth - playerDamage;
+        healthBars.setEnemyBar();
         onPlayerDoesDamage.Invoke();
         if(enemyHealth <= 0)
         {
@@ -41,6 +43,7 @@ public class FightingGameMaster : MonoBehaviour
     public void enemyRegularPunchDoesDamage()
     {
         playerHealth = playerHealth - enemyRegularAttackDamage;
+        healthBars.setPlayerBar();
         onEnemyDoesRegularDamage.Invoke();
         if(playerHealth <= 0)
         {
@@ -50,6 +53,7 @@ public class FightingGameMaster : MonoBehaviour
     public void enemySuperPunchDoesDamage()
     {
         playerHealth = playerHealth - enemySuperAttackDamage;
+        healthBars.setPlayerBar();
         onEnemyDoesBigDamage.Invoke();
         if(playerHealth <= 0)
         {

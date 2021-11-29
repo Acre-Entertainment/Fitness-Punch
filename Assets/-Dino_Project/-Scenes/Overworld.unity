@@ -243,9 +243,12 @@ GameObject:
   m_Component:
   - component: {fileID: 20040204}
   - component: {fileID: 20040205}
+<<<<<<< HEAD
   - component: {fileID: 20040206}
   - component: {fileID: 20040207}
   - component: {fileID: 20040208}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (14)"
   m_TagString: Coin
@@ -318,6 +321,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &20040206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,6 +365,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 14
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &25153965
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,9 +517,12 @@ GameObject:
   m_Component:
   - component: {fileID: 27481509}
   - component: {fileID: 27481510}
+<<<<<<< HEAD
   - component: {fileID: 27481511}
   - component: {fileID: 27481512}
   - component: {fileID: 27481513}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (16)"
   m_TagString: Coin
@@ -586,6 +595,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &27481511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -629,6 +639,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 16
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &41370470
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,9 +1433,12 @@ GameObject:
   m_Component:
   - component: {fileID: 198909830}
   - component: {fileID: 198909831}
+<<<<<<< HEAD
   - component: {fileID: 198909832}
   - component: {fileID: 198909833}
   - component: {fileID: 198909834}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (13)"
   m_TagString: Coin
@@ -1496,6 +1511,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &198909832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1539,6 +1555,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 13
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &204586370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,9 +1643,12 @@ GameObject:
   m_Component:
   - component: {fileID: 240376325}
   - component: {fileID: 240376326}
+<<<<<<< HEAD
   - component: {fileID: 240376327}
   - component: {fileID: 240376328}
   - component: {fileID: 240376329}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (10)"
   m_TagString: Coin
@@ -1700,6 +1721,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &240376327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1743,6 +1765,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 10
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &249996753
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,11 +2268,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332388030}
   m_CullTransparentMesh: 1
---- !u!1 &339637916 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 769834754468021618, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-  m_PrefabInstance: {fileID: 1124694834275800872}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &361890558 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1124694834451043798, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
@@ -2671,9 +2690,12 @@ GameObject:
   m_Component:
   - component: {fileID: 441624753}
   - component: {fileID: 441624754}
+<<<<<<< HEAD
   - component: {fileID: 441624755}
   - component: {fileID: 441624756}
   - component: {fileID: 441624757}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (19)"
   m_TagString: Coin
@@ -2746,6 +2768,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &441624755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2789,6 +2812,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 19
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &446103146
 GameObject:
   m_ObjectHideFlags: 0
@@ -3272,9 +3297,12 @@ GameObject:
   m_Component:
   - component: {fileID: 498649748}
   - component: {fileID: 498649749}
+<<<<<<< HEAD
   - component: {fileID: 498649750}
   - component: {fileID: 498649751}
   - component: {fileID: 498649752}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (4)"
   m_TagString: Coin
@@ -3347,6 +3375,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &498649750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3390,6 +3419,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 4
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &499250720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1124694834321826056, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
@@ -3537,9 +3568,12 @@ GameObject:
   m_Component:
   - component: {fileID: 541377397}
   - component: {fileID: 541377398}
+<<<<<<< HEAD
   - component: {fileID: 541377399}
   - component: {fileID: 541377400}
   - component: {fileID: 541377401}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (6)"
   m_TagString: Coin
@@ -3612,6 +3646,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &541377399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3655,6 +3690,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 6
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &560038449 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 560038449, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
@@ -4454,9 +4491,12 @@ GameObject:
   m_Component:
   - component: {fileID: 726848644}
   - component: {fileID: 726848645}
+<<<<<<< HEAD
   - component: {fileID: 726848646}
   - component: {fileID: 726848647}
   - component: {fileID: 726848648}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (7)"
   m_TagString: Coin
@@ -4529,6 +4569,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &726848646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4572,6 +4613,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 7
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &740553867
 GameObject:
   m_ObjectHideFlags: 0
@@ -4613,9 +4656,12 @@ GameObject:
   m_Component:
   - component: {fileID: 756408550}
   - component: {fileID: 756408551}
+<<<<<<< HEAD
   - component: {fileID: 756408552}
   - component: {fileID: 756408553}
   - component: {fileID: 756408554}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (24)"
   m_TagString: Coin
@@ -4688,6 +4734,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &756408552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4779,6 +4826,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 0
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &798262724
 GameObject:
   m_ObjectHideFlags: 0
@@ -4983,9 +5032,12 @@ GameObject:
   m_Component:
   - component: {fileID: 855477706}
   - component: {fileID: 855477707}
+<<<<<<< HEAD
   - component: {fileID: 855477708}
   - component: {fileID: 855477709}
   - component: {fileID: 855477710}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (21)"
   m_TagString: Coin
@@ -5058,6 +5110,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &855477708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5101,6 +5154,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 21
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &864448878
 GameObject:
   m_ObjectHideFlags: 0
@@ -5381,9 +5436,12 @@ GameObject:
   m_Component:
   - component: {fileID: 913371082}
   - component: {fileID: 913371083}
+<<<<<<< HEAD
   - component: {fileID: 913371084}
   - component: {fileID: 913371085}
   - component: {fileID: 913371086}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (2)"
   m_TagString: Coin
@@ -5456,6 +5514,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &913371084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5499,6 +5558,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 2
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &918660784
 GameObject:
   m_ObjectHideFlags: 0
@@ -5509,9 +5570,12 @@ GameObject:
   m_Component:
   - component: {fileID: 918660785}
   - component: {fileID: 918660786}
+<<<<<<< HEAD
   - component: {fileID: 918660787}
   - component: {fileID: 918660788}
   - component: {fileID: 918660789}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (20)"
   m_TagString: Coin
@@ -5584,6 +5648,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &918660787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5627,6 +5692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 20
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &919960537
 GameObject:
   m_ObjectHideFlags: 0
@@ -5914,9 +5981,12 @@ GameObject:
   m_Component:
   - component: {fileID: 993696162}
   - component: {fileID: 993696163}
+<<<<<<< HEAD
   - component: {fileID: 993696164}
   - component: {fileID: 993696165}
   - component: {fileID: 993696166}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (12)"
   m_TagString: Coin
@@ -5989,6 +6059,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &993696164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6032,6 +6103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 12
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &1001500292
 GameObject:
   m_ObjectHideFlags: 0
@@ -6664,9 +6737,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1156973477}
   - component: {fileID: 1156973478}
+<<<<<<< HEAD
   - component: {fileID: 1156973479}
   - component: {fileID: 1156973480}
   - component: {fileID: 1156973481}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (17)"
   m_TagString: Coin
@@ -6739,6 +6815,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &1156973479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6782,6 +6859,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 17
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &1191421743
 GameObject:
   m_ObjectHideFlags: 0
@@ -7491,9 +7570,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1338172177}
   - component: {fileID: 1338172178}
+<<<<<<< HEAD
   - component: {fileID: 1338172179}
   - component: {fileID: 1338172180}
   - component: {fileID: 1338172181}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (15)"
   m_TagString: Coin
@@ -7566,6 +7648,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &1338172179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7609,6 +7692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 15
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &1368449653
 GameObject:
   m_ObjectHideFlags: 0
@@ -7619,9 +7704,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1368449654}
   - component: {fileID: 1368449655}
+<<<<<<< HEAD
   - component: {fileID: 1368449656}
   - component: {fileID: 1368449657}
   - component: {fileID: 1368449658}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (8)"
   m_TagString: Coin
@@ -7694,6 +7782,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &1368449656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7737,6 +7826,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 8
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1001 &1385342591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8362,9 +8453,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1553715831}
   - component: {fileID: 1553715832}
+<<<<<<< HEAD
   - component: {fileID: 1553715833}
   - component: {fileID: 1553715834}
   - component: {fileID: 1553715835}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (1)"
   m_TagString: Coin
@@ -8437,6 +8531,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &1553715833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8480,6 +8575,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 1
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &1560920937
 GameObject:
   m_ObjectHideFlags: 0
@@ -8718,11 +8815,6 @@ MonoBehaviour:
   noActionsText: {fileID: 1124694834275800884}
   neededDisposition: 2
   invetorySize: 10
---- !u!1 &1590138824 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 769834754368039551, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-  m_PrefabInstance: {fileID: 1124694834275800872}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1619444569
 GameObject:
   m_ObjectHideFlags: 0
@@ -9079,9 +9171,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1705676825}
   - component: {fileID: 1705676826}
+<<<<<<< HEAD
   - component: {fileID: 1705676827}
   - component: {fileID: 1705676828}
   - component: {fileID: 1705676829}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (5)"
   m_TagString: Coin
@@ -9154,6 +9249,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &1705676827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9197,6 +9293,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 5
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &1706938215
 GameObject:
   m_ObjectHideFlags: 0
@@ -9469,11 +9567,6 @@ CanvasRenderer:
 --- !u!1 &1793251896 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5976959603285733291, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
-  m_PrefabInstance: {fileID: 1124694834275800872}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1797918308 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1403117765, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
   m_PrefabInstance: {fileID: 1124694834275800872}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1819232136
@@ -9988,9 +10081,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1895533424}
   - component: {fileID: 1895533425}
+<<<<<<< HEAD
   - component: {fileID: 1895533426}
   - component: {fileID: 1895533427}
   - component: {fileID: 1895533428}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (18)"
   m_TagString: Coin
@@ -10063,6 +10159,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &1895533426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10106,6 +10203,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 18
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!4 &1898202921 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7948030654676328964, guid: 945f09c9676e4334dac22e31efcac115, type: 3}
@@ -10461,9 +10560,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1986913055}
   - component: {fileID: 1986913056}
+<<<<<<< HEAD
   - component: {fileID: 1986913057}
   - component: {fileID: 1986913058}
   - component: {fileID: 1986913059}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (11)"
   m_TagString: Coin
@@ -10536,6 +10638,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &1986913057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10579,6 +10682,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 11
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &2004785533
 GameObject:
   m_ObjectHideFlags: 0
@@ -10620,9 +10725,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2031953999}
   - component: {fileID: 2031954000}
+<<<<<<< HEAD
   - component: {fileID: 2031954001}
   - component: {fileID: 2031954002}
   - component: {fileID: 2031954003}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (3)"
   m_TagString: Coin
@@ -10695,6 +10803,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &2031954001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10738,6 +10847,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 3
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &2048337799 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2048337799, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
@@ -10808,9 +10919,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2066813490}
   - component: {fileID: 2066813491}
+<<<<<<< HEAD
   - component: {fileID: 2066813492}
   - component: {fileID: 2066813493}
   - component: {fileID: 2066813494}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (22)"
   m_TagString: Coin
@@ -10883,6 +10997,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &2066813492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10926,6 +11041,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 22
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &2070307408
 GameObject:
   m_ObjectHideFlags: 0
@@ -11003,9 +11120,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2113146705}
   - component: {fileID: 2113146706}
+<<<<<<< HEAD
   - component: {fileID: 2113146707}
   - component: {fileID: 2113146708}
   - component: {fileID: 2113146709}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (9)"
   m_TagString: Coin
@@ -11078,6 +11198,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &2113146707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11121,6 +11242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 9
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &2114004454
 GameObject:
   m_ObjectHideFlags: 0
@@ -11302,9 +11425,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2133489876}
   - component: {fileID: 2133489877}
+<<<<<<< HEAD
   - component: {fileID: 2133489878}
   - component: {fileID: 2133489879}
   - component: {fileID: 2133489880}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: "Ch\xE3o_4 (23)"
   m_TagString: Coin
@@ -11377,6 +11503,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &2133489878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11420,6 +11547,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinNumber: 23
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1 &2147002174
 GameObject:
   m_ObjectHideFlags: 0
@@ -11434,8 +11563,11 @@ GameObject:
   - component: {fileID: 2147002178}
   - component: {fileID: 2147002179}
   - component: {fileID: 2147002180}
+<<<<<<< HEAD
   - component: {fileID: 2147002181}
   - component: {fileID: 2147002182}
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
   m_Layer: 0
   m_Name: OnLoadScripts
   m_TagString: Untagged
@@ -11529,6 +11661,7 @@ MonoBehaviour:
   disposicao2: {fileID: 2109288874}
   disposicao3: {fileID: 428895399}
   disposicao4: {fileID: 1445270753}
+<<<<<<< HEAD
 --- !u!114 &2147002181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11583,6 +11716,8 @@ MonoBehaviour:
   - {fileID: 2133489875}
   - {fileID: 756408549}
   oddsThatCoinSpawnOutOf100: 30
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
 --- !u!1001 &660690971716695120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11653,15 +11788,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 36563186, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
       value: 105.507385
       objectReference: {fileID: 0}
     - target: {fileID: 74032978, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -488.28003
+<<<<<<< HEAD
 =======
       value: 105.50769
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
       objectReference: {fileID: 0}
     - target: {fileID: 204585639, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -11669,11 +11810,15 @@ PrefabInstance:
       objectReference: {fileID: 7319460427771095124}
     - target: {fileID: 246904184, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 105.507385
 =======
       value: 105.50769
 >>>>>>> Stashed changes
+=======
+      value: 105.507385
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
       objectReference: {fileID: 0}
     - target: {fileID: 381612803, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -11685,6 +11830,7 @@ PrefabInstance:
       objectReference: {fileID: 9349393}
     - target: {fileID: 654954502, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 105.507385
       objectReference: {fileID: 0}
@@ -11698,6 +11844,13 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 105.50769
 >>>>>>> Stashed changes
+=======
+      value: 105.507385
+      objectReference: {fileID: 0}
+    - target: {fileID: 784074154, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 105.507385
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
       objectReference: {fileID: 0}
     - target: {fileID: 996912351, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -11709,19 +11862,26 @@ PrefabInstance:
       objectReference: {fileID: 9349393}
     - target: {fileID: 1397965547, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 105.507385
       objectReference: {fileID: 0}
     - target: {fileID: 1403117765, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
       value: 1
+=======
+      value: 105.507385
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
       objectReference: {fileID: 0}
     - target: {fileID: 1457462752, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -156
+<<<<<<< HEAD
 =======
       value: 105.50769
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
       objectReference: {fileID: 0}
     - target: {fileID: 1519049670, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -11735,6 +11895,7 @@ PrefabInstance:
     - target: {fileID: 1931860298, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -495.87988
+<<<<<<< HEAD
       objectReference: {fileID: 0}
     - target: {fileID: 553379610773926414, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
@@ -11744,6 +11905,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -495.87988
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
       objectReference: {fileID: 0}
     - target: {fileID: 769834752901836758, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -11751,11 +11914,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 769834752965472878, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.x
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: -330
 =======
       value: -330.0001
 >>>>>>> Stashed changes
+=======
+      value: -330
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
       objectReference: {fileID: 0}
     - target: {fileID: 769834753422601476, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
@@ -11769,6 +11936,7 @@ PrefabInstance:
     - target: {fileID: 769834753484076561, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -475
+<<<<<<< HEAD
       objectReference: {fileID: 0}
     - target: {fileID: 769834753650832965, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
@@ -11777,6 +11945,8 @@ PrefabInstance:
     - target: {fileID: 769834754050312169, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
       value: 0
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
       objectReference: {fileID: 0}
 =======
 >>>>>>> Stashed changes
@@ -11784,6 +11954,7 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
       objectReference: {fileID: 465736373}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     - target: {fileID: 769834754368039551, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
@@ -11791,6 +11962,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 59c6fab (TuToriel set to only open on first time)
     - target: {fileID: 769834754376812486, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 105.50635

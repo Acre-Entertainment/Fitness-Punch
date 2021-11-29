@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class SetTuToriel : MonoBehaviour
 {
-    private DataHolder dataHolder;
-    public GameObject tutorial;
-    public GameObject codex;
-    public GameObject game;
+    // Start is called before the first frame update
     void Start()
     {
-        dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
-        if(dataHolder.primeiraVezAbrindoOJogo == true)
-        {
-            tutorial.SetActive(false);
-            codex.SetActive(false);
-            game.SetActive(true);
-            dataHolder.primeiraVezAbrindoOJogo = false;
-        }
+        
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
