@@ -42,6 +42,7 @@ public class LoadDataHolder : MonoBehaviour
             gameDataHolder.resistencia = savedDataHolder.resistencia;
             gameDataHolder.coins = savedDataHolder.coins;
             gameDataHolder.inventorySlots = savedDataHolder.inventorySlots;
+            gameDataHolder.coinActivation = savedDataHolder.coinActivation;
             gameDataHolder.selectedGrocerFood = savedDataHolder.selectedGrocerFood;
             gameDataHolder.selectedCookingFood = savedDataHolder.selectedCookingFood;
             gameDataHolder.grocerThisDay = savedDataHolder.grocerThisDay;

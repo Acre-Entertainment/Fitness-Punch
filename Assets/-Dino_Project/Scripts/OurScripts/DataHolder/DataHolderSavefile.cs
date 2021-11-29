@@ -27,6 +27,7 @@ public class DataHolderSavefile
     public int coins;
 
     public int[] inventorySlots;
+    public bool[] coinActivation;
 
     //Grocer Minigame
     public int[] selectedGrocerFood;

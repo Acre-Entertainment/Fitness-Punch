@@ -32,6 +32,7 @@ public class DataHolder : MonoBehaviour
     public int coins;
 
     public int[] inventorySlots = new int[10];
+    public bool[] coinActivation = new bool[25];
 
     //Grocer Minigame
     public int[] selectedGrocerFood = new int[4];
