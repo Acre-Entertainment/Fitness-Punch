@@ -16,7 +16,7 @@ public class CoinCollector : MonoBehaviour
         {
             coinMarker = other.gameObject.GetComponent<CoinMark>().coinNumber;
             dataHolder.coinActivation[coinMarker] = false;
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
             dataHolder.coins++;
         }
     }
