@@ -24,6 +24,7 @@ public class DataHolderSavefile
 
     public int forca;
     public int resistencia;
+    public int coins;
 
     public int[] inventorySlots;
 

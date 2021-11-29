@@ -29,6 +29,7 @@ public class DataHolder : MonoBehaviour
 
     public int forca;
     public int resistencia;
+    public int coins;
 
     public int[] inventorySlots = new int[10];
 

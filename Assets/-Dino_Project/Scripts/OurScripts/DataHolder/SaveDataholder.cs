@@ -38,6 +38,7 @@ public class SaveDataholder : MonoBehaviour
             dataHolderSavefile.disposicao = dataHolder.disposicao;
             dataHolderSavefile.forca = dataHolder.forca;
             dataHolderSavefile.resistencia = dataHolder.resistencia;
+            dataHolderSavefile.coins = dataHolder.coins;
             dataHolderSavefile.inventorySlots = dataHolder.inventorySlots;
             dataHolderSavefile.selectedGrocerFood = dataHolder.selectedGrocerFood;
             dataHolderSavefile.selectedCookingFood = dataHolder.selectedCookingFood;
