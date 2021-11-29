@@ -29,6 +29,7 @@ public class FightingGameMaster : MonoBehaviour
         dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
         playerDamage = playerBaseDamage + playerDamagePerStrengh * dataHolder.forca;
         playerHealth = playerBaseHealth + playerHealthPerAerobic * dataHolder.resistencia;
+        healthBars.setBarStart();
     }
     public void playerPunchDoesDamage()
     {

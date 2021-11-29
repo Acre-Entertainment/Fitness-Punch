@@ -9332,7 +9332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26bd86b9cdb62ca49a8fd28d51b35f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBars: {fileID: 0}
+  healthBars: {fileID: 214585568}
   playerBaseHealth: 50
   playerHealthPerAerobic: 0
   playerHealth: 0
@@ -9340,8 +9340,8 @@ MonoBehaviour:
   playerDamagePerStrengh: 0
   playerDamage: 0
   enemyHealth: 50
-  enemyRegularAttackDamage: 1
-  enemySuperAttackDamage: 2
+  enemyRegularAttackDamage: 10
+  enemySuperAttackDamage: 20
   onPlayerWin:
     m_PersistentCalls:
       m_Calls:

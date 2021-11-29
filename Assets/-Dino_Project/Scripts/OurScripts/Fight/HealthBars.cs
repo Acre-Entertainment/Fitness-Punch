@@ -8,7 +8,7 @@ public class HealthBars : MonoBehaviour
     public FightingGameMaster fightingGameMaster;
     public Slider PlayerBar;
     public Slider EnemyBar;
-    public void setBarStar()
+    public void setBarStart()
     {
         PlayerBar.maxValue = fightingGameMaster.playerHealth;
         PlayerBar.value = fightingGameMaster.playerHealth;
