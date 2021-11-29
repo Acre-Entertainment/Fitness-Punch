@@ -1584,6 +1584,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &222735961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1403117765, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+  m_PrefabInstance: {fileID: 1124694834275800872}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &237256574
 GameObject:
   m_ObjectHideFlags: 0
@@ -9456,6 +9461,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742084185}
   m_CullTransparentMesh: 1
+--- !u!1 &1786295507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 769834754368039551, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+  m_PrefabInstance: {fileID: 1124694834275800872}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1793251896 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5976959603285733291, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
@@ -10095,6 +10105,11 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7948030654676328964, guid: 945f09c9676e4334dac22e31efcac115, type: 3}
   m_PrefabInstance: {fileID: 7948030655999354157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1926618500 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 769834754468021618, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+  m_PrefabInstance: {fileID: 1124694834275800872}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1942244688 stripped
 Transform:
@@ -11526,6 +11541,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41b3ce8d74279d242be69d465ff5ff99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorial: {fileID: 222735961}
+  codex: {fileID: 1926618500}
+  game: {fileID: 1786295507}
 --- !u!114 &2147002182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11633,6 +11651,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1403117765, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 769834754368039551, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 769834754468021618, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1124694834407347553, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_Name
       value: Canvas
