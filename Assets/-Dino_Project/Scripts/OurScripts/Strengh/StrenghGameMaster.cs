@@ -35,6 +35,7 @@ public class StrenghGameMaster : MonoBehaviour
     public UnityEvent onPlayerNotBlockedAttack;
     public UnityEvent onEnemyBlockedAttack;
     public UnityEvent onEnemyNotBlockedAttack;
+    private bool gameOver;
     void Start()
     {
         time = timeDuration;
@@ -43,10 +44,14 @@ public class StrenghGameMaster : MonoBehaviour
     }
     void Update()
     {
-        time = time - 1 * Time.deltaTime;
+        if(gameOver == false)
+        {
+            time = time - 1 * Time.deltaTime;
+        }
         uiTimerText.text = "Tempo: " + (int)time;
         if(time <= 0)
         {
+            gameOver = true;
             onGameEnd.Invoke();
             if(points >= pointsNeededForBigReward)
             {
