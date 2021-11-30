@@ -10,6 +10,6 @@ public class FightFadeOut : MonoBehaviour
     void Start()
     {
         dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
-        fadeOutText.text = "Dia " + dataHolder.dayOfEverything + 1;
+        fadeOutText.text = "Dia " + (dataHolder.dayOfEverything + 1);
     }
 }
