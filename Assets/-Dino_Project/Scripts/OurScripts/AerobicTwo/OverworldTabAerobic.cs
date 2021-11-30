@@ -12,6 +12,7 @@ public class OverworldTabAerobic : MonoBehaviour
     void Start()
     {
         dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
+        doTheThing();
     }
     public void doTheThing()
     {

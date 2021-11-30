@@ -12,6 +12,7 @@ public class OverworldTabStrengh : MonoBehaviour
     void Start()
     {
         dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
+        DoThisThing();
     }
     public void DoThisThing()
     {

@@ -14,6 +14,7 @@ public class OverworldPopupCooking : MonoBehaviour
     void Start()
     {
         dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
+        checkInventoryAndDoStuff();
     }
     public void checkInventoryAndDoStuff()
     {
