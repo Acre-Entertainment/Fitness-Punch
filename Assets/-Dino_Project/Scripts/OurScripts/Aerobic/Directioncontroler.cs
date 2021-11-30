@@ -183,6 +183,11 @@ public class Directioncontroler : MonoBehaviour
     public void PlayerLife()
     {
         life--;
+        Invoke("HitThePlayerDefault", 0.85f);
+    }
+
+    private void HitThePlayerDefault()
+    {
         HitThePlayer = false;
     }
 
