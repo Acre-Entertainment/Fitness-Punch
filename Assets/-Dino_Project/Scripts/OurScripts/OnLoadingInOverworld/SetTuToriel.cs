@@ -11,11 +11,14 @@ public class SetTuToriel : MonoBehaviour
     void Start()
     {
         dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
-        if(dataHolder.primeiraVezAbrindoOJogo == true)
+        if(dataHolder.primeiraVezAbrindoOJogo == false)
         {
             tutorial.SetActive(false);
             codex.SetActive(false);
             game.SetActive(true);
+        }
+        else
+        {
             dataHolder.primeiraVezAbrindoOJogo = false;
         }
     }
