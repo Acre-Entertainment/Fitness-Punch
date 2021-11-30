@@ -57,7 +57,7 @@ MonoBehaviour:
   timeBetweenChecks: 0.5
   isInContact: 0
   disposicaoDebuffForSuck: 1
-  pointsNeededForNormal: 25
+  pointsNeededForNormal: 30
   pointsNeededForExtra: 50
   disposicaoBuffForExtra: 1
   pointsForCenterThrow: 8
@@ -440,6 +440,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Stop
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Theme
           m_BoolArgument: 1
         m_CallState: 2
   aim: {fileID: 0}
