@@ -1514,6 +1514,38 @@ MonoBehaviour:
     loop: 1
     playOnAwake: 1
     source: {fileID: 0}
+  - name: button_1
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 74eec9f1c92103f4ebb9c88b1818674f, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: button_2
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 69963f2dc19716b4f8c2d7521262ff93, type: 3}
+    volume: 0.587
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: combo_effect
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 29507392ad947854181d9a347f1de699, type: 3}
+    volume: 0.065
+    pitch: 1
+    loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: select
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 924c655f6fe51a846abe5c7b93080ae6, type: 3}
+    volume: 0.558
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
 --- !u!4 &2090296215
 Transform:
   m_ObjectHideFlags: 0
@@ -1621,6 +1653,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1400097647531869360}
     - target: {fileID: 668172644, guid: e27b6d0753e497c48a57e21b88e0b369, type: 3}
+      propertyPath: onPhaseFiveEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 668172644, guid: e27b6d0753e497c48a57e21b88e0b369, type: 3}
+      propertyPath: onPhaseFiveEnd.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 668172644, guid: e27b6d0753e497c48a57e21b88e0b369, type: 3}
       propertyPath: onPhaseOneEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1400097647531869360}
@@ -1668,6 +1708,10 @@ PrefabInstance:
       propertyPath: onPhaseFiveEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 4846393122407135778}
+    - target: {fileID: 668172644, guid: e27b6d0753e497c48a57e21b88e0b369, type: 3}
+      propertyPath: onPhaseFiveEnd.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 2090296214}
     - target: {fileID: 668172644, guid: e27b6d0753e497c48a57e21b88e0b369, type: 3}
       propertyPath: onPhaseFourEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1736,6 +1780,30 @@ PrefabInstance:
       propertyPath: onPhaseThreeEnd.m_PersistentCalls.m_Calls.Array.data[6].m_Target
       value: 
       objectReference: {fileID: 1400097647531869360}
+    - target: {fileID: 668172644, guid: e27b6d0753e497c48a57e21b88e0b369, type: 3}
+      propertyPath: onPhaseFiveEnd.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 668172644, guid: e27b6d0753e497c48a57e21b88e0b369, type: 3}
+      propertyPath: onPhaseFiveEnd.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: Stop
+      objectReference: {fileID: 0}
+    - target: {fileID: 668172644, guid: e27b6d0753e497c48a57e21b88e0b369, type: 3}
+      propertyPath: onPhaseFiveEnd.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 668172644, guid: e27b6d0753e497c48a57e21b88e0b369, type: 3}
+      propertyPath: onPhaseFiveEnd.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 668172644, guid: e27b6d0753e497c48a57e21b88e0b369, type: 3}
+      propertyPath: onPhaseFiveEnd.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_StringArgument
+      value: Theme
+      objectReference: {fileID: 0}
+    - target: {fileID: 668172644, guid: e27b6d0753e497c48a57e21b88e0b369, type: 3}
+      propertyPath: onPhaseFiveEnd.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 80683395092481437, guid: e27b6d0753e497c48a57e21b88e0b369, type: 3}
       propertyPath: m_Name
       value: GameMaster
@@ -4345,6 +4413,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2090296214}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: button_2
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &4846393122376236193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6132,6 +6212,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2090296214}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: button_2
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &4846393122882901509
 GameObject:
   m_ObjectHideFlags: 0
@@ -7644,6 +7736,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2090296214}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: button_1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &4846393123148958008
@@ -9575,16 +9679,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2090296214}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: select
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &4846393123829887405
