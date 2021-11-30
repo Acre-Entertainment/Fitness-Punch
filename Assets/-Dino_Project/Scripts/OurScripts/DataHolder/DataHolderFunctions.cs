@@ -133,6 +133,7 @@ public class DataHolderFunctions : MonoBehaviour
         if(DT.resistencia > 10){DT.resistencia = 10;}
         if(DT.disposicao < 0){DT.disposicao = 0;}
         if(DT.disposicao > 10){DT.disposicao = 10;}
+        if(DT.dayOfTheWeek == 8){DT.dayOfTheWeek = 1;}
     }
     public void MainMenuSliderAdjustments()
     {
