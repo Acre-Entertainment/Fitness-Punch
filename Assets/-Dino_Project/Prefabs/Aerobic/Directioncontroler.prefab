@@ -104,10 +104,10 @@ MonoBehaviour:
   finalScore: 0
   score: 0
   direction: 0
-  easy: 10
-  hard: 20
-  expert: 30
-  life: 15
+  easy: 15
+  hard: 30
+  expert: 50
+  life: 10
   RightS: {fileID: 0}
   LeftS: {fileID: 0}
   DownS: {fileID: 0}
@@ -117,3 +117,4 @@ MonoBehaviour:
   EndMenu: {fileID: 0}
   anim: {fileID: 0}
   controllerButtons: {fileID: 0}
+  HitThePlayer: 0

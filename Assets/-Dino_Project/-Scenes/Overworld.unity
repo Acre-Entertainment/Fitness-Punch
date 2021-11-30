@@ -11899,6 +11899,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 36563186, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 105.50787
+      objectReference: {fileID: 0}
     - target: {fileID: 74032978, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -488.28003
@@ -11907,6 +11911,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 7319460427771095124}
+    - target: {fileID: 246904184, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 105.50787
+      objectReference: {fileID: 0}
     - target: {fileID: 346953210, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -53.99994
@@ -11919,9 +11927,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 9349393}
+    - target: {fileID: 654954502, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 105.50787
+      objectReference: {fileID: 0}
     - target: {fileID: 734436278, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -53.99994
+      objectReference: {fileID: 0}
+    - target: {fileID: 784074154, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 105.50787
       objectReference: {fileID: 0}
     - target: {fileID: 996912351, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -11938,6 +11954,10 @@ PrefabInstance:
     - target: {fileID: 1349517574, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -29.999939
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397965547, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 105.50787
       objectReference: {fileID: 0}
     - target: {fileID: 1457462752, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -13868,82 +13888,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DataHolder
       objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: fibra
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: forca
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: actions
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: dayTime
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: lipidio
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: mineral
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: proteina
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: vitamina
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: disposicao
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: carboidrato
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: resistencia
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: dayOfTheWeek
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: dayOfEverything
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: saiuDoApartamento
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: primeiraVezAbrindoOJogo
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: coinActivation.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: inventorySlots.Array.data[0]
-      value: 101
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: inventorySlots.Array.data[1]
-      value: 101
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245552510319420157, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-      propertyPath: inventorySlots.Array.data[2]
-      value: 101
-      objectReference: {fileID: 0}
     - target: {fileID: 8245552510319420158, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -13990,23 +13934,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
---- !u!1 &8245552510884975065 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8245552510319420156, guid: 4306797c67731ef4cb2ed2c9b39a28d9, type: 3}
-  m_PrefabInstance: {fileID: 8245552510884975064}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8245552510884975066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8245552510884975065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc878ce28001ca2479888cef8c235f2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &9166782791884545124
 PrefabInstance:
   m_ObjectHideFlags: 0

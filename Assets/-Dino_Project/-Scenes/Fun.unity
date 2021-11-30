@@ -1565,10 +1565,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2058064709}
     - target: {fileID: 9107976117145709641, guid: d315d97919741014bb57ab64957eb060, type: 3}
-      propertyPath: timeToBoost
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 9107976117145709641, guid: d315d97919741014bb57ab64957eb060, type: 3}
       propertyPath: highScoreText
       value: 
       objectReference: {fileID: 1105886659}
@@ -1580,10 +1576,6 @@ PrefabInstance:
       propertyPath: yourScoreText
       value: 
       objectReference: {fileID: 2133792177}
-    - target: {fileID: 9107976117145709641, guid: d315d97919741014bb57ab64957eb060, type: 3}
-      propertyPath: obstacles.Array.data[0]
-      value: 
-      objectReference: {fileID: 3415446127498566891, guid: 8aca5203fd5482144a91c6449beaa815, type: 3}
     - target: {fileID: 9107976117145709642, guid: d315d97919741014bb57ab64957eb060, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1630,30 +1622,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d315d97919741014bb57ab64957eb060, type: 3}
---- !u!1 &9107976117495650853 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9107976117145709640, guid: d315d97919741014bb57ab64957eb060, type: 3}
+--- !u!114 &9107976117495650854 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9107976117495650854, guid: d315d97919741014bb57ab64957eb060, type: 3}
   m_PrefabInstance: {fileID: 9107976117495650852}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &9107976117495650854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9107976117495650853}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d5105cb2c2e60941b5e4d09af056c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Overworld
 --- !u!114 &9107976117495650855 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9107976117145709641, guid: d315d97919741014bb57ab64957eb060, type: 3}
   m_PrefabInstance: {fileID: 9107976117495650852}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9107976117495650853}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3a823c59539cf949a164c63c43eda42, type: 3}

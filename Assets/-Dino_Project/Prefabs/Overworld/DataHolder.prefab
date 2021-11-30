@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8245552510319420158}
   - component: {fileID: 8245552510319420157}
+  - component: {fileID: 8245552510884975066}
   m_Layer: 0
   m_Name: DataHolder
   m_TagString: Untagged
@@ -43,21 +44,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c1f1064011d4845ade154fbfb09788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayOfTheMonth: 0
-  dayOfTheWeek: 0
-  year: 0
-  actions: 0
-  dayTime: 0
-  stepsTaken: 0
+  primeiraVezAbrindoOJogo: 1
+  saiuDoApartamento: 1
+  saiuDaAcademia: 0
+  saiuDaLoja: 0
+  saiuDoGrocer: 0
+  dayOfTheWeek: 1
+  dayOfEverything: 1
+  actions: 4
   money: 0
-  proteina: 0
-  carboidrato: 0
-  lipidio: 0
-  mineral: 0
-  vitamina: 0
-  fibra: 0
-  disposicao: 0
-  forca: 0
-  resistencia: 0
-  inventorySlots: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  proteina: 2
+  carboidrato: 2
+  lipidio: 2
+  mineral: 2
+  vitamina: 2
+  fibra: 2
+  disposicao: 3
+  forca: 2
+  resistencia: 2
+  coins: 0
+  inventorySlots: 65000000650000006500000000000000000000000000000000000000000000000000000000000000
+  coinActivation: 00000000000000000000000000000000000000000000000000
   selectedGrocerFood: 00000000000000000000000000000000
+  selectedCookingFood: 000000000000000000000000
+  grocerThisDay: 0
+  cookingThisDay: 0
+  aerobicoThisDay: 0
+  forcaThisDay: 0
+  funThisDay: 0
+  proteinaBefore: 0
+  carboidratoBefore: 0
+  lipidioBefore: 0
+  mineralBefore: 0
+  vitaminaBefore: 0
+  fibraBefore: 0
+  disposicaoBefore: 0
+  noExerciceBefore: 0
+  noAerobicBefore: 0
+  noStrenghBefore: 0
+  proteinaBonus: 0
+  proteinaMalus: 0
+  carboidratoBonus: 0
+  carboidratoMalus: 0
+  strenghBeforeFight: 0
+  resistenciaBeforeFight: 0
+  funHighScore: 0
+--- !u!114 &8245552510884975066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8245552510319420156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc878ce28001ca2479888cef8c235f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

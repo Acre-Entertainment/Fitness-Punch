@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9107976117145709642}
   - component: {fileID: 9107976117145709641}
+  - component: {fileID: 9107976117495650854}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -47,7 +48,24 @@ MonoBehaviour:
   highScoreText: {fileID: 0}
   yourScoreText: {fileID: 0}
   obstacles:
-  - {fileID: 0}
+  - {fileID: 3415446127498566891, guid: 8aca5203fd5482144a91c6449beaa815, type: 3}
   spawnPoint: {fileID: 0}
   spawnRate: 2
-  timeToBoost: 5
+  timeToBoost: 10
+  scoreNeededForExtraDisposition: 85
+  gamePaused: 0
+  howManyTimesHasTimeBeenBosted: 0
+  pauseObject: {fileID: 0}
+--- !u!114 &9107976117495650854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9107976117145709640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d5105cb2c2e60941b5e4d09af056c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Overworld
