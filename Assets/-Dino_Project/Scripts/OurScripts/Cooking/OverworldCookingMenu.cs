@@ -120,6 +120,7 @@ public class OverworldCookingMenu : MonoBehaviour
         switch(selectStage)
         {
             case 1:
+                SelectedOneGameobject.SetActive(true);
                 selectedOne.sprite = giveSpriteOfItenID(currentSelectedInventoryID);
                 if(currentSelectedInventoryID > 300)
                 {
@@ -128,6 +129,7 @@ public class OverworldCookingMenu : MonoBehaviour
                 selectedCookingButtonOne = currentSelectedButton;
                 break;
             case 2:
+                SelectedTwoGameobject.SetActive(true);
                 selectedTwo.sprite = giveSpriteOfItenID(currentSelectedInventoryID);
                 if(currentSelectedInventoryID > 300)
                 {
@@ -136,6 +138,7 @@ public class OverworldCookingMenu : MonoBehaviour
                 selectedCookingButtonTwo = currentSelectedButton;
                 break;
             case 3:
+                SelectedThreeGameobject.SetActive(true);
                 selectedTwo.sprite = giveSpriteOfItenID(currentSelectedInventoryID);
                 if(currentSelectedInventoryID > 300)
                 {
