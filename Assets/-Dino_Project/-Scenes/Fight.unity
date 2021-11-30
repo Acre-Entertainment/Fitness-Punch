@@ -8285,8 +8285,8 @@ MonoBehaviour:
   sidePunch_TimeFromDamageToEnd: 0.4
   block_DurationOfBlock: 0.8
   stagger_staggerDuration: 1
-  ai_IdleTime_VeryShort: 0.25
-  ai_IdleTime_Long: 0.75
+  ai_IdleTime_VeryShort: 0.5
+  ai_IdleTime_Long: 1
   onPunchStart:
     m_PersistentCalls:
       m_Calls:
@@ -9207,8 +9207,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -250}
-  m_SizeDelta: {x: 600, y: 800}
+  m_AnchoredPosition: {x: 0, y: -358}
+  m_SizeDelta: {x: 541.4, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1445650147
 MonoBehaviour:
@@ -9451,14 +9451,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBars: {fileID: 214585568}
   playerBaseHealth: 50
-  playerHealthPerAerobic: 0
+  playerHealthPerAerobic: 2
   playerHealth: 0
-  playerBaseDamage: 1
-  playerDamagePerStrengh: 0
+  playerBaseDamage: 5
+  playerDamagePerStrengh: 2
   playerDamage: 0
   enemyHealth: 50
-  enemyRegularAttackDamage: 10
-  enemySuperAttackDamage: 20
+  enemyRegularAttackDamage: 5
+  enemySuperAttackDamage: 7
   onPlayerWin:
     m_PersistentCalls:
       m_Calls:
@@ -12491,8 +12491,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 600, y: 1000}
+  m_AnchoredPosition: {x: 0, y: 1.44}
+  m_SizeDelta: {x: 500, y: 1033.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1916870716
 MonoBehaviour:
