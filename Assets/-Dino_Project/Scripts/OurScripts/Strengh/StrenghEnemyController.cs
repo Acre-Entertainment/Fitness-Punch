@@ -140,6 +140,7 @@ public class StrenghEnemyController : MonoBehaviour
     {
         if(isBlocking == false)
         {
+            FindObjectOfType<AudioManager>().Play("Soco_fraco");
             sgm.onEnemyNotBlockedAttack.Invoke();
             sgm.points = sgm.points + sgm.pointsForPunch;
             sgm.updatPointUI();
@@ -213,6 +214,7 @@ public class StrenghEnemyController : MonoBehaviour
     {
         if(pfs.isBlocking == false)
         {
+            FindObjectOfType<AudioManager>().Play("Soco_medio");
             sgm.onPlayerNotBlockedAttack.Invoke();
             sgm.points = sgm.points - sgm.pointsPenaltyForNotBlocking;
             sgm.updatPointUI();
