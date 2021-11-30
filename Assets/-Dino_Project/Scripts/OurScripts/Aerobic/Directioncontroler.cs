@@ -9,6 +9,8 @@ public class Directioncontroler : MonoBehaviour
     private string PerformaceChecker;
     private bool intime = false;
     private float timeControler = 2f;
+    private float delaycontroler = 0.35f;
+    private bool delayconfirm;
     [SerializeField] private float timereference, ITime, gameSpeed;
     [SerializeField] private int finalScore, score, direction, easy, hard, expert;
     [SerializeField] public int life;
@@ -126,6 +128,18 @@ public class Directioncontroler : MonoBehaviour
             intime = true;
         }
     }
+    private void DelayControler()
+    {
+        if (delaycontroler > 0f && delayconfirm == false)
+        {
+            delaycontroler -= Time.deltaTime;
+        }
+        else
+        {
+            delayconfirm = true;
+            delaycontroler = 0.35f;
+        }
+    }
 
     private void TimeSpeedUp()
     {
@@ -134,7 +148,7 @@ public class Directioncontroler : MonoBehaviour
     public void DirSelectRigth()
     {
         anim.SetBool("Right", true);
-        if (controlerNumber == 3 && HitThePlayer == false)
+        if (controlerNumber == 3 && HitThePlayer == false && delayconfirm == true)
         {
             TimeSpeedUp();
             score++;
@@ -146,7 +160,7 @@ public class Directioncontroler : MonoBehaviour
     public void DirSelectDown()
     {
         anim.SetBool("Down", true);
-        if (controlerNumber == 2 && HitThePlayer == false)
+        if (controlerNumber == 2 && HitThePlayer == false && delayconfirm == true)
         {
             TimeSpeedUp();
             score++;
@@ -158,7 +172,7 @@ public class Directioncontroler : MonoBehaviour
     public void DirSelectLeft()
     {
         anim.SetBool("Left", true);
-        if (controlerNumber == 1 && HitThePlayer == false)
+        if (controlerNumber == 1 && HitThePlayer == false && delayconfirm == true)
         {
             TimeSpeedUp();
             score++;
