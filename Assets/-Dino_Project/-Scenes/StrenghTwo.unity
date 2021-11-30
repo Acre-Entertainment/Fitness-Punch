@@ -974,6 +974,18 @@ MonoBehaviour:
           m_StringArgument: Punch
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Voosh_player
+          m_BoolArgument: 0
+        m_CallState: 2
   onOtherPunchStart:
     m_PersistentCalls:
       m_Calls:
@@ -987,6 +999,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Punch2
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Voosh_player
           m_BoolArgument: 0
         m_CallState: 2
   onPunchDamageTime:
@@ -1046,6 +1070,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Voosh_player
+          m_BoolArgument: 0
+        m_CallState: 2
   onBlockLowerGuard:
     m_PersistentCalls:
       m_Calls:
@@ -1091,6 +1127,18 @@ MonoBehaviour:
           m_StringArgument: AerobicoEsquerda
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Esquiva
+          m_BoolArgument: 0
+        m_CallState: 2
   onLeftDodgeFull:
     m_PersistentCalls:
       m_Calls: []
@@ -1127,6 +1175,18 @@ MonoBehaviour:
           m_StringArgument: AerobicoDireita
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Esquiva
+          m_BoolArgument: 0
+        m_CallState: 2
   onRightDodgeFull:
     m_PersistentCalls:
       m_Calls: []
@@ -1161,6 +1221,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: AerobicoDown
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Esquiva
           m_BoolArgument: 0
         m_CallState: 2
   onDownDodgeFull:
@@ -2478,6 +2550,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Stop
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Theme
+          m_BoolArgument: 0
+        m_CallState: 2
   onGameEndNoReward:
     m_PersistentCalls:
       m_Calls:
@@ -2491,6 +2575,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Defeat
           m_BoolArgument: 1
         m_CallState: 2
   onGameEndLowReward:
@@ -2508,6 +2604,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Victory
+          m_BoolArgument: 1
+        m_CallState: 2
   onGameEndMediumReward:
     m_PersistentCalls:
       m_Calls:
@@ -2521,6 +2629,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Victory
           m_BoolArgument: 1
         m_CallState: 2
   onGameEndHighReward:
@@ -2538,15 +2658,51 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Victory
+          m_BoolArgument: 1
+        m_CallState: 2
   onPlayerBlockedAttack:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Block
+          m_BoolArgument: 0
+        m_CallState: 2
   onPlayerNotBlockedAttack:
     m_PersistentCalls:
       m_Calls: []
   onEnemyBlockedAttack:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Block
+          m_BoolArgument: 0
+        m_CallState: 2
   onEnemyNotBlockedAttack:
     m_PersistentCalls:
       m_Calls:
@@ -2815,11 +2971,131 @@ MonoBehaviour:
   sounds:
   - name: Theme
     audioType: 1
-    audioClip: {fileID: 8300000, guid: c40f91600a62859469fc21aca2135484, type: 3}
-    volume: 0.24
+    audioClip: {fileID: 8300000, guid: 73bf58c009a0fba4aac2645e92eaa2d5, type: 3}
+    volume: 0.179
     pitch: 1
     loop: 1
     playOnAwake: 1
+    source: {fileID: 0}
+  - name: Victory
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 439a1b73cae793840913cc1c43f4f228, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Soco_fraco
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 626e243154026644cb90a3e4a78f5079, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Soco_medio
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 8e68de0af96b9774b8df28794c7dc1a8, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Soco_forte
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: f1b2a4ace4207514dbcf460053a41242, type: 3}
+    volume: 0.39
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Block
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: ffa1b61685381484f90a45ed4002686d, type: 3}
+    volume: 0.448
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Voosh_enemy1
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 4a3b3cc0df3f88f4cae238ec2dad79c0, type: 3}
+    volume: 0.441
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Voosh_enemy2
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 34e0355936369974f9f12c5f3898afd5, type: 3}
+    volume: 0.472
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Voosh_player
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 0ce3048ec0bb29043be83a75e5f59d78, type: 3}
+    volume: 0.485
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Esquiva
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: d346ea9d23631bd4cbe3fed7684dbe2e, type: 3}
+    volume: 0.529
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: button_1
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 503166fe721ef654cac95d10fc37aa4d, type: 3}
+    volume: 0.65
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: button_2
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 438d14bf454080048bd954b060c7813b, type: 3}
+    volume: 0.503
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Defeat
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 9d06ece7c168cf64ebaa1d4a61ecb4fc, type: 3}
+    volume: 0.561
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Countdown
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: b964a7846bf53d241ace42568fd5b849, type: 3}
+    volume: 0.6
+    pitch: 1.1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Countdown_go
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 30b42eab3b92a4042a3c5b35bacd025b, type: 3}
+    volume: 0.6
+    pitch: 1.1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: button_3
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 74eec9f1c92103f4ebb9c88b1818674f, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
     source: {fileID: 0}
 --- !u!4 &1662898744
 Transform:
@@ -3842,6 +4118,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: button_1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1925325906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4242,6 +4530,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: button_3
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2011492370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4350,6 +4650,18 @@ MonoBehaviour:
           m_StringArgument: EnemyPunch
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Voosh_enemy1
+          m_BoolArgument: 0
+        m_CallState: 2
   onPunchDamageTime:
     m_PersistentCalls:
       m_Calls: []
@@ -4381,6 +4693,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: EnemyPunch2
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Voosh_enemy2
           m_BoolArgument: 1
         m_CallState: 2
   onPunchDamageTimeOther:
@@ -4426,6 +4750,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1662898743}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Voosh_enemy1
           m_BoolArgument: 0
         m_CallState: 2
   onBlockEnd:

@@ -52,6 +52,7 @@ public class StrenghGameMaster : MonoBehaviour
             {
                 reward = bighRewardToStrengh;
                 onGameEndHighReward.Invoke();
+                FindObjectOfType<AudioManager>().Play("Victory");
             }
             else
             {
@@ -59,6 +60,7 @@ public class StrenghGameMaster : MonoBehaviour
                 {
                     reward = mediumRewardToStrengh;
                     onGameEndMediumReward.Invoke();
+                    FindObjectOfType<AudioManager>().Play("Victory");
                 }
                 else
                 {
@@ -66,11 +68,13 @@ public class StrenghGameMaster : MonoBehaviour
                     {
                         reward = smallRewardToStrengh;
                         onGameEndLowReward.Invoke();
+                        FindObjectOfType<AudioManager>().Play("Victory");
                     }
                     else
                     {
                         reward = 0;
                         onGameEndNoReward.Invoke();
+                        FindObjectOfType<AudioManager>().Play("Defeat");
                     }
                 }
             }
