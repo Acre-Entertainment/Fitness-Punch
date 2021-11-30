@@ -21,6 +21,6 @@ public class HealthBars : MonoBehaviour
     }
     public void setEnemyBar()
     {
-        EnemyBar.value = fightingGameMaster.playerHealth;
+        EnemyBar.value = fightingGameMaster.enemyHealth;
     }
 }
