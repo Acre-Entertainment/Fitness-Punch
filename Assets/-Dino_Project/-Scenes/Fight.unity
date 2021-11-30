@@ -692,51 +692,19 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
-  - name: Countdown_one
+  - name: Countdown
     audioType: 0
-    audioClip: {fileID: 8300000, guid: 1873d5eca9a5e3d48832c08908fc3e58, type: 3}
-    volume: 0.503
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: Countdown_two
-    audioType: 0
-    audioClip: {fileID: 8300000, guid: c437a1109823bea41951dd4ac6f43e5e, type: 3}
-    volume: 0.503
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: Countdown_three
-    audioType: 0
-    audioClip: {fileID: 8300000, guid: 861c96a7cf13afd4c9850b01c51ca1cf, type: 3}
-    volume: 0.503
-    pitch: 1
+    audioClip: {fileID: 8300000, guid: b964a7846bf53d241ace42568fd5b849, type: 3}
+    volume: 0.6
+    pitch: 1.1
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
   - name: Countdown_go
     audioType: 0
-    audioClip: {fileID: 8300000, guid: a90a26b9cbd75b142ab24a8ddb9a1b27, type: 3}
-    volume: 0.503
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: Countdown_fight
-    audioType: 0
-    audioClip: {fileID: 8300000, guid: 84270d0f9f2e23042b0f2a959ff4a557, type: 3}
-    volume: 0.541
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: Countdown_ready
-    audioType: 0
-    audioClip: {fileID: 8300000, guid: 6f4d4844f79747d4eb2e1712e91da203, type: 3}
-    volume: 0.503
-    pitch: 1
+    audioClip: {fileID: 8300000, guid: 30b42eab3b92a4042a3c5b35bacd025b, type: 3}
+    volume: 0.6
+    pitch: 1.1
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
@@ -1905,7 +1873,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Countdown_three
+          m_StringArgument: Countdown
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &265660180

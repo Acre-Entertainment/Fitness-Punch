@@ -20,25 +20,25 @@ public class FightTimer : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         text.text = "2";
-        FindObjectOfType<AudioManager>().Play("Countdown_two");
+        FindObjectOfType<AudioManager>().Play("Countdown");
     }
     private IEnumerator One()
     {
         yield return new WaitForSeconds(2);
         text.text = "1";
-        FindObjectOfType<AudioManager>().Play("Countdown_one");
+        FindObjectOfType<AudioManager>().Play("Countdown");
     }
     private IEnumerator Ready()
     {
         yield return new WaitForSeconds(3);
         text.text = "Pronto?";
-        FindObjectOfType<AudioManager>().Play("Countdown_ready");
+        FindObjectOfType<AudioManager>().Play("Countdown");
     }
     private IEnumerator Go()
     {
         yield return new WaitForSeconds(4);
         text.text = "Vai!";
-        FindObjectOfType<AudioManager>().Play("Countdown_fight");
+        FindObjectOfType<AudioManager>().Play("Countdown_go");
         onGo.Invoke();
     }
     private IEnumerator EndGame()
