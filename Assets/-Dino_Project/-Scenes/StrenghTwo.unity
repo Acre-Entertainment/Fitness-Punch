@@ -2464,11 +2464,11 @@ MonoBehaviour:
   pointsForPunch: 1
   pointsForBlock: 2
   pointsPenaltyForNotBlocking: 1
-  pointsNeededForSmallReward: 8
+  pointsNeededForSmallReward: 6
   smallRewardToStrengh: 1
-  pointsNeededForMediumReward: 14
+  pointsNeededForMediumReward: 10
   mediumRewardToStrengh: 2
-  pointsNeededForBigReward: 16
+  pointsNeededForBigReward: 14
   bighRewardToStrengh: 3
   timeDuration: 30
   uiTimer: {fileID: 1440228163}

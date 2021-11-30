@@ -8253,8 +8253,8 @@ MonoBehaviour:
   sidePunch_TimeFromDamageToEnd: 0.4
   block_DurationOfBlock: 0.8
   stagger_staggerDuration: 1
-  ai_IdleTime_VeryShort: 0.5
-  ai_IdleTime_Long: 1
+  ai_IdleTime_VeryShort: 1
+  ai_IdleTime_Long: 2
   onPunchStart:
     m_PersistentCalls:
       m_Calls:
