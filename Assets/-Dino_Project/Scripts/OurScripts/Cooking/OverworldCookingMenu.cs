@@ -139,7 +139,7 @@ public class OverworldCookingMenu : MonoBehaviour
                 break;
             case 3:
                 SelectedThreeGameobject.SetActive(true);
-                selectedTwo.sprite = giveSpriteOfItenID(currentSelectedInventoryID);
+                selectedThree.sprite = giveSpriteOfItenID(currentSelectedInventoryID);
                 if(currentSelectedInventoryID > 300)
                 {
                     selectedTwoGlow.SetActive(true);
