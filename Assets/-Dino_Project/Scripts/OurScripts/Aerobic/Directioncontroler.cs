@@ -188,16 +188,22 @@ public class Directioncontroler : MonoBehaviour
     {
         if (score >= easy && score < hard)
         {
+            FindObjectOfType<AudioManager>().Play("Defeat");
+            FindObjectOfType<AudioManager>().Stop("Theme");
             finalScore = 1;
             PerformaceChecker = "Lento";
         }
         if (score >= hard && score < expert)
         {
+            FindObjectOfType<AudioManager>().Play("Victory");
+            FindObjectOfType<AudioManager>().Stop("Theme");
             finalScore = 2;
             PerformaceChecker = "Normal";
         }
         if (score >= expert)
         {
+            FindObjectOfType<AudioManager>().Play("Victory");
+            FindObjectOfType<AudioManager>().Stop("Theme");
             finalScore = 3;
             PerformaceChecker = "Veloz";
         }

@@ -782,6 +782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 290984990}
   - component: {fileID: 290984989}
+  - component: {fileID: 290984991}
   m_Layer: 0
   m_Name: Effect
   m_TagString: Untagged
@@ -823,6 +824,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &290984991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290984988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd74de8686a885847bfdf3d6136ba3b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &343694964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,6 +1184,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1971959581}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: button_3
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &389492716
@@ -1570,6 +1595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 530154886}
   - component: {fileID: 530154887}
+  - component: {fileID: 530154888}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -1614,6 +1640,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &530154888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530154885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd74de8686a885847bfdf3d6136ba3b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &539157161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,6 +1741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 586332682}
   - component: {fileID: 586332683}
+  - component: {fileID: 586332684}
   m_Layer: 0
   m_Name: PunchingBagD
   m_TagString: PunchingBag
@@ -1744,6 +1783,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &586332684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586332681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd74de8686a885847bfdf3d6136ba3b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &675499001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3315,6 +3366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1268621999}
   - component: {fileID: 1268621998}
+  - component: {fileID: 1268622000}
   m_Layer: 0
   m_Name: PunchingBagL_
   m_TagString: PunchingBag
@@ -3356,6 +3408,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 17.5}
+--- !u!114 &1268622000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268621997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd74de8686a885847bfdf3d6136ba3b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1305294057
 GameObject:
   m_ObjectHideFlags: 0
@@ -4625,6 +4689,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1681510201}
   - component: {fileID: 1681510200}
+  - component: {fileID: 1681510202}
   m_Layer: 0
   m_Name: PunchingBagR_
   m_TagString: PunchingBag
@@ -4666,6 +4731,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17.5}
+--- !u!114 &1681510202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681510199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd74de8686a885847bfdf3d6136ba3b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1695736071
 GameObject:
   m_ObjectHideFlags: 0
@@ -4701,7 +4778,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -146.47}
+  m_AnchoredPosition: {x: 0, y: -146.46997}
   m_SizeDelta: {x: 73.27, y: 383.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1695736073
@@ -5248,12 +5325,132 @@ MonoBehaviour:
   soundEffectsMixerGroup: {fileID: -364875233008755489, guid: 571e0eb5e4dcdbb4d8a79e1407baa8f0, type: 2}
   sounds:
   - name: Theme
-    audioType: 0
+    audioType: 1
     audioClip: {fileID: 8300000, guid: a916fd101bca3d741be9cc02fa5519cc, type: 3}
     volume: 0.24
     pitch: 1
     loop: 1
     playOnAwake: 1
+    source: {fileID: 0}
+  - name: Victory
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 439a1b73cae793840913cc1c43f4f228, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Soco_fraco
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 626e243154026644cb90a3e4a78f5079, type: 3}
+    volume: 0.479
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Soco_medio
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 8e68de0af96b9774b8df28794c7dc1a8, type: 3}
+    volume: 0.551
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Soco_forte
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: f1b2a4ace4207514dbcf460053a41242, type: 3}
+    volume: 0.318
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Block
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: ffa1b61685381484f90a45ed4002686d, type: 3}
+    volume: 0.448
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Voosh_enemy1
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 4a3b3cc0df3f88f4cae238ec2dad79c0, type: 3}
+    volume: 0.39
+    pitch: 0.8
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Voosh_enemy2
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 34e0355936369974f9f12c5f3898afd5, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Voosh_player
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 0ce3048ec0bb29043be83a75e5f59d78, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Esquiva
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: d346ea9d23631bd4cbe3fed7684dbe2e, type: 3}
+    volume: 0.637
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: button_1
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 503166fe721ef654cac95d10fc37aa4d, type: 3}
+    volume: 0.65
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: button_2
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 438d14bf454080048bd954b060c7813b, type: 3}
+    volume: 0.503
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Defeat
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 9d06ece7c168cf64ebaa1d4a61ecb4fc, type: 3}
+    volume: 0.503
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Countdown
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: b964a7846bf53d241ace42568fd5b849, type: 3}
+    volume: 0.6
+    pitch: 1.1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Countdown_go
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 30b42eab3b92a4042a3c5b35bacd025b, type: 3}
+    volume: 0.6
+    pitch: 1.1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: button_3
+    audioType: 0
+    audioClip: {fileID: 8300000, guid: 74eec9f1c92103f4ebb9c88b1818674f, type: 3}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
     source: {fileID: 0}
 --- !u!4 &1971959582
 Transform:
@@ -5609,6 +5806,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1971959581}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: button_2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2043499363
