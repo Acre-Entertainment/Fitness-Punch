@@ -17,6 +17,7 @@ public class CoinCollector : MonoBehaviour
     {
         if(other.gameObject.tag == "Coin")
         {
+            FindObjectOfType<AudioManager>().Play("Coin_collect");
             coinMarker = other.gameObject.GetComponent<CoinMark>().coinNumber;
             dataHolder.coinActivation[coinMarker] = false;
             Destroy(other.gameObject);
