@@ -17,6 +17,7 @@ public class Directioncontroler : MonoBehaviour
     private DataHolder dt;
     [SerializeField] private Animator anim;
     public GameObject controllerButtons;
+    public bool HitThePlayer;
 
     private void Start()
     {
@@ -133,7 +134,7 @@ public class Directioncontroler : MonoBehaviour
     public void DirSelectRigth()
     {
         anim.SetBool("Right", true);
-        if (controlerNumber == 3)
+        if (controlerNumber == 3 && HitThePlayer == false)
         {
             TimeSpeedUp();
             score++;
@@ -145,7 +146,7 @@ public class Directioncontroler : MonoBehaviour
     public void DirSelectDown()
     {
         anim.SetBool("Down", true);
-        if (controlerNumber == 2)
+        if (controlerNumber == 2 && HitThePlayer == false)
         {
             TimeSpeedUp();
             score++;
@@ -157,7 +158,7 @@ public class Directioncontroler : MonoBehaviour
     public void DirSelectLeft()
     {
         anim.SetBool("Left", true);
-        if (controlerNumber == 1)
+        if (controlerNumber == 1 && HitThePlayer == false)
         {
             TimeSpeedUp();
             score++;
@@ -182,6 +183,7 @@ public class Directioncontroler : MonoBehaviour
     public void PlayerLife()
     {
         life--;
+        HitThePlayer = false;
     }
 
     private int ScoreChecker()

@@ -13,6 +13,7 @@ public class PunchingBag : MonoBehaviour
         impact.SetActive(true);
         anim.SetBool("Damage", true);
         StartCoroutine(WhaitForIt());
+        Dc.HitThePlayer = true;
     }
     private IEnumerator WhaitForIt()
     {
