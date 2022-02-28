@@ -1869,7 +1869,9 @@ MonoBehaviour:
   disposicao: 6
   forca: 5
   resistencia: 5
+  coins: 0
   inventorySlots: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  coinActivation: 00000000000000000000000000000000000000000000000000
   selectedGrocerFood: 00000000000000000000000000000000
   selectedCookingFood: 000000000000000000000000
   grocerThisDay: 0
@@ -2802,10 +2804,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Camila Aparecida Tiemi Kobayashi \n21352666\n\nLian Henrique Maidana Linsmeyer
-    \n21478113\n\nAnthony Oliveira da Cruz \n21437277\n\nThiago Garulo Sartori \n21385548\n\nDiego
-    Machado Baccili \n21375346\n\nFelipe Molina Cyrineu \n21249424\n\nCedric Joinovici
-    Cadier \n20696269"
+  m_text: "Camila Aparecida Tiemi Kobayashi \nMusic Designer\n\nLian Henrique Maidana
+    Linsmeyer \nProgrammer and Animator\n\nAnthony Oliveira da Cruz \nSound Designer
+    and Animator\n\nThiago Garulo Sartori \nArt Designer\n\nDiego Machado Baccili
+    \nDirector and Game Designer\n\nFelipe Molina Cyrineu \nProgrammer\n\nCedric
+    Joinovici Cadier \n20696269"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a324ee4325441b947a4eeda0de29f801, type: 2}
   m_sharedMaterial: {fileID: -6012019328254477163, guid: a324ee4325441b947a4eeda0de29f801, type: 2}
