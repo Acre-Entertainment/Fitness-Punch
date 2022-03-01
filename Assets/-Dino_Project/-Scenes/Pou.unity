@@ -7221,7 +7221,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1854240412340614912, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
       propertyPath: m_Text
-      value: clique nos itens para coletar
+      value: 'clique nos itens para coleta-los
+
+
+        Obs: Se nao clicar na comida,
+        ela nao aparecera no seu inventario!'
       objectReference: {fileID: 0}
     - target: {fileID: 1854240412340614912, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
       propertyPath: m_FontData.m_MinSize
@@ -7229,7 +7233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1854240412340614912, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 80
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1854240412340614915, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
       propertyPath: m_AnchorMax.x
@@ -7241,11 +7245,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1854240412340614915, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -0.7800293
+      value: -0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240412340614915, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 410.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240412340614915, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -231.43
       objectReference: {fileID: 0}
     - target: {fileID: 1854240412590531653, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240412604001088, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_Text
+      value: "Pegue 5 comidas antes do  tempo acabar.\n\nQuanto maior a qualidade
+        e quantidade, melhor o resultado!\n\nVerde: Podre\nAmarelo: Fraco\nAzul:
+        Bom\nRoxo: \xD3timo"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240412604001091, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 858.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240412604001091, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854240412604001091, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -994.48
       objectReference: {fileID: 0}
     - target: {fileID: 1854240412723306243, guid: 34692880d3c56aa459fbcbd0415d76f4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
