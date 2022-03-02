@@ -973,6 +973,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.0000076293945
       objectReference: {fileID: 0}
+    - target: {fileID: 4488856839885133479, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_Text
+      value: 'Points:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4488856840288830382, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
+      propertyPath: m_Text
+      value: Quit game
+      objectReference: {fileID: 0}
     - target: {fileID: 4488856840509783764, guid: 960117cab49a00b44b0a4540480547f8, type: 3}
       propertyPath: m_SizeDelta.x
       value: 560.58

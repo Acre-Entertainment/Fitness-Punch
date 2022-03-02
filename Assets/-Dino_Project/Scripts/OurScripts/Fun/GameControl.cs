@@ -76,7 +76,7 @@ public class GameControl : MonoBehaviour {
 		}
 
 		highScoreText.text = "Melhor Tempo: " + highScore;
-		yourScoreText.text = "Tempo Atual: " + yourScore;
+		yourScoreText.text = "Points: " + yourScore;
 
 		if (Time.time > nextSpawn)
 			SpawnObstacle ();

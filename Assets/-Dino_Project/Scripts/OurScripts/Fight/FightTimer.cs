@@ -31,13 +31,13 @@ public class FightTimer : MonoBehaviour
     private IEnumerator Ready()
     {
         yield return new WaitForSeconds(3);
-        text.text = "Pronto?";
+        text.text = "Ready?";
         FindObjectOfType<AudioManager>().Play("Countdown");
     }
     private IEnumerator Go()
     {
         yield return new WaitForSeconds(4);
-        text.text = "Vai!";
+        text.text = "Go!";
         FindObjectOfType<AudioManager>().Play("Countdown_go");
         onGo.Invoke();
     }

@@ -48,7 +48,7 @@ public class StrenghGameMaster : MonoBehaviour
         {
             time = time - 1 * Time.deltaTime;
         }
-        uiTimerText.text = "Tempo: " + (int)time;
+        uiTimerText.text = "Time: " + (int)time;
         if(time <= 0)
         {
             gameOver = true;
@@ -86,12 +86,12 @@ public class StrenghGameMaster : MonoBehaviour
             {
                 dt.forca = 10;
             }
-            finalMenuPoints.GetComponent<Text>().text = "Pontos: " + points;
-            finalMenuText.GetComponent<Text>().text = "Sua força aumentou em " + (dt.forca - forcaAntiga) + "!";
+            finalMenuPoints.GetComponent<Text>().text = "Points: " + points;
+            finalMenuText.GetComponent<Text>().text = "Your strength increased in " + (dt.forca - forcaAntiga) + "!";
         }
     }
     public void updatPointUI()
     {
-        uiPointsText.text = "Pontos: " + points;
+        uiPointsText.text = "Points: " + points;
     }
 }

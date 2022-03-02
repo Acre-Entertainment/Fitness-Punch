@@ -109,7 +109,7 @@ public class Directioncontroler : MonoBehaviour
             Left();
             intime = false;
         }
-        scoreUIcanvas.text = "Pontos: " + scoreUI;
+        scoreUIcanvas.text = "Points: " + scoreUI;
         controllerButtons.SetActive(true);
         return direction;
     }
@@ -175,8 +175,8 @@ public class Directioncontroler : MonoBehaviour
             ScoreChecker();
             EndMenu.SetActive(true);
             dt.resistencia += finalScore;
-            feedback.text = "Pontuação final: " + PerformaceChecker;
-            feedbackresist.text = "Mais " + finalScore + " De Resistencia!";
+            feedback.text = "Final score: " + PerformaceChecker;
+            feedbackresist.text = "Plus " + finalScore + "Of resistence";
             gameObject.SetActive(false);       
         }
     }
@@ -195,24 +195,21 @@ public class Directioncontroler : MonoBehaviour
     {
         if (score >= easy && score < hard)
         {
-            FindObjectOfType<AudioManager>().Play("Defeat");
             FindObjectOfType<AudioManager>().Stop("Theme");
             finalScore = 1;
-            PerformaceChecker = "Lento";
+            PerformaceChecker = "Slow";
         }
         if (score >= hard && score < expert)
         {
-            FindObjectOfType<AudioManager>().Play("Victory");
             FindObjectOfType<AudioManager>().Stop("Theme");
             finalScore = 2;
             PerformaceChecker = "Normal";
         }
         if (score >= expert)
         {
-            FindObjectOfType<AudioManager>().Play("Victory");
             FindObjectOfType<AudioManager>().Stop("Theme");
             finalScore = 3;
-            PerformaceChecker = "Veloz";
+            PerformaceChecker = "Fast";
         }
         return finalScore;
     }

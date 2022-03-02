@@ -1116,8 +1116,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "estar em contato com o solo e o ar vai proporcionar mais contato com bact\xE9rias
-    do bem\r"
+  m_Text: being in contact with the soil and air will provide more contact with good
+    bacteria
 --- !u!222 &120133396
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1227,7 +1227,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sai do celular e vai praticar na realidade!
+  m_Text: Get off your phone and go practice in reality!
 --- !u!222 &127758034
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1394,7 +1394,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "N\xE3o adianta ter corpo grande e mente pequena!"
+  m_Text: It's no use having a big body and a small mind!
 --- !u!222 &149265941
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1825,7 +1825,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 70% do trabalho de emagrecimento vem da comida!
+  m_Text: 70% of weight loss work comes from food!
 --- !u!222 &249996756
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1953,7 +1953,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "A presen\xE7a de algu\xE9m te estimula a fazer mais!"
+  m_Text: The presence of someone encourages you to do more!
 --- !u!222 &310206797
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2636,7 +2636,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Respeite seus limites, assim voc\xEA podera fazer o melhor ao seu alcance!"
+  m_Text: "\rRespect your limits, so you can do the best in your power!"
 --- !u!222 &397547830
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5944,7 +5944,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aproveite a juventude, cuide de seu corpo... voc\xEA vai precisar!"
+  m_Text: Enjoy your youth, take care of your body... you'll need it!
 --- !u!222 &977778944
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6395,7 +6395,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Adolo bliga!!!
+  m_Text: I like fight!!!
 --- !u!222 &1070082680
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7137,7 +7137,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "2 contra 1, embora n\xE3o seja justo eu nunca desisto!"
+  m_Text: 2 against 1, although it's not fair I never give up!
 --- !u!222 &1223720135
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8046,7 +8046,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Hmm, voc\xEA t\xE1 meio magro hein f\xEDo... t\xE1 precisando de um bolo!"
+  m_Text: Hmm, you're kinda skinny huh... you need a cake!
 --- !u!222 &1408197043
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8437,8 +8437,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "O sorvete possui um amino\xE1cido que nos acalma e reduz a agressividade,
-    e aumenta a serotonina, nos deixando feliz!"
+  m_Text: Ice cream has an amino acid that calms us down and reduces aggression,
+    and increases serotonin, making us happy!
 --- !u!222 &1535875310
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9074,7 +9074,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ei, voc\xEA \xE9 que vai lutar no final de semana!"
+  m_Text: Hey, you're the one fighting over the weekend!
 --- !u!222 &1650898528
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9557,8 +9557,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Cuide da sua sa\xFAde intestinal com probi\xF3ticos e fibras, isso ajuda
-    contra a obesidade!"
+  m_Text: Take care of your gut health with probiotics and fiber, it helps against
+    obesity!
 --- !u!222 &1742084188
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11848,21 +11848,59 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8337838, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "Carrot\r\n\r\n  Nutrients:\r\n- Lipid\r\n- Vitamin"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9673302, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Foods
+      objectReference: {fileID: 0}
     - target: {fileID: 26825465, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_Text
-      value: 10x - 5$
+      value: 50x - $5
       objectReference: {fileID: 0}
     - target: {fileID: 36563186, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 105.50781
+      value: 105.50787
       objectReference: {fileID: 0}
     - target: {fileID: 52634466, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 60285463, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Increase your Endurance!
+      objectReference: {fileID: 0}
     - target: {fileID: 74032978, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -488.28003
+      objectReference: {fileID: 0}
+    - target: {fileID: 84203449, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: 'NUTRIENTS:
+
+
+
+        - To receive bonus attributes you will need to
+        consume the right foods in the right amount, consuming them in excess will
+        decrease attributes
+
+
+
+        - The menu consists of 15 different foods,
+        each with 2 nutrients, with a maximum of 6 nutrients, which will be repeated
+        by the different foods
+
+
+
+        - The 6 nutrients are protein, carbohydrates,
+        lipids, minerals, vitamins and fiber
+
+
+
+        - Proteins and carbohydrates
+        give you a mood boost'
       objectReference: {fileID: 0}
     - target: {fileID: 84203449, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -11871,6 +11909,14 @@ PrefabInstance:
     - target: {fileID: 85913645, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_PixelsPerUnitMultiplier
       value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 155263589, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "Rice\r\n\r\n  Nutrients:\r\n- protein\r\n- Carbohydrate"
+      objectReference: {fileID: 0}
+    - target: {fileID: 193133061, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Have fun
       objectReference: {fileID: 0}
     - target: {fileID: 204585637, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
@@ -11902,8 +11948,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 219278626, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_Text
-      value: "No mesmo dia, na primeira vez, ser\xE1 gasto 2 de disposi\xE7\xE3o,
-        na segunda vez 3 e assim por diante"
+      value: On the same day, the first time, 2 disposal will be spent, the second
+        time 3, and so on.
       objectReference: {fileID: 0}
     - target: {fileID: 223096756, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
@@ -11941,11 +11987,39 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -56.00006
       objectReference: {fileID: 0}
+    - target: {fileID: 231582386, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Next
+      objectReference: {fileID: 0}
     - target: {fileID: 246904184, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 105.50781
+      value: 105.50787
+      objectReference: {fileID: 0}
+    - target: {fileID: 251493270, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Next
+      objectReference: {fileID: 0}
+    - target: {fileID: 257104307, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Go back to game!
+      objectReference: {fileID: 0}
+    - target: {fileID: 258201666, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Shop
       objectReference: {fileID: 0}
     - target: {fileID: 290502508, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 304095785, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 152.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 304095785, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -689
+      objectReference: {fileID: 0}
+    - target: {fileID: 307957902, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -11965,10 +12039,28 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -54
       objectReference: {fileID: 0}
+    - target: {fileID: 351817081, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Strength
+      objectReference: {fileID: 0}
     - target: {fileID: 381612803, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 9349393}
+    - target: {fileID: 394184058, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: 'STRENGTH AND RESISTANCE:
+
+
+
+        - To stay physically healthy you
+        should exercise at the gym
+
+
+
+        - Practicing strength will provide
+        more damage in final combat and stamina will provide more health'
+      objectReference: {fileID: 0}
     - target: {fileID: 394184058, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 58
@@ -11983,8 +12075,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 408117458, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_Text
-      value: "No mesmo dia, na primeira vez, ser\xE1 gasto 1 de disposi\xE7\xE3o,
-        na segunda vez 2 e assim por diante"
+      value: On the same day, the first time, 1 disposal will be spent, the second
+        time 2, and so on.
+      objectReference: {fileID: 0}
+    - target: {fileID: 422656845, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463462921, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Today is the day of the fight. Don't procrastinate!
       objectReference: {fileID: 0}
     - target: {fileID: 474696924, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
@@ -12001,6 +12101,18 @@ PrefabInstance:
     - target: {fileID: 474696925, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -463
+      objectReference: {fileID: 0}
+    - target: {fileID: 482388178, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Aerobic
+      objectReference: {fileID: 0}
+    - target: {fileID: 514214239, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Fight
+      objectReference: {fileID: 0}
+    - target: {fileID: 533019297, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: You will spend 1 lipid and 1 mineral.
       objectReference: {fileID: 0}
     - target: {fileID: 553106066, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_Color.b
@@ -12034,6 +12146,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 568382434, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Increase your strength!
+      objectReference: {fileID: 0}
     - target: {fileID: 598229077, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -12042,9 +12158,29 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 628200763, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 654954502, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 105.50781
+      value: 105.50787
+      objectReference: {fileID: 0}
+    - target: {fileID: 657168235, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 670235924, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706093741, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Places
+      objectReference: {fileID: 0}
+    - target: {fileID: 717288655, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: You will spend 1 vitamin and 1 fiber.
       objectReference: {fileID: 0}
     - target: {fileID: 724521055, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
@@ -12069,6 +12205,10 @@ PrefabInstance:
     - target: {fileID: 724521057, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_PixelsPerUnitMultiplier
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 730055002, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "Broccoli\r\n\r\n  Nutrients:\r\n- Vitamin\r\n- Fiber"
       objectReference: {fileID: 0}
     - target: {fileID: 734436278, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -12098,18 +12238,37 @@ PrefabInstance:
       propertyPath: m_PixelsPerUnitMultiplier
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 761097984, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "\rMilk\r\n\r\n  Nutrients:\r\n- Lipid\r\n- Mineral"
+      objectReference: {fileID: 0}
     - target: {fileID: 774865331, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 784074154, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 105.50781
+      value: 105.50787
       objectReference: {fileID: 0}
     - target: {fileID: 792246675, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_Text
-      value: "Entre no mercado e pegue os igredientes que voc\xEA precisa para cozinhar
-        uma dieta saud\xE1vel!"
+      value: Enter the market and get the ingredients you need to cook a healthy
+        diet!
+      objectReference: {fileID: 0}
+    - target: {fileID: 835162662, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: 'DISPOSITION:
+
+
+
+        - It''s not enough just to spend action points
+        to do activities, you must be in the mood for the chosen activity
+
+
+
+        -
+        The disposition is a bar of "willpower" of the character, it will always
+        be spent to do tiring activities'
       objectReference: {fileID: 0}
     - target: {fileID: 835162662, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -12127,13 +12286,30 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 855008162, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: 'Apartment:
+
+        
+
+        It''s for cooking, having fun and sleeping,
+        so waking up the next day'
+      objectReference: {fileID: 0}
     - target: {fileID: 855817103, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 896931522, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_Text
-      value: "Tente aumentar sua resist\xEAncia para durar mais na luta final!"
+      value: "\rTry to increase your stamina to last longer in the final fight!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 931572830, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: 'Gymnasium:
+
+        
+
+        The location of the final fight'
       objectReference: {fileID: 0}
     - target: {fileID: 936545499, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -12167,10 +12343,18 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 965891295, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 996912351, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 9349393}
+    - target: {fileID: 1025793406, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "weak supplement\r\n\r\n  Nutrients:\r\n- Plus 2 bonus for any two nutrients"
+      objectReference: {fileID: 0}
     - target: {fileID: 1025793406, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 65
@@ -12188,8 +12372,26 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1083654609, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: 'Welcome to Fitness Punch
+
+
+
+        Here you will manage your life
+        to maintain a healthy routine
+
+
+
+        in this tutorial you will understand
+        the technical features of the game in order to reach your goals'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083654609, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1095535456, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "Whole grain bread\r\n\r\n  Nutrients:\r\n- Lipid\r\n- Fiber"
       objectReference: {fileID: 0}
     - target: {fileID: 1111636621, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
@@ -12239,6 +12441,14 @@ PrefabInstance:
       propertyPath: m_PixelsPerUnitMultiplier
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1119483980, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "\rYour actions for today are over!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127948802, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "Coffee\r\n\r\n  Nutrients:\r\n- Plus 1 bonus for any two nutrients"
+      objectReference: {fileID: 0}
     - target: {fileID: 1127948802, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 65
@@ -12258,6 +12468,14 @@ PrefabInstance:
     - target: {fileID: 1137299060, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1176637033, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Next
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203810672, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Play and Get Ready
       objectReference: {fileID: 0}
     - target: {fileID: 1205737201, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_PixelsPerUnitMultiplier
@@ -12279,6 +12497,14 @@ PrefabInstance:
     - target: {fileID: 1266223324, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267940710, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Next
+      objectReference: {fileID: 0}
+    - target: {fileID: 1320427777, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "Chocolate\r\n\r\n  Nutrients:\r\n- Carbohydrate\r\n- Lipid"
       objectReference: {fileID: 0}
     - target: {fileID: 1321332580, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -12304,17 +12530,53 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.96862745
       objectReference: {fileID: 0}
+    - target: {fileID: 1373029766, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Your inventory is full!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389578665, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: 'Store:
+
+        
+
+        Used to buy upgrades and new visuals'
+      objectReference: {fileID: 0}
     - target: {fileID: 1397965547, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 105.50781
+      value: 105.50787
       objectReference: {fileID: 0}
     - target: {fileID: 1403117765, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1411591760, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: 'OBJECTIVE:
+
+
+
+        - You are a fighter and must manage the amount
+        of exercise, food and fun applied in your daily life, to prepare for a boxing
+        match at the end of the week
+
+
+
+        ACTIONS:
+
+
+
+        - For this you
+        will need to do activities scattered around the city to earn or keep these
+        three attributes'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411591760, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418027367, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Let's start
       objectReference: {fileID: 0}
     - target: {fileID: 1441705700, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -12324,13 +12586,34 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1446263950, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: 'Gym:
+
+        
+
+        It serves to train dodges and strikes, a
+        warm-up for the fight at the end of the week'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446476645, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "Avocado\r\n\r\n  Nutrients:\r\n- Carbohydrate\r\n- Fiber"
+      objectReference: {fileID: 0}
     - target: {fileID: 1457462751, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1457462752, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -156.00006
+      value: -156
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480287464, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "Orange\r\n\r\n  Nutrients:\r\n- Carbohydrate\r\n- Vitamin"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1502889548, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "\rYour actions today are finished"
       objectReference: {fileID: 0}
     - target: {fileID: 1512449385, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
@@ -12360,13 +12643,38 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1550401242, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "Lettuce\r\n\r\n  Nutrients:\r\n- Mineral\r\n- Fiber"
+      objectReference: {fileID: 0}
     - target: {fileID: 1562569685, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562569686, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 828.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562569686, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 177.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562569686, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 157.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577747782, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: 'This is where you will face the fight at the end of the week.
+
+
+
+        Be
+        ready!'
       objectReference: {fileID: 0}
     - target: {fileID: 1577750190, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_Text
-      value: "Tente aumentar sua for\xE7a para aplicar mais dano na luta final!"
+      value: Try to increase your strength to deal more damage in the final fight!
       objectReference: {fileID: 0}
     - target: {fileID: 1588779384, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
@@ -12374,7 +12682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1588779385, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -156.00006
+      value: -156
       objectReference: {fileID: 0}
     - target: {fileID: 1624824680, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -12500,7 +12808,27 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[9].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1631289617, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Go sleep
+      objectReference: {fileID: 0}
     - target: {fileID: 1644638335, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1673497822, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "Corn\r\n\r\n  Nutrients:\r\n- Mineral\r\n- Vitamin"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675662852, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "Cheese\r\n\r\n  Nutrients:\r\n- protein\r\n- Mineral"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681337264, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Buy food
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712883536, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -12519,6 +12847,14 @@ PrefabInstance:
     - target: {fileID: 1724241427, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_SizeDelta.y
       value: 1490.7765
+      objectReference: {fileID: 0}
+    - target: {fileID: 1741973594, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "Potato\r\n\r\n  Nutrients:\r\n- Carbohydrate\r\n- Mineral"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1772668381, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: 'COINS:'
       objectReference: {fileID: 0}
     - target: {fileID: 1772668381, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -12572,13 +12908,65 @@ PrefabInstance:
       propertyPath: m_PixelsPerUnitMultiplier
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1873832688, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Next
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887911952, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "Egg\r\n\r\n  Nutrients:\r\n- protein\r\n- Lipid"
+      objectReference: {fileID: 0}
     - target: {fileID: 1888844128, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_PixelsPerUnitMultiplier
       value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 1894190449, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "strong supplement\r\n\r\n  Nutrients:\r\n- 3 more bonus for any two
+        nutrients"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894190449, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898900327, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: 'MINIGAMES:
+
+
+
+        - Each activity in the city consists of a different
+        minigame
+
+
+
+        - The result of the minigame varies from your performance
+        in it, ranging from bad, medium and good
+
+
+
+        - The better the result,
+        the more attribute of the chosen minigame will be gained
+
+
+
+        - To
+        play the minigame more than once in the same game day, you will have to spend
+        more attributes than usual
+
+
+
+        INVENTORY:
+
+
+
+        - You will have
+        an inventory where your food was kept
+
+
+
+        -There is a limit of 10
+        spaces and items cannot be thrown away, use them wisely'
       objectReference: {fileID: 0}
     - target: {fileID: 1898900327, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -12591,6 +12979,10 @@ PrefabInstance:
     - target: {fileID: 1931860298, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -495.87988
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937256476, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "Peanut\r\n\r\n  Nutrients:\r\n- protein\r\n- Fiber"
       objectReference: {fileID: 0}
     - target: {fileID: 1967537898, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -12632,6 +13024,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2004570535, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: 'Supermarket:
+
+        
+
+        Used to buy food'
+      objectReference: {fileID: 0}
     - target: {fileID: 2007080761, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -12646,12 +13046,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2029353983, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_Text
-      value: "Reganhe sua disposi\xE7\xE3o usando o seu tempo para jogar algo descontra\xEDdo\n\nNo
-        jogo, pule para desviar das pedras, voc\xEA tem 3 vidas"
+      value: 'Regain your mood by using your time to play something relaxed
+
+
+
+        In
+        the game, jump to dodge the stones, you have 3 lives'
       objectReference: {fileID: 0}
     - target: {fileID: 2043309873, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043309875, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: You still have shares today! When the day is over you can come back
+        here to move on to the next day.
       objectReference: {fileID: 0}
     - target: {fileID: 2048337799, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
@@ -12660,6 +13069,10 @@ PrefabInstance:
     - target: {fileID: 2052701387, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071289880, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: Go cook
       objectReference: {fileID: 0}
     - target: {fileID: 2112068389, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -12681,6 +13094,15 @@ PrefabInstance:
       propertyPath: m_PixelsPerUnitMultiplier
       value: 2.8
       objectReference: {fileID: 0}
+    - target: {fileID: 2145400554, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: "Lean meat\r\n\r\n  Nutrients:\r\n- protein\r\n- Vitamin"
+      objectReference: {fileID: 0}
+    - target: {fileID: 271736848734192872, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: '- You can only recover it during the game having fun, it is essential
+        to stay healthy'
+      objectReference: {fileID: 0}
     - target: {fileID: 271736848734192872, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 55
@@ -12699,7 +13121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 769834752901836758, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 105.50641
+      value: 105.50635
       objectReference: {fileID: 0}
     - target: {fileID: 769834752965472878, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -12767,7 +13189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 769834754376812486, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 105.50641
+      value: 105.50635
       objectReference: {fileID: 0}
     - target: {fileID: 769834754468021618, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
@@ -12791,7 +13213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 769834754627219618, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 105.50641
+      value: 105.50635
       objectReference: {fileID: 0}
     - target: {fileID: 769834754918325483, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_IsActive
@@ -12895,7 +13317,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2365636570122895370, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -105.06915
+      value: -105.06909
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055865448702088269, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: '- Your strength and Stamina will be affected by the food you consume
+
+
+
+        -
+        Failing to exercise will also cause you to lose strength and stamina'
       objectReference: {fileID: 0}
     - target: {fileID: 3055865448702088269, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -12905,9 +13336,41 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3905364766726648897, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_text
+      value: SETTINGS
+      objectReference: {fileID: 0}
+    - target: {fileID: 4115743984759951472, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: '- Coins are received for performing minigames
+
+
+
+        - They can
+        also be found scattered around the city
+
+
+
+        - The game also has a
+        store, where you can buy coins too
+
+
+
+        STORE:
+
+
+
+        - In the
+        store the player can buy cosmetic items and supplements with in-game money
+        or real money'
+      objectReference: {fileID: 0}
     - target: {fileID: 4115743984759951472, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844820192618408551, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: '- Lipids and minerals give bonus Strength'
       objectReference: {fileID: 0}
     - target: {fileID: 4844820192618408551, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -12953,13 +13416,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7527542923840356156, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_text
+      value: MUSIC
+      objectReference: {fileID: 0}
     - target: {fileID: 7663624074150757921, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -135.99994
+      value: -135.99988
+      objectReference: {fileID: 0}
+    - target: {fileID: 7728369947985026527, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: '- To do any activity, 1 of 4 action points will be spent, after using
+        all the points, a new day will start, and thus, resetting the 4 action points'
       objectReference: {fileID: 0}
     - target: {fileID: 7728369947985026527, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964374610232409282, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
+      propertyPath: m_Text
+      value: '- Vitamins and fiber give stamina bonuses'
       objectReference: {fileID: 0}
     - target: {fileID: 7964374610232409282, guid: 4da317ae10c6fd640bba3785020ffd5c, type: 3}
       propertyPath: m_FontData.m_FontSize

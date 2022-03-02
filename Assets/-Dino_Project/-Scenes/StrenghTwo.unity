@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.6499, y: -100.01}
+  m_AnchoredPosition: {x: 0.049988, y: -195.99}
   m_SizeDelta: {x: 567.29, y: 200.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &95086541
@@ -182,7 +182,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -193,7 +193,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Sua for\xE7a n\xE3o aumentou...\nVoc\xEA deve praticar mais para melhorar!"
+  m_Text: 'Your strength has not increased...
+
+    You must practice more to improve!'
 --- !u!222 &95086542
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -524,8 +526,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -129}
-  m_SizeDelta: {x: 567.19, y: 152.95}
+  m_AnchoredPosition: {x: 0, y: -57.20499}
+  m_SizeDelta: {x: 567.19, y: 85.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &303112128
 MonoBehaviour:
@@ -549,7 +551,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -1745,7 +1747,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Voltar
+  m_Text: Go back to city
 --- !u!222 &1035936739
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2176,7 +2178,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Come\xE7ar"
+  m_Text: Start
 --- !u!222 &1178341779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3340,8 +3342,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -34}
-  m_SizeDelta: {x: 512.62, y: 428.2}
+  m_AnchoredPosition: {x: 0, y: -54.13}
+  m_SizeDelta: {x: 512.62, y: 416.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1700468305
 MonoBehaviour:
@@ -3376,10 +3378,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Instru\xE7\xF5es:\n\n-Pressione no treinador para golpear\n\n-Pressione
-    no seu personagem para bloquear ataques\n\n-Acerte a maior quantidade de socos
-    e bloqueie os ataques para fazer mais pontos. Quanto mais pontos fizer, melhor
-    ser\xE1 o resultado!"
+  m_Text: 'Instructions:
+
+    
+
+    -Press the trainer to strike
+
+    
+
+    -Press
+    on your character to block attacks
+
+    
+
+    -Hit the most punches and block
+    attacks to score more points. The more points you score, the better the result!'
 --- !u!222 &1700468306
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3604,7 +3617,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "TESTE DE FOR\xC7A!"
+  m_Text: STRENGTH TEST
 --- !u!222 &1817029410
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3647,8 +3660,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -339}
-  m_SizeDelta: {x: 567.09, y: 214.72}
+  m_AnchoredPosition: {x: 0, y: -308.94}
+  m_SizeDelta: {x: 523.79, y: 154.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1828313660
 MonoBehaviour:
@@ -3672,10 +3685,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: cd108552ffb754942baa28c2d0838670, type: 3}
-    m_FontSize: 73
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 120
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -3683,7 +3696,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: O Treinamento Acabou!
+  m_Text: TRAINING IS OVER!
 --- !u!222 &1828313661
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3959,8 +3972,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.29996, y: 20}
-  m_SizeDelta: {x: 567.39, y: 144.92}
+  m_AnchoredPosition: {x: -0.10001, y: 0}
+  m_SizeDelta: {x: 567.39, y: 104.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1906182615
 MonoBehaviour:
@@ -3984,7 +3997,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -4383,7 +4396,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 92.72998}
-  m_SizeDelta: {x: 461.32, y: 99.73}
+  m_SizeDelta: {x: 403.45, y: 80.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2011492369
 MonoBehaviour:
@@ -4849,7 +4862,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.59991, y: -100.02}
+  m_AnchoredPosition: {x: 0.000000059605, y: -196}
   m_SizeDelta: {x: 567.19, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2118437671
@@ -4874,7 +4887,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -4885,7 +4898,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Parab\xE9ns, continue neste ritimo e ser\xE1 vitorioso!"
+  m_Text: Congratulations, keep on this rhythm and you will be victorious!
 --- !u!222 &2118437672
 CanvasRenderer:
   m_ObjectHideFlags: 0

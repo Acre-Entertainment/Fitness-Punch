@@ -435,7 +435,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1030,7 +1030,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Vitorioso
+  m_Text: WINNER
 --- !u!222 &178130165
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1109,7 +1109,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VITORIOSO
+  m_Text: VICTORY
 --- !u!222 &178711775
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1217,7 +1217,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2294,7 +2294,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Voltar
+  m_Text: Go back to city
 --- !u!222 &339884533
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2420,7 +2420,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -8.59, y: 9.3}
-  m_SizeDelta: {x: 621.23, y: 221.71}
+  m_SizeDelta: {x: 1024, y: 164.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &348241016
 MonoBehaviour:
@@ -2455,7 +2455,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: A LUTA FINAL
+  m_Text: THE FINAL FIGHT
 --- !u!222 &348241017
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2559,7 +2559,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -4997,7 +4997,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -6590,7 +6590,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -6757,7 +6757,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -6847,7 +6847,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: DERROTA
+  m_Text: DEFEAT
 --- !u!222 &1096853255
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7240,7 +7240,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -8747,7 +8747,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -8837,7 +8837,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Come\xE7ar"
+  m_Text: Start
 --- !u!222 &1328766380
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9100,7 +9100,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 233.85}
+  m_AnchoredPosition: {x: 0, y: 219}
   m_SizeDelta: {x: 587.67, y: 271.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1424077429
@@ -9136,10 +9136,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Suas prepara\xE7\xF5es durante a semana culminam aqui!\n\nToque no seu
-    oponente para socar, no seu personagem para bloquer e nas laterais inferior,
-    direita e esquerda para se esquivar.\n\nSua for\xE7a, resist\xEAncia e habilidade
-    definir\xE1 quem ser\xE1 o campe\xE3o!"
+  m_Text: 'Your weekday preparations culminate here!
+
+    
+
+    Tap your opponent
+    to punch, your character to block and the bottom, right and left sides to dodge.
+
+    
+
+    Your
+    strength, endurance and skill will define who will be the champion!'
 --- !u!222 &1424077430
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10113,7 +10120,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -10192,7 +10199,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -10282,7 +10289,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Resist\xEAncia:"
+  m_Text: 'Endurence:'
 --- !u!222 &1599196410
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11287,7 +11294,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -11377,8 +11384,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Mas n\xE3o se preocupe! Tem sempre a pr\xF3xima semana. Treine mais, melhore
-    sua sua sa\xFAde e habilidade e eventualmente voc\xEA conseguira vencer!"
+  m_Text: But do not worry! There's always next week. Train harder, improve your
+    health and skill and eventually you will win!
 --- !u!222 &1741773645
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12716,7 +12723,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "For\xE7a:"
+  m_Text: 'Strenght:'
 --- !u!222 &1949972439
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13075,7 +13082,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d80cd09888ea5147920315c66db8b74, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -13288,8 +13295,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Com treinamento e preparando o seu corpo de modo saudavel voc\xEA consegui
-    obter o doce gosto da vit\xF3ria!"
+  m_Text: With training and preparing your body in a healthy way you managed to get
+    the sweet taste of victory!
 --- !u!222 &2069065960
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13823,7 +13830,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Derrota
+  m_Text: LOSER
 --- !u!222 &2146002056
 CanvasRenderer:
   m_ObjectHideFlags: 0

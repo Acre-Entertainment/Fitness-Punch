@@ -19,19 +19,19 @@ public class CookingResults : MonoBehaviour
         dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
         cookingGameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<CookingGameMaster>();
 
-        proteinaText.text = "Proteínas: +" + cookingGameMaster.changingPro;
-        carboidratoText.text = "Carboidratos:+" + cookingGameMaster.changingCar;
-        lipidioText.text = "Lipídios: +" + cookingGameMaster.changingLip;
-        mineralText.text = "Minerais: +" + cookingGameMaster.changingMin;
-        vitaminaText.text = "Vitaminas: +" + cookingGameMaster.changingVit;
-        fibraText.text = "Fibras: +" + cookingGameMaster.changingFib;
+        proteinaText.text = "Proteins: +" + cookingGameMaster.changingPro;
+        carboidratoText.text = "carbohydrates:+" + cookingGameMaster.changingCar;
+        lipidioText.text = "lipids: +" + cookingGameMaster.changingLip;
+        mineralText.text = "Minerals: +" + cookingGameMaster.changingMin;
+        vitaminaText.text = "Vitamins: +" + cookingGameMaster.changingVit;
+        fibraText.text = "Fibers: +" + cookingGameMaster.changingFib;
         if(cookingGameMaster.changingDis >= 0)
         {
-            disposicaoText.text = "Disposição: +" + cookingGameMaster.changingDis;
+            disposicaoText.text = "Disposition: +" + cookingGameMaster.changingDis;
         }
         if(cookingGameMaster.changingDis < 0)
         {
-            disposicaoText.text = "Disposição: -" + -cookingGameMaster.changingDis;
+            disposicaoText.text = "Disposition: -" + -cookingGameMaster.changingDis;
         }
     }
 }

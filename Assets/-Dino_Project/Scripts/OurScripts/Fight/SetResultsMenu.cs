@@ -17,13 +17,13 @@ public class SetResultsMenu : MonoBehaviour
     void Start()
     {
         dataHolder = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
-        forcaText.text = "Força: " + dataHolder.forca + "/12";
-        resistenciaText.text = "Resistência: " + dataHolder.resistencia + "/12";
-        proteinaText.text = "Proteínas: " + dataHolder.proteina + "/10";
-        carboidratoText.text = "Carboidratos: " + dataHolder.carboidrato + "/10";
-        lipidioText.text = "Lipídios: " + dataHolder.lipidio + "/10";
-        mineralText.text = "Minerais: " + dataHolder.mineral + "/10";
-        vitaminaText.text = "Vitaminas: " + dataHolder.vitamina + "/10";
-        fibraText.text = "Fibras: " + dataHolder.fibra + "/10";
+        forcaText.text = "Force: " + dataHolder.forca + "/12";
+        resistenciaText.text = "Resistance: " + dataHolder.resistencia + "/12";
+        proteinaText.text = "Proteins: " + dataHolder.proteina + "/10";
+        carboidratoText.text = "Carbohydrates: " + dataHolder.carboidrato + "/10";
+        lipidioText.text = "Lipids: " + dataHolder.lipidio + "/10";
+        mineralText.text = "Minerals: " + dataHolder.mineral + "/10";
+        vitaminaText.text = "Vitamins: " + dataHolder.vitamina + "/10";
+        fibraText.text = "Fibers: " + dataHolder.fibra + "/10";
     }
 }

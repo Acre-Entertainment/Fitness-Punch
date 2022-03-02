@@ -21,45 +21,45 @@ public class StrenghResistanceAttributeBonesMalus : MonoBehaviour
         if(dataHolder.lipidio == 7 || dataHolder.lipidio == 8)
         {
             dataHolder.forca += 1;
-            lipidioText.text = "+1 de Força devido a quantidade de Lipídios balanceados";
+            lipidioText.text = "+1 of Strength due to the amount of balanced Lipids";
         }
         if(dataHolder.lipidio == 0 || dataHolder.lipidio == 10)
         {
             dataHolder.forca -= 1;
-            lipidioText.text = "-1 de Força devido a quantidade de Lipídios desbalanceados";
+            lipidioText.text = "-1 of Strength due to the amount of unbalanced Lipids";
         }
         //mineral
         if(dataHolder.mineral == 7 || dataHolder.mineral == 8)
         {
             dataHolder.forca += 1;
-            mineralText.text = "+1 de Força devido a quantidade de Minerais balanceados";
+            mineralText.text = "+1 of Strength due to the amount of balanced Minerals";
         }
         if(dataHolder.mineral == 0 || dataHolder.mineral == 10)
         {
             dataHolder.forca -= 1;
-            mineralText.text = "-1 de Força devido a quantidade de Minerais desbalanceados";
+            mineralText.text = "-1 of Strength due to the amount of unbalanced Minerals";
         }
         //vitamina
         if(dataHolder.vitamina == 7 || dataHolder.vitamina == 8)
         {
             dataHolder.resistencia += 1;
-            vitaminaText.text = "+1 de Resistência devido a quantidade de Vitaminas balanceadas";
+            vitaminaText.text = "+1 of Resistance due to the amount of balanced Vitamins";
         }
         if(dataHolder.vitamina == 0 || dataHolder.vitamina == 10)
         {
             dataHolder.resistencia -= 1;
-            vitaminaText.text = "-1 de Resistência devido a quantidade de Vitaminas desbalanceadas";
+            vitaminaText.text = "-1 of Resistance due to the amount of unbalanced Vitamins";
         }
         //fibra
         if(dataHolder.fibra == 7 || dataHolder.fibra == 8)
         {
             dataHolder.resistencia += 1;
-            fibraText.text = "+1 de Resistência devido a quantidade de Fibras balanceadas";
+            fibraText.text = "+1 of Resistance due to the amount of balanced Fibers";
         }
         if(dataHolder.fibra == 0 || dataHolder.fibra == 10)
         {
             dataHolder.resistencia -= 1;
-            fibraText.text = "-1 de Resistência devido a quantidade de Fibras desbalanceadas";
+            fibraText.text = "-1 of Resistance due to the amount of unbalanced Fibers";
         }
         if(dataHolder.forca < 0)
         {
