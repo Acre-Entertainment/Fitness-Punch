@@ -1521,7 +1521,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Pontos: 0'
+  m_Text: 'Points: 0'
 --- !u!222 &662915010
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2425,7 +2425,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Tempo: 0'
+  m_Text: 'Time: 0'
 --- !u!222 &1440228166
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3192,7 +3192,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -163.69}
+  m_AnchoredPosition: {x: 0, y: -163.68994}
   m_SizeDelta: {x: 73.27, y: 173.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1677265482
@@ -3380,19 +3380,19 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Instructions:
 
-    
+
 
     -Press the trainer to strike
 
-    
 
-    -Press
-    on your character to block attacks
 
-    
+    -Press on your
+    character to block attacks
 
-    -Hit the most punches and block
-    attacks to score more points. The more points you score, the better the result!'
+
+
+    -Hit the most punches and block attacks to
+    score more points. The more points you score, the better the result!'
 --- !u!222 &1700468306
 CanvasRenderer:
   m_ObjectHideFlags: 0

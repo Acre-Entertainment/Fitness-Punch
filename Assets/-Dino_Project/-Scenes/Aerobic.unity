@@ -983,7 +983,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Come\xE7ar"
+  m_Text: Start
 --- !u!222 &344017146
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1306,7 +1306,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Parab\xE9ns!"
+  m_Text: Congratulations!
 --- !u!222 &418309845
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2191,7 +2191,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Treine sua Resistencia!
+  m_Text: Train your endurance!
 --- !u!222 &839591060
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2495,8 +2495,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Toque a parte inferior da tela para agachar e as laterais da tela para
-    esquivar.
+  m_Text: Tap the bottom of the screen to crouch and the sides of the screen to dodge.
 --- !u!222 &1042168001
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2813,10 +2812,10 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Dodge objects to score
 
-    
 
-    Tap the bottom of the screen to crouch
-    and the sides of the screen to dodge.'
+
+    Tap the bottom of the screen to crouch and
+    the sides of the screen to dodge.'
 --- !u!222 &1139718360
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3983,7 +3982,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Desvie dos objetos para pontuar
+  m_Text: Dodge the objects to score points!
 --- !u!222 &1437481854
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4244,7 +4243,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Voltar
+  m_Text: Back
 --- !u!222 &1549816108
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5126,7 +5125,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Pontua\xE7\xE3o final:\n"
+  m_Text: 'Final score:'
 --- !u!222 &1950109602
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5462,7 +5461,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Pontua\xE7\xE3o final:\nMais  de Resistencia!"
+  m_Text: 'Final Score:
+
+    Plus  of Resistence!'
 --- !u!1 &2037220517
 GameObject:
   m_ObjectHideFlags: 0
@@ -5533,7 +5534,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Sua pontua\xE7\xE3o foi:"
+  m_Text: 'Your score is:'
 --- !u!222 &2037220520
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5915,7 +5916,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: -141}
+  m_AnchoredPosition: {x: 0, y: -141}
   m_SizeDelta: {x: 412.89, y: 179.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2137715494
@@ -5959,7 +5960,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mais  de Resistencia!
+  m_Text: Plus  of Resistence!
 --- !u!1001 &1204492857074592039
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -193,229 +193,229 @@ public class OverworldCookingMenu : MonoBehaviour
         switch(foodID)
         {
             case 101:
-                showText1.text = "Amendoim de Baixa Qualidade:";
-                showText2.text = "+1 Proteína";
-                showText3.text = "+1 Fibra";
+                showText1.text = "Low-Quality Peanut:";
+                showText2.text = "+1 Protein";
+                showText3.text = "+1 Fiber";
                 return;
             case 102:
-                showText1.text = "Carne Magra de Baixa Qualidade:";
-                showText2.text = "+1 Proteína";
-                showText3.text = "+1 Vitamina";
+                showText1.text = "Low-Quality Lean Meat:";
+                showText2.text = "+1 Protein";
+                showText3.text = "+1 Vitamin";
                 return;
             case 103:
-                showText1.text = "Ovo de Baixa Qualidade:";
-                showText2.text = "+1 Proteína";
-                showText3.text = "+1 Lipídio";
+                showText1.text = "Low-Quality Egg:";
+                showText2.text = "+1 Protein";
+                showText3.text = "+1 Lipid";
                 return;
             case 104:
-                showText1.text = "Arroz de Baixa Qualidade:";
-                showText2.text = "+1 Proteína";
-                showText3.text = "+1 Carboidrato";
+                showText1.text = "Low-Quality Rice:";
+                showText2.text = "+1 Protein";
+                showText3.text = "+1 Carbohydrate";
                 return;
             case 105:
-                showText1.text = "Queijo de Baixa Qualidade:";
-                showText2.text = "+1 Proteína";
+                showText1.text = "Low-Quality Cheese:";
+                showText2.text = "+1 Protein";
                 showText3.text = "+1 Mineral";
                 return;
             case 106:
-                showText1.text = "Brócolis de Baixa Qualidade:";
-                showText2.text = "+1 Vitamina";
-                showText3.text = "+1 Fibra";
+                showText1.text = "Low-Quality Broccoli:";
+                showText2.text = "+1 Vitamin";
+                showText3.text = "+1 Fiber";
                 return;
             case 107:
-                showText1.text = "Milho de Baixa Qualidade:";
+                showText1.text = "Low-Quality Corn:";
                 showText2.text = "+1 Mineral";
-                showText3.text = "+1 Vitamina";
+                showText3.text = "+1 Vitamin";
                 return;
             case 108:
-                showText1.text = "Chocolate de Baixa Qualidade:";
-                showText2.text = "+1 Carboidrato";
-                showText3.text = "+1 Lipídio";
+                showText1.text = "Low-Quality Chocolate:";
+                showText2.text = "+1 Carbohydrate";
+                showText3.text = "+1 Lipid";
                 return;
             case 109:
-                showText1.text = "Leite de Baixa Qualidade:";
-                showText2.text = "+1 Lipídio";
+                showText1.text = "Low-Quality Milk:";
+                showText2.text = "+1 Lipid";
                 showText3.text = "+1 Mineral";
                 return;
             case 110:
-                showText1.text = "Cenoura de Baixa Qualidade:";
-                showText2.text = "+1 Lipídio";
-                showText3.text = "+1 Vitamina";
+                showText1.text = "Low-Quality Carrot:";
+                showText2.text = "+1 Lipid";
+                showText3.text = "+1 Vitamin";
                 return;
             case 111:
-                showText1.text = "Pão de Baixa Qualidade:";
-                showText2.text = "+1 Lipídio";
-                showText3.text = "+1 Fibra";
+                showText1.text = "Low-Quality Bread:";
+                showText2.text = "+1 Lipid";
+                showText3.text = "+1 Fiber";
                 return;
             case 112:
-                showText1.text = "Laranja de Baixa Qualidade:";
-                showText2.text = "+1 Carboidrato";
-                showText3.text = "+1 Vitamina";
+                showText1.text = "Low-Quality Orange:";
+                showText2.text = "+1 Carbohydrate";
+                showText3.text = "+1 Vitamin";
                 return;
             case 113:
-                showText1.text = "Abacate de Baixa Qualidade:";
-                showText2.text = "+1 Carboidrato";
-                showText3.text = "+1 Fibra";
+                showText1.text = "Low-Quality Avocado:";
+                showText2.text = "+1 Carbohydrate";
+                showText3.text = "+1 Fiber";
                 return;
             case 114:
-                showText1.text = "Batata de Baixa Qualidade:";
-                showText2.text = "+1 Carboidrato";
+                showText1.text = "Low-Quality Potato:";
+                showText2.text = "+1 Carbohydrate";
                 showText3.text = "+1 Mineral";
                 return;
             case 115:
-                showText1.text = "Amendoin de Baixa Qualidade:";
-                showText2.text = "+1 Proteína";
-                showText3.text = "+1 Fibra";
+                showText1.text = "Low-Quality Peanut:";
+                showText2.text = "+1 Protein";
+                showText3.text = "+1 Fiber";
                 return;
             case 201:
-                showText1.text = "Amendoim de Média Qualidade:";
-                showText2.text = "+2 Proteínas";
-                showText3.text = "+2 Fibras";
+                showText1.text = "Medium-Quality Peanut:";
+                showText2.text = "+2 Protein";
+                showText3.text = "+2 Fiber";
                 return;
             case 202:
-                showText1.text = "Carne Magra de Média Qualidade:";
-                showText2.text = "+2 Proteínas";
-                showText3.text = "+2 Vitaminas";
+                showText1.text = "Medium-Quality Lean Meat:";
+                showText2.text = "+2 Protein";
+                showText3.text = "+2 Vitamin";
                 return;
             case 203:
-                showText1.text = "Ovo de Média Qualidade:";
-                showText2.text = "+2 Proteínas";
-                showText3.text = "+2 Lipídios";
+                showText1.text = "Medium-Quality Egg:";
+                showText2.text = "+2 Protein";
+                showText3.text = "+2 Lipid";
                 return;
             case 204:
-                showText1.text = "Arroz de Média Qualidade:";
-                showText2.text = "+2 Proteínas";
-                showText3.text = "+2 Carboidratos";
+                showText1.text = "Medium-Quality Rice:";
+                showText2.text = "+2 Protein";
+                showText3.text = "+2 Carbohydrate";
                 return;
             case 205:
-                showText1.text = "Queijo de Média Qualidade:";
-                showText2.text = "+2 Proteínas";
-                showText3.text = "+2 Minerais";
+                showText1.text = "Medium-Quality Cheese:";
+                showText2.text = "+2 Protein";
+                showText3.text = "+2 Mineral";
                 return;
             case 206:
-                showText1.text = "Brócolis de Média Qualidade:";
-                showText2.text = "+2 Vitaminas";
-                showText3.text = "+2 Fibras";
+                showText1.text = "Medium-Quality Broccoli:";
+                showText2.text = "+2 Vitamin";
+                showText3.text = "+2 Fiber";
                 return;
             case 207:
-                showText1.text = "Milho de Média Qualidade:";
-                showText2.text = "+2 Minerals";
-                showText3.text = "+2 Vitaminas";
+                showText1.text = "Medium-Quality Corn:";
+                showText2.text = "+2 Mineral";
+                showText3.text = "+2 Vitamin";
                 return;
             case 208:
-                showText1.text = "Chocolate de Média Qualidade:";
-                showText2.text = "+2 Carboidratos";
-                showText3.text = "+2 Lipídios";
+                showText1.text = "Medium-Quality Chocolate:";
+                showText2.text = "+2 Carbohydrate";
+                showText3.text = "+2 Lipid";
                 return;
             case 209:
-                showText1.text = "Leite de Média Qualidade:";
-                showText2.text = "+2 Lipídios";
-                showText3.text = "+2 Minerais";
+                showText1.text = "Medium-Quality Milk:";
+                showText2.text = "+2 Lipid";
+                showText3.text = "+2 Mineral";
                 return;
             case 210:
-                showText1.text = "Cenoura de Média Qualidade:";
-                showText2.text = "+2 Lipídios";
-                showText3.text = "+2 Vitaminas";
+                showText1.text = "Medium-Quality Carrot:";
+                showText2.text = "+2 Lipid";
+                showText3.text = "+2 Vitamin";
                 return;
             case 211:
-                showText1.text = "Pão de Média Qualidade:";
-                showText2.text = "+2 Lipídios";
-                showText3.text = "+2 Fibras";
+                showText1.text = "Medium-Quality Bread:";
+                showText2.text = "+2 Lipid";
+                showText3.text = "+2 Fiber";
                 return;
             case 212:
-                showText1.text = "Laranja de Média Qualidade:";
-                showText2.text = "+2 Carboidratos";
-                showText3.text = "+2 Vitaminas";
+                showText1.text = "Medium-Quality Orange:";
+                showText2.text = "+2 Carbohydrate";
+                showText3.text = "+2 Vitamin";
                 return;
             case 213:
-                showText1.text = "Abacate de Média Qualidade:";
-                showText2.text = "+2 Carboidratos";
-                showText3.text = "+2 Fibras";
+                showText1.text = "Medium-Quality Avocado:";
+                showText2.text = "+2 Carbohydrate";
+                showText3.text = "+2 Fiber";
                 return;
             case 214:
-                showText1.text = "Batata de Média Qualidade:";
-                showText2.text = "+2 Carboidratos";
-                showText3.text = "+2 Minerais";
+                showText1.text = "Medium-Quality Potato:";
+                showText2.text = "+2 Carbohydrate";
+                showText3.text = "+2 Mineral";
                 return;
             case 215:
-                showText1.text = "Amendoin de Média Qualidade:";
-                showText2.text = "+2 Proteínas";
-                showText3.text = "+2 Fibras";
+                showText1.text = "Medium-Quality Peanut:";
+                showText2.text = "+2 Protein";
+                showText3.text = "+2 Fiber";
                 return;
             case 301:
-                showText1.text = "Amendoim de Alta Qualidade:";
-                showText2.text = "+2 Proteínas";
-                showText3.text = "+2 Fibras";
+                showText1.text = "High-Quality Peanut:";
+                showText2.text = "+3 Protein";
+                showText3.text = "+3 Fiber";
                 return;
             case 302:
-                showText1.text = "Carne Magra de Alta Qualidade:";
-                showText2.text = "+2 Proteínas";
-                showText3.text = "+2 Vitaminas";
+                showText1.text = "High-Quality Lean Meat:";
+                showText2.text = "+3 Protein";
+                showText3.text = "+3 Vitamin";
                 return;
             case 303:
-                showText1.text = "Ovo de Alta Qualidade:";
-                showText2.text = "+2 Proteínas";
-                showText3.text = "+2 Lipídios";
+                showText1.text = "High-Quality Egg:";
+                showText2.text = "+3 Protein";
+                showText3.text = "+3 Lipid";
                 return;
             case 304:
-                showText1.text = "Arroz de Alta Qualidade:";
-                showText2.text = "+2 Proteínas";
-                showText3.text = "+2 Carboidratos";
+                showText1.text = "High-Quality Rice:";
+                showText2.text = "+3 Protein";
+                showText3.text = "+3 Carbohydrate";
                 return;
             case 305:
-                showText1.text = "Queijo de Alta Qualidade:";
-                showText2.text = "+2 Proteínas";
-                showText3.text = "+2 Minerais";
+                showText1.text = "High-Quality Cheese:";
+                showText2.text = "+3 Protein";
+                showText3.text = "+3 Mineral";
                 return;
             case 306:
-                showText1.text = "Brócolis de Alta Qualidade:";
-                showText2.text = "+2 Vitaminas";
-                showText3.text = "+2 Fibras";
+                showText1.text = "High-Quality Broccoli:";
+                showText2.text = "+3 Vitamin";
+                showText3.text = "+3 Fiber";
                 return;
             case 307:
-                showText1.text = "Milho de Alta Qualidade:";
-                showText2.text = "+2 Minerals";
-                showText3.text = "+2 Vitaminas";
+                showText1.text = "High-Quality Corn:";
+                showText2.text = "+3 Mineral";
+                showText3.text = "+3 Vitamin";
                 return;
             case 308:
-                showText1.text = "Chocolate de Alta Qualidade:";
-                showText2.text = "+2 Carboidratos";
-                showText3.text = "+2 Lipídios";
+                showText1.text = "High-Quality Chocolate:";
+                showText2.text = "+3 Carbohydrate";
+                showText3.text = "+3 Lipid";
                 return;
             case 309:
-                showText1.text = "Leite de Alta Qualidade:";
-                showText2.text = "+2 Lipídios";
-                showText3.text = "+2 Minerais";
+                showText1.text = "High-Quality Milk:";
+                showText2.text = "+3 Lipid";
+                showText3.text = "+3 Mineral";
                 return;
             case 310:
-                showText1.text = "Cenoura de Alta Qualidade:";
-                showText2.text = "+2 Lipídios";
-                showText3.text = "+2 Vitaminas";
+                showText1.text = "High-Quality Carrot:";
+                showText2.text = "+3 Lipid";
+                showText3.text = "+3 Vitamin";
                 return;
             case 311:
-                showText1.text = "Pão de Alta Qualidade:";
-                showText2.text = "+2 Lipídios";
-                showText3.text = "+2 Fibras";
+                showText1.text = "High-Quality Bread:";
+                showText2.text = "+3 Lipid";
+                showText3.text = "+3 Fiber";
                 return;
             case 312:
-                showText1.text = "Laranja de Alta Qualidade:";
-                showText2.text = "+2 Carboidratos";
-                showText3.text = "+2 Vitaminas";
+                showText1.text = "High-Quality Orange:";
+                showText2.text = "+3 Carbohydrate";
+                showText3.text = "+3 Vitamin";
                 return;
             case 313:
-                showText1.text = "Abacate de Alta Qualidade:";
-                showText2.text = "+2 Carboidratos";
-                showText3.text = "+2 Fibras";
+                showText1.text = "High-Quality Avocado:";
+                showText2.text = "+3 Carbohydrate";
+                showText3.text = "+3 Fiber";
                 return;
             case 314:
-                showText1.text = "Batata de Alta Qualidade:";
-                showText2.text = "+2 Carboidratos";
-                showText3.text = "+2 Minerais";
+                showText1.text = "High-Quality Potato:";
+                showText2.text = "+3 Carbohydrate";
+                showText3.text = "+3 Mineral";
                 return;
             case 315:
-                showText1.text = "Amendoin de Alta Qualidade:";
-                showText2.text = "+2 Proteínas";
-                showText3.text = "+2 Fibras";
+                showText1.text = "High-Quality Peanut:";
+                showText2.text = "+3 Protein";
+                showText3.text = "+3 Fiber";
                 return;
             
         }

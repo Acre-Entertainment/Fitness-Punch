@@ -127,49 +127,49 @@ public class PouMenu : MonoBehaviour
         switch(IDDaComidaAMudar)
         {
             case 1:
-                textoAMudar.text = "Amendoin: Proteínas e Fibras";
+                textoAMudar.text = "Peanut: Protein and Fiber.";
                 break;
             case 2:
-                textoAMudar.text = "Carne Magra: Proteínas e Vitaminas";
+                textoAMudar.text = "Lean Meat: Protein and Vitamins.";
                 break;
             case 3:
-                textoAMudar.text = "Ovo: Proteínas e Lipídios";
+                textoAMudar.text = "Egg: Protein and Lipids.";
                 break;
             case 4:
-                textoAMudar.text = "Arroz: Proteínas e Carboidratos";
+                textoAMudar.text = "Rice: Protein and Carbohydrates.";
                 break;
             case 5:
-                textoAMudar.text = "Queijo: Proteínas e Minerais";
+                textoAMudar.text = "Cheese: Protein and Minerals.";
                 break;
             case 6:
-                textoAMudar.text = "Brócolis: Vitaminas e Fibras";
+                textoAMudar.text = "Broccoli: Vitamins and Fiber.";
                 break;
             case 7:
-                textoAMudar.text = "Milho: Minerais e Vitaminas";
+                textoAMudar.text = "Corn: Minerals and Vitamins.";
                 break;
             case 8:
-                textoAMudar.text = "Chocolate: Carboidratos e Lipídios";
+                textoAMudar.text = "Chocolate: Carbohydrates and Lipids.";
                 break;
             case 9:
-                textoAMudar.text = "Leite: Lipídios e Minerais";
+                textoAMudar.text = "Milk: Lipids and Minerals.";
                 break;
             case 10:
-                textoAMudar.text = "Cenoura: Lipídios e Vitaminas";
+                textoAMudar.text = "Carrot: Lipids and Vitamins.";
                 break;
             case 11:
-                textoAMudar.text = "Pão: Lipídios e Fibras";
+                textoAMudar.text = "Bread: Lipids and Fiber.";
                 break;
             case 12:
-                textoAMudar.text = "Laranja: Carboidratos e Vitaminas";
+                textoAMudar.text = "Orange: Carbohydrates and Vitamins.";
                 break;
             case 13:
-                textoAMudar.text = "Abacate: Carboidratos e Fibras";
+                textoAMudar.text = "Avocado: Carbohydrates and Fiber.";
                 break;
             case 14:
-                textoAMudar.text = "Batata: Carboidratos e Minerais";
+                textoAMudar.text = "Potato: Carbohydrates and Minerals.";
                 break;
             case 15:
-                textoAMudar.text = "Alfaçe: Minerais e Fibras";
+                textoAMudar.text = "Lettuce: Minerals and Fiber.";
                 break;
         }
     }

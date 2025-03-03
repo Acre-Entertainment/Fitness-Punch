@@ -17,14 +17,14 @@ public class PouDispositionAndInventoryCheck : MonoBehaviour
     {
         DT = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>();
         neededDisposition = 1 + DT.grocerThisDay;
-        noDispositionText.GetComponent<Text>().text = "Sua disposição não está auta o suficiente! Você precisa de " + (1 + DT.grocerThisDay) + " e você tem " + DT.disposicao + "!";
+        noDispositionText.GetComponent<Text>().text = "Your disposition level isn't high enough! You need  and you have  " + (1 + DT.grocerThisDay) + " and you have " + DT.disposicao + "!";
         if(DT.grocerThisDay == 0)
         {
-            dispositionText.GetComponent<Text>().text = "Sua primeira compra do dia custa 1 disposição.";
+            dispositionText.GetComponent<Text>().text = "Your first purchase of the day costs 1 energy.";
         }
         else
         {
-            dispositionText.GetComponent<Text>().text = "-" + neededDisposition + " disposição";
+            dispositionText.GetComponent<Text>().text = "-" + neededDisposition + " disposition";
         }
     }
     public void doCheckAndAct()

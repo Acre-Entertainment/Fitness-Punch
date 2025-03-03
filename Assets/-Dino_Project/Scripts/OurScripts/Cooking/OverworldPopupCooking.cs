@@ -20,11 +20,11 @@ public class OverworldPopupCooking : MonoBehaviour
     {
         if(dataHolder.cookingThisDay == 0)
         {
-            disposicaoText.text = "Sua primeira vez cozinhando no dia não custa disposição!";
+            disposicaoText.text = "Your first time cooking of the day doesn't cost energy!";
         }
         else
         {
-            disposicaoText.text = "-" + dataHolder.cookingThisDay + " Disposição";
+            disposicaoText.text = "-" + dataHolder.cookingThisDay + " Disposition";
         }
         if(dataHolder.actions == 0)
         {
@@ -42,7 +42,7 @@ public class OverworldPopupCooking : MonoBehaviour
                 textoDeNoInventory.SetActive(false);
                 textoDeNoAction.SetActive(false);
 
-                textoDeNoDisposition.GetComponent<Text>().text = "Você não tem disposição o suficiente! Você tem " + dataHolder.disposicao + " e precisa de " + dataHolder.cookingThisDay + "!";
+                textoDeNoDisposition.GetComponent<Text>().text = "You don't have enough disposition! You have " + dataHolder.disposicao + " and you need " + dataHolder.cookingThisDay + "!";
             }
             else
             {
